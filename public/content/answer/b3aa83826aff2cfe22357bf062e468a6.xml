@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="地理测试03" papersubject="Geography" paperid="test03">
+	<question id="test03_01" type="select">
+		<text>B</text>
+	</question>
+	<question id="test03_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test03_03" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_04" type="select" >
+		<text>A</text>
+	</question>
+	<question id="test03_05" type="select">
+		<text>D</text>
+	</question>
+	<question id="test03_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_07" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test03_08" type="select" >
+		<text>D</text>
+	</question>
+	
+	<question id="test03_09" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_10" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_11" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_12" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_13" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_14" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test03_15" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_16" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_17" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_18" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_19" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_20" type="select">
+		<text>B</text>
+	</question>
+	<question id="test03_21" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_22" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_23" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_24" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_25" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_26_01" type="shortanswer">
+		<text>
+		就业机会多； 收入较高； 有更好的生活水平。
+		</text>
+	</question>
+	<question id="test03_26_02" type="shortanswer">
+		<text>
+		石家庄比沧州服务范围大； 石家庄比沧州服务种类多、级别高(或石家庄服务功能比沧州强)。
+		</text>
+	</question>
+	<question id="test03_26_03" type="shortanswer">
+		<text>
+		城市化速度加快； 城市化水平提高。
+		</text>
+	</question>
+	<question id="test03_26_04" type="shortanswer">
+		<text>
+			提高运输能力(或效率)； 促进城际、区际联系； 完善区域交通运输网络，缓解运输紧张状况。		</text>
+	</question>
+	<question id="test03_26_05" type="shortanswer">
+		<text>
+		 地处温带季风气候区，降水变率大； 夏季河流流量大，水位高， 桥拱利于泄洪。北方以陆路交通运输方式为主，桥面平缓方便车辆行人通过。
+		</text>
+	</question>
+	<question id="test03_27_01" type="shortanswer">
+		<text>
+			 大于等于10°C的积温数值较高(读出具体积温值可得分),热量条件较好； 
+			光照条件较好； 气温日较差较大，利于枸杞糖分积累。 海拔较低(或地处宁夏平原)，地势平坦； 土层深厚，土壤较肥沃； 临近黄河，有灌溉水源。 
+		</text>
+	</question>
+	<question id="test03_27_02" type="shortanswer">
+		<text>
+			政策支持力度加大； 科技水平提高； 市场需求扩大。 (必须有表示变化的词语)
+		</text>
+	</question>
+	<question id="test03_27_03" type="shortanswer">
+		<text>
+			实行深加工，延长了产业链； 调整了当地的经济结构； 增加了就业机会； 创收创汇(或增加收入)； 推动了经济发展。(写出其中三项即可，每项1分，共3分。)
+		</text>
+	</question>
+		<question id="test03_28_01" type="shortanswer">
+		<text>
+			钨、锡、铅锌等)有色金属矿产资源丰富,原料充足； 煤炭、水能资源丰富,能源充足； 铁路、高速公路等交通方式多样，交通便利； 靠近河流，水源充足。
+		</text>
+	</question>
+		<question id="test03_28_02" type="shortanswer">
+		<text>
+			共用基础设施； 便于企业间交流与协作； 降低成本； 获得规模效益； 带动当地配套企业的快速发展。 (写出其中三项即可，每项1分，共3分。)
+		</text>
+	</question>
+		<question id="test03_28_03" type="shortanswer">
+		<text>
+			提高粮食产量(或提高粮食单位面积产量)； 提高粮食质量。
+		</text>
+	</question>
+		<question id="test03_28_04" type="shortanswer">
+		<text>
+			多低山丘陵； 季风气候，降水集中，降水变率大； 过度开垦、过度樵采； 不合理的工矿、交通建设。
+		</text>
+	</question>
+		<question id="test03_29_01" type="shortanswer">
+		<text>
+			纬度位置：大部分位于30 0N -50 0N之间(或大部分位于北半球中纬度地区)； 
+			海陆位置：横贯北美洲大陆中部； 东临大西洋，西临太平洋，南临墨西哥湾。(至少要答出东部和西部的两大洋名称，才能给1分。) 
+		</text>
+	</question>
+		<question id="test03_29_02" type="shortanswer">
+		<text>
+			河流支流众多，河流径流量大； 大部分河段位于中、低纬地区，无结冰期，通航时间长； 干流主要流经平原地区(海拔200米以下)，落差较小，水流平稳； 流程长，流域面积广，通航里程长。
+		</text>
+	</question>
+		<question id="test03_29_03" type="shortanswer">
+		<text>
+			内力作用：地壳抬升； 外力作用：流水侵蚀。
+		</text>
+	</question>
+		<question id="test03_29_04" type="shortanswer">
+		<text>
+			加拿大经济发达，旅游需求高； 与美国相邻，市场距离近； 交通发达，出行便利。
+		</text>
+	</question>
+</paperanswer>
+

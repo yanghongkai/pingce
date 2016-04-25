@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="地理测试03" subject="Geography" id="test03" >
+	<section name="选择题" score="50.0" >
+		<questions>
+			<text format="html">
+			<Picread id="Pic1_2_1">下图为“甲、乙、丙、丁四个国家某时期人口出生率和死亡率统计图”。</Picread>
+			回答第1、2题。
+			</text>
+			<question id="test03_01" score="2.0" type="select">
+				<text>图中__</text>
+				<select multiple="false">
+					<option value="A">甲国人口自然增长率最低</option>
+					<option value="B">乙国人口增长为过渡模式</option>
+					<option value="C">丙国一定属于发展中国家</option>
+					<option value="D">北丁国人口增长为现代型</option>
+				</select>
+			</question>
+			<question id="test03_02" score="2.0" type="select">
+				<text> 有关乙、丙两国的叙述，正确的是__</text>
+				<select multiple="false" format="html">
+					<option value="A">乙国城市化进程减慢</option>
+					<option value="B">丙国城市均出现逆城市化现象</option>
+					<option value="C">乙国劳动力不够充足</option>
+					<option value="D">丙国进入人口老龄化阶段</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">亦庄经济技术开发区是北京市重点发展的三个新卫星城之一，其定位是京津城际发展走廊上的高新技术产业和先进制造业基地。近年来人口数量不断增加。
+			<Picread id="Pic3_4_1">下图为“亦庄城镇人口构成比例图”。</Picread>
+			回答第3、4题。
+			</text>
+			<question id="test03_03" score="2.0" type="select">
+				<text>在图示季节中，一位地理学家在e地看到日落正西方，1小时之后下列各地发生的现象是__
+				<label id="03_1">中心城区迁出人口</label>	
+				<label id="03_2">本地区原有农业人口</label>
+				<label id="03_3">来京务工人员</label>	
+				<label id="03_4">外国留学生</label>
+				</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="03_1"/><label id="03_3"/><label id="03_4"/></option>
+					<option value="B"><label id="03_2"/><label id="03_3"/><label id="03_4"/></option>
+					<option value="C"><label id="03_1"/><label id="03_2"/><label id="03_3"/></option>
+					<option value="D"><label id="03_1"/><label id="03_2"/><label id="03_4"/></option>
+				</select>
+			</question>
+			<question id="test03_04" score="2.0" type="select">
+				<text>影响亦庄人口迁入的主要因素是__</text>
+				<select multiple="false">
+					<option value="A">经济因素</option>
+					<option value="B">政治因素</option>
+					<option value="C">生态环境因素</option>
+					<option value="D">社会文化因素</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html"><Picread id="Pic5_6_1">下图为我国南方某城市的发展过程示意图。</Picread>回答第5、6题。
+			</text>
+			<question id="test03_05" score="2.0" type="select">
+				<text>城区的扩展与主要影响因素组合正确的是__</text>
+				<select multiple="false">
+					<option value="A">甲时期向南北方向扩展--地形因素</option>
+					<option value="B">乙时期沿干线公路扩展--历史因素</option>
+					<option value="C">丙时期向东北方向扩展--行政因素</option>
+					<option value="D">丁时期向多个方向扩展--交通因素</option>
+				</select>
+			</question>
+			<question id="test03_06" score="2.0" type="select">
+				<text>丁时期__</text>
+				<select multiple="false">
+					<option value="A">商业用地因政府规划集中分布在城市中心</option>
+					<option value="B">工业用地考虑地价因素分布在城市外围</option>
+					<option value="C">新增工业区为防止大气污染建在城市西北部</option>
+					<option value="D">新增商业区因综合交通便利建在城市东南部</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic7_8_1">下图为“北京市种植业各类作物产值比重变化图”。</Picread>回答第7、8题。
+			</text>
+			<question id="test03_07" score="2.0" type="select">
+				<text>2000年以来__</text>
+				<select multiple="false">
+					<option value="A">蔬菜瓜类产值比重持续下降</option>
+					<option value="B">水果产值比重排序稳居第二位</option>
+					<option value="C">粮食作物产值比重排序变化最大</option>
+					<option value="D">经济作物产值比重始终在1%以下</option>
+				</select>
+			</question>
+			<question id="test03_08" score="2.0" type="select">
+				<text>蔬菜瓜类产值所占比重稳居第一位的主要原因是____</text>
+				<select multiple="false">
+					<option value="A">自然条件适宜</option>
+					<option value="B">温室技术成熟</option>
+					<option value="C">交通运输便利</option>
+					<option value="D">市场需求稳定</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic9_10_1">下图中a图</Picread>阴影部分为全国农业和农村经济发展“十二五”规划中的甘肃新疆主产区，<Picread id="Pic9-10_2">b图为该主产区的局部放大示意图。</Picread>
+			回答第9、10题。
+			</text>
+			<question id="test03_09" score="2.0" type="select">
+				<text> 农业主产区呈条带状分布,因为__</text>
+				<select multiple="false">
+					<option value="A">地处暖温带，光热资源充足</option>
+					<option value="B">沿铁路线分布，交通便捷</option>
+					<option value="C">沿山麓地带，灌溉水源丰富</option>
+					<option value="D">地处山前平原，黑土肥沃</option>
+				</select>
+			</question>
+			<question id="test03_10" score="2.0" type="select">
+				<text>b图中各区域适宜的农业生产活动与可能引发的主要生态问题，组合正确的是__
+				</text>
+				<select multiple="false">
+				<option value="A">山区修建梯田----水土流失</option>
+				<option value="B">绿洲种小麦、棉花----土壤次生盐渍化</option>
+				<option value="C">过渡带植灌种草----土地荒漠化</option>
+				<option value="D">荒漠繁育野生动物----生物多样性减少</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			雅戈尔集团将一种原产于我国云南山区、有“天然纤维之王”美誉的麻类植物改良后命名为“汉麻”。目前，雅戈尔集团的西双版纳勐海工业园区已成为全国“汉麻”的种植、加工中心和“汉麻”纤维化产业示范区。据此完成11、12题。
+			</text>
+			<question id="test03_11" score="2.0" type="select">
+				<text>雅戈尔集团在云南勐海建立“汉麻”加工的工业园区，主要考虑的因素是__</text>
+				<select multiple="false">
+					<option value="A">交通便利</option>
+					<option value="B">科技水平高</option>
+					<option value="C">原料丰富</option>
+					<option value="D">政策支持</option>
+				</select>
+			</question>
+			<question id="test03_12" score="2.0" type="select" format="html">
+				<text>该工业园区的建立对当地的影响是__
+				<label id="11_12_1">促进了产业结构调整</label>
+				<label id="11_12_2">改变了地理景观</label>
+				<label id="11_12_3">增加了就业机会</label>
+				<label id="11_12_4">推动了旅游业发展</label></text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="11_12_1"/><label id="11_12_2"/><label id="11_12_3"/></option>
+					<option value="B"><label id="11_12_2"/><label id="11_12_3"/><label id="11_12_4"/></option>
+					<option value="C"><label id="11_12_1"/><label id="11_12_2"/><label id="11_12_4"/></option>
+					<option value="D"><label id="11_12_1"/><label id="11_12_3"/><label id="11_12_4"/></option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			临空经济区一般是以机场为核心、以机场的影响范围为界限的区域。<Tabread id="Tab13_14_1">读下表</Tabread>
+			<tab id="Tab13_14_1">
+				<title>我国部分城市临空经济区及其产业现状表</title>
+					<row>
+					 	<col>城市</col>
+						<col>临空经济区</col>
+						<col>产业现状</col>
+					</row>
+					<row>
+						<col>北京</col>
+						<col>首都临空经济区</col>
+						<col>现代制造、现代服务业、微电子、生物医药等</col>
+					</row>
+					<row>
+						<col>广州</col>
+						<col>花都空港经济区</col>
+						<col>航空物资、商贸、航空维修、电子、精密制造等</col>
+					</row>
+					<row>
+					    <col>成都</col>
+						<col>西南航空港经济开发区</col>
+						<col>航空制造、教育、科研产业、医药、光电等</col>
+					</row>
+				</tab>
+			据此完成13、14题。
+			</text>
+			<question id="test03_13" score="2.0" type="select" format="html">
+				<text>临空经济区的主要特点是__
+				<label id="13_14_1">企业产品附加值低</label>
+				<label id="13_14_2">航空依赖程度高</label>
+				<label id="13_14_3">物流速度快</label>
+				<label id="13_14_4">产业能源需求量大</label></text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="13_14_1"/><label id="13_14_3"/></option>
+					<option value="B"><label id="13_14_2"/><label id="13_14_3"/></option>
+					<option value="C"><label id="13_14_2"/><label id="13_14_4"/></option>
+					<option value="D"><label id="13_14_3"/><label id="13_14_4"/></option>
+				</select>
+			</question>
+			<question id="test03_14" score="2.0" type="select">
+				<text>临空经济区以高新技术产业为主，该类产业的主要特点是__</text>
+				<select multiple="false">
+				<option value="A">科研人员比重大</option>
+				<option value="B">产品更新换代慢</option>
+				<option value="C">研发费用比例小</option>
+				<option value="D">运输成本比较高</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			新疆是我国重要的能源基地，继“西气东输”之后，“十二五”期间又实施了“疆电外送”工程。<Picread id="Pic15_16_1">下图为“疆电外送线路及沿线部分地区景观示意图”。</Picread>
+			读图回答下列各题。
+			</text>
+			<question id="test03_15" score="2.0" type="select">
+				<text>“疆电外送”对调入区的直接影响有__</text>
+				<select multiple="false">
+					<option value="A">调整产业结构</option>
+					<option value="B">加剧环境污染</option>
+					<option value="C">缓解能源紧张</option>
+					<option value="D">促进资源开发</option>
+				</select>
+			</question>
+			<question id="test03_16" score="2.0" type="select">
+				<text>关于“疆电外送”沿线地区人文景观的叙述，正确的是__</text>
+				<select multiple="false" format="html">
+				<option value="A">甲图建筑充分利用了当地昼夜温差大的气候特点</option>
+				<option value="B">乙图建筑体现了当地降水丰富、地形平坦的特点</option>
+				<option value="C">丙图地区牧业生产规模大，科技水平高</option>
+				<option value="D">丁图地区农业生产精耕细作，水利工程量大</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic17_18_1">下图为“某河流水利工程建设前、后遥感影像图”。</Picread>回答第17、18题。
+			</text>
+			<question id="test03_17" score="2.0" type="select">
+				<text>该段河流进行水利工程建设后__</text>
+				<select multiple="false">
+					<option value="A">大坝上游河道变宽，通航条件改善</option>
+					<option value="B">大坝下游水位升高，淹没水中沙洲</option>
+					<option value="C">河流支流数量增加，流域面积增大</option>
+					<option value="D">流量季节变化增大，两岸植被减少</option>
+				</select>
+			</question>
+			<question id="test03_18" score="2.0" type="select">
+				<text>该水利工程的建设对区域发展的积极影响是__</text>
+				<select multiple="false">
+				<option value="A">大坝拦截泥沙，从根本上治理水土流失</option>
+				<option value="B">水库调节径流，有效防治上游洪涝灾害</option>
+				<option value="C">实现水能开发，资源优势变为经济优势</option>
+				<option value="D">提供灌溉用水，避免干旱现象的发生</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">2013年10月29日，贯穿土耳其海峡的海底铁路隧道正式开通。
+			<Picread id="Pic19_20_1">下图为“土耳其海峡示意图”。</Picread>回答第19、20题。
+			</text>
+			<question id="test03_19" score="2.0" type="select">
+				<text format="html">土耳其海峡海底铁路隧道的修建__
+				<label id="13_14_1">沟通亚洲与欧洲，提高铁路运输的灵活性</label>
+				<label id="13_14_2">加强海峡两岸的地域联系，促进人员流动</label>
+				<label id="13_14_3">需克服洋流、台风、海水腐蚀等不利条件</label>
+				<label id="13_14_4">缓解伊斯坦布尔跨海大桥的交通拥堵状况</label></text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="13_14_1"/><label id="13_14_3"/></option>
+					<option value="B"><label id="13_14_2"/><label id="13_14_3"/></option>
+					<option value="C"><label id="13_14_3"/><label id="13_14_4"/></option>
+					<option value="D"><label id="13_14_2"/><label id="13_14_4"/></option>
+				</select>
+			</question>
+			<question id="test03_20" score="2.0" type="select">
+				<text>关于图示地区的叙述，正确的是__</text>
+				<select multiple="false">
+				<option value="A">海峡连接两大洋，地理位置十分重要</option>
+				<option value="B">位于板块边界附近，地壳运动活跃</option>
+				<option value="C">气候雨热同期，以传统稻作农业为主</option>
+				<option value="D">日出比北京晚，区时与世界时相差3小时</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			013年10月，美国有线电视新闻网(CNN)评选出全球15条旅游最美的河流，漓江成为中国唯一入选的河流。
+			结合所学知识，回答21、22题。
+			</text>
+			<question id="test03_21" score="2.0" type="select">
+				<text>唐代诗人韩愈写诗赞美漓江两岸的风光“苍苍森八桂，兹地在湘南。江作青罗带，山如碧玉簪”。诗中__</text>
+				<select multiple="false">
+					<option value="A"> “苍苍森八桂”描写出该地区的茂密热带季雨林景观特点</option>
+					<option value="B">“兹地在湘南”描写出漓江的地理位置在福建省湘江以南</option>
+					<option value="C">“江作青罗带”描写出漓江蜿蜒曲折、水清沙少的水流特点</option>
+					<option value="D"> “山如碧玉簪”描写出两岸山地是地壳抬升形成的块状山</option>
+				</select>
+			</question>
+			<question id="test03_22" score="2.0" type="select">
+				<text>关于漓江景区的叙述，正确的是</text>
+				<select multiple="false">
+				<option value="A">漓江是自然旅游资源，美学价值、科学价值及经济价值很高</option>
+				<option value="B">漓江因天气不同呈现不同景色，属于气象气候类旅游资源</option>
+				<option value="C"> 漓江景区的游览应登高远眺，选择特定位置和适当距离观赏</option>
+				<option value="D">漓江景区旅游资源呈面状扩展分布，密度较小</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			美国《国家地理》杂志称：如果人类继续向大气中增加碳排放，当全球平均气温上升12℃时，地球冰川将全部融化，海平面将上升66米，全球许多地区将被海水淹没。<Picread id="Pic23_24_25_1">下图为“南极洲海岸线变化示意图”。</Picread>
+			回答23~25题。
+			</text>
+			<question id="test03_23" score="2.0" type="select">
+				<text>全球气候变暖对南极洲的影响是__</text>
+				<select multiple="false">
+					<option value="A">平均海拔升高</option>
+					<option value="B">土地沙化严重</option>
+					<option value="C">淡水资源减少</option>
+					<option value="D">旱涝灾害多发</option>
+				</select>
+			</question>
+			<question id="test03_24" score="2.0" type="select">
+				<text>人类解决全球气候变暖问题要遵循可持续发展的__</text>
+				<select multiple="false">
+				<option value="A">持续性原则</option>
+				<option value="B">公平性原则</option>
+				<option value="C">共同性原则</option>
+				<option value="D">整体性原则</option>
+				</select>
+			</question>
+			<question id="test03_25" score="2.0" type="select">
+				<text>我国计划在甲地建立第四个科学考察站——泰山站，该地</text>
+				<select multiple="false">
+				<option value="A">地处南半球的寒温带</option>
+				<option value="B">位于上海的东南方向</option>
+				<option value="C">极昼时间长达6个月</option>
+				<option value="D">严寒、风大、降水少</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" score="52.0" >
+		<questions>
+			<headtext>阅读材料，回答下列问题</headtext>
+			<title>材料一</title>
+			<text format="html">
+			<Picread id="Pic26_1">图 “京津冀部分地区示意图”。(图甲)</Picread>
+			</text>
+			<question id="test03_26_01" type="shortanswer">
+				<text> num="1" format="html">河北省第六次全国人口普查(2010年)数据显示：近10年以来，石家庄、唐山、秦皇岛已成为人口净流入城市。简述其主要原因。</text>
+			</question>
+			<question id="test03_26_02" type="shortanswer">
+				<text>结合材料一，说出石家庄和沧州在城市服务方面的差异。</text>
+			</question>
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题</headtext>
+			<title>材料二</title>
+			<text format="html">
+			<Picread id="Pic26_2">图乙“河北省城镇人口比重图”。(图乙)</Picread>
+			</text>
+			<question id="test03_26_03" type="shortanswer">
+				<text>结合材料二，说出与1982年之前比较，1982年之后河北省城市化进程的特点。</text>
+			</question>
+			<question id="test03_26_04" type="shortanswer">
+				<text>简述图甲所示地区大力发展高速铁路对本地区的积极意义。 </text>
+			</question>
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题</headtext>
+			<title>材料三 </title>
+			<text format="html">
+			<Picread id="Pic26_3">图丙为赵州桥景观图。（图丙）</Picread>赵州桥坐落在河北省赵县洨河上，该桥建筑有两大特点：一是与南方石拱桥相比,桥面更平缓,跨度更大；二是大拱两端各设两小拱，提高泄洪能力。 
+			</text>
+			<question id="test03_26_05" type="shortanswer">
+				<text> 请从气候、水文、交通运输方式的角度,分析赵州桥的建筑特点与地理环境的关系。</text>
+			</question>
+		</questions>
+		<questions>
+			<headtext> “世界枸杞看中国，中国枸杞看宁夏”。阅读材料，回答下列问题。</headtext>
+			<title>材料一</title>
+			<text format="html"><Picread id="Pic27_1">下图 “宁夏回族自治区图”。</Picread>完成下列问题。</text>
+			<question id="test03_27_01" type="shortanswer">
+				<text>宁夏北部海拔小于1500米的地区为枸杞种植适宜区。分析该地区利于种植枸杞的自然条件。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext> “世界枸杞看中国，中国枸杞看宁夏”。阅读材料，回答下列问题。</headtext>
+			<title>材料二</title>
+			<text>近十年来，宁夏政府先后投入2亿多元大力发展枸杞生产，选育优良品种，扩大种植面积，使产量不断提高，并建立枸杞加工、营销企业100多家，开发枸杞酒、枸杞籽油、果汁等十大类、50多种特色产品。“枸杞经济”在宁夏已初具规模，如今的宁夏枸杞市场已拓展到五大洲40多个国家和地区。</text>
+			<question id="test03_27_02" type="shortanswer">
+				<text>依据材料，简述宁夏枸杞生产规模不断扩大的社会经济条件。</text>
+			</question>
+			<question id="test03_27_03" type="shortanswer">
+				<text>说明宁夏“枸杞经济”对当地社会经济发展的推动作用。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题。</headtext>
+			<title>材料一</title>
+			<text format="html"><Picread id="Pic28_1">下图 “湖南省部分地区图”。</Picread>
+			</text>
+			<question id="test03_28_01" type="shortanswer">
+				<text>简述以郴州为中心的湘南地区发展有色冶金工业的有利区位条件。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题。</headtext>
+			<title>材料二</title>
+			<text format="html">2010年至2013年，长沙市规划建设了汽车零部件配套产业园，多家全球知名的汽车零部件企业落户长沙，推动了一批本土配套企业的快速发展。
+			</text>
+			<question id="test03_28_02" type="shortanswer">
+				<text>说明长沙市零部件生产企业集聚的好处。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题。</headtext>
+			<title>材料三</title>
+			<text format="html">2013年12月湖南省新闻报道：长沙市芙蓉区将打造“种业硅谷”，区域内有湖南省农科院、湖南农业大学等30余所科研院所，有袁隆平等一批专家学者，且聚集了现代农业、生物技术等多种产业。
+			</text>
+			<question id="test03_28_03" type="shortanswer">
+				<text>说简要说明“种业硅谷”的建设对该省粮食生产的积极作用。</text>
+			</question>	
+			<question id="test03_28_04" type="shortanswer">
+				<text>邵阳、郴州、永州和衡阳等市、州的水土流失面积占全省总水土流失面积的63%。说明该区域水土流失的主要原因。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题。</headtext>
+			<title>材料一</title>
+			<text format="html"><Picread id="Pic29_1">下图 “美国本土图”。</Picread>
+			</text>
+			<question id="test03_29_01" type="shortanswer">
+				<text>描述美国本土的纬度位置和海陆位置。</text>
+			</question>	
+			<question id="test03_29_02" type="shortanswer">
+				<text>说明长沙市零部件生产企业集聚的好处。</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>阅读材料，回答下列问题。</headtext>
+			<title>材料二</title>
+			<text>美国科罗拉多大峡谷是世界七大自然景观之一，这里曾是一片汪洋大海，造山运动使之隆起，海拔的升高导致科罗拉多河流域降雨量的增加。大峡谷从谷底到顶部分布着各个时期的岩层，层次清晰，色调各异，并且含有各个地质年代的代表性生物化石，被称为“活的地质史教科书”。
+			</text>
+			<question id="test03_29_03" type="shortanswer">
+				<text>说出科罗拉多大峡谷景观形成的地质作用。</text>
+			</question>	
+			<question id="test03_29_04" type="shortanswer">
+				<text>据美国旅游机构调查，加拿大是美国最大的旅游入境客源市场，说明其原因。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

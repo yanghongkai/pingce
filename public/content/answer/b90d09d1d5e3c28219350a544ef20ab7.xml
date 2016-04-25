@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="地理测试01" papersubject="Geography" paperid="test01">
+
+	<question id="test01_01" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_02" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_03" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_04" type="select" >
+		<text>B</text>
+	</question>
+	<question id="test01_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="test01_06" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_07" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="test01_08" type="select" >
+		<text>A</text>
+	</question>
+	
+	<question id="test01_09" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test01_10" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_11" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_12" type="select">
+		<text>B</text>
+	</question>
+	<question id="test01_13" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_14" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_15" type="select" >
+		<text>C</text>
+	</question>
+	<question id="test01_16" type="select">
+		<text>B</text>
+	</question>
+	<question id="test01_17" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test01_18" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test01_19" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="test01_20" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_21" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test01_22" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_23" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_24" type="select" >
+		<text>D</text>
+	</question>
+	<question id="test01_25" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_26" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_27" type="select">
+		<text>A</text>
+	</question>
+
+	<question id="test01_28" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="test01_29" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_30" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test01_31" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test01_32" type="select" >
+		<text>C</text>
+	</question>
+	
+	<question id="test01_33" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_34_01" type="fillblank" num="4" scoretype="all">
+		<text>4</text>
+		<text>l5°N，0°</text>
+		<text>75°N~90°N（或75°N到极点）</text>
+		<text>全球为同一天</text>
+	</question>
+	<question id="test01_34_02_01" type="fillblank" num="1" scoretype="all">
+		<text>15°N</text>
+	</question>
+	<question id="test01_34_02_02" type="shortanswer">
+		<text>
+		 相等
+		</text>
+	</question>
+	<question id="test01_34_03" type="shortanswer">
+		<text>
+		 北半球各地昼渐长，夜渐短（1分），北极圈内（1分）极昼范围逐渐扩大（1分）
+		</text>
+	</question>
+	<question id="test01_34_04" type="select" >
+		<text>D</text>
+	</question>
+	
+	<question id="test01_35_01" type="shortanswer">
+		<text>
+		气温从低纬度向高纬度递减，（1分）同纬度陆地气温高于海洋（1分）
+		</text>
+	</question>
+	<question id="test01_35_02" type="shortanswer">
+		<text>
+		5月份西南季风尚未到达（正处于旱季的最后阶段）（1分），晴天多、云量少（降水少）（1分），大气对太阳辐射的削弱作用小。（1分）
+		</text>
+	</question>
+	<question id="test01_35_03" type="shortanswer">
+		<text>
+		亚欧大陆与太平洋之间，海陆热力差异显著，形成季风环流；（1分） 来自太平洋的夏季风带来丰沛水汽（1分），利于形成降水。（1分）
+		</text>
+	</question>
+		<question id="test01_36_01" type="shortanswer">
+		<text>
+		据图示信息，我国东南地区油菜开花日期等值线分布的基本特征是油菜开花日期等值线大致呈纬向分布（或开花日期等值线大致沿纬线延伸）（或油菜花由南向北依次开放）（或油菜花开放日期由南向北逐渐推迟）（1分）。 原因：我国东南部气温从低纬向高纬递减（或太阳直射点位置由南向北推进，气温也随之由南向北逐渐上升）（1分）。
+		</text>
+	</question>
+	<question id="test01_36_02" type="shortanswer">
+		<text>
+		4月1日 的油菜开花日期等值线在黄淮流域有明显向北凸出之势。因为该地区（位于华北平原南部）春天升温比东部沿海地区和西部山地更快（2分）。
+		</text>
+	</question>
+	<question id="test01_36_03_01" type="fillblank" num="1" scoretype="all">
+		<text>东北—西南</text>
+	</question>
+	<question id="test01_36_03_02" type="shortanswer">
+		<text>
+		 此时，全国普遍高温，水分条件成为主要制约因素。 （自西北向东南）距海洋越近（1分）水分越足，开花日期相对较早（1分）。
+		</text>
+	</question>
+	<question id="test01_36_04" type="shortanswer">
+		<text>
+			油菜花开花日期等值线呈半环状分布（1分），随海拔高度上升而开花日期推迟（1分）。 主要受地形因素的影响。地势低处气温高开花日期早，高处气温低开花日期晚（2分）。
+		</text>
+	</question>
+	<question id="test01_37_01_01" type="fillblank" num="1" scoretype="all">
+		<text>南纬20°—30°地区</text>
+	</question>
+	<question id="test01_37_01_02" type="shortanswer">
+		<text>
+			 副热带高压控制，盛行下沉气流（1分），降水量远小于蒸发量（1分）
+		</text>
+	</question>
+	<question id="test01_37_02" type="fillblank" num="2" scoretype="all">
+		<text>多</text>
+		<text>南半球40°～60°地区洋面宽阔，水汽来源充足（1分），所以降雨量大。</text>
+	</question>
+</paperanswer>
+

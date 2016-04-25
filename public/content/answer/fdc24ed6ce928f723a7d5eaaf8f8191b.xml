@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2014年普通高等学校招生全国统一考试语文（北京卷）" papersubject="Chinese" paperid="2014BeijingGaokao" info="语文攻关组第一次测试">
+	<question id="2014BeijingGaokao_01" type="select">
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_02" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_03" type="select">
+		<text>A</text>
+	</question>
+	<question id="2014BeijingGaokao_04" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_05" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_06_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_06_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_07_01" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_07_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_07_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_08" type="punctuation">
+		<text>
+		夫虑熟谋审/力不劳而功倍/作事可以为后法/一宜书/不苟一时之誉/思为利于无穷/而告来者不以废/二宜书/岳之民人与湖中之往来者/皆欲为滕侯纪/三宜书/以三宜书/不可以不书/乃为之书。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_09" type="select">
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_10" type="select" >
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_11" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_12" type="shortanswer">
+		<text>
+		（庆历四年春）滕子京谪守巴陵郡。越明年，政通人和，百废俱兴。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_13" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="2014BeijingGaokao_14_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_14_02" type="select">
+		<text>B</text>
+		<text>E</text>
+	</question>
+	<question id="2014BeijingGaokao_14_03" type="shortanswer">
+		<text>
+		这两句诗的意思是“不知自己何时才能占据一丛竹林，头戴小乌巾，过着像刘岩一样的隐士生活”，运用典故，通过对韦曲春色描写，表达出作者的喜爱之情，因此产生对归隐山林的隐士生活的向往，曲折含蓄地表达出对久图官场功名而不得的厌倦情绪。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_15" type="select">
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_16" type="select">
+		<text>C</text>
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_17" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_18" type="select">
+		<text>A</text>
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_19" type="shortanswer">
+		<text>经过了岁月的洗礼后，载着历史厚重意蕴的，有着文化价值的，能够给人带来一种“悟性的陶醉”的遗迹。</text>
+	</question>
+	<question id="2014BeijingGaokao_20" type="shortanswer">
+		<text>第一阶段，文艺复兴时期，从废墟挖掘的遗迹让人们感到震撼和鼓舞，激发了人们对艺术创造的热情，人们对前人遗留的创造刮目相看。第二阶段，十八世纪末到二十世纪初，启蒙运动提出“返归自然”的主张，在浪漫主义运动中产生影响，喜好远古题材，追求神奇和神秘，爱好欧洲常见的古堡遗址。第三阶段，1820年断臂维纳斯的发现，残缺的美成为经典，废墟的残缺美进入美学殿堂，保护废墟遗址成为了一种文化行为。</text>
+	</question>
+	<question id="2014BeijingGaokao_21" type="shortanswer">
+		<text>同意，圆明园凝聚着前人非凡的智慧和巨大的辛劳，残缺的圆明园能引起人们痛惜，让人产生心灵的震撼与共鸣，它带着岁月的沧桑，能唤起人们“悟性陶醉”，重修圆明园是对人们国民文物意识的严重误导。</text>
+	</question>
+	<question id="2014BeijingGaokao_22"  type="composition">
+		<title>微写作</title>
+				<text format="html">
+				从下面三个题目中任选一题，按要求作答，不超过150字。
+					<label id="22_1">毕业前，语文老师请同学们把自己学习语文的体会写下来，与下一届同学分享，要求所写的体会具体，切实，易记忆。</label>
+					<label id="22_2">今天早晨是家长送你来考场的吗？请对“家长送考”现象予以评论，要求观点明确，有理有据。</label>
+					<label id="22_3">写一段抒情文字（可写诗歌），纪念自己的18岁，要求感情真挚，富有文采。</label>
+				</text>
+	</question>	
+	<question id="2014BeijingGaokao_23"  type="composition">
+		<title>作文</title>
+				<text format="html">
+				阅读下面文字，按要求作文。
+					<label id="23_1">
+					北京过去有许多“老规矩”，如“出门回家都要跟长辈打招呼”、“吃菜不许满盘子乱挑”、“不许管闲事儿”、“笑不露齿，话不高声”、“站有站相 坐有坐相”、“作客时不许随便动主人家的东西”、“忠厚传世，勤俭持家”等，这些从小就被要求遵守的准则，点点滴滴，影响了一辈辈北京人。
+　　				世易时移，这些“老规矩”渐渐被人们淡忘了。不久前，有网友陆续把一些“老规矩”重新整理出来贴到网上，引发了一片热议。
+					“老规矩”被重新提起并受到关注，这种现象引发了你哪些思考？请自选角度，自拟题目写一篇文章，文体不限（诗歌除外），不少于700字。
+					</label>
+				</text>
+	</question>	
+</paperanswer>

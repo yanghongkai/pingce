@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="地理测试02" subject="Geography" id="test02" >
+	<section name="选择题" score="80.0" >
+		<questions>
+			<text format="html">
+			<Picread id="Pic1_2_1">下图为“某地住宅建筑冬夏正午日照示意图”。</Picread>
+			回答第1、2题。
+			</text>
+			<question id="test02_01" score="2.0" type="select">
+				<text> 该地可能是__</text>
+				<select multiple="false">
+					<option value="A">刚果盆地</option>
+					<option value="B">撒哈拉沙漠南缘</option>
+					<option value="C">巴西高原</option>
+					<option value="D">北美洲五大湖地区</option>
+				</select>
+			</question>
+			<question id="test02_02" score="2.0" type="select">
+				<text format="html"> 仅考虑地球运动，图示窗户、屋檐的搭建对室内光热的影响有__
+				<label id="02_1">利于夏季遮阳、冬季采光</label>	
+				<label id="02_2">冬至到春分，正午室内的日照面积逐渐增大</label>
+				<label id="02_3">春分到夏至，正午屋檐的遮阳作用逐渐增强</label>	
+				<label id="02_4">冬暖夏凉，利于减少能源的消耗</label>
+				</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="02_1"/><label id="02_2"/><label id="02_3"/></option>
+					<option value="B"><label id="02_1"/><label id="02_2"/><label id="02_4"/></option>
+					<option value="C"><label id="02_1"/><label id="02_3"/><label id="02_4"/></option>
+					<option value="D"><label id="02_2"/><label id="02_3"/><label id="02_4"/></option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic3_4_1">读下图世界海陆分布及地球公转轨道示意图，</Picread>回答下列各题
+			</text>
+			<question id="test02_03" score="2.0" type="select">
+				<text>在图示季节中，一位地理学家在e地看到日落正西方，1小时之后下列各地发生的现象是__</text>
+				<select multiple="false">
+					<option value="A">a—阳光直射</option>
+					<option value="B">b—夕阳西下</option>
+					<option value="C">c—旭日东升</option>
+					<option value="D">d—午后秋阳</option>
+				</select>
+			</question>
+			<question id="test02_04" score="2.0" type="select">
+				<text>在之后的两个月中，下列变化规律符合实际的是__</text>
+				<select multiple="false">
+					<option value="A">a地白昼逐渐变长</option>
+					<option value="B">a.c两地气温都在下降</option>
+					<option value="C">b地牧草日益茂盛</option>
+					<option value="D">c.d两地河流水位升高</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">某市寻找适合布局工厂的地点，该厂址要满足两个条件：1.地形平坦；2.距河流1km范围内。<Picread id="Pic5_6_1">下图中</Picread>“空间资料”是该市地形与河流的空间分布，每一小方格代表1 km 2(该区面积共16 km 2)；“属性资料”是地形和河流的类别资料。根据选址条件，对照空间资料和属性资料，符合条件为“1”，不符合条件为“0”，若同一小方格内有两种不同属性类别分布时，为求简化，占有面积比例较大的属性作为评估对象。
+			下图为“地球圈层结构示意图”，回答第5、6题。
+			</text>
+			<question id="test02_05" score="2.0" type="select">
+				<text> 下列是四幅“河流”资料的评估值图，其中正确的是__</text>
+				<select multiple="false" format="html">
+					<option value="A"><Picread id="Pic5_6_2"></Picread></option>
+					<option value="B"><Picread id="Pic5_6_3"></Picread></option>
+					<option value="C"><Picread id="Pic5_6_4"></Picread></option>
+					<option value="D"><Picread id="Pic5_6_5"></Picread></option>
+				</select>
+			</question>
+			<question id="test02_06" score="2.0" type="select">
+				<text>根据地形、河流两项资料的综合评估，<Picread id="Pic5_6_6">下图</Picread>中适合布局工厂的地点是__</text>
+				<select multiple="false" format="html">
+					<option value="A">甲.乙</option>
+					<option value="B">乙.丙</option>
+					<option value="C">乙.丁</option>
+					<option value="D">甲.丙</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic7_8_1">下图中,</Picread>
+			<label id="7_8_1"/>、<label id="7_8_2"/>、<label id="7_8_3"/>、<label id="7_8_4"/>表示某区域地形类型中的山脊和山谷，点a、b、c对应的海拔分别为900米、600米、300米。回答第7、8题。
+			</text>
+			<question id="test02_07" score="2.0" type="select">
+				<text format="html"><label id="7_8_1"/>、<label id="7_8_2"/>、<label id="7_8_3"/>、<label id="7_8_4"/>沿线坡度最平缓的是__</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="7_8_1"/></option>
+					<option value="B"><label id="7_8_2"/></option>
+					<option value="C"><label id="7_8_3"/></option>
+					<option value="D"><label id="7_8_4"/></option>
+				</select>
+			</question>
+			<question id="test02_08" score="2.0" type="select">
+				<text>降落到P点的雨水会向____流动</text>
+				<select multiple="false">
+					<option value="A">南方</option>
+					<option value="B">东南方</option>
+					<option value="C">西南方</option>
+					<option value="D">北方</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic9_10_1">读下图,</Picread>
+			回答第9、10题。
+			</text>
+			<question id="test02_09" score="2.0" type="select">
+				<text format="html">下列关于图中时刻的叙述，正确的是__
+				<label id="9_10_1">图中等压面一般出现在夜晚</label>
+				<label id="9_10_2">图中等压面一般出现在白天</label>
+				<label id="9_10_3">此时风向由Q到P</label>
+				<label id="9_10_4">此时风向由P到Q</label></text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="9_10_1"/><label id="9_10_3"/></option>
+					<option value="B"><label id="9_10_1"/><label id="9_10_4"/></option>
+					<option value="C"><label id="9_10_2"/><label id="9_10_3"/></option>
+					<option value="D"><label id="9_10_2"/><label id="9_10_4"/></option>
+				</select>
+			</question>
+			<question id="test02_10" score="2.0" type="select">
+				<text format="html">在晴朗的夜晚该谷地上空会出现逆温现象，逆温层产生的原因是__
+				</text>
+				<select multiple="false">
+				<option value="A">山坡上的冷空气沿山坡下沉到谷底，谷底的较暖空气被冷空气抬升</option>
+				<option value="B">山顶接受的太阳辐射多，山谷接受的太阳辐射少</option>
+				<option value="C">山顶离太阳近，山谷离太阳远</option>
+				<option value="D">在对流层，气温随高度增加而递减</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic11_12_1">某地理小组做了如下实验：两个相同规格的玻璃箱(如下图)</Picread>
+			甲底部放一层土，乙底部放一层水，中午同时把两个玻璃箱放在日光下，十五分钟后，同时测玻璃箱内的气温，结果发现甲箱比乙箱的气温高了3℃。据此完成11、12题。
+			</text>
+			<question id="test02_11" score="2.0" type="select">
+				<text>该实验主要目的是测试__</text>
+				<select multiple="false">
+					<option value="A">大气的温室效应</option>
+					<option value="B">大气环流</option>
+					<option value="C">一天中最高气温出现的时刻 </option>
+					<option value="D">大气主要的直接热源为地面辐射</option>
+				</select>
+			</question>
+			<question id="test02_12" score="2.0" type="select">
+				<text> 甲箱温度计比乙箱温度计高的原因是__</text>
+				<select multiple="false" format="html">
+				<option value="A">太阳辐射强弱差异</option>
+				<option value="B">地面辐射强弱差异</option>
+				<option value="C">大气吸热强弱差异</option>
+				<option value="D">大气辐射强弱差异</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic13_14_1">下图为“气压带、风带移动示意图”。</Picread>
+			据此完成13、14题。
+			</text>
+			<question id="test02_13" score="2.0" type="select">
+				<text>关于甲图所示季节各纬度带气流运动的说法，正确的是__</text>
+				<select multiple="false">
+					<option value="A">0°～10°N盛行下沉气流</option>
+					<option value="B">10°N～20°N盛行东南风</option>
+					<option value="C">20°N～30°N盛行西北风</option>
+					<option value="D">30°N～40°N盛行西南风</option>
+				</select>
+			</question>
+			<question id="test02_14" score="2.0" type="select">
+				<text>甲、乙两图反映的时间与季节正确的是__</text>
+				<select multiple="false" format="html">
+				<option value="A">甲表示3月份.春季</option>
+				<option value="B">乙表示7月份.夏季</option>
+				<option value="C">甲表示9月份.秋季</option>
+				<option value="D">乙表示1月份.冬季</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic15_16_1">下列四幅天气图反映了一次寒潮的天气过程。</Picread>
+			读图回答下列各题。
+			</text>
+			<question id="test02_15" score="2.0" type="select">
+				<text>关于甲图所示季节各纬度带气流运动的说法，正确的是__</text>
+				<select multiple="false">
+					<option value="A">a→c→b→d</option>
+					<option value="B">b→c→d→a</option>
+					<option value="C">c→b→d→a</option>
+					<option value="D">d→a→c→b</option>
+				</select>
+			</question>
+			<question id="test02_16" score="2.0" type="select">
+				<text>据四幅天气图判断，对应城市的天气状况接近实际的是__</text>
+				<select multiple="false">
+				<option value="A">a—武汉地区晴朗温暖</option>
+				<option value="B">b—天津地区大风降温</option>
+				<option value="C">c—北京地区雷雨交加</option>
+				<option value="D">d—杭州地区阴雨连绵</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">读下图,图中
+			<Picread id="Pic17_18_1">A</Picread>、<Picread id="Pic17_18_2">B</Picread>
+			两图，回答第17、18题。
+			</text>
+			<question id="test02_17" score="2.0" type="select">
+				<text>关于图中近地面的大气运动，叙述正确的是__</text>
+				<select multiple="false">
+					<option value="A">B图的水平气流呈顺时针方向旋转辐合</option>
+					<option value="B">A图的水平气流呈逆时针方向旋转辐散</option>
+					<option value="C">B图中南半球水平气流呈顺时针方向旋转辐散</option>
+					<option value="D">A图中北半球水平气流呈逆时针方向旋转辐合</option>
+				</select>
+			</question>
+			<question id="test02_18" score="2.0" type="select">
+				<text>导致一天中最低温出现在山谷的主要原因是__</text>
+				<select multiple="false">
+				<option value="A">巴西高原正处在旱季</option>
+				<option value="B">印度半岛正处在雨季</option>
+				<option value="C">亚平宁半岛正处在雨季</option>
+				<option value="D">我国正处在夏季</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic19_20_1">读下图，“亚欧大陆气候分布模式图”</Picread>回答第19、20题。
+			</text>
+			<question id="test02_19" score="2.0" type="select">
+				<text>表示温带季风气候与地中海气候的代号分别是__</text>
+				<select multiple="false">
+					<option value="A">甲.乙</option>
+					<option value="B">乙.丙</option>
+					<option value="C">丙.丁</option>
+					<option value="D">甲.丁</option>
+				</select>
+			</question>
+			<question id="test02_20" score="2.0" type="select">
+				<text>气候特征符合终年多雨(湿润)的代号有__</text>
+				<select multiple="false">
+				<option value="A">甲.丙</option>
+				<option value="B">丙.戊</option>
+				<option value="C">戊.己</option>
+				<option value="D">甲.己</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic21_22_1">读下图,</Picread>
+			回答21、22题。
+			</text>
+			<question id="test02_21" score="2.0" type="select">
+				<text>根据图中等水温线数值分布及弯曲形态判断，下列叙述正确的是__</text>
+				<select multiple="false">
+					<option value="A">甲图所示区域位于南半球</option>
+					<option value="B">乙图所示区域位于南半球</option>
+					<option value="C">甲图洋流为暖流</option>
+					<option value="D">乙图洋流为寒流</option>
+				</select>
+			</question>
+			<question id="test02_22" score="2.0" type="select">
+				<text>图中所示区域均位于太平洋，则甲、乙两图的洋流名称判断正确的是__</text>
+				<select multiple="false">
+				<option value="A">甲图洋流为秘鲁寒流</option>
+				<option value="B">乙图洋流为西澳大利亚寒流</option>
+				<option value="C">甲图洋流为加利福尼亚寒流</option>
+				<option value="D">乙图洋流为巴西暖流</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic23_24_1">读下列两幅岛屿图(下图),</Picread>
+			回答23、24题。
+			</text>
+			<question id="test02_23" score="2.0" type="select">
+				<text>下列关于两图及两图所示区域的叙述，正确的是__</text>
+				<select multiple="false">
+					<option value="A">甲图的比例尺小于乙图的比例尺</option>
+					<option value="B">甲图区域为正午时，乙图区域正值日落时刻</option>
+					<option value="C">甲图区域位于乙图区域的东北方向</option>
+					<option value="D">两图区域以东濒临同一大洋</option>
+				</select>
+			</question>
+			<question id="test02_24" score="2.0" type="select">
+				<text>下列关于两区域自然环境的叙述，正确的是__</text>
+				<select multiple="false">
+				<option value="A">甲岛气候类型呈现南北分异，乙岛气候类型呈现东西分异</option>
+				<option value="B">甲岛东侧的洋流为寒流，乙岛东侧的洋流为暖流</option>
+				<option value="C">甲岛的植被属亚热带类型，乙岛的植被属热带类型</option>
+				<option value="D">甲岛河流汛期出现在其夏季，乙岛河流汛期出现在其冬季</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic25_26_1">下图为“陆地环境主要构成要素的相互关联图”,</Picread>读图完成下列各题，读图回答25、26题。
+			</text>
+			<question id="test02_25" score="2.0" type="select">
+				<text>黑龙江和珠江水文特征不同，关键是图中__箭头所起的作用</text>
+				<select multiple="false">
+				<option value="A">a</option>
+				<option value="B">b</option>
+				<option value="C">c</option>
+				<option value="D">d</option>
+				</select>
+			</question>
+			<question id="test02_26" score="2.0" type="select">
+				<text>能表示黄土高原千沟万壑的地貌特征形成的箭头是__</text>
+				<select multiple="false">
+				<option value="A">a</option>
+				<option value="B">b</option>
+				<option value="C">c</option>
+				<option value="D">d</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic27_28_29_30_1">下图为30°S附近沿海某地等高线地形图和地层示意图，</Picread>
+			R河流正值汛期。，读图回答27~30题。
+			</text>
+			<question id="test02_27" score="2.0" type="select">
+			<text>Q 地海拔可能为__</text>
+			<select multiple="false">
+				<option value="A">350米</option>
+				<option value="B">500米</option>
+				<option value="C">650米</option>
+				<option value="D">800米</option>
+			</select>
+			</question>
+			<question id="test02_28" score="2.0" type="select">
+				<text>此季节，该地区__</text>
+				<select multiple="false">
+				<option value="A">温和多雨</option>
+				<option value="B">山麓落叶阔叶林枝繁叶茂</option>
+				<option value="C">受副热带高气压带控制</option>
+				<option value="D">盛行东南风</option>
+				</select>
+			</question>
+			<question id="test02_29" score="2.0" type="select">
+				<text>关于R河的说法，正确的是__</text>
+				<select multiple="false">
+				<option value="A">河流流向自西向东</option>
+				<option value="B">此时地下水补给河水></option>
+				<option value="C">北岸泥沙淤积较多</option>
+				<option value="D">河流冰期较长</option>
+				</select>
+			</question>
+			<question id="test02_30" score="2.0" type="select">
+				<text>关于图示地区，叙述正确的是__</text>
+				<select multiple="false" format="html">
+				<option value="A">向斜成谷，背斜成山</option>
+				<option value="B">图示地貌由内力作用形成></option>
+				<option value="C"><label id="27_28_29_30_2"/>处比<label id="27_28_29_30_1"/>处建地下隧道更合理</option>
+				<option value="D"><label id="27_28_29_30_1"/>处比<label id="27_28_29_30_2"/>处更可能找到石油</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic31_32_1">下右图表示巨蟒出山风景，</Picread>
+			（<label id="31_32_1"/>—<label id="31_32_4"/>）它是江西三清山标志性景观，海拔1200余米，相对高度128米，是由风化和重力崩解作用而形成的巨型花岗岩石柱。左图为岩石圈物质循环示意图。结合相关知识完成下列各题。。
+			</text>
+			<question id="test02_31" score="2.0" type="select">
+				<text> 形成巨蟒出山风景的岩石属于左图中的__</text>
+				<select multiple="false">
+				<option value="A">甲</option>
+				<option value="B">乙</option>
+				<option value="C">丙</option>
+				<option value="D">丁</option>
+				</select>
+			</question>
+			<question id="test02_32" score="2.0" type="select">
+				<text format="html">该景观形成的地质作用有__</text>
+				<label id="31_32_1">岩浆活动</label>
+				<label id="31_32_1">地壳运动</label>
+				<label id="31_32_1">外力作用</label>
+				<label id="31_32_1">变质作用</label>
+				<select multiple="false" format="html">
+				<option value="A"><label id="31_32_1"/><label id="31_32_2"/><label id="31_32_3"/></option>
+				<option value="B"><label id="31_32_2"/><label id="31_32_3"/><label id="31_32_4"/></option>
+				<option value="C"><label id="31_32_1"/><label id="31_32_2"/><label id="31_32_4"/></option>
+				<option value="D"><label id="31_32_1"/><label id="31_32_3"/><label id="31_32_4"/></option>
+				</select>	
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic33_34_1">安徽黄山山体主要由垂直节理发育的花岗岩构成。奇松、怪石、云海、温泉被称为黄山四绝。黄山先后被列入“世界文化与自然遗产”、“世界地质公园”</Picread>读图回答33、34题。
+			</text>
+			<question id="test02_33" score="2.0" type="select">
+				<text>构成黄山山体的花岗岩，其成因类型属于__</text>
+				<select multiple="false">
+				<option value="A">喷出型岩浆岩</option>
+				<option value="B">沉积岩</option>
+				<option value="C">侵入型岩浆岩</option>
+				<option value="D">变质岩</option>
+				</select>
+			</question>
+			<question id="test02_34" score="2.0" type="select">
+				<text format="html">黄山一年中云雾天气达200多天，特别是冬春季节，常出现大面积的云海。下列对黄山冬春季节多云雾的主要原因分析正确的是__
+				<label id="32_33_1">黄山山高谷深，植被茂密，空气湿度大 </label>
+				<label id="32_33_2">黄山温泉蒸发量大</label>
+				<label id="32_33_3">冬春季节黄山冷空气活动频繁</label>
+				<label id="32_33_4">黄山地区空气中的凝结核多</label></text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="32_33_1"/><label id="32_33_2"/></option>
+				<option value="B"><label id="32_33_3"/><label id="32_33_4"/></option>
+				<option value="C"><label id="32_33_2"/><label id="32_33_4"/></option>
+				<option value="D"><label id="32_33_1"/><label id="32_33_3"/></option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+		<question id="test02_35" score="2.0" type="select">
+			<text>面积近240平方千米，由火山喷发、湖盆相对下陷而形成的达里诺尔湖，位于我国某省达里诺尔自然保护区。下图是该湖及周边的<Picread id="Pic35_1">水系图</Picread>，以下描述完全符合该湖泊所处的地理环境的是__</text>
+			<select multiple="false">
+			<option value="A">处于辽宁北部的丘陵地形，为被风化的玄武岩或花岗岩地貌，是淡水湖</option>
+			<option value="B"> 位于内蒙古的高原地形，为被风化的玄武岩或花岗岩地貌，是咸水湖</option>
+			<option value="C">位于山西，地处黄土高原，地表广泛分布着石灰岩和大理岩，是淡水湖</option>
+			<option value="D"> 位于河北，太行山麓，地表多盐碱低洼地，是华北平原面积较大的淡水湖</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+		<question id="test02_36" score="2.0" type="select">
+			<text format="html"><Picread id="Pic36_1">下图是Google Earth提供的美国科罗拉多河流域的三维地表形态图，</Picread>图中所示的高原及峡谷，其地貌形态的成因分别是__</text>
+			<select multiple="false">
+			<option value="A">岩浆活动冰川侵蚀作用</option>
+			<option value="B">地壳抬升风力侵蚀作用</option>
+			<option value="C">地壳抬升流水侵蚀作用</option>
+			<option value="D">流水沉积流水侵蚀作用</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic37_
+				38_1">下图是世界某区域农业地带分布图。</Picread>读图回答37、38题。
+			</text>
+			<question id="test02_37" score="2.0" type="select">
+				<text>农业地带沿0°经线变化所反映出的地域分异规律的形成基础是__</text>
+				<select multiple="false">
+				<option value="A">水分</option>
+				<option value="B">热量</option>
+				<option value="C">地形</option>
+				<option value="D">土壤</option>
+				</select>
+			</question>
+			<question id="test02_38" score="2.0" type="select">
+				<text> 甲地区是世界上著名的棉花产区，其形成的主导因素是__</text>
+				<select multiple="false" format="html">
+				<option value="A">光照</option>
+				<option value="B">热量</option>
+				<option value="C">水源</option>
+				<option value="D">土壤</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic39_40_1">读我国某地地形剖面图（下图），</Picread>读图回答39、40题。
+			</text>
+			<question id="test02_39" score="2.0" type="select">
+				<text>该地形剖面图的走向是__</text>
+				<select multiple="false">
+				<option value="A">西南一东北走向</option>
+				<option value="B">东南一西北走向</option>
+				<option value="C">东西走向</option>
+				<option value="D">南北走向</option>
+				</select>
+			</question>
+			<question id="test02_40" score="2.0" type="select">
+				<text>下列各组为图中a地形区主要农作物的是__</text>
+				<select multiple="false" format="html">
+				<option value="A">水稻.玉米.甜菜</option>
+				<option value="B">水稻.棉花.油菜</option>
+				<option value="C">小麦.甘蔗.毛竹</option>
+				<option value="D">甘蔗.小麦.油菜</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" score="60.0">
+		<questions score="14">
+			<title>材料一</title>
+			<text format="html">
+			<Picread id="Pic41_1">气压带、风带分布示意图(左图)</Picread>和<Picread id="Pic41_2">两个大洲的纬度分布组合示意图(右图) </Picread>
+			</text>
+			<title>材料二</title>
+			<text format="html"><Picread id="Pic41_3">四地气温和降水资料示意图</Picread></text>
+			<question id="test02_41_01" type="fillblank" score="2">
+				<blank num="1" format="html">材料一左图表示的是__(南或北)半球的气压带、风带分布状况。</blank>
+			</question>
+			<question id="test02_41_02_01" type="fillblank" score="3">
+				<blank num="2" format="html">材料一右图中A、B、C、D四地，常年在左图中<label id="41_1_6"/>⑥带控制下的是__，其形成的气候类型的名称为__，</blank>
+			</question>	
+			<question id="test02_41_02_02" type="shortanswer" score="2">
+				<text format="html">分析该地降水丰富的原因。</text>
+			</question>
+			<question id="test02_41_03" type="fillblank" score="3">
+				<blank num="2" format="html">材料二中与材料一右图中C地的气候类型相吻合的是__图，该气候类型的一般分布规律是__。</blank>
+			</question>	
+			<question id="test02_41_04" type="shortanswer" score="4">
+				<text format="html">分析上题所述气候类型在夏季对农业生产的影响。</text>
+			</question>
+		</questions>
+		<questions score="12">
+			<text format="html"><Picread id="Pic42_1">下图为世界某区域示意图，</Picread><Tabread id="Tab42_1">表为图中甲、乙两城市的气候资料。</Tabread>完成下列问题。
+					<tab id="tab42_1">
+					<row>
+					 	<col>月</col>
+						<col>甲</col>
+						<col>甲</col>
+						<col>乙</col>
+						<col>乙</col>
+					</row>
+					<row>
+						<col>月</col>
+						<col>气温（℃）</col>
+						<col>降水（mm）</col>
+						<col>气温（℃）</col>
+						<col>降水（mm）</col>
+					</row>
+					<row>
+						<col>1</col>
+						<col>-6.7</col>
+						<col>45.6</col>
+						<col>-12.4</col>
+						<col>90</col>
+					</row>
+					<row>
+					    <col>4</col>
+						<col>6.0</col>
+						<col>64.0</col>
+						<col>3.3</col>
+						<col>75.5</col>
+					</row>
+					<row>
+						<col>7</col>
+						<col>20.5</col>
+						<col>76.6</col>
+						<col>19.1</col>
+						<col>118.5</col>
+					</row>
+					<row>
+						<col>10</col>
+						<col>8.9</col>
+						<col>63.0</col>
+						<col>6.5</col>
+						<col>96</col>
+					</row>
+				</tab>
+		</text>
+			<question id="test02_42_01" type="shortanswer" score="7">
+				<text format="html">圣劳伦斯河是世界上水位最稳定的河流之一，根据图表资料，分析其原因；并比较<label id="42_1"/>、<label id="42_2"/>河段水文特征的差异。</text>
+			</question>	
+			<question id="test02_42_02" type="shortanswer" score="5">
+				<text>简述“雪带”(降雪量明显多于周边地区)分布的特点，并解释原因。</text>
+			</question>
+		</questions>
+		<questions score="24">
+			<text format="html"><Picread id="Pic43_1">读下面某区域局部图(下图)</Picread>，回答下列问题。
+			</text>
+			<question id="test02_43_01" type="shortanswer" score="10">
+				<text>比较甲、乙两地在图示季节气温和降水量的差异，并分析其主要原因。</text>
+			</question>	
+			<question id="test02_43_02" type="shortanswer" score="6">
+				<text>score="24"</text>
+			</question>
+			<question id="test02_43_03" type="shortanswer" score="8">
+				<text>图中R区域的两片沼泽在不同季节会呈现分离或聚合的变化现象，请予以说明。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<text format="html">
+			 
+			<Picread id="Pic44_1"> 读下图 “世界森林植被分布示意图”，</Picread>回答下列问题。
+			</text>
+			<question id="test02_44_01" type="shortanswer" score="3">
+				<text>描述图中亚寒带针叶林的分布规律。</text>
+			</question>
+			<question id="test02_44_02" type="fillblank" score="3">
+				<blank num="2" format="html">A地气温年较差比B地__；形成亚欧大陆由沿海向内陆自然带变化的基础因素是__。</blank>
+			</question>
+			<question id="test02_44_03" type="shortanswer" score="4">
+				<text>简述世界热带雨林的破坏带来的主要环境问题。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

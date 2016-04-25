@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2011年北京市高考数学试卷(文科)" subject="Math" id="2011BeijingGaokao" >
+	<section name="一、选择题（共8小题，每小题5分，共40分.在每小题列出的四个选项中，选出符合题目要求的一项）" score="40" >
+		<questions score="40">
+			<question id="2011BeijingGaokao_01" score="5" type="select">
+				<text format="latex">已知全集$U=R$,集合$P=\{x|x^2\leq 1\}$,那么$\complement_{U}{P}=$__</text>		
+				<select multiple="false" format="latex">
+					<option value="A">$(-\infty,-1)$</option>
+					<option value="B">$(1,+\infty)$</option>
+					<option value="C">$(-1,1)$</option>
+					<option value="D">$(-\infty,-1)\cup(1,+\infty)$</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_02" score="5" type="select">
+				<text format="latex">复数$\frac{i-2}{1+2i}=$__</text>
+				<select multiple="false" format="latex">
+					<option value="A">i</option>
+					<option value="B">-i</option>
+					<option value="C">$-\frac{4}{5}-\frac{3i}{5}$</option>
+					<option value="D">$-\frac{4}{5}+\frac{3i}{5}$</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_03" score="5" type="select">
+				<text format="latex">/如果$log_{\frac{1}{2}}{x}＜log_{\frac{1}{2}}{y}＜0$,那么__</text>		
+				<select multiple="false" format="latex">
+					<option value="A">$y＜x＜1$</option>
+					<option value="B">$x＜y＜1$</option>
+					<option value="C">$1＜x＜y$</option>
+					<option value="D">$1＜y＜x$</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_04" score="5" type="select">
+				<text>若p是真命题,q是假命题,则__</text>			
+				<select multiple="false" format="latex">
+					<option value="A">$p\vee q$是真命题</option>
+					<option value="B">$p\wedge q$是真命题</option>
+					<option value="C">$\neg p$是真命题</option>
+					<option value="D">$\neg q$是真命题</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_05" score="5" type="select">
+				<text format="html"><Picread id="Pic5_1">某四棱锥的三视图如图所示</Picread>,该四棱锥的表面积是__</text>
+				<select multiple="false" format="latex">
+					<option value="A">32</option>
+					<option value="B">$16+16\sqrt{2}[2]$</option>
+					<option value="C">48</option>
+					<option value="D">$16+32\sqrt{2}[2]$</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_06" score="5" type="select">
+				<text format="html"><Picread id="Pic6_1">执行如图所示的程序框图</Picread>,若输入A的值为2,则输出的P值为__</text>
+				<select multiple="false">
+					<option value="A">2</option>
+					<option value="B">3</option>
+					<option value="C">4</option>
+					<option value="D">5</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_07" score="5" type="select">
+				<text format="latex">某车间分批生产某种产品,每批的生产准备费用为800元.若每批生产x件,则平均仓储时间为$\frac{x}{8}$天,且每件产品每天的仓储费用为1元.为使平均到每件产品的生产准备费用与仓储费用之和最小,每批应生产产品__</text>
+				<select multiple="false">
+					<option value="A">60件</option>
+					<option value="B">80件</option>
+					<option value="C">100件</option>
+					<option value="D">120件</option>
+				</select>
+			</question>
+			<question id="2011BeijingGaokao_08" score="5" type="select">
+				<text format="latex">已知点$A(0,2)$,$B(2,0)$.若点C在函数$y=x^2$的图象上,则使得$\triangle ABC$的面积为2的点C的个数为__</text>
+				<select multiple="false">
+					<option value="A">4</option>
+					<option value="B">3</option>
+					<option value="C">2</option>
+					<option value="D">1</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="二、填空题（共6小题，每小题5分，共30分）" score="30" >
+		<questions score="30">
+			<question id="2011BeijingGaokao_09" score="5" type="fillblank">
+				<blank num="1" format="latex">在$\triangle ABC$中,若$b=5$,$\angle B=\frac{\pia}{4}$,$\sin A=\frac{1}{3}$,则$a=$__.</blank> 	
+			</question>
+			<question id="2011BeijingGaokao_10" score="5" type="fillblank">
+				<blank num="1" format="latex">已知双曲线$x^2-\frac{y^2}{b^2}=1(b＞0)$的一条渐近线的方程为$y=2x$,则$b=$__.</blank>
+			</question>
+			<question id="2011BeijingGaokao_11" score="5" type="fillblank">
+				<blank num="1" format="latex">已知向量$\vec{a}=(\sqrt[2]{3},1)$,$\vec{b}=(0,-1)$,$\vec{c}=(k,\sqrt[2]{3})$.若$\vec{a}-2\vec{b}$与$\vec{c}$共线,则$k=$__.</blank>
+			</question>
+			<question id="2011BeijingGaokao_12" score="5" type="fillblank">
+				<blank num="2" format="latex">在等比数列$\{a_{n}\}$中,若$a_{1}=\frac{1}{2}$,$a_{4}=4$,则公比$q=$__;$a_{1}+a_{2}+\cdots+a_{n}=$__.</blank>
+			</question>
+			<question id="2013BeijingGaokao_13" score="5" type="fillblank">
+				<blank num="1" format="latex">已知函数
+				$$f(x)=
+				 \left\{
+                   \begin{aligned}
+                   frac{2}{x},x\ge 2 \\
+                   (x-1)^3,x＜2
+				   \end{aligned}
+                   \right.
+                $$
+				若关于x的方程$f(x)=k$有两个不同的实根,则实数k的取值范围是__.</blank>
+			</question>
+			<question id="2011BeijingGaokao_14" score="5" type="fillblank">
+				<blank num="2" format="latex">设$A(0,0)$,$B(4,0)$,$C(t+4,3)$,$D(t,3)(t\in R)$.记$N(t)$为平行四边形ABCD内部(不含边界)的整点的个数,其中整点是指横、纵坐标都是整数的点,则$N(0)=$__; $N(t)$的所有可能取值为__.</blank>
+			</question>
+		</questions>
+	</section>
+	<section name="三、解答题（共6小题，共80分。解答应写出必要的文字说明，演算步骤或证明过程）" score="80" >
+		<questions score="13">
+			<text format="latex">已知函数$f(x)=4\cosx\sin(x+\frac{\pia}{6})-1$.</text>
+			<question id="2011BeijingGaokao_15_01" type="shortanswer">
+				<text format="latex">求$f(x)$的最小正周期;</text>
+			</question>	
+			<question id="2011BeijingGaokao_15_02" type="shortanswer">
+				<text format="latex">求$f(x)$在区间$[-\frac{\pia}{6},\frac{\pia}{4}]$上的最大值和最小值.</text>
+			</question>
+		</questions>
+		<questions score="13">
+			<text format="latex,html"><Picread id="Pic16_1">以下茎叶图</Picread>记录了甲、乙两组各四名同学的植树棵数.乙组记录中有一个数据模糊.无法确认,在图中经X表示.
+			注:方差$s^2=\frac{1}{n}[(x_{1}-\bra{x})^2+(x_{2}-\bra{x})^2+\cdots+(x_{n}-\bra{x})^2]^2$,其中$\bra{x}$为$x_{1}$,$x_{2}$,$\cdots$,$x_{n}$的平均数.</text>
+			<question id="2011BeijingGaokao_16_01" type="shortanswer">
+				<text format="latex">如果$X=8$,求乙组同学植树棵数的平均数和方差;</text>
+			</question>	
+			<question id="2011BeijingGaokao_16_02" type="shortanswer">
+				<text format="latex">如果$X=9$,分别从甲、乙两组中随机选取一名同学,求这两名同学的植树总棵数为19的概率.</text>
+			</question>
+		</questions>
+		<questions score="14">
+			<text format="latex,html"><Picread id="Pic17_1">如图</Picread>,在四面体PABC中,$PC\perp AB$,$PA\perp BC$,点D,E,F,G分别是棱AP,AC,BC,PB的中点.</text>
+			<question id="2011BeijingGaokao_17_01" type="shortanswer">
+				<text format="latex">求证:$DE\parallel 平面BCP$;</text>
+			</question>	
+			<question id="2011BeijingGaokao_17_02" type="shortanswer">
+				<text>求证:四边形DEFG为矩形;</text>
+			</question>
+			<question id="2011BeijingGaokao_17_03" type="shortanswer">
+				<text >是否存在点Q,到四面体PABC六条棱的中点的距离相等?说明理由.</text>
+			</question>			
+		</questions>
+		<questions score="13">
+			<text format="latex">已知函数$f(x)=(x-k)e^x$.</text>
+			<question id="2011BeijingGaokao_18_01" type="shortanswer">
+				<text format="latex">求$f(x)$的单调区间;</text>
+			</question>	
+			<question id="2011BeijingGaokao_18_02" type="shortanswer">
+				<text format="latex">求$f(x)$在区间$[0,1]$上的最小值.</text>
+			</question>		
+		</questions>
+		<questions score="14">
+			<text format="latex">已知椭圆G:$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a＞b＞0)$的离心率为$\frac{\sqrt[2]{6}}{3}$,右焦点为$(2\sqrt[2]{2},0)$.斜率为1的直线L与椭圆G交于A,B两点,以AB为底边作等腰三角形,顶点为$P(-3,2)$. </text>
+			<question id="2011BeijingGaokao_19_01" type="shortanswer">
+				<text>求椭圆G的方程;</text>
+			</question>	
+			<question id="2011BeijingGaokao_19_02" type="shortanswer">
+				<text format="latex">求$\triangle PAB$的面积.</text>
+			</question>	
+		</questions>
+		<questions score="13">
+			<text format="latex">若数列$\{A_{n}\}$:$a_{1}$,$a_{2}$,$\cdots$,$a_{n}(n\ge 2)$满足$|a_{k+1}-a_{k}|=1(k=1,2,\cdots,n-1)$,则称$A_{n}$为E数列.记$S(A_{n})=a_{1}+a_{2}+\cdots+a_{n}$.</text>
+			<question id="2011BeijingGaokao_20_01" type="shortanswer">
+				<text format="latex">写出一个E数列$\{A_{n}\}$满足$a_{1}=a_{3}=0$;</text>		
+			</question>	
+			<question id="2011BeijingGaokao_20_02" type="shortanswer">
+				<text format="latex">若$a_{1}=12$,$n=2000$,证明:E数列$\{A_{n}\}$是递增数列的充要条件是$a_{n}=2011$;</text>
+			</question>
+			<question id="2011BeijingGaokao_20_03" type="shortanswer">
+				<text format="latex">在$a_{1}=4$的E数列$\{A_{n}\}$中,求使得$S(A_{n})=0$成立的n的最小值.</text>
+			</question>			
+		</questions>
+	</section>
+</paper>

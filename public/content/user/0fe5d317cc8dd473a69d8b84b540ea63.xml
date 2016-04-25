@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="历史测试01" papersubject="History" paperid="test01">
+
+	<question id="test01_01" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_02" type="select">
+		<text>B</text>
+	</question>
+	<question id="test01_03" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="test01_05" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_06" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_07" type="select">
+		<text>A</text>
+	</question>
+
+	<question id="test01_08" type="select" >
+		<text>A</text>
+	</question>
+	
+	<question id="test01_09" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test01_10" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test01_11" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test01_12" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test01_13_01" type="shortanswer">
+		<text>
+		有利于发展。 孟子主张顺应自然规律， 保护自然资源， 以达到社会的富裕和安定。
+		</text>
+	</question>
+
+	
+	<question id="test01_13_02" type="shortanswer">
+		<text>
+		继承：国家权力来自于人民的授权。 发展：霍布斯认为人民不能反抗国家政权；洛克认为人民有权反抗暴政。 
+		影响：有利于推翻封建专制制度，为资本主义经济发展提供保证。
+		</text>
+	</question>
+	<question id="test01_13_03" type="shortanswer">
+		<text>
+		破坏：沦为原料产地和产品倾销市场，加剧了贫困和落后。 
+    机遇：带来了近代技术和资本主义生产方式 
+		</text>
+	</question>
+		
+	<question id="test01_13_04" type="shortanswer">
+		<text format="html">
+		<tab id="tab13_2">
+					<row>
+						<col>"大跃进"和人民公社运动</col>
+						<col>片面追求经济发展的高速度；国民经济比例严重失调。</col>
+						<col>__</col>
+					</row>
+					<row>
+						<col>改革开放</col>
+						<col>__</col>
+						<col>公有制为主导的多种所有制经济和社会主义市场经济体制</col>
+					</row>
+				</tab>	
+		</text>
+	</question>
+	<question id="test01_14_01_01" type="fillblank" num="1" scoretype="all">
+		<text>关税与贸易总协定(关贸总协定)</text>
+	</question>
+	<question id="test01_14_01_02" type="shortanswer">
+		<text>
+		宗旨是降低关税，减少贸易壁垒，实现国际贸易自由化。 客观上创造了一个自由贸易的环境，推动了战后世界经济的发展。 
+		后来演变为世界贸易组织。
+		</text>
+	</question>
+	<question id="test01_15_01" type="shortanswer">
+		<text>
+		条件：农村计划经济影响较弱，容易转向市场； 计划经济体制下农民经济地位低，易于接受改革。 
+		影响：调动农民生产积极性； 克服分配中的平均主义。
+		</text>
+	</question>
+</paperanswer>
+

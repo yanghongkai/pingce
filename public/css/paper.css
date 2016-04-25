@@ -1,0 +1,209 @@
+/*阅卷*/
+.paperScore{
+	box-shadow: 0 2px 3px #bdbdbd;
+	border-top: 1px solid #B44242;
+	background-color: #fff;
+	margin:32px auto 50px;
+	width: 1000px;
+	padding: 15px 5px;
+	position: relative;
+	min-height: 350px;
+}
+
+.paperDetail{
+	text-align: center;
+}
+
+.paperName{
+	color: #B44242;
+	margin-top: 15px;
+	font-size: 28px;
+	/*width: 300px;*/
+}
+
+.paperInfo{
+	color: #acacac;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.paperInfo span{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.objSection, .subSection{
+	margin: 10px 20px;
+}
+
+
+.secName{
+	color: #B44242;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+
+.question{
+	color:#333333;
+	font-size: 14px;
+	margin:0 15px;
+}
+
+.question span{
+	display: inline-block;
+	margin: 0 15px;
+	font-weight: bold;
+}
+
+.question li{
+	clear: left;
+	padding: 3px 0;
+}
+
+.question_Name{
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.question_total{
+	color: #B44242;
+}
+
+.question_left{
+	font-weight: bold;
+	float: left;
+}
+
+.question input[type=text]{
+	width: 50px;
+	float: left;
+	text-align: center;
+	padding: 3px 3px;
+	/*margin: 3px 3px;*/
+	font-size: 14px;
+}
+
+.question input[type=button]{
+	width: 50px;
+	height: 25px;
+	text-align: center;
+	border:1px solid #B44242;
+	border-radius: 3px;
+	color: #B44242;
+	cursor: pointer;
+	background-color: #fff;
+	margin-left: 30px;
+	float: left;
+}
+
+.question input[type=button]:hover{
+	color: #fff;
+	background-color: rgba(193,71,71,0.7);
+	border:1px solid #fff;
+}
+
+.comments input[type=button]{
+	width: 50px;
+	height: 25px;
+	text-align: center;
+	border:1px solid #B44242;
+	border-radius: 3px;
+	color: #B44242;
+	cursor: pointer;
+	background-color: #fff;
+	margin-left: 30px;
+	margin-top: 50px;
+	float: left;
+}
+
+.comments input[type=button]:hover{
+	color: #fff;
+	background-color: rgba(193,71,71,0.7);
+	border:1px solid #fff;
+}
+
+.submitBar{
+	position: fixed;
+	background-color: #fff;
+	z-index: 999;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	width: 100%;
+	/*box-shadow: 0 2px 3px #bdbdbd;*/
+	border-top: 1px solid #B44242;
+}
+
+.inner{
+	text-align: center;
+	margin:5px auto;
+}
+
+.submitBar input[type=button]{
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	border:1px solid #B44242;
+	border-radius: 3px;
+	color: #B44242;
+	cursor: pointer;
+	background-color: #fff;
+	margin: 10px 50px;
+}
+
+.submitBar input[type=button]:hover{
+	color: #fff;
+	background-color: rgba(193,71,71,0.7);
+	border:1px solid #fff;
+}
+
+#lf-cancle{
+	float: left;
+	margin-left: 35%;
+}
+
+#rl-submit{
+	float: right;
+	margin-right: 35%;
+}
+.confirm{
+	font-size: 14px;
+	color: #B44242;
+	/*float: left;*/
+	margin-left: 200px;
+	margin-top: 3px;
+}
+
+.comments{
+	/*float: left;*/
+	margin: 20px 20px;
+	height: 150px;
+}
+
+#comText{
+	border:1px solid #999999;
+	border-radius: 3px;
+	/*float: left;*/
+	/* padding: 3px;*/
+	font-size: 14px;
+	/*overflow: auto;*/
+	padding: 5px 5px;
+	margin: 5px 5px;
+	width: 830px;
+	height: 100px;
+	resize: none;
+}
+
+.res{
+	/*float: left;*/
+}
+
+.comPro{
+	float: left;
+	text-align: center;
+	color: #B44242;
+	margin-left: 30px;
+	margin-top: 10px;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="历史测试04" papersubject="History" paperid="test04">
+
+	<question id="test04_01" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test04_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_03" type="select">
+		<text>A</text>
+	</question>
+	<question id="test04_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="test04_05" type="select">
+		<text>A</text>
+	</question>
+	<question id="test04_06" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test04_07" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="test04_08" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="test04_09" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test04_10" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test04_11" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test04_12" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_13_01_01" type="shortanswer">
+		<text>
+		特点：将西方近代民族主义思想与中国传统华夷观相结合；维护民族利益和加强内部凝聚力；突出汉族的主体地位。（6分，任意两点即可。）
+		</text>
+	</question>
+<!--
+（说明：由于简答题没有一定固定的格式，答案也比较主观。所以目前的想法只是将采分点用text标签标记出来。）	
+-->
+	
+	
+	<question id="test04_13_01_02" type="shortanswer">
+		<text>
+			原因：西方近代民族主义思想的冲击；抵御西方列强侵略，挽救民族危机的时代需求；反对革命派“排满”式的狭隘民族观念的政治需要；民族资本主义发展的促进；推进中国近代化的重要前提。（9分，任意三点即可。）
+		</text>
+	</question>
+	<question id="test04_13_02" type="shortanswer">
+		<text>
+			特征：中国近代思想的发展总体上呈现出人的解放日益让位于民族与国家的解放的特征。（1分） 
+			原因：由于中国传统文化中深富“集体主义”的资源，关心国事民生长期以来成为中国传统思维的重要前提；近代以来严重的民族危机使得挽救民族危亡成为最重要的时代主题并一以贯之；这种特殊的历史与现实的条件又导致了在近代化的过程中不仅保护了传统性而且强化了对国家民族富强的终极追求。这一切都造成了高度关注重民族、国家解放而相对弱化了对个体自由独立的追求。这种现象是由于中国特有的文化传统和近代历史特征决定的。对于民族危亡的缓解和赢得民族独立有重要意义，但是对于人自身独立和解放的忽视不仅有碍于对西方现代文明的完整准确理解，更使“民族主义”内涵显得单薄，从一定意义上义阻碍着中国现代化的深入。（9分） 
+		</text>
+	</question>
+		
+	<question id="test04_14" type="shortanswer">
+		<text>
+			理解和认识： 李约瑟 教授充分肯定了中国传统文化的社会价值；中国传统文化在欧洲的传播，对欧洲社会发展产生了重要影响。无神论儒学成为启蒙思想反对宗教神学的理论武器和启蒙运动的一面旗帜；启蒙思想、法国大革命及后来各种进步运动深受孔子学说的影响。
+		</text>
+	</question>
+
+	<question id="test04_15_01" type="shortanswer">
+		<text>
+			特点：以家庭联产承包为主的责任制、统分结合的双层经营体制；农户有了生产经营自主权。（4分） 意义：有利于调动农民的生产积极性和农村生产力的发展；有利于社会主义制度的自我完善和发展。（4分）
+		</text>
+	</question>
+	<question id="test04_15_02" type="shortanswer">
+		<text>
+			共同点：坚持社会主义公有制；注重调动个体生产者的积极性；建立多种形式的经济责任制。（4分） 认识：社会主义国家的经济体制改革必须坚持社会主义制度；必须从实际出发，实事求是；必须注重改善民生等。（3分） 
+		</text>
+	</question>
+	<question id="test04_16_01" type="shortanswer">
+		<text>
+			民族革命：领导辛亥革命；政治革命：颁布《临时约法》；维护民主共和等；社会革命：提出《实业计划》，规划中国工业化的道路。		
+		</text>
+	</question>
+	<question id="test04_16_01" type="shortanswer">
+		<text>
+			同：基本都是同时代的人物（或都面临民族独立和发展的时代主题）；两人都被本国人民称为“国父”（或为人民所怀念）；两人都是资产阶级革命家；都主张民族独立和发展。（回答三点得5分） 异：为实现民族独立所采取的手段不同，前者主张暴力革命，后者主张非暴力革命；对西方文明的态度不同：前者主张学习西方文明，后者排斥西方文明。（4分） 意义：有利于调动农民的生产积极性和农村生产力的发展；有利于社会主义制度的自我完善和发展。（4分）
+		</text>
+	</question>
+</paperanswer>
+

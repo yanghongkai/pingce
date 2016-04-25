@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2013北京高考文综地理试卷" subject="Geography" id="2013BeijingGaokao" >
+	<section name="选择题">
+		<questions>
+			<text>
+			<Picread id="Pic1_2_3_1">读图1，</Picread>
+			回答1~3题。
+			</text>
+			<question id="2013BeijingGaokao_01" type="select">
+				<text>图中__</text>
+				<select multiple="false">
+					<option value="A">甲地是中国日出最早的地方</option>
+					<option value="B">夏至日漠河有极昼现象</option>
+					<option value="C">大兴安岭为内、外流区分水岭</option>
+					<option value="D">松花江干流有凌汛现象</option>
+				</select>
+			</question>
+			<question id="2013BeijingGaokao_02" type="select">
+				<text>东北平原__</text>
+				<select multiple="false">
+					<option value="A">地势中间高、南北低</option>
+					<option value="B">冬冷夏热，伏旱严重</option>
+					<option value="C">农业实行小农场经营，精耕细作</option>
+					<option value="D">是中国重要的商品棉基地</option>
+				</select>
+			</question>
+			<question id="2013BeijingGaokao_03" type="select">
+				<text format="html">
+				20世纪50~70年代，人口大规模迁入东北地区的主要原因是__
+				<label id="3_1">农村剩余劳动力转移</label>	
+				<label id="3_2">工业基地建设的需要</label>
+				<label id="3_3">地处边疆，邻国人口迁入</label>
+				<label id="3_4">城市知识青年有计划迁入</label>
+				</text>
+				<select multiple="false">
+					<option value="A"><label id="3_1"/><label id="3_2"/></option>
+					<option value="B"><label id="3_3"/><label id="3_4"/></option>
+					<option value="C"><label id="3_1"/><label id="3_3"/></option>
+					<option value="D"><label id="3_2"/><label id="3_4"/></option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			玉米是世界重要的农产品之一。图2示意中国、印度、南非和巴西四国的部分地区玉米种植、收获生产活动的时段。
+			<Picread id="Pic4_1">读图2，</Picread>
+			回答第4题。
+			</text>
+			<question id="2013BeijingGaokao_04" type="select">
+				<text>甲、乙、丙分别位于__</text>
+				<select multiple="false">
+					<option value="A">巴西、印度、南非</option>
+					<option value="B">南非、巴西、印度</option>
+					<option value="C">印度、巴西、南非</option>
+					<option value="D">巴西、南非、印度</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			<Picread id="Pic5_1">图3为地球大气受热过程示意图。</Picread>
+			读图3，回答第5题。
+			</text>
+			<question id="2013BeijingGaokao_05" type="select">
+				<text>大气中__</text>
+				<select multiple="false">
+					<option value="A">臭氧层遭到破坏，会导致<label id="5_1"/>增加</option>
+					<option value="B">二氧化碳浓度降低，会使<label id="5_2"/>减少</option>
+					<option value="C">可吸入颗粒物增加，会使<label id="5_3"/>增加</option>
+					<option value="D">出现雾霾，会导致<label id="5_4"/>在夜间减少</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			<Picread id="Pic6_7_1">图4（a）为某日08时海平面气压分布图（单位：百帕）；</Picread>
+			<Picread id="Pic6_7_2">图4（b）显示<label id="6_7_4"/>地24小时内风的变化。</Picread>
+			读图4，回答第6~7题。
+			</text>
+			<question id="2013BeijingGaokao_06" type="select">
+				<text>图4（a）中__</text>
+				<select multiple="false">
+					<option value="A"><label id="6_7_1"/>比<label id="6_7_2"/>风速大</option>
+					<option value="B"><label id="6_7_1"/>比<label id="6_7_3"/>云量少</option>
+					<option value="C"><label id="6_7_2"/>比<label id="6_7_3"/>气压低</option>
+					<option value="D"><label id="6_7_2"/>比<label id="6_7_4"/>气温高</option>
+				</select>
+			</question>
+			<question id="2013BeijingGaokao_07" type="select">
+				<text>锋通过<label id="6_7_4"/>地的时间可能为__</text>
+				<select multiple="false">
+					<option value="A">上午</option>
+					<option value="B">下午</option>
+					<option value="C">傍晚</option>
+					<option value="D">夜间</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			<Picread id="Pic8_9_1">读图5，</Picread>
+			回答第8、9题。
+			</text>
+			<question id="2013BeijingGaokao_08" type="select">
+				<text format="html">
+				甲地为峰林，同类景观多出现在__
+				<label id="8_1">苏</label>	
+				<label id="8_2">湘</label>
+				<label id="8_3">滇</label>
+				<label id="8_4">新</label>
+				<label id="8_5">桂</label>	
+				<label id="8_6">内蒙古</label>
+				</text>
+				<select multiple="false">
+					<option value="A"><label id="8_1"/><label id="8_2"/></option>
+					<option value="B"><label id="8_3"/><label id="8_4"/></option>
+					<option value="C"><label id="8_3"/><label id="8_5"/></option>
+					<option value="D"><label id="8_5"/><label id="8_6"/></option>
+				</select>
+			</question>
+			<question id="2013BeijingGaokao_09" type="select">
+				<text>图中__</text>
+				<select multiple="false">
+					<option value="A">甲处侵蚀作用强烈</option>
+					<option value="B">乙处由内力作用形成</option>
+					<option value="C">丙处易发生滑坡现象</option>
+					<option value="D">丁处是典型的背斜山</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>
+			某品牌企业在京津冀地区建有饮用瓶装水厂。
+			<Picread id="Pic10_11_1">读图6，</Picread>
+			回答第10~11题。
+			</text>
+			<question id="2013BeijingGaokao_10" type="select">
+				<text>瓶装水厂如此选址的主要原因是__</text>
+				<select multiple="false">
+					<option value="A">利用优于授权地区的水源</option>
+					<option value="B">靠近技术发达地区</option>
+					<option value="C">吸引高素质的劳动力</option>
+					<option value="D">降低运输成本</option>
+				</select>
+			</question>
+			<question id="2013BeijingGaokao_11" type="select">
+				<text format="html">瓶装水厂的建设使所在地__
+				<label id="11_1">就业岗位增加</label>	
+				<label id="11_2">吸引大城市人口迁入</label>
+				<label id="11_3">承接品牌授权地区产业转移</label>
+				<label id="11_4">吸引相关企业集聚</label>
+				<label id="11_5">城市等级提升</label>
+				</text>
+				<select multiple="false">
+					<option value="A"><label id="11_1"/><label id="11_2"/><label id="11_5"/></option>
+					<option value="B"><label id="11_1"/><label id="11_3"/><label id="11_4"/></option>
+					<option value="C"><label id="11_2"/><label id="11_3"/><label id="11_4"/></option>
+					<option value="D"><label id="11_2"/><label id="11_4"/><label id="11_5"/></option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" >
+		<questions score="36">
+			<text>
+			<Picread id="Pic36_1">读图12，回答下列问题。</Picread>
+			</text>
+			<question id="2013BeijingGaokao_36_01" score="8" type="shortanswer">
+				<text>简述新西兰对外联系的交通运输方式及原因</text>
+			</question>	
+			<question id="2013BeijingGaokao_36_02" score="8" type="shortanswer">
+				<text>分析南岛降水量西多东少的原因</text>
+			</question>	
+			<question id="2013BeijingGaokao_36_03" score="12" type="shortanswer">
+				<text>与南岛相比，说出北岛经济发展的地理条件优势</text>
+			</question>	
+			<question id="2013BeijingGaokao_36_04" score="8" type="shortanswer">
+				<text>新西兰多火山地震。分析其成因，并概述火山旅游活动的主要内容</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<text>
+			达尔文在南美洲考察期间，在<label id="40_1"/>地看到热带雨林景观，在<label id="40_2"/>地观察到安第斯山植被的垂直变化现象。
+			<Picread id="Pic40_1">读图14，</Picread>
+			回答第（2）题。
+			</text>
+			<question id="2013BeijingGaokao_40" score="10" type="shortanswer">
+				<text>在达尔文看到的<label id="40_1"/>地景观和<label id="40_2"/>地现象中，任选其一说明成因</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<text>
+			中华大地幅员辽阔、历史悠久、文化灿烂。
+			<Picread id="Pic41_1">读图15，</Picread>
+			回答第（1）小题。
+			</text>
+			<question id="2013BeijingGaokao_41" score="10" type="shortanswer">
+				<text>在甲、乙两区域中任选其一，概述聚落分布特点和有利于农业生产的自然条件</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

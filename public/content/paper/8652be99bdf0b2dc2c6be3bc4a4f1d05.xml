@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="历史测试02" subject="History" id="test02" >
+	<section name="一、单选题（本大题共48小题，共0.0分）">
+		<questions>
+			<question id="test02_01" type="select">
+				<text>与“同姓则同德，同德则同心”这一思想观念相对应的中国古代政治制度是__</text>
+				<select multiple="false">
+					<option value="A">原始社会后期的禅让制</option>
+					<option value="B">商朝的内外服制度</option>
+					<option value="C">西周的分封制</option>
+					<option value="D">秦汉的郡县制</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_02" type="select">
+				<text>春秋战国时期，社会经济领域出现了重要变革，其表现之一是__</text>
+				<select multiple="false">
+					<option value="A">青铜农具的使用和推广</option>
+					<option value="B">出现新型灌溉工具翻车</option>
+					<option value="C">代田法用力少而得谷多</option>
+					<option value="D">农用动力的革命性变化</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_03" type="select">
+				<text>史书记载，“始秦戎翟之教，父子无别，同室而居”。后来“商君遗礼谊，弃仁恩，并心于进取。行之二岁，秦旧俗败。故秦人家富子壮则出分，家贫子壮则出赘。”这种变化__</text>
+				<select multiple="false">
+					<option value="A">有利于秦国推行残酷的连坐法 </option>
+					<option value="B">加快了小农经济在秦国确立的进程</option>
+					<option value="C">瓦解了旧的血缘宗法制度 </option>
+					<option value="D">大大增强了秦军的战斗力 </option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_04" type="select">
+				<text>孟子和荀子都是儒家学派的重要代表，在他们的思想中截然相反的是__</text>
+				<select multiple="false">
+					<option value="A">人性善恶有别</option>
+					<option value="B">是否实行仁政</option>
+					<option value="C">是否主张“礼”</option>
+					<option value="D">是否追求气节</option>
+				</select>	
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_05" type="select">
+				<text>下列战国时期百家争鸣的主张中，反映了当时社会发展趋势的是__</text>
+				<select multiple="false">
+					<option value="A">民贵君轻</option>
+					<option value="B">兼爱尚贤</option>
+					<option value="C">中央集权</option>
+					<option value="D">无为而治</option>
+				</select>
+			</question>
+	 	</questions>
+	 	<questions>
+			<question id="test02_06" type="select">
+				<text>秦朝实际负责管理、控制军事的是__</text>
+				<select multiple="false">
+					<option value="A">御史大夫</option>
+					<option value="B">丞相 </option>
+					<option value="C">太尉</option>
+					<option value="D">皇帝</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_07" type="select">
+				<text format="html">《史记•秦始皇本纪》记载：“侯生卢生相与谋曰：‘……天下之事无小大皆决于上，上至以衡石量书，日夜有呈[定量]，不中呈[不完成定量]不得休息。贪于权势至如此，未可为求仙药。’”从中我们能得出的结论是__
+					<lable id="07_1">臣民对秦始皇独断专权不满</lable>	
+					<lable id="07_2">秦始皇十分勤于政事神</lable>
+					<lable id="07_3">秦始皇欲求仙药想长生不老</lable>	
+					<lable id="07_4">秦始皇统一了度量衡</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①③④</option>
+					<option value="B">②③④</option>
+					<option value="C">①②③</option>
+					<option value="D">①②④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_08" type="select">
+				<text>秦始皇实行“焚书坑儒”，汉武帝推行“罢黜百家，独尊儒术”，二者的根本着眼点是__</text>
+				<select multiple="false">
+					<option value="A">压制知识分子</option>
+					<option value="B">区别对待古代文化</option>
+					<option value="C">完善法律机制</option>
+					<option value="D">加强君主专制</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_09" type="select">
+				<text>汉武帝颁布“推恩令”，规定诸侯王死后，除了嫡长子继承王位外，其他子弟也可以受封土地为列侯。此项措施的实施使得__</text>
+				<select multiple="false">
+					<option value="A">汉初以来的分封制被废除</option>
+					<option value="B">宗法制得以重新确立</option>
+					<option value="C">王国问题得到了妥善处理</option>
+					<option value="D">土地兼并更加严重</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_10" type="select">
+				<text>《资治通鉴》记载：西汉初期，匈奴“往往入盗于汉边,不可胜数;然尚贪乐关市(边境贸易),嗜汉财务,汉亦关市不绝,以中其意”。对上述材料的理解正确的是__</text>
+				<select multiple="false">
+					<option value="A">战争阻断了各民族之间的经济交流</option>
+					<option value="B">匈奴接受了汉族先进的生产方式</option>
+					<option value="C">经济交流是各民族人民的共同心愿</option>
+					<option value="D">汉朝和匈奴之间以和平交往为主</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_11" type="select">
+				<text>北魏孝文帝改革规定：“诸男夫十五以上受露田四十亩，妇人二十亩……老免及身没则还田。……男夫给二十亩，课种桑五十株；桑田皆为世业，身终不还。”“其民调，一夫一妇，帛一匹，粟二石……此外复有杂调。”以下理解与材料相符的是__</text>
+				<select multiple="false">
+					<option value="A">政府分配的土地全部归农民所有</option>
+					<option value="B">国家将土地按人头平均分配</option>
+					<option value="C">国家将土地分成小块出售给农民</option>
+					<option value="D">耕种国家土地的农民需承担国家的租税役</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_12" type="select">
+				<text>达尔文在《物种起源》中说；“如果以为选择原理是近代发明的，那就未免和事实相差太远了……早在1300年前，在一部古代的中国（农业）百科全书中已经有关于选择原理的明确记述。”这部书是__</text>
+				<select multiple="false">
+					<option value="A">《墨子》</option>
+					<option value="B">《齐民要术》</option>
+					<option value="C">《天工开物》</option>
+					<option value="D">《农政全书》</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_13" type="select">
+				<text>关于《洛神赋图》的作者及生活年代的表述，正确的是__</text>
+				<select multiple="false">
+					<option value="A">东晋顾恺之</option>
+					<option value="B">隋朝展子虔</option>
+					<option value="C">唐朝阎立本</option>
+					<option value="D">唐朝吴道子</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_14" type="select">
+				<text>随着商业的发展，唐朝在货币金融方面有重要的进步，主要表现在__</text>
+				<select multiple="false">
+					<option value="A">出现了股份公司和证券交易</option>
+					<option value="B">出现柜坊和飞钱</option>
+					<option value="C">政府设置机构管理货币存放和借贷</option>
+					<option value="D">邸店成为我国最早的金融机构</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_15" type="select">
+				<text>一位学者认为唐朝时期江南曾经实施了稻麦轮种制，并欲引用白居易任职苏州时写的诗句“去年到郡日，麦穗黄离离；今年去郡日，稻花白霏霏”来证明自己的说法。关于这位学者的看法，以下哪一种说明更为合理__</text>
+				<select multiple="false">
+					<option value="A">诗里提到麦作.稻作，足以作为实施稻麦轮种的证据</option>
+					<option value="B">诗中指出稻.麦产于不同年月，足以清楚说明轮种制</option>
+					<option value="C">诗中并未指明稻.麦是否产自同一块土地，不足为据</option>
+					<option value="D">诗文描写大多不准确，肯定不适合运用在历史研究中</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_16" type="select">
+				<text format="html">据陈茂同《中国历代选官制度》等记述，唐代科举考试主要科目及内容如下。以上材料说明唐代科举制__<Tabread id="Tab16_1"></Tabread>
+					<lable id="16_1">实行分科考试选拔官员</lable>	
+					<lable id="16_2">测试考生记诵儒家经典的能力</lable>
+					<lable id="16_3">检测考生解决实际问题的能力</lable>	
+					<lable id="16_4">明经科考试难度大于进士科</lable>
+				</text>
+				<Tab id="Tab16_1">
+					<row>
+						<col>科目</col>
+						<col>初试</col>
+						<col>二试</col>
+						<col>三试</col>
+					</row>
+					<row>
+						<col>明经</col>
+						<col>选《礼记》或《左传》之一及《孝经》《论语》《尔雅》，每经帖十条</col>
+						<col>口答诸经大义十条</col>
+						<col>答时务策三道</col>
+					</row>
+					<row>
+						<col>进士</col>
+						<col>选《礼记》或《左传》之一及《尔雅》，每经帖十条</col>
+						<col>作诗、赋、文各一篇</col>
+						<col>作时务策五道</col>
+					</row>
+				</Tab>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">②③④</option>
+					<option value="C">①②④</option>
+					<option value="D">①③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_17" type="select">
+				<text format="html">公元751年，唐朝军队在中亚打了一场败仗，被俘的士兵中有不少技术工匠，造纸术随之传入下图中的__<Picread id="Pic17_1"></Picread></text>
+				<select multiple="false">
+					<option value="A">新罗</option>
+					<option value="B">高昌</option>
+					<option value="C">天竺</option>
+					<option value="D">大食</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_18" type="select">
+				<text>分化削弱宰相的权力，是古代中国皇帝实现个人专制的常用做法。宋代为分割宰相权力而设置的是__</text>
+				<select multiple="false">
+					<option value="A">三司使</option>
+					<option value="B">节度使</option>
+					<option value="C">通判</option>
+					<option value="D">转运使</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_19" type="select">
+				<text>北宋中期，“官以寓禄秩、叙位著，职以待文学之选，而别为差遣以治内外之事”。如某人为“吏部郎中、龙图阁学士、知开封府”，吏部郎中是官，龙图阁学士是职，知开封府才是实际职务。宋代这样做的影响是__</text>
+				<select multiple="false">
+					<option value="A">提高了行政效率</option>
+					<option value="B">完善了宋朝的科举制度</option>
+					<option value="C">加重了财政负担</option>
+					<option value="D">解决了藩镇割据的威胁</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_20" type="select">
+				<text>王安石变法的主要意图是__</text>
+				<select multiple="false">
+					<option value="A">削弱地方割据势力和农民的反抗</option>
+					<option value="B">改革科举选拔人才</option>
+					<option value="C">抑制地主和高利贷者的层层盘剥</option>
+					<option value="D">解决中央财政困难</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_21" type="select">
+				<text>隋唐时期在中央设中书省，元朝是在中央也设立了中书省，他们之间的不同在于__</text>
+				<select multiple="false">
+					<option value="A">前者下设六部管理全国政务，后者专管佛教和藏族地区事务</option>
+					<option value="B">前者仅为中央决策机构，后者还是管理部分地区的行政机构</option>
+					<option value="C">前者标志着封建政治制度的成熟，后者标志着专制制度达到顶峰</option>
+					<option value="D">前者为削弱相权，加强皇权而设，后者则为加强对地方的控制而设</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_22" type="select">
+				<text format="html">北宋孟元老《东京梦华录》记载：“市井经纪之家……夜市直至三更尽，才五更又复开张。如耍闹去处，通晓不绝。”“金银彩帛交易之所，屋宇雄壮，门面广阔，望之森然，每一交易，动即千万，骇人闻见。”以上材料可以获得的历史信息有__
+					<lable id="22_1">东京是北宋时的一个大商业都会</lable>	
+					<lable id="22_2">东京的商品交易规模大</lable>
+					<lable id="22_3">城市商业活动不再受时间上的限制</lable>	
+					<lable id="22_4">东京有热闹的娱乐场所</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">①②④</option>
+					<option value="C">①②③④</option>
+					<option value="D">③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_23" type="select">
+				<text format="html">日本学者内藤湖南提出的“唐宋变革说”认为，自唐朝开始，中国社会发生深刻的变化，宋朝以后进入到“近世”时期，中国历史的方方面面都呈现出新的特征。以下关于唐宋时期中国社会变化的叙述，正确的是__
+					<lable id="23_1">商品货币在经济中影响增大</lable>	
+					<lable id="23_2">文化生活明显出现市民化趋势</lable>
+					<lable id="23_3">经济重心转移逐渐完成</lable>	
+					<lable id="23_4">中枢机构分权制约了君主专制</lable> 
+				</text>
+				<select multiple="false">
+					<option value="A">①②③④</option>
+					<option value="B">①②③</option>
+					<option value="C">②③④</option>
+					<option value="D">①②④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_24" type="select">
+				<text>该书体例完整，内容涉及元朝11个省，力图对整个农业生产作系统全面的论述。据此判断，该书是__</text>
+				<select multiple="false">
+					<option value="A">徐光启的《农政全书》</option>
+					<option value="B">王祯《农书》</option>
+					<option value="C">贾思勰的《齐民要术》</option>
+					<option value="D">氾胜之的《氾胜之书》</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_25" type="select">
+				<text>培根指出：“印刷术、火药、指南针曾改变了整个世界，变化如此之大，以至没有一个帝国，没有一个学派，没有一个显赫有名的人物，能比这三种发明在人类事业中产生更大的力量和影响。”这里所说的影响主要是指__</text>
+				<select multiple="false">
+					<option value="A">促进了西欧社会制度的转型</option>
+					<option value="B">奠定了中国古代文明古国的地位</option>
+					<option value="C">推动了欧洲工业革命的发展</option>
+					<option value="D">打破了世界各地彼此隔绝的状态</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_26" type="select">
+				<text>钱乘旦《现代文明的起源与演进》中这样评价理学：“它的丰富性与普遍性使中国统治者与士大夫相信儒家学说已穷尽世界一切真理。中国既是天下中心，并有着辉煌的、无与伦比的历史与成就。那么中国之外的‘夷务’就不在中国人关心的范围之内。”由此可见作者认为理学__</text>
+				<select multiple="false">
+					<option value="A">排斥儒学以外的一切思想</option>
+					<option value="B">博大精深但有一定封闭性</option>
+					<option value="C">概括了世间所有自然规律</option>
+					<option value="D">内容丰富.探索世界本源</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_27" type="select">
+				<text format="html">某同学在图书馆查阅资料时，发现了中国古代某地居民的一份职业结构表。据此推断，这种职业结构最可能出现在__<Tabread id="Tab27_1"></Tabread></text>
+				<Tab id="Tab27_1">
+					<row>
+						<col> </col>
+						<col>自耕农和地主</col>
+						<col>佃农</col>
+						<col>工场主</col>
+						<col>商人</col>
+					</row>
+					<row>
+						<col>占总人口比例</col>
+						<col>24％</col>
+						<col>36％</col>
+						<col>30％</col>
+						<col>10％</col>
+					</row>
+				</Tab>
+				<select multiple="false">
+					<option value="A">唐代关中地区</option>
+					<option value="B">宋代太湖地区</option>
+					<option value="C">明代苏杭地区</option>
+					<option value="D">清末广州地区</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_28" type="select">
+				<text format="html">某机构虽总辖军国政务，但不是一个正式权力机关。大臣除奉命办事外不能做出任何决定，也无权对外发出任何指示。下列哪一组言论是对该机构及其大臣的描述__
+					<lable id="28_1">“雍正七年，青海军兴，始设军机房。”</lable>	
+					<lable id="28_2">“掌佐天子执大政，而总判省事。”</lable>
+					<lable id="28_3">“掌书谕旨，综军国之要，以赞上治机务。”</lable>	
+					<lable id="28_4">“传述朕旨，令章京缮写，均不应稍有泄漏。”</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">①③④</option>
+					<option value="C">②③④</option>
+					<option value="D">①②④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_29" type="select">
+				<text>近年来，以历史为题材的影视剧持续热播。下列剧情基本符合历史的是__</text>
+				<select multiple="false">
+					<option value="A">《隋唐英雄传》中隋灭陈之战炮声雷动</option>
+					<option value="B">《大宋提刑官》中内阁大学士位高权重</option>
+					<option value="C">《开创盛世》中突厥兵犯唐朝边境</option>
+					<option value="D">《孔子》中孔子将《诗经》整理到纸上</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_30" type="select">
+				<text>民国时期，爬长城、逛颐和园、去梅兰芳家是当时老外来中国最向往的三大传统项目。梅兰芳是由于唱京剧而闻名于世。京剧是我国的国粹，它主要是由__</text>
+				<select multiple="false">
+					<option value="A">元杂剧发展而来的</option>
+					<option value="B">北京地区剧种演化而成的</option>
+					<option value="C">流行于北方的剧中融合而成的</option>
+					<option value="D">南方一些剧种传入北京后融合而成</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_31" type="select">
+				<text>达尔文称《本草纲目》为“中国古代的百科全书”，主要是因为__</text>
+				<select multiple="false">
+					<option value="A">记载的药物种类多</option>
+					<option value="B">分类方法先进</option>
+					<option value="C">涉及的学科领域广泛</option>
+					<option value="D">世界影响巨大</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_32" type="select">
+				<text format="html">清代广东罗定山区“凡一炉场环而居三百家，司炉者二百余人，掘铁矿者三百余，汲者、烧炭者二百余，驮者牛二百头，载者舟五十艘”。从材料可以得到的准确历史信息是
+					<lable id="32_1">罗定山区的冶铁工场规模很大</lable>	
+					<lable id="32_2">冶铁业发展带动人口聚居情况的出现</lable>
+					<lable id="32_3">冶铁业带动了相关产业的发展</lable>	
+					<lable id="32_4">这是一家采用了雇工经营的新式企业</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">①②④</option>
+					<option value="C">①③④</option>
+					<option value="D">①②③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_33" type="select">
+				<text>明清时期的思想家提出了一系列新的思想观点。下列观点出自顾炎武的是__</text>
+				<select multiple="false">
+					<option value="A">“穿衣吃饭，即人伦物理”</option>
+					<option value="B">“以君为主，以天下为客”</option>
+					<option value="C">“保天下者，匹夫之贱与有责焉尔矣!”</option>
+					<option value="D">“无其器则无其道”“非器则道无所寓”</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_34" type="select">
+				<text format="html">下表是16-17世纪中国著名科学家及其成就简表，从中能够分析得出的信息有__<Tabread id="Tab34_1"></Tabread> 
+					<lable id="34_1">中国传统科技进入总结阶段</lable>	
+					<lable id="34_2">当时中国科技成就与社会生产和生活密切相关</lable>
+					<lable id="34_3">当时中国科技在研究方法上主要采取整理典籍和总结经验的方法</lable>	
+					<lable id="34_4">当时中国科学家缺乏勤奋研究精神，没有产生近代自然科学</lable>
+				</text>
+				<Tab id="Tab34_1">
+					<row>
+						<col>姓名</col>
+						<col>生卒年代</col>
+						<col>著作</col>
+					</row>
+					<row>
+						<col>李时珍</col>
+						<col>1518-1593</col>
+						<col>《本草纲目》</col>
+					</row>
+					<row>
+						<col>徐光启</col>
+						<col>1562-1633</col>
+						<col>《农政全书》</col>
+					</row>
+					<row>
+						<col>徐霞客</col>
+						<col>1586-1641</col>
+						<col>《徐霞客游记》</col>
+					</row>
+					<row>
+						<col>宋应星</col>
+						<col>1587-？</col>
+						<col>《天工开物》</col>
+					</row>
+				</Tab>
+				<select multiple="false">
+					<option value="A">①②④</option>
+					<option value="B">②③④</option>
+					<option value="C">①②③</option>
+					<option value="D">①③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_35" type="select">
+				<text>明清小说《拍案惊奇》中描写了一位卖豆腐起家的太原王氏是明清时著名的晋商，“以商贾兴，以官宦显”。这一现象所产生的影响是__</text>
+				<select multiple="false">
+					<option value="A">削弱了重农抑商的政策</option>
+					<option value="B">制约工商业扩大再生产</option>
+					<option value="C">扩大了手工业品的市场</option>
+					<option value="D">不利于农产品的商品化</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_36" type="select">
+				<text format="html">下图是人民英雄纪念碑碑座十块大型浮雕的第一块，纪念碑上雕刻的历史情景反映了中国人民__<Picread id="Pic36_1"></Picread></text>
+				<select multiple="false">
+					<option value="A">敢于反抗外来侵略</option>
+					<option value="B">用于维护领土完整</option>
+					<option value="C">积极打击走私贩毒</option>
+					<option value="D">努力维护清朝统治</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_37" type="select">
+				<text>“是书何以作？曰为以夷攻夷而作，为以夷款夷而作，为师夷长技以制夷而作。”以上材料反映了魏源编写《海国图志》的目的是__</text>
+				<select multiple="false">
+					<option value="A">要求在中国发展资本主义</option>
+					<option value="B">抵制侵略走上富强之路</option>
+					<option value="C">帮助人们挣脱封建思想的枷锁</option>
+					<option value="D">促使人们注意世界形势</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_38" type="select">
+				<text>下列不平等条约组合中，搭配有误的是__</text>
+				<select multiple="false">
+					<option value="A">增开天津为商埠——《天津条约》</option>
+					<option value="B">割香港岛给英国——《南京条约》</option>
+					<option value="C">割九龙司地方一区给英国——《北京条约》</option>
+					<option value="D">允许投资设厂——《马关条约》</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_39" type="select">
+				<text>日本倒幕派领袖久玄端曾说过：“英法之所以未能随心所欲地对皇国大动干戈，就是因为中国的太平军声威雷震所致，万一的万一，太平军屈服于英法，英法必将入寇我国。”这表明中国的太平天国运动__</text>
+				<select multiple="false">
+					<option value="A">把反对西方列强入侵作为主要斗争内容</option>
+					<option value="B">牵制了西方列强对日本倒幕运动的干涉</option>
+					<option value="C">促使西方列强集中力量侵略日本</option>
+					<option value="D">与日本共同反抗西方列强的侵略</option>
+				</select>
+			</question>
+		</questions>
+	 <questions>
+			<question id="test02_40" type="select">
+				<text>1865年，两广总督毛鸿宾致总署函：“此(铁)路一开，遂为外国火车独行之路，中国马车既难与之并驾齐驱，更不堪其横冲直撞，势将断绝往来，商民交割。……且内地股匪未靖广……必乘机煽动，作梗生端，即外国人在中国者，亦不能平安无事”。对以上材料的解读正确的是__</text>
+				<select multiple="false">
+					<option value="A">两广人民掀起了保路运动</option>
+					<option value="B">中国近代的铁路修筑遇到了重重困难</option>
+					<option value="C">列强掀起了抢夺筑路权的高潮</option>
+					<option value="D">太平天国正利用国人反对修路扩张势力</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_41" type="select">
+				<text format="html">民国初出版的《南浔志•南浔丝市行》中写道：“小贾收买交大贾，大贾载入申江界。申江鬼国正通商，繁华富丽压苏杭。番舶来银百万计，中国商人皆若狂。今年买经更陆续，农人纺经十之六。遂使家家置纺车，无复有心种菽粟。”对诗文信息理解准确的是__
+					<lable id="41_1">这些现象出现在鸦片战争以后</lable>	
+					<lable id="41_2">外贸繁荣受到中外商人欢迎</lable>
+					<lable id="41_3">苏杭逐渐成为对外贸易的中心</lable>	
+					<lable id="41_4">开埠后中国丝织业得到发展</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">②③④</option>
+					<option value="C">①②④</option>
+					<option value="D">①②③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_42" type="select">
+				<text>《马关条约》中反映资本输出的条款是__</text>
+				<select multiple="false">
+					<option value="A">割让台湾</option>
+					<option value="B">巨额赔款</option>
+					<option value="C">开放通商口岸</option>
+					<option value="D">办厂特权</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_43" type="select">
+				<text format="html">甲午战后，民族工业初步发展的原因有__
+					<lable id="43_1">洋务派兴办工业</lable>	
+					<lable id="43_2">清政府放宽对民间设厂的限制</lable>
+					<lable id="43_3">民间兴起实业救国热潮</lable>	
+					<lable id="43_4">自然经济进一步瓦解</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①③④</option>
+					<option value="B">②③④</option>
+					<option value="C">①②③</option>
+					<option value="D">②③</option>
+				</select>
+			</question>
+    </questions>
+    <questions>
+			<question id="test02_44" type="select">
+				<text>观察下列历史建筑旧址图片，其中与宣传鼓动维新变法运动直接相关的是__</text>
+				<select multiple="false" format="html">
+					<option value="A"><Picread id="Pic44_1">京师同文馆</Picread></option>
+					<option value="B"><Picread id="Pic44_2">京师大学堂旧址</Picread></option>
+					<option value="C"><Picread id="Pic44_3">北京强学会旧址</Picread></option>
+					<option value="D"><Picread id="Pic44_4">北京清华学堂旧址</Picread></option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_45" type="select">
+				<text>《中华文明史》写道：作为一场政治运动，百日维新短命而败，但作为一场更广阔意义上的社会文化运动，自有其成功之处。这里的“成功之处”主要是指戊戌变法运动__</text>
+				<select multiple="false">
+					<option value="A">阻止了民族危机继续加深</option>
+					<option value="B">改革了君主专制体制</option>
+					<option value="C">在社会上起了思想启蒙作用</option>
+					<option value="D">动摇了儒家思想的正统地位</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_46" type="select">
+				<text>梁启超《灭国新法论》：“教育固国民之元气也，顾吾闻数月以来，京师及各省都会，其翻译通事之人，声价骤增，势力极盛，于是都人士咸歆而慕之，……吾知此后外国教育之势日涨，而此等之风气亦日开，所以偿义和团之损失者，如是而已。请判断这是在什么重大事件之后__</text>
+				<select multiple="false">
+					<option value="A">《马关条约》的签订</option>
+					<option value="B">《辛丑条约》的签订</option>
+					<option value="C">中日甲午战争</option>
+					<option value="D">戊戌变法</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_47" type="select">
+				<text>1912年在山东潍县的某市面店铺出现了一副对联：“职赞共和，学佛门祝发；名为待诏，代文士修容。”下列对出现此联背景的表述，最接近历史的是__</text>
+				<select multiple="false">
+					<option value="A">民国政府提倡个人卫生</option>
+					<option value="B">山东潍县的商人支持共和</option>
+					<option value="C">民国政府颁布剪辫法令</option>
+					<option value="D">清朝提倡佛儒道三教融合</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test02_48" type="select">
+				<text>词汇出现的频率高低可以反映国家政治经济主题的变化。下列词汇最有可能出现在1912年中国各报刊上的有__</text>
+				<select multiple="false">
+					<option value="A">北京.义和团.八国联军.新政</option>
+					<option value="B">民国.孙文.共和.三权分立</option>
+					<option value="C">新文化.北洋军阀.实业救国.张謇</option>
+					<option value="D">革命.中国共产党.长征.抗日</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="二、综合题(本大题共3小题，共52.0分)" score="52.0" >
+		<questions score="6">
+			<headtext>每逢社会转型时期，政治制度往往会发生根本性变化。阅读下列材料并回答问题：</headtext>
+			<text>有学者认为：西周封建制度下，主权经由层级的结构，逐级分享，不论王室，或是诸侯，或是卿大夫，都不能拥有完整的主权。而在战国开始时，一种新型的国家出现了。在这个国家里面，国君掌握专制权力，大臣可以自由任免；同时这种官僚制度选任和提拔有才干者，淘汰不合格者。国家事务远较以前复杂，这就需要一批有管理国家本领的专家来行政，而不是任用只懂朝廷礼仪的绅士来做官。 ——据许倬云《万古江河》、《中国古代社会史论》等资料整理</text>
+			<question id="test02_49_01" score="6" type="shortanswer">
+				<text>结合所学，概括春秋战国时期我国政治制度所发生的重要变化。</text>
+			</question>	
+		</questions>
+		<questions score="12">
+		    <headtext>每逢社会转型时期，政治制度往往会发生根本性变化。阅读下列材料并回答问题：</headtext>
+		    <text>夫近百年来，贯穿于中国历史之一中心问题，为如何求自强以御外侮。此一自强运动，实始于咸丰末年英法联军之役以后，而甲午一战，则为此初期三十年自强运动失败之总结也。 ——石泉《甲午战争前后之晚清政局》</text>
+			<question id="test02_49_02" score="12" type="shortanswer">
+				<text>根据该学者的观点，简述中国近代“自强运动”初期的主要表现及失败原因。19世纪末至20世纪初，中国“自强运动”的发展出现了怎样的新特点？请用史实加以说明。 </text>
+			</question>	
+		</questions>
+		<questions score="12">
+			<headtext>经济发展与时代特色紧密相关。阅读下列材料，完成下列各题</headtext>
+			<text>汉武帝在位时兴修水利、穷兵黩武，使汉朝国力达到最高点，但同时也引发了政府的财政危机。新增的大批政府开支亟需新的收入，而终武帝王朝，为寻求收支平衡的努力一直未曾停止过。 ——费正清《传统与变迁》 </text>
+			<text>随着市场的扩大，手工艺制作也有了很大的发展，有时甚至达到大批量生产的水平。景德镇的官窑为皇宫及官府烧制了大量瓷器，有的还专供出口。……景德镇的瓷器在当时制瓷工艺尚不发达的欧洲，确实是无上的珍品，因而被欧洲人尊称为“中国器皿”(Chinaware )。同时，苏州亦成为国内商业、金融业和产品加工业（特别是纺织、染色业）的中心。附近的松江地区则是晚明时期棉纺织业的中心，当地人利用外地原料进行加工后，再将成品返销各地。广州的铁锅亦畅销内地、海外以及中亚地区。 ——费正清《传统与变迁》</text>	
+			<question id="test02_50_01_01" score="4" type="shortanswer">
+				<text>结合所学和材料一，列举出汉武帝为增加收入而采取的重大措施。</text>
+			</question>	
+			<question id="test02_50_01_02" score="8" type="shortanswer">
+				<text>根据材料二并结合所学，概括指出明中后期手工业发展的特点；并指出手工业发展所带来的影响。</text>
+			</question>	
+		</questions>
+		<questions score="6">
+			<headtext>经济发展与时代特色紧密相关。阅读下列材料，完成下列各题</headtext>
+			<text format="html">晚清政府财政收入结构表（单位：万两）——摘自冯杨《低关税与近代中国经济发展研究》<Tabread id="Tab50_1"></Tabread></text>
+			<Tab id="Tab50_1">
+				<row>
+					<col>年代</col>
+					<col>
+						<row>农业税收入</row>
+						<row>
+							<col>数额</col>
+							<col>比重</col>
+						</row>
+					</col>
+					<col>
+						<row>工商杂税收入</row>
+						<row>
+							<col>数额</col>
+							<col>比重</col>
+						</row>
+					</col>
+					<col>
+						<row>其他收入</row>
+						<row>
+							<col>数额</col>
+							<col>比重</col>
+						</row>
+					</col>
+					<col>
+						<row>总收入</row>
+						<row>
+							<col>数额</col>
+							<col>比重</col>
+						</row>
+					</col>
+				</row>
+				<row>
+					<col>1849</col>
+					<col>3281</col>
+					<col>77</col>
+					<col>969</col>
+					<col>23</col>
+					<col> </col>
+					<col>  </col>
+					<col>4250</col>
+					<col>100</col>	
+				</row>
+				<row>
+					<col>1885</col>
+					<col>3071</col>
+					<col>40</col>
+					<col>3920</col>
+					<col>51</col>
+					<col>714</col>
+					<col>9</col>
+					<col>7708</col>
+					<col>100</col>	
+				</row>
+				<row>
+					<col>1911</col>
+					<col>4810</col>
+					<col>16</col>
+					<col>20441</col>
+					<col>69</col>
+					<col>4445</col>
+					<col>15</col>
+					<col>29696</col>
+					<col>100</col>	
+				</row>
+			</Tab>
+			<question id="test02_50_02" score="6" type="shortanswer">
+				<text>根据材料，概括晚清政府在税收方面出现的重大变化。结合所学，分析出现这些变化的原因。</text>
+			</question>	
+		</questions>
+		<questions score="6">
+			<headtext>儒家学说长期居于中国传统文化的主流，在两千多年历史中，随着时代变迁，不断吸收其他思想，以适应时代需要。</headtext>
+			<text>	
+				臣谨案《春秋》之文，求王道之端，得之于正。正次王，王次春。春者，天之所为也；正者，王之所为也。其意曰，上承天之所为，而下以正其所为，正王道之端云尔。然则王者欲有所为，宜求其端于天。天道之大者在阴阳。阳为德，阴为刑；刑主杀而德主生。……以此见天之任德不任刑也。……终阳以成岁为名，此天意也。王者承天意以从事，故任德教而不任刑。 ——《汉书董仲舒传》 
+				宇宙之间，一理而已。天得之而为天，地得之而为地，而凡生于天地之间者，又各得之以为性；其张之为三纲，其纪之为五常，盖皆此理之流行，无所适而不在。 ——《朱子文集》卷七 
+            </text>
+			<question id="test02_51_01" score="6" type="shortanswer">
+				<text>汉代儒学已不同于先秦儒学。依据材料，说明董仲舒发展儒学的表现；并分析董仲舒的观点仍然属于儒家学说的原因。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<headtext>儒家学说长期居于中国传统文化的主流，在两千多年历史中，随着时代变迁，不断吸收其他思想，以适应时代需要。</headtext>
+			<text>以佛修心，以道养生，以儒治世。——南宋孝宗《佛祖统纪》卷48</text>
+			<question id="test02_51_02_01" score="4" type="shortanswer">
+				<text>宋代儒学发展到了一个新的高峰。依据材料，说明宋代儒学发展的特点。</text>
+			</question>	
+			<question id="test02_51_02_02" score="6" type="shortanswer">
+				<text>康有为将《孔子改制考》进呈御览，并说明“臣今所作编撰，特发明孔子为改制教主，六经皆孔子所作，俾国人知教主，共尊之。”结合时代背景，分析康有为编撰《孔子改制考》的目的。</text>
+			</question>
+		</questions>	
+	</section>
+</paper>	

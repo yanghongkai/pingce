@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2015北京高考文综历史试卷" subject="History" id="2015BeijingGaokao" >
+	<section name="选择题" >
+		<questions>
+			<question id="2015BeijingGaokao_12" type="select">
+				<text format="html">“苟无事迹，虽圣人不能作《春秋》，苟不知其事迹，虽以圣人读《春秋》，不知所以褒贬。”《四库全书总目》中这段话体现的史学原则是__
+				<label id="12_1">秉笔直书</label>	
+				<label id="12_2">言必有据</label>
+				<label id="12_3">论从史出</label>	
+				<label id="12_4">以小见大</label>
+				</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="12_1"/><label id="12_2"/></option>
+					<option value="B"><label id="12_2"/><label id="12_3"/></option>
+					<option value="C"><label id="12_1"/><label id="12_3"/></option>
+					<option value="D"><label id="12_2"/><label id="12_4"/></option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_13" type="select">
+				<text>某朝官员王锷通过贿赂企图兼任宰相。皇帝同意了王锷的请求，并下诏“锷可兼宰相”。时任给事中的李藩行使职权，驳回诏书。由此推断，给事中隶属于__</text>
+				<select multiple="false">
+					<option value="A">唐朝的门下省</option>
+					<option value="B">宋朝的枢密院</option>
+					<option value="C">明朝的内阁</option>
+					<option value="D">清朝的军机处</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_14" type="select">
+				<text>唐代长安的商业店铺主要集中在东西两市，按规定，“诸行自有正铺者，不得于铺前更造偏铺。”南宋都城中的商业店铺散布于城内各处，据记载约有“四百四十行”，上述材料可以佐证，南宋时期__</text>
+				<select multiple="false">
+					<option value="A">私营商业已居主导地位</option>
+					<option value="B">坊市制度已经瓦解</option>
+					<option value="C">商业发展已超过农业</option>
+					<option value="D">资本主义萌芽已出现</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_15" type="select">
+				<text format="html">明朝中后期，王阳明学说在中国士大夫中流行。朝鲜来华使者对此不理解，认为“阳明敢肆己意，谤辱朱子，实斯文之罪人也”。结合所学判断，下列选项正确的有__
+				<label id="15_1">朝鲜使者以程朱理学为正宗</label>	
+				<label id="15_2">王阳明心学超越了理学范畴</label>
+				<label id="15_1">王阳明与朱熹观点明显不同</label>	
+				<label id="15_1">王阳明心学是对儒学的叛逆</label>
+				</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="15_1"/><label id="15_2"/></option>
+					<option value="B"><label id="15_2"/><label id="15_3"/></option>
+					<option value="C"><label id="15_1"/><label id="15_3"/></option>
+					<option value="D"><label id="15_2"/><label id="15_4"/></option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_16" type="select">
+				<text>太平天国提倡“剪辫蓄发”，认为当时人的发饰“坏先人之服冕，是使中国之人忘其根本也”。辛亥革命期间，革命党人认为“欲除满清之藩篱，必先去满清之形状”，提倡“剪辫易服”。二者均希望通过变革发饰__</text>
+				<select multiple="false">
+					<option value="A">与西方文明相对接</option>
+					<option value="B">号召推翻清朝统治</option>
+					<option value="C">提倡民主自由思想</option>
+					<option value="D">表明各自宗教信仰</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_17" type="select">
+				<text>近代某全国性咨询议政机构获准成立后，上呈公文，请求将北京原用于科举考试的贡院改为其办公地。公文中有“仰慕天恩，准予改拨”等语。该公文应出现于__</text>
+				<select multiple="false">
+					<option value="A">洋务运动时期</option>
+					<option value="B">戊戌变法时期</option>
+					<option value="C">预备立宪时期</option>
+					<option value="D">中华民国时期</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_18" type="select">
+				<text format="html"><Tabread id="tab18_1">表一摘引了一步人物传记的目录</Tabread>，根据所学判断，表中空白处应该是__</text>
+				<tab id="tab18_1">
+					<row>
+						<col>目录</col>
+					</row>
+					<row>
+						<col>二十</col>
+						<col>指导敌后抗战和《论持久战》</col>
+					</row>
+					<row>
+						<col>二十三</col>
+						<col>新民主主义的理论</col>
+					</row>
+					<row>
+						<col>三十</col>
+						<col> </col>
+					</row>
+					<row>
+						<col>三十二</col>
+						<col>全面内战爆发以后</col>
+					</row>
+					<row>
+						<col>四十</col>
+						<col>筹建新中国</col>
+					</row>
+				</tab>
+				<select multiple="false">
+					<option value="A">五四大潮的洗礼</option>
+					<option value="B">长征</option>
+					<option value="C">上井冈山</option>
+					<option value="D">重庆谈判</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_19" type="select">
+				<text><Picread id="Pic19_1">以下是私服新中国不同时期的宣传画</Picread>。该画中主题体现的时间先后顺序，排列正确的是__</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="19_1"/><label id="19_2"/><label id="19_3"/><label id="19_4"/></option>
+					<option value="B"><label id="19_2"/><label id="19_3"/><label id="19_1"/><label id="19_4"/></option>
+					<option value="C"><label id="19_3"/><label id="19_1"/><label id="19_2"/><label id="19_4"/></option>
+					<option value="D"><label id="19_4"/><label id="19_2"/><label id="19_3"/><label id="19_1"/></option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_20" type="select">
+				<text>1521年，德国威登堡的一家作坊印制了很多幅对帧木板画。其中一幅的左侧是基督跪在地上为门徒洗脚；右侧是高高在上的教皇伸出脚让跪在地上的信徒亲吻。这幅图意在__</text>
+				<select multiple="false">
+					<option value="A">抨击罗马教廷</option>
+					<option value="B">推销“赎罪券”</option>
+					<option value="C">反对宗教改革</option>
+					<option value="D">倡导宗教宽容</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_21" type="select">
+				<text format="html">对于美国《独立宣言》在大革命前法国的反响，有学者评论说：宣言中的学说来自哪里并不重要。无论是来自卢梭，还是洛克（英国启蒙思想家），法国读者一定能在《独立宣言》的下述文字中看到法国哲人们的思想：“人人生而平等，他们都被造物主赋予了某些不可转让的权利……”结合所学判断，下列选项正确的是__
+				<label id="21_1">法国读者不了解洛克和卢梭的学说</label>	
+				<label id="21_2">《独立宣言》与洛克和卢梭的思想无关</label>
+				<label id="21_3">法国社会中的等级制观念已经动摇</label>	
+				<label id="21_4">天赋人权思想已在大西洋两岸传播</label>
+				</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="21_1"/><label id="21_3"/></option>
+					<option value="B"><label id="21_2"/><label id="21_3"/></option>
+					<option value="C"><label id="21_1"/><label id="21_4"/></option>
+					<option value="D"><label id="21_3"/><label id="21_4"/></option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_22" type="select">
+				<text>1845年，美国国会通过一项法案：禁止总统在未经过国会同意拨款的前提下授权建造海上缉私船。总统约翰·泰勒否决了该法案，但国会推翻了总统的否决。根据美国宪法，随后__</text>
+				<select multiple="false">
+					<option value="A">这项法案将会自动生效</option>
+					<option value="B">国会将自行建造缉私船</option>
+					<option value="C">最高法院可废除该法案</option>
+					<option value="D">总统可再次否决该法案</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_23" type="select">
+				<text>1880年，日本政府的一项教育指令称：应利用“古今之画像照片”宣传忠孝精神；与其过分关注搞深的理论和外语，不如对农商庶民施以生存的实际教育。结合所学判断，该指令__</text>
+				<select multiple="false">
+					<option value="A">试图阻止西方科技的传播</option>
+					<option value="B">表明忠孝精神已在日本瓦解</option>
+					<option value="C">旨在强化日本社会的等级制度</option>
+					<option value="D">旨在培养掌握现代技能的忠顺臣民</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" >
+		<questions score="8">
+			<headtext>历史语境中的语言和文化</headtext>
+			<title>材料一</title>
+			<text>汉语是世界上最古老的语言之一。秦汉时期，汉字形成统一的书写规范。官学、书院、私塾大都使用汉语，科举考试亦然。魏孝文帝改革将汉语作为“正音”。清朝确立在全国的统治后，很快将汉语作为官方语言。日本等周边国家的语言也受到汉语影响。
+			拉丁语最初是古罗马人的语言。公元1世纪，标准拉丁语形成，与希腊语等一起成为罗马帝国学校的教学语言。罗马帝国解体后，拉丁语的日常口语功能逐渐丧失，成为一种书面语言。17世纪末期以前，西欧的学术著作大都使用拉丁文撰写，意大利、西班牙、葡萄牙、法国等在拉丁语的基础上，发展出自己的民族语言。 
+			</text>
+			<question id="2015BeijingGaokao_37_01" score="8" type="shortanswer">
+				<text>阅读材料一，结合所学，概括上述两种语言文学发展演变的异同。</text>
+			</question>	
+		</questions>
+		<questions score="12">
+			<headtext>历史语境中的语言和文化</headtext>
+			<title>材料二</title>
+			<text>16世纪，英语主要是英格兰人的语言。到18世纪中后期，英语已扩展到英国的殖民地，并在国际商贸活动中广泛使用。二战后，英语逐渐超越其他语言，成为科教领域和众多国际组织的通用语言，被称为语言的“日不落帝国”。</text>
+			<question id="2015BeijingGaokao_37_02" score="12" type="shortanswer">
+				<text>阅读材料二，分析英语发展成为语言的“日不落帝国”的历史原因。</text>
+			</question>	
+		</questions>
+		<questions score="18">
+			<headtext>历史语境中的语言和文化</headtext>
+			<title>材料三</title>
+			<text format="html">20世纪10年代，《新青年》杂志有过一场汉字存废的讨论，主张废除汉字的学者认为：汉字难识难写，不便推广；“新理新事新物之名词，一无所有”；“欲使中国民族成为二十世纪文明之民族；必以废孔学，灭道教为根本之解决，而废记载孔门学说及道教妖言之汉文，尤为根本解决之根本解决。”
+			近代以来，汉语中出现了大量的新词汇，
+			<Tabread id="tab37_1">下表内容为新词汇示例</Tabread>。 
+			</text>
+			<tab id="tab37_1">
+				<row>
+					<col>创造新词的方式</col>
+					<col>繁体字</col>
+					<col>1956年后推行的简体字</col>
+				</row>
+				<row>
+					<col>音译外来词</col>
+					<col>沙發、牛頓、布爾什維克、麥當勞</col>
+					<col>沙发、牛顿、布尔什维克、麦当劳</col>
+				</row>
+				<row>
+					<col>赋予旧词新涵义</col>
+					<col>共和、格致學、計學、總統</col>
+					<col>共和、科学（格致学）、经济学（计学）、总统</col>
+				</row>
+				<row>
+					<col>其他</col>
+					<col>西學、洋錢</col>
+					<col>西学、洋钱、孔子学院</col>
+				</row>
+			</tab>
+			<question id="2015BeijingGaokao_37_03_01" type="shortanswer">
+				<text>阅读材料三，结合所学，分析“废汉字”主张提出的时代背景；</text>
+			</question>	
+			<question id="2015BeijingGaokao_37_03_02" type="shortanswer">
+				<text>以“挑战与应对——百年来汉语的变迁”为主题，对上表进行解读。</text>
+			</question>
+		</questions>
+		<questions score="6">
+			<title>
+			<Picread id="40_1">丝绸之路东起中国西安，西起埃及的亚历山大。</Picread>
+			</title>
+			<text>陆上之路是东西方史往的重要通通，分为东西两段，东段主要在今中国晚内，其正式开通源自张赛通西城。汉与西城的文往主要通过河西走廊；南北朝时期，由于河西走廊被割据政权占据，南朝与西域的交往主要通过今青海道；唐朝统一后，河西走廊又恢复了在丝绸之路中的主导地位；11世纪纪西夏崛起，青海道和河西走廊被切断，北宋只能向被渡过黄河，再由河套地区向西进入西域。从元朝起，河西走廊为中西方交往稳定通道。 
+			</text>
+			<question id="2015BeijingGaokao_40" score="6" type="shortanswer">
+				<text  format="html">
+				阅读上图和上述材料，从中概括古代陆上丝绸之路的历史特点。
+				</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<title>世界博览会通过展示科学技术成果，预示世界发展方向。1962年世博会在美国西雅图举行。</title>
+			<text>1957年，苏联发射了人类历史上第一颗人造地球卫星。1961年，苏联宇航员加加林成为第一个遨游太空的人，美国随即提出阿波罗登月计划。1962年，在西雅图举办了主题为“太空时代的人类生活”的博览会。 </text>
+			<question id="2015BeijingGaokao_41" score="6" type="shortanswer">
+				<text>列举20世纪60年代以来我国取得的航天成就。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

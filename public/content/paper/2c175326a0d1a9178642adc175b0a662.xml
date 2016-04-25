@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="地理测试04" subject="Geography" id="test04" >
+	<section name="选择题"  score="64.0">
+		<questions>
+		<question id="test01_01" score="2.0" type="select">
+			<text format="html">
+			<Tabread id="Tab1_1">读表1，</Tabread>与地球相比，火星__
+			<tab id="Tab1_1">
+				<title>我国部分城市临空经济区及其产业现状表</title>
+					<row>
+					 	<col></col>
+						<col>与日平均距离（百万千米）</col>
+						<col>质量</col>
+						<col>体积</col>
+						<col>自转周期</col>
+					</row>
+					<row>
+						<col>地球</col>
+						<col>149.6</col>
+						<col>1</col>
+						<col>1</col>
+						<col>24时37分</col>
+					</row>
+					<row>
+						<col>火星</col>
+						<col>227.9</col>
+						<col>0.11</col>
+						<col>0.15</col>
+						<col>24时37分</col>
+					</row>
+				</tab>
+			</text>
+			<select multiple="false">
+				<option value="A"> 距日较近</option>
+				<option value="B">自转线速度比地球小</option>
+				<option value="C">表面均温比地球高</option>
+				<option value="D">自转角速度比地球大得多</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+		<question id="test04_02" score="2.0" type="select">
+				<text><Picread id="Pic2_1">图是中国局部地区太阳年辐射总量分布图。</Picread>读图，Ⅰ区太阳年辐射总量比Ⅳ区高，主要因为Ⅰ区__</text>
+				<select multiple="false">
+					<option value="A">夏季大气逆辐射强</option>
+					<option value="B">年平均气温比较高</option>
+					<option value="C">正午太阳高度角大</option>
+					<option value="D">天气晴朗且海拔高</option>
+				</select>
+		</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic3_4_5_1">图为1954～2005年我国江淮地区太阳黑子数与梅雨强度的相关系数分布图。</Picread>
+			回答第3~5题。
+			</text>
+			<question id="test04_03" score="2.0" type="select">
+				<text>形成梅雨的天气系统及出现时间分别是__
+				</text>
+				<select multiple="false">
+					<option value="A">高压中心，3—4月</option>
+					<option value="B">低压中心，4—5月</option>
+					<option value="C">锋面，6—7月</option>
+					<option value="D">反气旋，7—8月</option>
+				</select>
+			</question>
+			<question id="test04_04" score="2.0" type="select">
+				<text>太阳黑子数与梅雨强度__</text>
+				<select multiple="false">
+					<option value="A">在湖北省的东南部呈正相关</option>
+					<option value="B">在安徽省的大部分地区呈负相关</option>
+					<option value="C">在图中西北部的相关性最小</option>
+					<option value="D">正相关最大值出现在图中东北部</option>
+				</select>
+			</question>
+			<question id="test04_05" score="2.0" type="select">
+				<text>太阳黑子数达最大值时__</text>
+				<select multiple="false">
+					<option value="A">江淮地区梅雨强度增大</option>
+					<option value="B">通讯卫星信号易受干扰</option>
+					<option value="C">漠河地区出现极昼现象</option>
+					<option value="D"> 耀斑爆发强度减弱</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+		<question id="test04_06" score="2.0" type="select">
+			<text format="html"><Picread id="Pic6_1">一位学生在家做了一个小实验，他用一根细绳绑住家中洗脸池的活塞，用活塞塞住洗脸池的漏水口，然后往洗脸池中放满水。过了几分钟，他看到池中的水平静了，就抓住绳子迅速向上把活塞拔出，他看见水在下渗的过程中形成了向右旋转的漩涡(如图所示)。</Picread>，产生这种现象的原因是__</text>
+			<select multiple="false">
+				<option value="A">太阳活动</option>
+				<option value="B">地球自转</option>
+				<option value="C">地球公转</option>		
+				<option value="D">地震时产生的地震波</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+		<question id="test04_07" score="2.0" type="select">
+			 <text>从南极上空向下看，飞机甲沿南纬60°逆时针方向飞行；从北极上空向下看，飞机乙沿北纬60°顺时针方向飞行，下列叙述中，正确的是__</text>
+			<select multiple="false">
+				<option value="A">都是自东向西飞行</option>
+				<option value="B">都是自西向东飞行</option>
+				<option value="C">都是向低纬飞行</option>		
+				<option value="D">都是向高纬飞行</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+			<text format="html">中国第二艘载人航天飞船“神舟六号”于2005年10月12日9时在酒泉卫星发射中心成功发射升空。飞船绕地飞行轨道与地球赤道的夹角为42.40°，绕地球一圈需要90分钟，并于10月17日4时33分在内蒙古着陆场顺利着陆。
+			<Picread id="Pic8_9_1">读图“神舟六号”飞船绕地轨道及方向示意图，</Picread>
+			回答第8、9题。
+			</text>
+			<question id="test04_08" score="2.0" type="select">
+				<text>图中A点为飞船第一次到达最南位置，当飞船第二次到达最南位置时，此地的地理坐标大约是__</text>
+				<select multiple="false">
+					<option value="A">42.4°N，105°E</option>
+					<option value="B">42.4°S，127.5°W</option>
+					<option value="C">42.4°S，82.5°W</option>
+					<option value="D">42.4°S，105°W</option>
+				</select>
+			</question>
+			<question id="test04_09" score="2.0" type="select">
+				<text>飞船飞行期间，地球的位置可能是图中的__</text>
+				<select multiple="false">
+					<option value="A">1位置</option>
+					<option value="B">2位置</option>
+					<option value="C">3位置</option>
+					<option value="D">4位置</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">北京奥运会火炬于2008年3月25日在雅典采集火种，4月1日从北京出发在全球传递，5月传回中国。
+			<Picread id="Pic10_11_1">读图“北京奥运火炬传递路线图”，</Picread>
+			回答下列问题。
+			</text>
+			<question id="test04_10" score="2.0" type="select">
+				<text format="html">北京时间2008年8月8日20时奥运会开幕，此时<label id="10_11_1"/>地所在时区的区时为__</text>
+				<select multiple="false">
+					<option value="A">7日4时</option>
+					<option value="B">7日12时</option>
+					<option value="C">8日4时</option>
+					<option value="D">9日12时</option>
+				</select>
+			</question>
+			<question id="test04_11" score="2.0" type="select">
+				<text format="html"> 当火炬传递到__
+				</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="10_11_1"/>地时，当地正午太阳高度为全年最大</option>
+				<option value="B"><label id="10_11_3"/>地时，当地黑夜比白昼长</option>
+				<option value="C"><label id="10_11_4"/>地时，当地正值多雨季节</option>
+				<option value="D"><label id="10_11_5"/>地时，当地正值春暖花开季节</option>
+				</select>
+			</question>
+		</questions>
+		
+		<questions>
+			<text format="html">
+			<Picread id="Pic12_13_1">读图,</Picread>
+			回答第12、13题。
+			</text>
+			<question id="test04_12" score="2.0" type="select">
+				<text> 一艘从太平洋驶向大西洋的船，经过P点时，一名中国船员拍摄到海上日落的景观，洗印出的照片上显示拍照时间为7日7时0分0秒（北京时间）。该船员拍摄照片时，P地的地方时为__</text>
+				<select multiple="false">
+					<option value="A">6日8时</option>
+					<option value="B">6日14时</option>
+					<option value="C">6日20时 </option>
+					<option value="D">6日18时</option>
+				</select>
+			</question>
+			<question id="test04_13" score="2.0" type="select">
+				<text>拍摄照片的当天，漠河的夜长是__</text>
+				<select multiple="false">
+				<option value="A">16小时</option>
+				<option value="B">14小时</option>
+				<option value="C">10小时</option>
+				<option value="D">12小时</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic14_15_1">图中阴影部分代表黑夜</Picread>
+			读图，回答下列问题。
+			</text>
+			<question id="test04_14" score="2.0" type="select">
+				<text>此时，北京时间是__</text>
+				<select multiple="false">
+					<option value="A">2点</option>
+					<option value="B">4点</option>
+					<option value="C">8点</option>
+					<option value="D">10点</option>
+				</select>
+			</question>
+			<question id="test04_15" score="2.0" type="select">
+				<text>此时，新一天的范围占全球的__</text>
+				<select multiple="false">
+				<option value="A">大于二分之一地</option>
+				<option value="B">小于二分之一</option>
+				<option value="C">小于四分之一</option>
+				<option value="D">等于四分之三</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+		<question id="test04_16" score="2.0" type="select">
+			<text>如果在150°E经线上的某点测得此时垂直竖立的物体高度与其影子等长，则该点的纬度可能是__</text>
+			<select multiple="false">
+			<option value="A">21°34′S</option>
+			<option value="B">48°52′N</option>
+			<option value="C">52°08′S</option>
+			<option value="D">78°26′N</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+		<question id="test04_17" score="2.0" type="select">
+			<text format="html"><Picread id="Pic17_1">若图中</Picread>阴影区为3月20日，非阴影区为3月21日，若正确表示此时正午太阳光线的箭头是丙，则此时北京时间是__</text>
+			<select multiple="false">
+				<option value="A">3月21日 13：00</option>
+				<option value="B">3月20日 13：00</option>
+				<option value="C">3月21日 17：00</option>
+				<option value="D">3月20日 17：00</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+		<question id="test04_18" score="2.0" type="select">
+			<text format="html"><Picread id="Pic18_1">读图</Picread>一架在北半球飞行的飞机，飞越晨昏线上空时，当地为8日19时。根据上述条件判断，飞机飞越的是下列所示的四个地区中的__</text>
+			<select multiple="false" format="html">
+				<option value="A"><label id="18_1"/></option>
+				<option value="B"><label id="18_2"/></option>
+				<option value="C"><label id="18_3"/></option>
+				<option value="D"><label id="18_4"/></option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic19_20_1">图表示6月22日四地昼长时数和正午太阳高度。</Picread>，回答第19、20题。
+			</text>
+			<question id="test04_19" score="2.0" type="select">
+				<text> 图中标注有明显错误的一地是__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="19_20_1"/>地</option>
+				<option value="B"><label id="19_20_2"/>地</option>
+				<option value="C"><label id="19_20_3"/>地</option>
+				<option value="D"><label id="19_20_4"/>地</option>
+				</select>
+			</question>
+			<question id="test04_20" score="2.0" type="select">
+				<text>下列叙述正确的是__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="19_20_1"/><label id="19_20_2"/>两地距太阳直射点的纬度间隔相同</option>
+				<option value="B">除标注错误的一地外，其余三地一年之中均有太阳直射的机会</option>
+				<option value="C">除图所示以外，其余时间<label id="19_20_1"/>地的正午太阳高度均小于<label id="19_20_2"/>地</option>
+				<option value="D">每年大约有9个月时间<label id="19_20_3"/>地的昼长大于夜长</option>
+				</select>
+			</question>	
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic21_22_1">读“某地全年太阳视运动示意图”,</Picread>
+			，读图回答21、22题。
+			</text>
+			<question id="test04_21" score="2.0" type="select">
+				<text>该地的地理纬度为__</text>
+				<select multiple="false">
+					<option value="A">23. 5°S</option>
+					<option value="B">30°N</option>
+					<option value="C">40°S</option>
+					<option value="D">40°N</option>
+				</select>
+			</question>
+			<question id="test04_22" score="2.0" type="select">
+				<text>下列关于太阳方向的叙述，不正确的为__</text>
+				<select multiple="false">
+				<option value="A">冬至日某地太阳升起的方位是东偏南，落下的方位是西偏南</option>
+				<option value="B">夏至日赤道太阳从东南升起，正午于正北，从西南落下</option>
+				<option value="C">春、秋分日各地太阳六时从正东方向升起，十八时从正西方向落下</option>
+				<option value="D">一年四季中，北回归线以北各地正午太阳总在正南方向</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic23_24_1">图为我国<label id="23_24_1"/><label id="23_24_1"/>两地某日日出日落（北京时间）示意图,读图回答下列问题。</Picread>
+			，读图回答23、24题。
+			</text>
+			<question id="test04_23" score="2.0" type="select">
+				<text> 该日最有可能是__</text>
+				<select multiple="false">
+					<option value="A">3月21日</option>
+					<option value="B">6月22日</option>
+					<option value="C">9月23日</option>
+					<option value="D">12月22日</option>
+				</select>
+			</question>
+			<question id="test04_24" score="2.0" type="select">
+				<text format="html"><label id="23_24_1"/>地可能为__</text>
+				<select multiple="false">
+				<option value="A">乌鲁木齐</option>
+				<option value="B">成都</option>
+				<option value="C">北京</option>
+				<option value="D">上海</option>
+				</select>
+			</question>
+		</questions>
+		 <questions>
+		<question id="test04_25" score="2.0" type="select">
+			<text format="html"><Picread id="Pic25_1">图为地球某日太阳光照示意图，图中阴影部分为黑夜，其他地区为白昼。</Picread>图示时刻，太阳直射点的地理坐标是__</text>
+			<select multiple="false">
+				<option value="A">23°26’N，105°E</option>
+				<option value="B">23°26’N，135°E</option>
+				<option value="C">23°26’S，90°E</option>
+				<option value="D">23°26’S，90°W</option>
+			</select>
+		</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic26_27_1">读图。</Picread>回答26、27题。
+			</text>
+			<question id="test04_26" score="2.0" type="select">
+				<text>北京时间2008年9月25日21时10分，“神舟7号”从酒泉卫星发射中心升空，图14中各线表示太阳高度日变化，其中与酒泉当日太阳高度日变化较吻合的是__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="26_27_1"/></option>
+				<option value="B"><label id="26_27_2"/></option>
+				<option value="C"><label id="26_27_3"/></option>
+				<option value="D"><label id="26_27_4"/></option>
+				</select>
+			</question>
+			<question id="test04_27" score="2.0" type="select">
+				<text>此时，地球绕太阳公转的速度正处于__</text>
+				<select multiple="false">
+				<option value="A">最快的阶段</option>
+				<option value="B">最慢的阶段</option>
+				<option value="C">由慢到快的阶段</option>
+				<option value="D">由快到慢的阶段</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">
+			<Picread id="Pic28_29_30_31_1">图是经纬网图层和中国省级行政中心图层的叠加图，图中经纬线间隔度数相等</Picread>读图回答28~31题。
+			</text>
+			<question id="test04_28" score="2.0" type="select">
+				<text>经纬网的纬线间距为__</text>
+				<select multiple="false">
+				<option value="A">3°</option>
+				<option value="B">5°</option>
+				<option value="C">8°</option>
+				<option value="D">10°</option>
+				</select>
+			</question>
+			<question id="test04_29" score="2.0" type="select">
+				<text>图上标出的经纬网格区中__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="28_29_30_31_32_2"/>与<label id="28_29_30_31_32_3"/>都处于暖温带</option>
+				<option value="B">随地球自转，<label id="28_29_30_31_32_3"/>的角速度比<label id="28_29_30_31_32_4"/>小</option>
+				<option value="C">从春分到夏至，<label id="28_29_30_31_32_1"/>比<label id="28_29_30_31_32_4"/>的昼长变化幅度大</option>
+				<option value="D"> 从夏至到秋分，<label id="28_29_30_31_32_2"/>比<label id="28_29_30_31_32_5"/>的正午太阳高度角变化幅度大</option>
+				</select>
+			</question>
+			<question id="test04_30" score="2.0" type="select">
+				<text>从地形和降水条件分析，最易发生泥石流的网格区是__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="28_29_30_31_32_1"/><label id="28_29_30_31_32_4"/></option>
+				<option value="B"><label id="28_29_30_31_32_2"/><label id="28_29_30_31_32_3"/></option>
+				<option value="C"><label id="28_29_30_31_32_3"/><label id="28_29_30_31_32_5"/></option>
+				<option value="D"><label id="28_29_30_31_32_4"/><label id="28_29_30_31_32_5"/></option>
+				</select>
+			</question>
+			<question id="test04_31" score="2.0" type="select">
+				<text>关于图示地区气温年较差变化规律及原因的叙述，不正确的是__</text>
+				<select multiple="false" format="html">
+				<option value="A"><label id="28_29_30_31_32_1"/></option>
+				<option value="B"><label id="28_29_30_31_32_2"/></option>
+				<option value="C"><label id="28_29_30_31_32_4"/></option>
+				<option value="D"><label id="28_29_30_31_32_5"/></option>
+				</select>
+			</question>
+			</questions>
+			<questions>
+			<question id="test04_32" score="2.0" type="select">
+				<text>在30°N附近的日光城拉萨安装太阳能热水器，为了充分利用太阳能，尽可能使一年内正午太阳光线与集热板保持垂直，集热板与地面夹角的调整幅度约为__</text>
+				<select multiple="false">
+				<option value="A">23.5°</option>
+				<option value="B">30°</option>
+				<option value="C">47°</option>
+				<option value="D">60°</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" score="30.0" >
+		<question score="14" id="test04_33" type="shortanswer">
+			<text>目前，中国已有酒泉、西昌、太原三个内陆发射基地，但受到铁路运输条件的限制，火箭直径不能超过3.35米，在国际市场上没有竞争力。海南文昌射向1000公里范围内无人居住的海洋，会大幅降低发射后未燃尽残骸造成意外的概率。结合所学知识和资料，请分析在文昌市建设新航天发射场的原因。</text>
+		</question>
+		<questions score="16">
+			<text format="html">
+			<Picread id="Pic34_1">读图</Picread>回答下列问题
+			</text>
+			<question id="test04_34_01" type="shortanswer">
+				<text>地球由A转到B的过程中，太阳直射点移动的方向及纬度变化的范围是__。</text>
+			</question>
+			<question id="test04_34_02" type="fillblank">
+				<blank num="1" format="html">此刻，<label id="34_2"/>地的太阳高度是__</blank>
+			</question>	
+			<question id="test04_34_03" type="shortanswer">
+				<text>地球由C转到D的过程中，10°S正午太阳高度和昼夜长短变化的特点是?</text>
+			</question>
+			<question id="test04_34_04" type="fillblank">
+				<blank num="1" format="html">地球由D转到A的过程中，地球表面极昼现象的变化范围是__</blank>
+			</question>
+			<question id="test04_34_05" type="shortanswer">
+				<text format="html">当地球处在D位置时，<Picread id="Pic34_2">在下图</Picread>中转画成以南极点为中心的日照图。要求：画出地球自转方向、太阳光线、晨昏线和夜半球。</text>
+			</question>
+		</questions>
+	</section>
+</paper>

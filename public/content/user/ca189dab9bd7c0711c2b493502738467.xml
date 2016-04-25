@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="地理测试04" papersubject="Geography" paperid="test04">
+	<question id="test04_01" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_03" type="select">
+		<text>C</text>
+	</question>
+	<question id="test04_04" type="select" >
+		<text>D</text>
+	</question>
+	<question id="test04_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="test04_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_07" type="select">
+		<text>A</text>
+	</question>
+
+	<question id="test04_08" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="test04_09" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_10" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test04_11" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_12" type="select">
+		<text>D</text>
+	</question>
+		<question id="test04_13" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_14" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_15" type="select">
+		<text>A</text>
+	</question>
+	<question id="test04_16" type="select" >
+		<text>A</text>
+	</question>
+	<question id="test04_17" type="select">
+		<text>A</text>
+	</question>
+	<question id="test04_18" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_19" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="test04_20" type="select" >
+		<text>A</text>
+	</question>
+	
+	<question id="test04_21" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test04_22" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test04_23" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test04_24" type="select">
+		<text>C</text>
+	</question>
+		<question id="test04_25" type="select">
+		<text>C</text>
+	</question>
+	<question id="test04_26" type="select">
+		<text>D</text>
+	</question>
+	<question id="test04_27" type="select">
+		<text>C</text>
+	</question>
+	<question id="test04_28" type="select" >
+		<text>B</text>
+	</question>
+	<question id="test04_29" type="select">
+		<text>C</text>
+	</question>
+	<question id="test04_30" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test04_31" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="test04_32" type="select" >
+		<text>C</text>
+	</question>
+	
+
+	
+	<question id="test04_33" type="shortanswer">
+		<text>
+		①纬度低（2分）地球自转线速度大（2分）节省燃料效益高（2分） ②海运便利（2分）可运输大型火箭（2分） ③邻近无人居住的海洋，安全性好（2分） ④文昌市原有基础设施条件好（2分）
+		</text>
+	</question>
+ 	<question id="test04_34_01" type="shortanswer">
+		<text>
+			向北（1分） 0°—23°26′N
+		</text>
+	</question>
+	 <question id="test04_34_02" type="fillblank" num="1" scoretype="all">
+		<text>0°</text>
+	</question>
+
+	<question id="test04_34_03" type="shortanswer">
+		<text>
+			正午太阳高度：先变大—最大—变小（3分） 昼夜长短：昼夜平分--昼逐渐长，夜逐渐短--昼最长夜最短（3分）
+		</text>
+	</question>
+	 <question id="test04_34_04" type="fillblank" num="1" scoretype="all">
+		<text>极昼范围由南极圈内向南逐渐减小至南极点</text>
+	</question>
+	<question id="test04_34_05" type="shortanswer">
+		<text>
+			图略 
+		</text>
+	</question>
+</paperanswer>
+

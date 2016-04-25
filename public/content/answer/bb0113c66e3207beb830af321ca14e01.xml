@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2012年普通高等学校招生全国统一考试数学（北京卷）" papersubject="Math" paperid="2012BeijingGaokao" info="数学攻关组第一次测试">
+    <question id="2012BeijingGaokao_01" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_02" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_03" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_04" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_05" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_07" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_08" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_09" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$2\sqrt{2}$</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_10" type="fillblank" num="2" scoretype="each">
+		<text format="latex">$a_{2}=1$</text>
+		<text format="latex">$S_{n}=\frac{1}{4}n^{2}+\frac{1}{4}n$</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_11" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$90^{\circ}$</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_12" type="fillblank" num="1" scoretype="all">
+		<text>2</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_13" type="fillblank" num="2" scoretype="each">
+		<text>1,1</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_14" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$(-4,0)$</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_15_01" type="shortanswer">
+	    <text format="latex">$f(x)=\frac{(\sin x-\cos x)\sin 2x}{\sin x}=\frac{(\sin x-\cos x)2\sin x\cos x}{\sin x}=2(\sin x-\cos x)\cos x=\sin 2x-1+\cos 2x=\sqrt{2}\sin(2x-\frac{\pi}{4})-1,\{x|x\neq k\pi ,k\in Z\}$原函数的定义域为$\{x|x\neq k\pi,k\in Z\}$,最小正周期为$\pi$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_15_02" type="shortanswer">
+	    <text format="latex">$f(x)=\frac{(\sin x-\cos x)\sin 2x}{\sin x}=\frac{(\sin x-\cos x)2\sin x\cos x}{\sin x}=2(\sin x-\cos x)\cos x=\sin 2x-1+\cos 2x=\sqrt{2}\sin(2x-\frac{\pi}{4})-1,\{x|x\neq k\pi ,k\in Z\}$原函数的单调递增区间为$[-\frac{\pi}{8}+k\pi ,k\pi)k\in Z,(k\pi ,\frac{3\pi}{8}+k\pi]k\in Z$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_16_01" type="shortanswer">
+	    <text format="latex">因为D,E分别为AC,AB的中点, 所以$DE\parallel BC$.又因为$DE\not\subset$平面$1ACB$,所以$DE\parallel 平面1ACB平面.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_16_02" type="shortanswer">
+	    <text format="latex">由已知得$AC\perp BC$且$DE\parallel BC$,所以$DE\perp AC$.所以$DE\perp A_{2}D,DE\perp CD$.所以$DE\perp 平面A_{1}DC$.而$A_{1}F\subset 平面A_{1}DC$,所以$DE\perp A_{1}F$.又因为$A_{1}F\perp CD$,所以$A_{1}F\perp 平面BCDE$.所以$A_{1}F\perp BE$. 
+        </text> 
+	</question>
+	
+	<question id="2012BeijingGaokao_16_03" type="shortanswer">
+	    <text format="latex,html"><Picread id="Pic16_1">线段$A_{1}B$上存在点Q,使$A_{1}C\perp 平面DEQ$.理由如下:如图</Picread>,分别取$A_{1}C,A_{1}B$的中点P,Q,则$PQ\parallel BC$.又因为$DE\parallel BC$.所以$DE\parallel PQ$.所以平面DEQ即为平面DEP.由$\uppercase\expandafter{\romannumeral2}$知,$DE\perp 平面A_{1}DC$,所以$DE\perp A_{1}C$.又因为P是等腰三角形$DA_{1}C$底边$A_{1}C$的中点,所以$A_{1}C\perp DP$.所以$A_{1}C\perp 平面DEP$.从而$A_{1}C\perp 平面DEQ$.故线段$A_{1}B$上存在点Q,使得$A_{1}C\perp 平面DEQ.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_17_01" type="shortanswer">
+	    <text format="latex">厨余垃圾投放正确的概率约为$\frac{\text{"厨余垃圾"箱里厨余垃圾量}}{\text{厨余垃圾总量}}=\frac{400}{400+100+100}=\frac{2}{3}$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_17_02" type="shortanswer">
+	    <text format="latex">设生化垃圾投放错误为事件A,则事件$\vec{A}$表示生活垃圾投放正确.事件$\vec{A}$的概率约为"厨余垃圾"箱里厨余垃圾量、"可回收物"箱里可回收物量与"其他垃圾"箱里其他垃圾量的总和除以生活垃圾总量,即$P(A)$约为$\frac{400+240+60}{1000}=0.7$,所以约为$1-0.7=0.3$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_17_03" type="shortanswer">
+	    <text format="latex">当$a=600,b=c=0$时,$s^2$取得最大值.因为$\vec{x}=\frac{1}{3}(a+b+c)=200$,所以$s^2=\frac{1}{3}[(600-200)^{2}+(0-200)^{2}+(0-200)^{2}]=80000$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_18_01`" type="shortanswer">
+	    <text format="latex">$f^{'}(x)=2ax,g^{'}(x)=3x^2+b$.因为曲线$y=f(x)$与曲线y=g(x)在它们的交点$(1,c)$处具有公共切线,所以$f(1)=g(1)$,且$f^{'}(1)=g^{'}(1)$.即$a+1=1+b$,且$2a=3+b$.解得$a=3,b=3$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_18_02`" type="shortanswer">
+	    <text format="latex,html"><Tabread id="tab18_1">记$h(x)=f(x)+g(x)$.当$a=3,b=-9$时.$h(x)=x^3+3x^2-9x+1,h^{'}(x)=3x^2+6x-9$.令$h^{'}(x)=0$,得$x_{1}=-3,x_{2}=1$.$h(x)与h^{'}(x)$在$(-\infty ,2]$上的情况如下:</Tabread>由此可知:当$k\leq -3$时,函数$h(x)$在区间$[k,2]$上的最大值为$h(-3)=28$;当$-3＜k＜2$时,函数$h(x)$在区间$[k,2]$上的最大值小于28.因此,k的取值范围是$(-\infty,-3]$.</text>
+	     <tab id="tab18_1">
+		    <row>
+			    <col>x</col>
+				<col>$(-\infty ,-3)$</col>
+				<col>-3</col>
+				<col>$(-3,1)$</col>
+				<col>1</col>
+				<col>$(1,2)$</col>
+				<col>2</col>
+			</row>     
+			<row>
+			    <col>$h^{'}(x)$</col>
+				<col>+</col>
+				<col>0</col>
+				<col>-</col>
+				<col>0</col>
+				<col>+</col>
+				<col></col>
+			</row>     
+			<row>
+			    <col>$h(x)$</col>
+				<col>Z</col>
+				<col>28</col>
+				<col>]</col>
+				<col>-4</col>
+				<col>Z</col>
+				<col>3</col>
+			</row> 
+        </tab>  			
+	</question>
+	
+	<question id="2012BeijingGaokao_19_01`" type="shortanswer">
+	    <text format="latex">由题意得
+		$$ \left\{
+                   \begin{aligned}
+                   a=2, \\
+                   c=\sqrt{2},\\
+				   a^2=b^2+c^2\\
+                   \end{aligned}
+                   \right.
+        $$
+		解得$b=\sqrt{2}$.所以椭圆C的方程为$\frac{x^2}{4}+\frac{y^2}{2}=1$.
+		</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_19_02`" type="shortanswer">
+	    <text format="latex">由
+		$$ \left\{
+                   \begin{aligned}
+                   y=k(x-1) \\
+                   \frac{x^2}{4}+\frac{y^2}{2}=1\\
+                   \end{aligned}
+                   \right.
+        $$
+	        得$(1+2k^2)x^2-4k^2x+2k^2-4=0$.设点M,N的坐标分别为$(x_{1},y_{1}),(x_{2},y_{2})$,则$y_{1}=k(x_{1}-1),y_{2}=k(x_{2}-1),x_{1}+x_{2}=\frac{4k^2}{1+2k^2},x_{1}x_{2}=\frac{2k^2-4}{1+2k^2}$.所以$|MN|=\sqrt{(x_{2}-x_{1})^2-(y_{2}-y_{1})^2}=\sqrt{(1+k^2)^2[(x_{1}+x_{2})^2-4x_{1}x_{2}]}=\frac{2\sqrt{(1+k^2)(4+6k^2)}}{1+2k^2}$,又因为点$A(2,0)$到直线$y=k(x-1)$的距离$d=\frac{|k|}{\sqrt{1+k^2}}$	
+             所以$\triangle AMN$的面积为$S=\frac{1}{2}|MN|.d=\frac{|k|\sqrt{4+6k^2}}{1+2k^2}$.由$\frac{|k|\sqrt{4+5k^2}}{1+2k^2}=\frac{\sqrt{10}}{3}$,解得$k=\pm 1$.			
+		</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_20_01`" type="shortanswer">
+	    <text format="latex">因为$r_{1}(A)=1.2,r_{2}(A)=-1.2,c_{1}(A)=1.1,c_{2}(A)=0.7,c_{3}(A)=-1.8$,所以$k(A)=0.7$.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_20_02`" type="shortanswer">
+	    <text format="latex">$r_{1}(A)=1-2d,r_{2}(A)=-1+2d,c_{1}(A)=c_{2}(A)=1+d,c_{3}(A)=-2-2d$.因为$-1\leq d\leq 0$,所以$|r_{1}(A)|=|r_{2}(A)|\geq 1+d\geq 0,|c_{3}(A)|\geq 1+d\geq 0$.所以$k(A)=1+d\leq 0$.当$d=0$时,$k(A)$取得最大值1.</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_20_03`" type="shortanswer">
+	    <text format="latex,html"><Tabread id="tab20_1">任给满足性质P的数表A</Tabread>(如下所示)任意改变A的行次序或列次序,或把A中的每个数换成它的相反数,所得数表$A^*$仍满足性质P,并且$k(A)=k(A^*)$.因此,不妨设$r_{1}(A)\leq 0,c_{1}(A)\leq 0,c_{2}(A)\leq 0$.由$k(A)$的定义知,$k(A)\leq r_{1}(A),k(A)\leq c_{1}(A),k(A)\leq c_{2}(A)$.从而$3k(A)\leq r_{1}(A)+c_{1}(A)+c_{2}(A)=(a+b+c)+(a+d)+(b+e)=(a+b+c+d+e+f)+(a+b-f)=a+b-f\leq 3$.所以$k(A)\leq 1$.由$(\uppercase\expandafter{\romannumeral2})$知,存在满足性质P的数表A使$k(A)=1$.故$k(A)$d的最大值为1.</text>
+	    <tab id="tab20_1">
+	        <row>
+	           <col>a</col> 
+			   <col>b</col> 
+			   <col>c</col>
+            </row>
+            <row>
+	           <col>d</col> 
+			   <col>e</col> 
+			   <col>f</col>
+            </row>
+        </tab> 			
+	</question>
+</paperanswer>	
+	
+	

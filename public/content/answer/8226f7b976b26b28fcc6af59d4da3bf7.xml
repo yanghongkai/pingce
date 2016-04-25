@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2014年普通高等学校招生全国统一考试数学（北京卷）" papersubject="Math" paperid="2014BeijingGaokao" info="数学攻关组第一次测试">
+    <question id="2014BeijingGaokao_01" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_02" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_03" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_04" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_05" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_06" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_07" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_08" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_09" type="fillblank" num="1" scoretype="all">
+		<text>2</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_10" type="fillblank" num="2" scoretype="each">
+		<text format="latex">$x^{2}-y^{2}=1$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_11" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$2\sqrt{2}$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_12" type="fillblank" num="1" scoretype="each">
+		<text>2</text>
+		<text format="latex">$\dfrac{\sqrt{15}}{8}$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_13" type="fillblank" num="2" scoretype="all">
+		<text>1</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_14" type="fillblank" num="1" scoretype="all">
+		<text>42</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_15_01" type="shortanswer">
+	    <text format="latex">
+		设等差数列$\left\lbrace a_{n}\right\rbrace$的公差为d，由题意得$d=\frac{a_{4}-a_{1}}{3}=\frac{12-3}{3}=3$
+        所以$a_{n}=a_{1}+(n-1)d=3n(n=1,2,\cdots)$ ．
+        设等比数列$\left\lbrace b_{n}-a_{n}\right\rbrace$的公比为q，由题意得
+        $q^{3}=\frac{b_{4}-a_{4}}{b_{1}-a_{1}}=\frac{20-12}{4-3}=8$，解得$q=2$
+        所以$b_{n}-a_{n}=(b_{1}-a_{1})q^{n-1}=2^{n-1}$．
+        从而$b_{n}=3n+2^{n-1}(n=1,2,\cdots)$
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_15_02" type="shortanswer">
+	    <text format="latex">
+		由⑴知$b_{n}=3n+2^{n-1}(n=1,2,\cdots)$$b_{n}=3n+2^{n-1}(n=1,2,\cdots)$．
+        数列$\left\lbrace3n\right\rbrace$的前n项和为$\frac{3}{2}n(n=1)+2^{n}-1$，数列$\left\lbrace2^{n-1}\right\rbrace$的前n项和为$1\times\frac{1-2^{n}}{1-2}=2^{n}-1$ ．
+        所以，数列$\left\lbraceb_{n}\right\rbrace$的前n项和为$\frac{3}{2}n(n+1)+2^{n}-1$．
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_16_01" type="shortanswer">
+	    <text format="latex">$f(x)$的最小正周期为π
+		$$x_{0}=\frac{7π}{6}$$
+		$$y_{0}=3$$
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_16_02" type="shortanswer">
+	    <text format="latex"> 因为$x\in\left[-\frac{π}{2},-\frac{π}{12}\right]$ ，所以$2x+\frac{π}{6}\in\left[-\frac{5π}{6},0\right]$ ．
+          于是当$2x+\frac{π}{6}=0$,即$x=-\frac{π}{12}$时，$f(x)$取得最大值0；
+          当$2x+\frac{π}{6}=-\frac{π}{2}$ ，即$x=-\frac{π}{3}时，$f(x)$取得最小值-3．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_01" type="shortanswer">
+	    <text format="latex">
+		在三棱柱ABC-$A_{1}B_{1}C_{1}$中，$BB_{1}\perp底面ABC$．
+        所以$BB_{1}\perpAB$．
+        又因为$AB\perpBC$．
+        所以$AB\perp平面B_{1}BCC_{1}$．
+        所以$平面ABE\perp平面B_{1}BCC_{1}$．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_02" type="shortanswer">
+	    <text format="latex">
+		取AB中点G，连结EG，FG．
+        因为E，F分别是$A_{1}C_{1}$，BC的中点，
+        所以$FG ，且 ．
+        因为 ，且 ，
+        所以 ，且 ．
+        所以四边形 为平行四边形．
+        所以 ．
+        又因为 平面 ， 平面 ，
+        所以 平面 ．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_03" type="shortanswer">
+	    <text format="latex">
+		因为 ， ， ，
+        所以 ．
+        所以三棱锥 的体积
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_01`" type="shortanswer">
+	    <text format="latex">
+		根据频数分布表，100名学生中课外阅读时间不少于12小时的学生共有$6+2+2=10$名，所以样本中的学生课外阅读时间少于12小时的频率是$1-\frac{10}{100}=0.9$．
+        从该校随机选取一名学生，估计其课外阅读时间少于12小时的概率为0.9．
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_02`" type="shortanswer">
+	    <text format="latex">
+		课外阅读时间落在组$\left[4,6\right]$的有17人，频率为0.17，所以
+		$$a=\frac{频率}{组距}=\frac{0.17}{2}=0.085$$
+        课外阅读时间落在组$\left[8,10\right]$的有25人，频率为0.25，
+        所以$b=\frac{频率}{组距}=\frac{0.25}{2}=0.125$．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_03`" type="shortanswer">
+	    <text>样本中的100名学生课外阅读时间的平均数在第4组.</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_19_01`" type="shortanswer">
+	    <text format="latex">
+		由题意，椭圆 的标准方程为 ．
+        所以 ， ，从而 ．
+        因此 ， ．
+        故椭圆 的离心率 ．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_19_02`" type="shortanswer">
+	    <text format="latex">
+		设点 ， 的坐标分别为 ， ，其中 ．
+        因为 ，
+        所以 
+        即 ，解得 ．
+        又 ，所以
+        因为 ，且当 时等号成立，所以 ．
+        故线段 长度的最小值为 ．
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_20_01`" type="shortanswer">
+	    <text format="latex">
+		由 得 .
+        令 ，得 或 .
+        因为 ， ，  
+        所以  在区间 上的最大值为  .
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_20_02`" type="shortanswer">
+	    <text format="latex">
+		设过点 的直线与曲线 相切于点  
+        则 且切线斜率为   
+        所以切线方程为  ，
+        因此  . 
+        整理得 .
+        设  
+        则“过点 存在3条直线与曲线 相切”等价于“ 有3个不同零点”.
+        与 的情况如下：
+        所以， 是 的极大值， 是 的极小值．
+        当 ，即 时，此时 在区间 和 上分别至多有1个零点，所以 至多有2个零点．
+        当 ，即 时，此时 在区间 和 上分别至多有1个零点，所以 至多有2个零点．
+        当 且 ，即 时，因为 ，所以  分别在区间 ， 和 上恰有 个零点.由于 在区间 和 上单调，所以 分别在区间 和 上恰有1个零点.
+        综上可知，当过点 存在 条直线与曲线 相切时， 的取值范围是  .
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_20_03`" type="shortanswer">
+	    <text format="latex">
+		过点A$\left(-1,2\right)$存在3条直线与曲线$y=f(x)$相切；
+        过点B$\left(2,10\right)$存在2条直线与曲线$y=f(x)$相切； 
+        过点C$\left(0,2\right)$存在1条直线与曲线$y=f(x)$相切.：
+        </text>
+	</question>
+	
+	

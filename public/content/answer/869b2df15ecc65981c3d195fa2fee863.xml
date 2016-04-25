@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="地理测试02" papersubject="Geography" paperid="test02">
+
+	<question id="test02_01" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_02" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_03" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="test02_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_06" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_07" type="select">
+		<text>A</text>
+	</question>
+
+	<question id="test02_08" type="select" >
+		<text>D</text>
+	</question>
+	
+	<question id="test02_09" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_10" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_11" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_12" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_13" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_14" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_15" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_16" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_17" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_18" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_19" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_20" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_21" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_22" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_23" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_24" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_25" type="select">
+		<text>A</text>
+	</question>
+	<question id="test02_26" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_27" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_28" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_29" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_30" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_31" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_32" type="select">
+		<text>A</text>
+	</question>
+	<question id="test02_33" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_34" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_35" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_36" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_37" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_38" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_39" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_40" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_41_01" type="fillblank" num="1" scoretype="all">
+		<text>北</text>
+	</question>
+	<question id="test02_41_02_01" type="fillblank" num="2" scoretype="all">
+		<text>B</text>
+		<text>温带海洋性气候</text>
+	</question>
+	<question id="test02_41_02_02" type="shortanswer">
+		<text>
+		盛行西风从海洋上带来丰富的暖湿气流；该地西侧受阿拉斯加暖流增温增湿作用的影响；位于迎风坡，受地形抬升影响，降水丰富。
+		</text>
+	</question>
+	<question id="test02_41_03" type="fillblank" num="2" scoretype="all">
+		<text>丙</text>
+		<text>分布在南北纬30°～40°的大陆西岸</text>
+	</question>
+	<question id="test02_41_04" type="shortanswer">
+		<text>
+		夏季炎热干燥，光照 热量充足，昼夜温差大，有利于农作物营养物质的积累，但降水少，需引水灌溉
+		</text>
+	</question>
+	<question id="test02_42_01" type="shortanswer">
+		<text>
+		流域内降水的季节变化小，五大湖的调节作用明显。①河段较 ②河段流速快、流量小，冰期短。
+		</text>
+	</question>
+	<question id="test02_42_02" type="shortanswer">
+		<text>
+		分布在湖的东、南岸。五大湖地区周围水汽充足，冬季多西风和西北风，冷空气经过湖面时，遇暖湿空气使其抬升，水汽凝结形成降雪，出现雪带。
+		</text>
+	</question>
+	<question id="test02_43_01" type="shortanswer">
+		<text>
+	  甲地降水量大于乙地；甲地气温高于乙地。甲沿岸有暖流经过；风由海洋吹向陆地 (地处迎风坡 )；且海拔比乙地低。 (或乙地沿岸有寒流经过；为离岸风；且海拔比甲地高。 )
+		</text>
+	</question>
+	<question id="test02_43_02" type="shortanswer">
+		<text>
+		 地形以高原为主；地势起伏和缓；海岸线较平直或沿海分布狭窄平原。
+		</text>
+	</question>
+	<question id="test02_43_03" type="shortanswer">
+		<text>
+		二片沼泽之间地势较高；沼泽的补给水源位于热带草原气候区；湿季时，水源补给量大，使沼泽水位上涨而聚合；干季时，水源补给量小且蒸发量大，导致沼泽水位下降而分离。
+		</text>
+	</question>
+	<question id="test02_44_01" type="shortanswer">
+		<text>
+		北半球；中高纬度；横贯大陆东西。
+		</text>
+	</question>
+  <question id="test02_44_02" type="fillblank" num="2" scoretype="all">
+		<text>大</text>
+		<text>水分</text>
+	</question>
+	<question id="test02_44_03" type="shortanswer">
+		<text>
+		减少了对二氧化碳的吸收，加剧全球气候变暖；生物多样性减少；森林的环境调节功能下降；水旱灾害频繁；水土流失加剧等。</text>
+	</question>
+</paperanswer>
+

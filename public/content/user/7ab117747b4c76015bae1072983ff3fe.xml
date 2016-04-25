@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="历史测试03" papersubject="History" paperid="test03">
+
+	<question id="test03_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_02" type="select">
+		<text>B</text>
+	</question>
+	<question id="test03_03" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_04" type="select" >
+		<text>B</text>
+	</question>
+	<question id="test03_05" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_06" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_07" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test03_08" type="select" >
+		<text>D</text>
+	</question>
+	
+	<question id="test03_09" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_10" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_11" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_12" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_13" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_14" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_15" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_16" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_17" type="select">
+		<text>B</text>
+	</question>
+	<question id="test03_18" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_19" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_20" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_21" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_22" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_23" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_24" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_25" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_26" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_27" type="select">
+		<text>A</text>
+	</question>
+	<question id="test03_28" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_29" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_30" type="select">
+		<text>D</text>
+	</question>
+	<question id="test03_31" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_32" type="select">
+		<text>B</text>
+	</question>
+	<question id="test03_33" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_34" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_35" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_36" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_37" type="select">
+		<text>D</text>
+	</question>
+	<question id="test03_38" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_39" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test03_40" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_41" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_42" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_43" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_44" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test03_45" type="select">
+		<text>C</text>
+	</question>
+	<question id="test03_46" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_47" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test03_48" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test03_49_01" type="shortanswer">
+		<text>
+		西周疆域辽阔，交通、通讯等技术条件落后；（2分）通过分封诸侯，建立藩屏拱卫王室，维护统治。（2分）
+		</text>
+	</question>
+	<question id="test03_49_02_01" type="shortanswer">
+		<text>
+		历史依据：春秋战国时期，王室衰微，诸侯争霸混战不休。
+		</text>
+	</question>
+	<question id="test03_49_02_02" type="shortanswer">
+		<text>
+		特点：中央垂直管理地方；郡县长官一概由皇帝任免，不得世袭。（4分）
+		</text>
+	</question>
+	<question id="test03_49_03" type="shortanswer">
+		<text>
+			角度：康有为：地方自治是强国之道，立国之本。（1分） 留日学生：地方自治是发展民族工商实业、增强经济实力的重要保证。（1分） 背景：19世纪末，中国民族危机严重；（1分）中国民族资本主义初步发展，民族资产阶级登上历史舞台，主张变法强国，实业救国。（2分）
+		</text>
+	</question>
+	<question id="test03_50_01_01" type="shortanswer">
+		<text>
+		贾谊观点：主张重农抑商；（1分）背景：秦末战乱频繁，社会经济破坏严重（或西汉初年社会经济凋敝）。（2分） 司马光观点：认为农业、工商业均是社会发展的需要和国家财富之源。（1分）背景：宋代社会商品经济的大发展。（2分）
+		</text>
+	</question>
+	<question id="test03_50_01_02" type="shortanswer">
+		<text>
+			原因：鸦片战争后，协定关税的规定使得外国人在华贸易有特权；受中国抑商政策的影响，清政府对中国商人征收重税。（4分） 影响：削弱了中国对民族经济的保护作用；冲击了中国传统落后的经济结构，使自给自足的自然经济开始解体。（4分） 
+		</text>
+	</question>
+	<question id="test03_50_02" type="shortanswer">
+		<text>
+			意义：突破了重农抑商的传统政策；有利于工商业的进一步发展；有利于维护中国的经济利益。（4分，每点2分，任意两点即可）。
+		</text>
+	</question>
+	<question id="test03_51_01_01" type="shortanswer">
+		<text>
+			规范社会道德，维护社会秩序。
+		</text>
+	</question>
+		<question id="test03_51_01_02" type="shortanswer">
+		<text>
+			官场黑暗，人心道德沦丧；知识分子醉心四书五经，忽视社会现实问题。
+		</text>
+	</question>
+		<question id="test03_51_02_01" type="shortanswer">
+		<text>
+			异：冯桂芬主张中学为主（本、体），西学为辅（末、用）；康有为主张中西融会，无分上下。同：学习西方先进文化。
+		</text>
+	</question>
+		<question id="test03_51_02_02" type="shortanswer">
+		<text>
+			民族危机、救亡图存是根本原因，国人对西方文化的先进之处有所认识，经世致用学风的潜移默化。（4分，任意两点即可）
+		</text>
+	</question>
+
+</paperanswer>
+

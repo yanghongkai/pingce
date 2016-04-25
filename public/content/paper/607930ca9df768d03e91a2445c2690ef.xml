@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="历史测试01" subject="History" id="test01" >
+	<section name="一、单选题（本大题共12小题，共24.0分）">
+		<questions>
+			<question id="test01_01" type="select">
+				<text>史学家吕思勉的《中国制度史》在论述“国体”时，把中国历史划分为三个时代：部落时代、封建时代、郡县时代。其中构成“封建时代”的主要制度是__</text>
+				<select multiple="false">
+					<option value="A">分封制和宗法制</option>
+					<option value="B">皇帝制度和中央集权</option>
+					<option value="C">三公九卿制</option>
+					<option value="D">三省六部制</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_02" type="select">
+				<text>宋朝中枢机构中“对持文武二柄，号为二府”的两个机构是__</text>
+				<select multiple="false">
+					<option value="A">中书门下和三司使</option>
+					<option value="B">中书门下和枢密院</option>
+					<option value="C">参知政事和枢密院</option>
+					<option value="D">枢密院和三司使</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>从明中叶至清末，中华文明与西方文明开始进行对话和交流，引发和加速了中华文明由传统农业文明向近代工业文明的转型。回答小(1)-(2)题。</text>
+			<question id="test01_03" type="select">
+				<text format="html">唐太宗说：“隋末无道，上下相蒙，主则骄矜，臣惟谄佞。上不闻过，下不尽忠，至使社稷倾危，身死匹夫之手。朕拨乱反正，志在安人，平乱任武臣，守成委文吏，庶得各展器能，以匡不逮。”这段材料说明唐朝统治者__
+					<lable id="03_1">吸取隋朝灭亡教训</lable>	
+					<lable id="03_2">重视人才的选拔任用</lable>
+					<lable id="03_3">鼓励群臣直言进谏</lable>	
+					<lable id="03_4">重文轻武以拨乱反正</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">②③④</option>
+					<option value="B">①③④</option>
+					<option value="C">①②④</option>
+					<option value="D">①②③</option>
+				</select>
+			</question>
+			<question id="test01_04" type="select">
+				<text format="html">1601年意大利传教士利玛窦到达北京时带来了望远镜和世界地图，并将《四书》译为拉丁文。随后又陆续有传教士东来，系统介绍物理学等自然科学知识．并把《五经》等典籍译为拉丁文。在他们的引导下，徐光启等士大夫开始研究和介绍西方科技。这说明__
+					<lable id="04_1">明末清初开始出现西学东渐</lable>	
+					<lable id="04_2">西方文化在明末清初有重要影响</lable>
+					<lable id="04_3">西方知识界渴望了解中国文化谏</lable>	
+					<lable id="04_4">传教士成为中西文化交流的桥梁</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③④</option>
+					<option value="B">②③④</option>
+					<option value="C">①③④</option>
+					<option value="D">②③</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_05" type="select">
+				<text>鸦片战争后，先进的中国人在向西方学习的过程中，由研究科学技术进而转向研究民主政治学说。下列言论能够反映这一转变的是__</text>
+				<select multiple="false">
+					<option value="A">“人人不受私，物物归上主”</option>
+					<option value="B">“采西学，制洋器”</option>
+					<option value="C">“夫自由之义，孔门已先倡之矣”</option>
+					<option value="D">“敢以帝制自卫者，天下共击之”</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_06" type="select">
+				<text>陕甘宁边区政府在一份文件中指出:“统一战线模范政府的各种政策，应当根据各阶级的共同利害出发，凡是只对一阶级有利，对另一阶级有害的便不能作为政策决定的根据。”材料中所说的政府应该是__</text>
+				<select multiple="false">
+					<option value="A">工农苏维埃政府</option>
+					<option value="B">人民民主专政政府</option>
+					<option value="C">国共联合政府</option>
+					<option value="D">“三三制”政府</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_07" type="select">
+				<text format="html">从清末立宪到新中国第一部宪法的颁布，中国的宪政建设经历了近半个世纪。下列关于中国宪政建设的表述，准确的一组是__
+					<lable id="07_1">《钦定宪法大纲》仿效日本近代宪法</lable>	
+					<lable id="07_2">《临时约法》体现了启蒙运动的精神</lable>
+					<lable id="07_3">《共同纲领》具备国家根本大法性质</lable>	
+					<lable id="07_4">1954年宪法标志社会主义经济制度确立</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">①③④</option>
+					<option value="C">①②④</option>
+					<option value="D">①②③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_08" type="select">
+				<text format="html"><Picread id="Pic08_1"></Picread>图反映的是从西周至新中国建立初期黄土高原森林覆盖率锐减，植被破坏严重的现象。造成这一变化的社会历史原因有__
+					<lable id="08_1">长期大规模农耕活动的影响</lable>	
+					<lable id="08_2">人口的增加导致土地过度开垦</lable>
+					<lable id="08_3">统治者大肆修建宫室陵苑</lable>	
+					<lable id="08_4">近代以来大规模的工业化建设</lable>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③</option>
+					<option value="B">①②④</option>
+					<option value="C">①③④</option>
+					<option value="D">②③④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_09" type="select">
+				<text>美国现今两党政治的格局初步形成于__</text>
+				<select multiple="false">
+					<option value="A">独立战争期间</option>
+					<option value="B">1787制宪会议期间</option>
+					<option value="C">工业革命期间</option>
+					<option value="D">垄断资本主义初期</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_10" type="select">
+				<text>20世纪30年代，美国修建田纳西水利工程，苏联修建第聂伯河水电站，两大水利工程在防洪、航运、发电等方面都发挥了巨大的作用。美苏两大水利工程得以建立的共同原因是__</text>
+				<select multiple="false">
+					<option value="A">国内拥有大量剩余物资</option>
+					<option value="B">国家投资进行工程建设</option>
+					<option value="C">拥有大量的剩余劳动力</option>
+					<option value="D">计划经济发挥重要作用</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_11" type="select">
+				<text>标志着第三世界国家作为独立的政治力量登上国际舞台的事件是__</text>
+				<select multiple="false">
+					<option value="A">亚非独立国家的万隆会议</option>
+					<option value="B">不结盟运动兴起</option>
+					<option value="C">美苏对峙的两极格局结束</option>
+					<option value="D">亚太经合组织建立</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="test01_12" type="select">
+				<text>20世纪，反映西方社会经济危机的现代主义艺术兴起。现代主义强调无意识和非理性，以及关于事件、空间、时间的不确定性，手法比较荒诞。其典型的代表作是__</text>
+				<select multiple="false">
+					<option value="A">《摩登时代》</option>
+					<option value="B">《人间喜剧》</option>
+					<option value="C">《日出•印象》</option>
+					<option value="D">《等待戈多》</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="二、综合题(本大题共3小题，共0.0分)">
+		<questions>
+			<headtext>发展是人类社会永恒的主题。回答以下问题。</headtext>
+			<text>不违农时，谷不可胜食也。数罟(指细密的渔网)不入洿池(深池，池塘)，鱼鳖不可胜食也。斧斤以时入山林，材木不可胜用也。谷与鱼鳖不可胜食，材木不可胜用……王道(安定富足的理想社会)之始也。 ——《孟子•梁惠王上》</text>
+			<question id="test01_13_01" type="shortanswer">
+				<text>阅读以上材料请回答，孟子这一主张是否有利于经济和社会的发展?为什么?</text>
+			</question>
+		</questions>
+		<questions>
+			<headtext>发展是人类社会永恒的主题。回答以下问题。</headtext>
+			<text format="html">社会契约思想的比较<Tabread id="Tab13_1"></Tabread></text>
+			<Tab id="Tab13_1">
+					<row>
+						<col>霍布斯</col>
+						<col>大家都放弃自己的全部权力并把它们转交给一个主权者利维坦（比喻强大的公共权力，即国家政权）。利维坦的权力是绝对的、至高无上且不受侵犯的。利维坦凌驾于其余所有社会成员之上</col>
+					</row>
+					<row>
+						<col>洛克</col>
+						<col>人们各自放弃其仲裁权并把它转交给一个中间人（指公共权力机关）；同时保留其性命、私有财产。中间人若侵犯其生命财产，人民有权推翻他。中间人同其余社会成员是一种契约关系。</col>
+					</row>
+			</Tab>
+			<question id="test01_13_02" type="shortanswer">
+				<text>结合材料分析，洛克对霍布斯的社会契约思想有哪些继承和发展?对西方的政治、经济发展有什么影响?</text>
+			</question>
+			<question id="test01_13_03" type="shortanswer">
+				<text>鸦片战争以后，西方资本主义列强打开中国大门，中国被卷入资本主义世界体系。试分析这种情况对中国社会经济发展造成什么破坏?客观上带来哪些机遇?</text>
+			</question>	
+		</questions>
+		<questions>
+			<headtext>发展是人类社会永恒的主题。回答以下问题。</headtext>
+			<text>党的十七大报告提出要深入贯彻落实科学发展观。科学发展观作为中国特色社会主义理论体系的重要组成部分，以丰富的思想内涵构建了第一要义是发展、核心是以人为本、基本要求是全面协调可持续、根本方法是统筹兼顾的科学理论。</text>	
+			<question id="test01_13_04" type="shortanswer">
+				<text format="html">结合建国以来，我国在社会主义建设中的经验和教训，完成下表。<Tabread id="Tab13_2"></Tabread></text>
+				<Tab id="Tab13_2">
+					<row>
+						<col>“大跃进”和人民公社化运动</col>
+						<col>__</col>
+						<col>单一公有制经济和高度集中的计划经济体制</col>
+					</row>
+					<row>
+						<col>改革开放</col>
+						<col>国民经济长期持续、稳定、协调发展</col>
+						<col>__</col>
+					</row>
+				</Tab>
+			</question>	
+		</questions>
+		<questions>
+			<text format="html">新中国成立后，中国与世界的交往日益密切，促进了社会的发展。改革开放以来，中国积极参与国际经济竞争，发展外向型经济，二次大战以后的世界经济体系对于中国经济的稳定与发展也产生了重要的影响。战后世界资本主义经济体系<Tabread id="Tab14_1"></Tabread></text>
+			<Tab id="Tab14_1">
+				<row>
+					<col>调整世界经济贸易和金融的三大支柱</col>
+					<col>
+						<row>①国际贸易基金组织</row>
+						<row>②国际复兴开发银行</row>
+						<row>③__</row>
+					</col>
+					<col>世界经济向体系化和制度化方向发展</col>
+				</row>
+			</Tab>
+			<question id="test01_14_01_01" type="fillblank">
+				<blank num="1" format="html">战后世界经济体系三大支柱中的③是__(请填写在答题纸上)。</blank>
+			</question>
+			<question id="test01_14_01_02" type="shortanswer">
+				<text>简要说明该组织的宗旨、作用以及后来的沿革。</text>
+			</question>
+		</questions>
+		<questions>
+			<title>阅读材料，结合相关学科知识，回答以下问题。</title>
+			<text>中国的经济体制改革，首先是从农村起步的。这一方面是由于中国农村一直是计划经济体系中最薄弱的环节，因而也是商品交换市场最容易繁荣的领域；另一方面，中国农民在传统计划经济体制下，经济与社会地位最低下，因而也最具有改革的热情。家庭联产承包责任制作为中国农村现阶段的主要经营组织形式，是同我国大部分地区的农业技术水平和农业生产资料的发展状况相适应的。……采取家庭承包的小规模经营方式，调动农民个人及其家庭成员的生产积极性和主动性，使他们从自身经济利益出发，关心生产的全部过程，重视质量，讲求实效，节约开支。它克服了传统体制下平均主义分配方式。 ——王询 于秋华《中国近现代经济史》</text>
+			<question id="test01_15_01" type="shortanswer">
+				<text>依据材料分析，改革开放时期农村实行家庭联产承包责任制的条件。这一经营形式对农业生产发展产生什么影响？</text>
+			</question>	
+	    </questions>
+	</section>
+</paper>	
