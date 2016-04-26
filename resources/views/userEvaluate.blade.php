@@ -28,11 +28,13 @@
 					<td>主观分</td>
 					<td>客观分</td>
 					<td>总得分</td>
-
 					<td>阅卷人</td>
+					<td><a href="#">我的试卷</a></td>
+					<!--
 					<td><a href="#">试题</a></td>
 					<td><a href="#">我的答案</a></td>
 					<td><a href="#">参考答案</a></td>
+					-->
 				</tr>
 				<?php
 
@@ -49,9 +51,12 @@
 						<td>{{$arr_grade[$i]}}</td>
 
 						<td>{{$arr_scorers[$i]}}</td>
+						<!--
 						<td><a href=" ./downloadByPath?path={{$arr_paper_con[$i]}} ">试题</a></td>
 						<td><a href=" ./downloadByPath?path={{$arr_user_ans[$i]}} ">我的答案</a></td>
 						<td><a href=" ./downloadByPath?path={{$arr_paper_ans[$i]}} ">参考答案</a></td>
+						-->
+						<td><a href=" ./stuPaper/{{$arr_scorer_paper_id[$i]}} ">我的试卷</a></td>
 					</tr>
 				<?php
 					}

@@ -21,34 +21,36 @@
 
 	<!--右侧试卷编辑-->
 	<div class="user_form">
+	
 	<div class="pro_title"><a href="{{ url('/userManage')}}">试卷管理</a>
 	&nbsp;>&nbsp;
-		<a href="{{ url('/paperNew')}}">新建试卷</a></div>
-		<form id="pro_content_form" method="post" action="{{ url('/paperNew')}}" class="pro_content">
+		<a href="../paperEdit/{{$paper->id}}">试卷编辑</a></div>
+		@if(count($paper)>0)
+		<form id="paper_edit_form" method="post" action="{{ url('/paperEditTrue')}}" class="pro_content">
 			 {{ csrf_field() }}
-
+			 <input type="hidden" name="id" value="{{$paper->id}}" />
 			<ul class="pro_mainform">
 				<li>
 					<div class="pro_left">试卷名*</div>
 					<div class="pro_table">
-						<input title="试卷名" type="text" name="paperName" id="paperName" value="{{old('paperName')}} ">
+						<input title="试卷名" type="text" name="paperName" id="paperName" value="{{$paper->name}} ">
 						</input>
 					</div>
 				</li>
 				<li>
 					<div class="pro_left">详细介绍</div>
 					<div class="pro_blank">
-						<textarea name="introduction" id="text" value='{{ old('introduction')}}'></textarea>
+						<textarea name="introduction" id="text" >{{$paper->introduction}}</textarea>
 					</div>
 				</li>
 			<li>
 				<div class="pro_left">试题文件</div>
 				
 				<div class="pro_file">
-					<input type="text" id="fileField1" readonly="readonly"></input>
+					<input type="text" id="fileField1" readonly="readonly" value="{{$paper->content}}"></input>
 					
 					<a>上传
-					<input type="file" name="uploadPaper" id="upload_paper" class="file" onchange="document.getElementById('fileField1').value=this.value"></input></a>
+					<input type="file" name="uploadPaper" id="upload_paper_edit" class="file" onchange="document.getElementById('fileField1').value=this.value"></input></a>
 					<!--<input type="file" name="uploadPaper" id="upload_paper" >-->
 				</div>
 				
@@ -56,53 +58,33 @@
 			<li>
 				<div class="pro_left">答案文件</div>
 				<div class="pro_file">
-					<input type="text" id="fileField2" readonly="readonly"></input>
+					<!--<input type="text" id="fileField2" readonly="readonly" value="{{$paper->answer}}"></input>-->
+					<input type="text" id="fileField2" readonly="readonly" value="{{$paper->answer}}"></input>
 					
 					<a>上传
-					<input type="file" name="uploadAnswer" id="upload_answer" class="file" onchange="document.getElementById('fileField2').value=this.value"></input></a>
+					<input type="file" name="uploadAnswer" id="upload_answer_edit" class="file" onchange="document.getElementById('fileField2').value=this.value"></input></a>
 					<!--<input type="file" name="uploadAnswer" id='upload_answer'  >-->
 				</div>
 			</li>
-			<!--<li>
-				<div class="pro_left">是否发布</div>
-				<div class="pro_radio">
-					<input type="radio" name="publish" value="published">
-					<label for="published">发布</label>
-					<input type="radio" name="publish" value="unpublished">
-					<label for="unpublished">暂不发布</label>
-				</div>
-			</li>-->
+			
 			<li>
 				<div class="pro_left">试卷科目</div>
-				
-				<div class="pro_radio">
-					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="subject" value="chinese">
-						<span class="sub_radioInput"></span>语文
-					</label>
-					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="subject" value="math">
-						<span class="sub_radioInput"></span>数学
-					</label>
-					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="subject" value="geography">
-						<span class="sub_radioInput"></span>地理
-					</label>
-					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="subject" value="history">
-						<span class="sub_radioInput"></span>历史
-					</label>
+				<div class="pro_table">
+						<input title="试卷名" type="text" name="paperSub" id="paperSub" placeholder="地理" readonly="readonly" value="{{$paper->category}}">
+						</input>
 				</div>
+				
  			</li>
 
 
 			<li>
 				<div class="proBut">
-					<input type="button" id="button_submit" name="save" value="保存"></input>
+					<input type="button" id="button_submit_edit" name="save" value="保存"></input>
 				</div>
 			</li>
 			</ul>
 		</form>
+		@endif
 	</div>
 	<!--试卷编辑结束-->
 </div>
@@ -110,36 +92,36 @@
 
 <script type="text/javascript">
 	$(function(){
-		var paper_options={
-			url: "{{ url('/uploadPaper')}}",
+		var paper_edit_options={
+			url: "{{ url('/uploadPaperEdt')}}",
 			type: 'POST',
 			dataType: 'json',//返回的数据类型
 			success: showResponse,
 		};
-		$('#pro_content_form input[name=uploadPaper]').on('change',function(){
-			$('#pro_content_form').ajaxForm(paper_options).submit();
+		$('#paper_edit_form #upload_paper_edit').on('change',function(){
+			$('#paper_edit_form').ajaxForm(paper_edit_options).submit();
 		});
 
-		var paper_answer={
-			url: "{{ url('/uploadAnswer')}}",
+		var paper_answer_edit={
+			url: "{{ url('/uploadAnswerEdt')}}",
 			type: 'POST',
 			dataType: 'json',//返回的数据类型
 			success: showResponse,
 			
 		};
-		$('#pro_content_form input[name=uploadAnswer]').on('change',function(){
-			$('#pro_content_form').ajaxForm(paper_answer).submit();
+		$('#paper_edit_form #upload_answer_edit').on('change',function(){
+			$('#paper_edit_form').ajaxForm(paper_answer_edit).submit();
 		});
 
 		var submit_options={
-			url: "{{ url('/paperNew')}}",
+			url: "{{ url('/paperEditTrue')}}",
 			type: 'POST',
 			dataType: 'json',//返回的数据类型
 			success: showResponseSubmit,
 		};
 
-		$('#pro_content_form #button_submit').on('click',function(){
-			$('#pro_content_form').ajaxForm(submit_options).submit();
+		$('#paper_edit_form #button_submit_edit').on('click',function(){
+			$('#paper_edit_form').ajaxForm(submit_options).submit();
 		});
 
 

@@ -96,6 +96,19 @@ table{
 	color: #B44242;
 }
 
+.user_form_item button{
+	border: none;
+	background: none repeat scroll 0% 0% #fff;
+	color:#888;
+	font-size: 14px;
+	margin-left: 3px;
+}
+
+.user_form_item button:hover{
+	cursor: pointer;
+	color: #B44242;
+}
+
 /*个人资料（用户信息）*/
 .pro_title{
 	color: #B44242;
@@ -206,7 +219,7 @@ table{
 
 .pro_text{
 	font-size: 16px;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 	padding: 5px 5px;
 	margin: 5px 10px;
 	color: #7b7b7b;
@@ -284,10 +297,11 @@ textarea{
 
 /*试题发布页*/
 .pro_radio{
-	float: left;
+	/*float: left;*/
 	/*margin-left: -160px;*/
 	/*margin-top: -35px;*/
 	margin: 5px 10px;
+	text-align: left;
 }
 
 .sub_label{

@@ -3,7 +3,7 @@
 	box-shadow: 0 2px 3px #bdbdbd;
 	border-top: 1px solid #B44242;
 	background-color: #fff;
-	margin:32px auto 50px;
+	margin:15px auto 50px;
 	width: 1000px;
 	padding: 15px 5px;
 	position: relative;
@@ -44,10 +44,12 @@
 	margin-bottom: 3px;
 }
 
+
+
 .question{
 	color:#333333;
 	font-size: 14px;
-	margin:0 15px;
+	margin:10px 15px 50px 15px;
 }
 
 .question span{
@@ -206,4 +208,61 @@
 	color: #B44242;
 	margin-left: 30px;
 	margin-top: 10px;
+}
+
+#queText{
+	border:1px solid #999999;
+	border-radius: 3px;
+	/*float: left;*/
+	/* padding: 3px;*/
+	font-size: 14px;
+	/*overflow: auto;*/
+	padding: 5px 5px;
+	margin: 5px 5px;
+	width: 830px;
+	height: 50px;
+	resize: none;
+	/*float: left;*/
+}
+
+/*学生卷面查看*/
+.navBar{
+	margin: -5px auto;
+	position: relative;
+	width: 1000px;
+	font-size: 13px;
+}
+
+.backEva a{
+	color: #acacac;
+	float: right;
+	font-size: 14px;
+	margin-right: 30px;
+	margin-top: -10px;
+}
+
+.backEva a:hover{
+	color: #B44242;
+}
+
+.sourceDnld{
+	margin: 25px 20px;
+	/*padding: 10px auto;*/
+}
+
+.dnldName{
+	font-size: 18px;
+	color: #B44242;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.sourceDnld p{
+	/*text-decoration: underline;*/
+	font-size: 14px;
+	margin: 6px 10px;
+}
+
+.sourceDnld a:hover{
+	color: #B44242;
 }

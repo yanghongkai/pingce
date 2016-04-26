@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="数学测试01" subject="Math" id="test01" >
+	<section name="一、选择题（本大题共8小题,共40分）" score="40" >
+		<questions score="40">
+			<question id="test01_01" score="5" type="select">
+				<text format="latex">$\sin 600^{\circ}$的值为__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$\frac{\sqrt[2]{3}}{2}$</option>
+					<option value="B">$\frac{\sqrt[2]{-3}}{2}$</option>
+					<option value="C">$\frac{-1}{2}$</option>
+					<option value="D">$\frac{1}{2}$</option>
+				</select>
+			</question>
+			<question id="test01_02" score="5" type="select">
+				<text format="latex">若$a=(\frac{1}{2})^0.1$,$b=0.3^-2$,$c=\log_{\frac{1}{2}}2$,则a,b,c的大小关系为__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$a＞b＞c$</option>
+					<option value="B">$a＞c＞b$</option>
+					<option value="C">$c＜b＞c$</option>
+					<option value="D">$b＞a＞c$</option>
+				</select>
+			</question>
+			<question id="test01_03" score="5" type="select">
+				<text format="html"><Picread id="Pic3_1">一个空间几何体的三视图如图所示</Picread>,则该几何体的体积为__</text>
+				<select multiple="false">
+					<option value="A">12</option>
+					<option value="B">6</option>
+					<option value="C">4</option>
+					<option value="D">2</option>
+				</select>
+			</question>
+			<question id="test01_04" score="5" type="select">
+				<text format="html,latex"><Picread id="Pic4_1">如图</Picread>,半径为2的⊙O中$\angle AOB=90^{\circ}$,D为OB的中点,AD的延长线交⊙O于点E,则线段DE的长为__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$\frac{\sqrt[2]{5}}{2}$</option>
+					<option value="B">$\frac{2\sqrt[2]{5}}{2}$</option>
+					<option value="C">$\frac{3\sqrt[2]{5}}{5}$</option>
+					<option value="D">$\frac{\sqrt[2]{3}}{2}$</option>
+				</select>
+			</question>
+			<question id="test01_05" score="5" type="select">
+				<text format="latex">已知各项均不为零的数列$\{a_{n}\}$,定义向量$c_{n}=(a_{n},a_{n+1})$,$b_{n}=(n,n+1)$,$n\in N^*$,下列命题中真命题是__</text>
+				<select multiple="false" format="latex">
+					<option value="A">若$\forall n\in N^*$总有$c_{n}\parallel b_{n}$成立,数列$\{a_{n}\}$是等差数列</option>
+					<option value="B">若$\forall n\in N^*$总有$c_{n}\parallel b_{n}$成立,数列$\{a_{n}\}$是等比数列</option>
+					<option value="C">若$\forall n\in N^*$总有$c_{n}\perb b_{n}$成立,数列$\{a_{n}\}$是等差数列</option>
+					<option value="D">若$\forall n\in N^*$总有$c_{n}\perb b_{n}$成立,数列$\{a_{n}\}$是等比数列</option>
+				</select>
+			</question>
+			<question id="test01_06" score="5" type="select">
+				<text>由数字0,1,2,3,4,5组成的奇偶数字相间且无重复数字的六位数的个数是__</text>
+				<select multiple="false">
+					<option value="A">72</option>
+					<option value="B">60</option>
+					<option value="C">48</option>
+					<option value="D">12</option>
+				</select>
+			</question>
+			<question id="test01_07" score="5" type="select">
+				<text format="latex"> 已知椭圆$E:\frac{x^2}{m}+\frac{y^2}{4}=1$,对于任意实数 k,下列直线被椭圆E截得的弦长与$l:y=kx+1$被椭圆E截得的弦长不可能相等的是__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$kx+y+k=0$</option>
+					<option value="B">$kx-y-1=0$</option>
+					<option value="C">$kx+y-k=0$</option>
+					<option value="D">$kx+y-2=0$</option>
+				</select>
+			</question>
+			<question id="test01_08" score="5" type="select">
+				<text format="latex,html"><Picread id="Pic08_1">如图所示</Picread>在正方体$ABCD-A_{1}B_{1}C_{1}D_{1}$中,E是棱$DD_{1}$的中点,F是侧面$CDD_{1}C_{1}$上的动点,且$B_{1}F\parallel A_{1}BE$,则$B_{1}F$与平面$CDD_{1}C_{1}$所成角的正切值构成的集合是__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$\{2\}$</option>
+					<option value="B">$\{\frac{2\sqrt[2]{5}}{5}\}$</option>
+					<option value="C">$\{t|2\leq t\leq 2\sqrt[2]{2}\}$</option>
+					<option value="D">$\{t|\frac{2\sqrt[2]{5}}{5}\leq t\leq 2\}$</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="第二题,填空题(共30分)" score="30" >
+		<questions score="30">
+			<question id="test01_09" type="fillblank">
+				<blank num="2" format="latex">圆C的极坐标方程$\rho=2\cos \theta$化为直角坐标方程为______,圆心的直角坐标为______.</blank>
+			</question>
+			<question id="test01_10" type="fillblank">
+				<blank num="1" format="latex,html"> 某部门计划对某路段进行限速,为调查限速60km/h是否合理,对通过该路段的300辆汽车的车速进行检测,将所得数据按$[40,50)$,$[50,60)$,$[60,70)$,$[70,80]$分组,<Picread id="Pic10_1">绘制成如图所示的频率分布直方图</Picread>．则这300辆汽车中车速低于限速的汽车有______辆.</blank>
+			</question>
+			<question id="test01_11" type="fillblank">
+				<blank num="1" format="html"><Picread id="Pic11_1">某程序的框图如图所示</Picread>,若使输出的结果不大于37,则输入的整数i的最大值为______.</blank>
+			</question>
+			<question id="test01_12" type="fillblank">
+				<blank num="1" format="latex,html"><Picread id="Pic12_1">如图</Picread>,已知$|AB|=10$,图中的一系列圆是圆心分别为 A,B的两组同心圆,每组同心圆的半径分别是1,2,3,$\ldots$,n,$\ldots$,利用这两组同心圆可以画出以 A,B为焦点的双曲线,若其中经过点 M,N,P的双曲线的离心率分别记为$e_{M}$,$e_{N}$,$e_{P}$,则它们的大小关系是______（用“＜”连接）.</blank>
+			</question>
+			<question id="test01_13" type="fillblank">
+				<blank num="1" format="latex,html">已知函数$f(x)=\sin x-\frac{x}{3}$,$x\in [0,\pi]$,$\cos x_{0}=\frac{1}{3}(x_{0}\in [0,\pi])$那么下面命题中真命题的序号是______.</blank>
+				<label id="13_1">$f(x)$的最大值为$f(x_{0})$</label>	
+				<label id="13_2">$f(x)$的最小值为$f(x_{0})$</label>
+				<label id="13_1">$f(x)$在$[0,x_{0}]$上是减函数</label>	
+				<label id="13_2">$f(x)$在$[x_{0},\pi]$上是减函数</label>	
+			</question>
+			<question id="test01_14" type="fillblank">
+				<blank num="2" format="latex">在平面直角坐标系xOy中,O为坐标原点.定义P$(x_{1},y_{1})$,Q$(x_{2},y_{2})$两点之间的“直角距离”为d$(P,Q)=|x_{1}-x_{2}|+|y_{1}-y_{2}|$.若点A$(-1,3)$,则d$(A,O)$=______；已知点B$(1,0)$,点M是直线$kx-y+3=0(k＞0)$上的动点,d$(B,M)$上的最小值______.</blank>
+			</question>
+		</questions>
+	</section>
+	<section name="第三题,解答题(共80分)" score="80" >
+		<questions>
+			<text format="latex">设函数$f(x)=\cos x(2x-\frac{\pi}{3})-\cos 2x$,$x\in R$.</text>
+			<question id="test01_15_01" type="shortanswer">
+				<text format="latex">求$f(x)$在$(0,\frac{\pi}{2})$上的值域；</text>
+			</question>	
+			<question id="test01_15_02" type="shortanswer">
+				<text format="latex">记$\triangle ABC$的内角A, B, C的对边分别为 a, b, c,若$f(A)=1$,$b=\sqrt[2]{7}$,$b=3$,求c的值.</text>
+			</question>
+		</questions>
+		<questions>
+			<text format="latex">某班将要举行篮球投篮比赛,比赛规则是：每位选手可以选择在A区投篮2次或选择在B区投篮3次．在A区每进一球得2分,不进球得0分；在B区每进一球得3分,不进球得0分,得分高的选手胜出．已知参赛选手甲在A区和B区每次投篮进球的概率分别为$\frac{9}{10}$和$\frac{1}{3}$.</text>
+			<question id="test01_16_01" type="shortanswer">
+				<text>如果选手甲以在 A、B区投篮得分的期望较高者为选择投篮区的标准,问选手甲应该选择在哪个区投篮？</text>
+			</question>	
+			<question id="test01_16_02" type="shortanswer">
+				<text> 求选手甲在A区投篮得分高于在B区投篮得分的概率．</text>
+			</question>
+		</questions>
+		<questions>
+			<text format="latex,html"><Picread id="Pic17_1">如图</Picread>,棱柱ABCD-$A_{1}B_{1}C_{1}D_{1}$的所有棱长都为2,$AC\cap BD=O$,侧棱A$A_{1}$与底面ABCD所成的角为$60^{\circ}$,$A_{1}O\perp ABCD$,F为$DC_{1}$的中点.</text>
+			<question id="test01_17_01" type="shortanswer">
+				<text format="latex">证明：$BD\perp AA_{1}$；</text>
+			</question>	
+			<question id="test01_17_02" type="shortanswer">
+				<text format="latex">证明：$OF\parallel BCB_{1}C{1}$；</text>
+			</question>
+			<question id="test01_17_03" type="shortanswer">
+				<text format="latex">求二面角$D-AA_{1}-C$的值.</text>
+			</question>			
+		</questions>
+		<questions>
+			<text format="latex">已知函数$f(x)=\ln(x+1)-ax+\frac{1-a}{x+1}(a\geq \frac{1}{2})$.</text>
+			<question id="test01_18_01" type="shortanswer">
+				<text format="latex">当曲线$y=f(x)$在点$(1,f(1))$处的切线与直线l；$y=-2x+1$平行时,求a的值；</text>
+			</question>	
+			<question id="test01_18_02" type="shortanswer">
+				<text format="latex">求$f(x)$的单调区间.</text>
+			</question>		
+		</questions>
+		<questions>
+			<text format="latex">已知点$M(1,y)$在抛物线C：$y^2=2px(p＞0)$上,M点到抛物线C的焦点F的距离为2直线l：$y=\frac{-1}{2}+b$与抛物线C交于A,B两点. </text>
+			<question id="test01_19_01" type="shortanswer">
+				<text> 求抛物线C的方程</text>
+			</question>	
+			<question id="test01_19_02" type="shortanswer">
+				<text> 若以AB为直径的圆与x轴相切,求该圆的方程</text>
+			</question>
+            <question id="test01_19_03" type="shortanswer">
+				<text format="latex">若直线l与y轴负半轴相交,求$\triangle AOB$面积的最大值.</text>
+			</question>				
+		</questions>
+		<questions>
+				<questions>
+			<headtext format="latex">已知集合$A=\{1,2,3,\ldots,2n\}(n\in N^*)$对于A的一个子集S,若存在不大于n的正整数m,使得对S中的任意一对元素$s_{1}$,$s_{2}$,都有$|s_{1}-s{2}|\neq m$,则称S具有性质P.</headtext>
+			<question id="test01_20_01" type="shortanswer">
+				<text format="latex">当$n=10$时,试判断集合$B=\{x\in A|x＞9\}$和$C=\{x\in A|x=3k-1,k\in N^*|\}$是否具有性质P？并说明理由；</text>
+			</question>	
+		</questions>	
+		<questions>
+			<headtext format="latex">已知集合$A=\{1,2,3,\ldots,2n\(n\in N^*)\}$对于A的一个子集S,若存在不大于n的正整数m,使得对S中的任意一对元素$s_{1}$,$s_{2}$,都有$|s_{1}-s{2}|\neq m$,则称S具有性质P.</headtext>
+			    <text format="latex">当$n=2000$时,</text>
+                <question id="test01_20_02_01" type="shortanswer">
+				   <text format="latex">若集合S具有性质P,那么集合$T=\{2001-x|x\in S\}$是否一定具有性质P？并说明理由；</text>
+			    </question>	
+			    <question id="test01_20_02_02" type="shortanswer">
+			       <text format="latex">若集合S具有性质P,求集合S中元素个数的最大值．</text>
+			    </question>
+		</questions>	
+		</questions>
+	</section>
+</paper>

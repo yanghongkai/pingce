@@ -45,9 +45,14 @@
 					<form action="./newsDelete/{{$news_item->id}}" method="POST">
 					{{ csrf_field() }}
 					<td><button type="submit">删除</button></td></form>
+					<!--
 					<form action="./newsTop/{{$news_item->id}}" method="POST">
 					{{ csrf_field() }}
 					<td><button type="submit">置顶</button></td></form>
+					-->
+					<form action="./newsEdit/{{$news_item->id}}" method="POST">
+					{{ csrf_field() }}
+					<td><button type="submit">编辑</button></td></form>
 					
 					<!-- <td><a href="paperEdit.html">编辑</a></td> -->
 				</tr>

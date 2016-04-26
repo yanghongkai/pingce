@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="历史测试02" papersubject="History" paperid="test02">
+
+	<question id="test02_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_04" type="select" >
+		<text>A</text>
+	</question>
+	<question id="test02_05" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_06" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_07" type="select">
+		<text>C</text>
+	</question>
+
+	<question id="test02_08" type="select" >
+		<text>D</text>
+	</question>
+	
+	<question id="test02_09" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_10" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_11" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_12" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_13" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_14" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_15" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_16" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_17" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_18" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_19" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_20" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_21" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_22" type="select">
+		<text>A</text>
+	</question>
+	<question id="test02_23" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_24" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_25" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_26" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_27" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_28" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_29" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_30" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_31" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_32" type="select">
+		<text>A</text>
+	</question>
+	<question id="test02_33" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_34" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_35" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_36" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_37" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_38" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="test02_39" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_40" type="select">
+		<text>B</text>
+	</question>
+	<question id="test02_41" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_42" type="select">
+		<text>D</text>
+	</question>
+	<question id="test02_43" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_44" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_45" type="select">
+		<text>C</text>
+	</question>
+	<question id="test02_46" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_47" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_48" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_49_01" type="shortanswer">
+		<text>
+		专制君主制确立（或取代等级君主制）；中央集权制（郡县制）取代分封制；职业官僚制取代世卿世禄制。
+		</text>
+	</question>
+	<question id="test02_49_02" type="shortanswer">
+		<text>
+		“自强运动”初期主要表现：洋务运动。失败原因：单纯引起西方技术而不改变中国传统的政治制度。（4分）
+		新特点：学习西方政治制度。（2分）
+		史实：戊戌变法：提倡学习君主立宪制；清廷“预备立宪”：颁布宪法，设内阁，仿行 宪政。辛亥革命：推翻帝制，建立民主共和国。（6分）</text>
+	</question>
+	<question id="test02_50_01_01" type="shortanswer">
+		<text>
+		实行货币官铸、盐铁酒专卖(将最有利可图的煮盐、冶铁、铸钱等行业收归官办)、官营贩运，对工商业者征收重税等。（4分）
+		</text>
+	</question>
+	<question id="test02_50_01_02" type="shortanswer">
+		<text>
+		特点：手工业区域分工明显；品种多，技术水平高 ；部分民营手工业水平超过官营；并出现资本主义萌芽。（4分）
+	  影响：手工业发展带动了农产品商品化程度提高；促进了国内外贸易发展；有利于白银流入中国，成为普遍流通的货币；促进了工商业城市的发展；冲击贱商传统，带动了思想观念及社会风气的变化。（四点即可得4分）</text>
+	</question>
+	<question id="test02_50_02" type="shortanswer">
+		<text>
+		总税额大幅度上升。农业税比重大为缩小；工商杂税收入税额持续、大幅度上升，取代了农业税成为清政府收入的最主要来源，并带动总收入大幅度上升。（3分）
+	  原因：中国被卷入资本主义世界市场，中外贸易发展，关税增加；洋务企业和民族资本主义企业出现并发展，带动工商杂税大幅度上升。（3分）
+		</text>
+	</question>
+	<question id="test02_51_01" type="shortanswer">
+		<text>
+		发展：董仲舒吸收法家和阴阳五行家的思想，宣扬 “天人感应”、德刑并用。判断：观点依据《春秋》；主张德为主，强调君主要实行德政。
+		</text>
+	</question>
+	<question id="test02_51_02_01" type="shortanswer">
+		<text>
+		特点：增加了儒学的哲学思辨色彩，认为天理是宇宙万物本原；把天理和伦理道德直接联系起来；糅合了佛道思想。</text>
+	</question>
+	<question id="test02_51_02_02" type="shortanswer">
+		<text>
+		甲午战争前后，中国面临亡国亡种的危机。面对民族危亡，先进人士顺应时代要求，呼吁维新变法。康有为宣称孔子是主张改革的先师，实际上是借助孔子，宣传维新变法的必要性、合理性。</text>
+	</question>
+	
+</paperanswer>
+
