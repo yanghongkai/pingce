@@ -35,6 +35,7 @@ Route::get('/manageNews','DirectAccessController@manageNews');
 //新建新闻
 Route::get('/newsNew','DirectAccessController@newsNew');
 
+
 //用户管理
 Route::get('/manageUser','DirectAccessController@manageUser');
 //新建用户
@@ -46,10 +47,18 @@ Route::get('/resourceNew','DirectAccessController@resourceNew');
 
 //post 新建新闻
 Route::post('/newsNew','DirectAccessController@postNewsNew');
+//编辑新闻
+Route::post('/newsEditTrue','DirectAccessController@postNewsEditTrue');
 //删除新闻
 Route::post('/newsDelete/{id}','DirectAccessController@newsDelete');
 //置顶新闻
 Route::post('/newsTop/{id}','DirectAccessController@newsTop');
+//编辑新闻
+Route::post('/newsEdit/{id}','DirectAccessController@newsEdit');
+Route::get('/newsEdit/{id}','DirectAccessController@newsEdit');
+//编辑试卷
+Route::post('/paperEdit/{id}','DirectAccessController@paperEdit');
+Route::get('/paperEdit/{id}','DirectAccessController@paperEdit');
 //新建资源
 Route::post('/resourceNew','PaperController@postResourceNew');
 //新建用户
@@ -59,6 +68,8 @@ Route::post('/resDelete/{id}','DirectAccessController@resDelete');
 //修改用户密码
 Route::get('/pwdEdit/{id}','DirectAccessController@pwdEdit');
 Route::post('/pwdEdit','DirectAccessController@postPwdEdit');
+//试卷详情
+Route::get('/stuPaper/{id}','DirectAccessController@stuPaper');
 
 
 //修改个人资料
@@ -70,10 +81,16 @@ Route::get('/manageProfile','DirectAccessController@accProfile');
 Route::post('/manageProfile','DirectAccessController@editProfile');
 //新建试卷表单
 Route::post('/paperNew','PaperController@paperNew');
+//修改试卷
+ROute::post('/paperEditTrue','PaperController@paperEditTrue');
 //上传试卷
 //Route::get('/uploadPaper','PaperController@getUploadPaper');
 Route::post('/uploadPaper','PaperController@postUploadPaper');
 Route::post('/uploadAnswer','PaperController@postUploadAnswer');
+//编辑试卷页面中的删除试卷和答案
+Route::post('/uploadPaperEdt','PaperController@postUploadPaperEdt');
+Route::post('/uploadAnswerEdt','PaperController@postUploadAnswerEdt');
+
 //上传资源
 Route::post('/uploadResource','PaperController@postUploadResource');
 //下载试卷

@@ -21,9 +21,12 @@
 			<span>发布时间：{{$news->created_at->format('Y-m-d')}}</span><span>发布人：{{$news->publisher}}</span>
 		</div>
 		<div class="news_content">
-			<p>{{$news->content}}</p>
+			<!--<p>{{$news->content}}</p>-->
+			<p>{!!$news->content!!}</p>
+			<!--<p>@{{$news->content}}</p>-->
+
 		</div>
-		<div class="back_homepage"><a href="{{ url('/')}}"> &nbsp;返回</a>
+		<div class="back_homepage"><a href="{{ url('/')}}"> &nbsp;<&nbsp;返回</a>
 		</div>
 	</div>
 	

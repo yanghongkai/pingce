@@ -77,7 +77,8 @@
 			?>
 				<ul class="question">
 					<li class="question_Name">
-					{{$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]}}
+					<!--{{$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]}}-->
+					{!!$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]!!}
 					</li>
 					<li>
 						<div class="{{ $questions_flag[$i-$select_num]==1 ? 'question_total' : '' }}"><div class="question_left">总分：</div>{{$std_scores[$i-$select_num]}}分</div>
@@ -88,8 +89,16 @@
 					<li>
 						<div class="question_left">参考答案：</div>{{$std_total_answer[$i]->text}}
 					</li>
+
+					<form id="saveForm{{$std_total_answer[$i]['id']}}" action="{{ url('/answerSave')}}" method="POST" >
+					<li class="queCom">
+					<div class="question_left">试题备注：</div>
+					<textarea class="queCom" name="queText" id="queText"  placeholder="请在此填写试题备注...">{{$tea_save_coms[$i-$select_num]}}</textarea>
+					</li>
+
+
 					<li>
-						<form id="saveForm{{$std_total_answer[$i]['id']}}" action="{{ url('/answerSave')}}" method="POST" >
+						<!--<form id="saveForm{{$std_total_answer[$i]['id']}}" action="{{ url('/answerSave')}}" method="POST" >-->
 						{{ csrf_field() }}
 						<div class="question_left">得分：</div>
 						<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="{{$tea_save_anws[$i-$select_num]}}">
@@ -101,9 +110,10 @@
 						<!--该题分值-->
 						<input type="hidden" name="question_score" value="{{$std_scores[$i-$select_num]}}" />
 						<input type="button" id="save{{$std_total_answer[$i]['id']}}" name="save" value="保存"></input>
-						</form>
+						<!--</form>-->
 						<div id="con{{$std_total_answer[$i]['id']}}" class="confirm"></div>
 					</li>
+					</form>
 				</ul>
 
 			<?php 

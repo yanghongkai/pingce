@@ -74,13 +74,7 @@ class PaperController extends Controller
             return response()->json(['success'=>false]);
         }
 
-        //file_put_contents('dataTest.txt', $content.'\r\n',FILE_APPEND);
-        //file_put_contents('dataTest.txt', $answer.'\r\n',FILE_APPEND);
-        //学科信息
         
-        //$category=$request->input('subject');
-        //file_put_contents('dataTest.txt', 'category='.$category.'\r\n',FILE_APPEND);
-
         try{
             $paper=new Paper;
             $paper->name=$paperName;
@@ -105,14 +99,35 @@ class PaperController extends Controller
             return response()->json(['success'=>false]);
 
         }
-        
-       
          //存入之后，需要将session清空(有没有执行成功都需要执行)
         $request->session()->forget('paper');
         $request->session()->forget('answer');
        
         return response()->json(['success'=>true]);
 
+    }
+
+    public function paperEditTrue(Request $request){
+        $id=$request->input('id');
+        $introduction=$request->input('introduction');
+        $paper=Paper::where('id',$id)->first();
+        $content=$request->session()->get('paperEdit');
+        $answer=$request->session()->get('answerEdit');
+        
+        
+        $paper->content=$content;
+        $paper->answer=$answer;
+        $paper->introduction=$introduction;
+
+        try{
+            $paper->save();
+        }catch(Exception $e){
+            return response()->json(['success'=>false]);
+        }
+        $request->session()->forget('paperEdit');
+        $request->session()->forget('answerEdit');
+        return response()->json(['success'=>true]);
+        
     }
 
     public function getUploadPaper(Request $request){
@@ -156,6 +171,56 @@ CREATE;
         return response()->json(['success'=>true]);
     	
     	
+    }
+
+    //编辑页面中上传文件 试题文件session paperEdit
+    public function postUploadPaperEdt(Request $request){
+        //判断请求中是否包含name=uploadPaper的上传文件
+        if(!$request->hasFile('uploadPaper')){
+            //exit('上传文件为空!');
+            return response()->json(['success'=>false]);
+        }
+        $file=$request->file('uploadPaper');
+        //判断文件上传过程中是否出错
+        if(!$file->isValid()){
+            //exit('文件上传出错!');
+            return response()->json(['success'=>false]);
+        }
+        $newFileName=md5(time().rand(0,10000)).'.'.$file->getClientOriginalExtension();
+        //$newFileName=$file->getClientOriginalName();
+        $savePath='paper/'.$newFileName;
+        $bytes=Storage::put($savePath,file_get_contents($file->getRealPath()));
+        if(!Storage::exists($savePath)){
+            //exit('保存文件失败！');
+            return response()->json(['success'=>false]);
+        }
+
+
+        //将提交的文件的路径名保存到session中
+        $request->session()->put('paperEdit',$savePath);
+        $request->session()->save();//写入session后，需要马上保存
+
+        //判断试题文件和答案文件是否匹配
+        if($request->session()->has('answerEdit')){
+            $content_path=$request->session()->get('paperEdit');
+            $content=simplexml_load_file('./content/'.$content_path);
+            $content_name=(string)$content['name'];
+            $answer_path=$request->session()->get('answerEdit');
+            $answer=simplexml_load_file('./content/'.$answer_path);
+            $answer_name=(string)$answer['papername'];
+            //file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
+            if($content_name != $answer_name){
+                //清空之前的session
+                $request->session()->forget('answer');
+                //Storage::delete($answer);//不能清空，如果修改不成功还要保存原来的
+                return response()->json(['success'=>false]);
+            }
+        }else{
+            return response()->json(['success'=>false]);
+        }
+
+        return response()->json(['success'=>true]);
+
     }
 
     //上传资源
@@ -282,14 +347,70 @@ CREATE;
             if($content_name != $answer_name){
                 //清空之前的session
                 $request->session()->forget('answer');
+                //Storage::delete($answer);
                 return response()->json(['success'=>false]);
             }
+        }else{
+            return response()->json(['success'=>false]);
         }
-
-
         return response()->json(['success'=>true]);
     }
 
+    //编辑页面中上传答案处理
+    public function postUploadAnswerEdt(Request $request){
+
+        
+         //判断请求中是否包含name=uploadAnswer的上传文件
+        if(!$request->hasFile('uploadAnswer')){
+            //exit('上传文件为空!');
+            return response()->json(['success'=>false]);
+        }
+        $file=$request->file('uploadAnswer');
+
+        
+        //判断文件上传过程中是否出错
+        if(!$file->isValid()){
+            //exit('文件上传出错!');
+            return response()->json(['success'=>false]);
+        }
+        $newFileName=md5(time().rand(0,10000)).'.'.$file->getClientOriginalExtension();
+        //$newFileName=$file->getClientOriginalName();
+        $savePath='answer/'.$newFileName;
+        $bytes=Storage::put($savePath,file_get_contents($file->getRealPath()));
+        if(!Storage::exists($savePath)){
+            //exit('保存文件失败！');
+            return response()->json(['success'=>false]);
+        }
+        
+        //将提交的文件的路径名保存到session中
+        $request->session()->put('answerEdit',$savePath);
+        $request->session()->save();//写入session后，需要马上保存
+
+        
+        //判断试题文件和答案文件是否匹配
+        if($request->session()->has('paperEdit')){
+            $content_path=$request->session()->get('paperEdit');
+            $content=simplexml_load_file('./content/'.$content_path);
+            $content_name=(string)$content['name'];
+            $answer_path=$request->session()->get('answerEdit');
+            $answer=simplexml_load_file('./content/'.$answer_path);
+            $answer_name=(string)$answer['papername'];
+            //file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
+            if($content_name != $answer_name){
+                //清空之前的session
+                $request->session()->forget('answer');
+                //Storage::delete($answer);//不能清空，如果修改不成功还要保存原来的
+                return response()->json(['success'=>false]);
+            }
+        }else{
+            return response()->json(['success'=>false]);
+        }
+
+        return response()->json(['success'=>true]);
+        
+
+
+    }
     //
     public function uploadUserAnswer(Request $request){
         $paperId=$request->input('id');
@@ -594,7 +715,7 @@ CREATE;
             foreach ($question_arr as $question){
             if((string)$question['type']=='fillblank'){
                 //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
-                $std_short_answers[]=(string)$question->blank;
+                $std_short_answers[]=$question->blank->asXML();
                 try{
                     //当不存在score这个属性时，并不会报错，而是为空字符串
                     $score=(string)$question['score'];
@@ -620,7 +741,8 @@ CREATE;
 
             if((string)$question['type']=='shortanswer'){
                 //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                $std_short_answers[]=(string)$question->text;
+
+                $std_short_answers[]=$question->text->asXML();
                 //$std_scores[]=(string)$question['score'];
                 try{
                     //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -645,7 +767,7 @@ CREATE;
 
             if((string)$question['type']=='select'){
                 //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                $std_short_answers[]=(string)$question->text;
+                $std_short_answers[]=$question->text->asXML();
                 //$std_scores[]=(string)$question['score'];
                 try{
                     //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -702,7 +824,7 @@ CREATE;
                         //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
                         //填空题可能有多个
 
-                        $std_short_answers[]=(string)$question->blank;
+                        $std_short_answers[]=$question->blank->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -727,7 +849,7 @@ CREATE;
                     }
 
                     if((string)$question['type']=='shortanswer'){
-                        $std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         //$std_scores[]=(string)$question['score'];
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -753,8 +875,9 @@ CREATE;
                     }
 
                     if((string)$question['type']=='select'){
-                        //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                        $std_short_answers[]=(string)$question->text;
+                        
+                        //$std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         //$std_scores[]=(string)$question['score'];
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -778,7 +901,8 @@ CREATE;
                     }
 
                     if((string)$question['type']=='punctuation'){
-                        $std_short_answers[]=(string)$question->passage;
+                        //$std_short_answers[]=(string)$question->passage;
+                        $std_short_answers[]=$question->passage->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -802,7 +926,7 @@ CREATE;
 
                     //作文
                     if((string)$question['type']=='composition'){
-                        $std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -864,7 +988,7 @@ CREATE;
                         //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
                         //填空题可能有多个
 
-                        $std_short_answers[]=(string)$question->blank;
+                        $std_short_answers[]=$question->blank->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -889,7 +1013,7 @@ CREATE;
                     }
 
                     if((string)$question['type']=='shortanswer'){
-                        $std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         //$std_scores[]=(string)$question['score'];
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -916,7 +1040,7 @@ CREATE;
 
                     if((string)$question['type']=='select'){
                         //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                        $std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         //$std_scores[]=(string)$question['score'];
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
@@ -940,7 +1064,7 @@ CREATE;
                     }
 
                     if((string)$question['type']=='punctuation'){
-                        $std_short_answers[]=(string)$question->passage;
+                        $std_short_answers[]=$question->passage->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -964,7 +1088,7 @@ CREATE;
 
                     //作文
                     if((string)$question['type']=='composition'){
-                        $std_short_answers[]=(string)$question->text;
+                        $std_short_answers[]=$question->text->asXML();
                         try{
                             //当不存在score这个属性时，并不会报错，而是为空字符串
                             $score=(string)$question['score'];
@@ -1053,13 +1177,16 @@ CREATE;
             //如果为空也要传递$tea_save_anws数组
             $detail_xml=simplexml_load_string($str_det_xml);
             $tea_save_anws=array();
+            $tea_save_coms=array();
             for($i=0;$i<count($std_que_ids);$i++){
                 $que_id=$std_que_ids[$i];
                 $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
                 if(count($ans_save)>0){
                     $tea_save_anws[]=(float)$ans_save[0]->text;
+                    $tea_save_coms[]=$ans_save[0]->comment;
                 }else{
                     $tea_save_anws[]='';
+                    $tea_save_coms[]='';
                 }
             }
         }else{
@@ -1067,13 +1194,17 @@ CREATE;
             $str_det_xml=$scorer_paper->detail_xml;
             $detail_xml=simplexml_load_string($str_det_xml);
             $tea_save_anws=array();
+            $tea_save_coms=array();
             for($i=0;$i<count($std_que_ids);$i++){
                 $que_id=$std_que_ids[$i];
                 $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
                 if(count($ans_save)>0){
                     $tea_save_anws[]=(float)$ans_save[0]->text;
+                    $tea_save_coms[]=$ans_save[0]->comment;
                 }else{
                     $tea_save_anws[]='';
+                    $tea_save_coms[]='';
+
                 }
             }
             //如果保存有用户的选择题答案，从数据库中读出用户的选择题答案
@@ -1106,7 +1237,7 @@ CREATE;
                                 'str_std_sele_answer'=>$str_std_sele_answer,'str_user_sele_answer'=>$str_user_sele_answer,
                                 'std_short_answers'=>$std_short_answers,'score_total_sel'=>$score_total_sel,
                                 'paper_name'=>$paper_name,'stu_name'=>$stu_name,'user_paper_time'=>$user_paper_time,
-                                'scorer_id'=>$scorer_id,'user_paper_id'=>$user_paper_id,'tea_save_anws'=>$tea_save_anws,
+                                'scorer_id'=>$scorer_id,'user_paper_id'=>$user_paper_id,'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,
                                 'comment'=>$comment,'questions_flag'=>$questions_flag,
                                  'std_scores'=>$std_scores,'std_total_answer'=>$std_total_answer,'user_total_answer'=>$user_total_answer]);
        
@@ -1128,6 +1259,9 @@ CREATE;
         //file_put_contents('./dataTest.txt', $scorer_id.'\n',FILE_APPEND);
         $user_paper_id=$request->input('user_paper_id');
         $question_id=$request->input('question_id');
+        //试题备注queText
+        $que_text=$request->input('queText');
+        //file_put_contents('./dataTest.txt', $que_text.'\r\n',FILE_APPEND);
         //用户试题得分
         $question_scorer=$request->input('paperName_scorer');
         //0,'',empty()都是true
@@ -1164,12 +1298,14 @@ CREATE;
         if(count($question_exist)>0){
             //存在的话，修改分值
             $question_exist[0]->text=$question_scorer;
+            $question_exist[0]->comment=$que_text;
 
         }else{
             //新建节点
             $question=$detail_xml->addChild('question');
             $question->addAttribute('id',$question_id);
-            $question->addChild('text',$question_scorer); 
+            $question->addChild('text',$question_scorer);
+            $question->addChild('comment',$que_text); 
         }
         
         $str_new_det=$detail_xml->asXML();
