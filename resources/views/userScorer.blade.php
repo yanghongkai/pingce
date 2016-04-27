@@ -61,9 +61,9 @@
 		            <td>{{$sub_name}}</td>
 		        <?php
 		            //提交时间
-            		$created_at=$user_paper->created_at;
+            		$updated_at=$user_paper->updated_at;
             	?>
-            		<td>{{$created_at}}</td>
+            		<td>{{$updated_at}}</td>
             		<td>{{$user_paper->status}}</td>
             	<?php
             		 //阅卷人

@@ -43,7 +43,7 @@
 				?>
 						<tr class="user_form_item">
 						<td>{{$arr_paper_name[$i]}}</td>
-						<td>{{$arr_created_at[$i]}}</td>
+						<td>{{$arr_updated_at[$i]}}</td>
 						<td>{{$arr_paper_status[$i]}}</td>
 						<!--<td>{{$arr_grade[$i]}}</td>-->
 						<td>{{$arr_subject_grade[$i]}}</td>

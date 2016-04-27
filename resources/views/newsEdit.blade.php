@@ -46,14 +46,25 @@
 			<li>
 				<div class="pro_left">是否置顶</div>
 				<div class="pro_radio">
+				@if($news->top==1)
 					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="top" value="1">
+						<input class="sub_radio" type="radio" checked="checked"  name="top" value="1">
 						<span class="sub_radioInput"></span>是
 					</label>
 					<label class="sub_label">
-						<input class="sub_radio" type="radio" name="top" value="0">
+						<input class="sub_radio" type="radio"  name="top" value="0">
 						<span class="sub_radioInput"></span>否
 					</label>
+				@else
+					<label class="sub_label">
+						<input class="sub_radio" type="radio"   name="top" value="1">
+						<span class="sub_radioInput"></span>是
+					</label>
+					<label class="sub_label">
+						<input class="sub_radio" type="radio" checked="checked"  name="top" value="0">
+						<span class="sub_radioInput"></span>否
+					</label>
+				@endif
 				</div>
  			</li>
 			<li>

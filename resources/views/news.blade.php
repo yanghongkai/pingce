@@ -18,7 +18,7 @@
 	<div class="news">
 		<h2 class="news_name">{{$news->title}}</h2>
 		<div class="news_info">
-			<span>发布时间：{{$news->created_at->format('Y-m-d')}}</span><span>发布人：{{$news->publisher}}</span>
+			<span>发布时间：{{$news->created_at->format('Y-m-d H:i:s')}}</span><span>发布人：{{$news->publisher}}</span>
 		</div>
 		<div class="news_content">
 			<!--<p>{{$news->content}}</p>-->
