@@ -25,7 +25,7 @@ class EnterMiddleware
         //echo $name."<br/>";
         
         $password=$request->input('password');
-        $user=User::where('name',$name)->first();
+        $user=User::where('active',1)->where('name',$name)->first();
         //dd($user);
         //echo "hello"."<br/>";
        

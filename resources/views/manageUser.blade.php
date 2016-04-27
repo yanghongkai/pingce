@@ -44,7 +44,7 @@
 					<td>启用&nbsp;|&nbsp;<a href="#">禁用</a></td>-->
 					<td>{{$user->role->name}}</td>
 					<td><a href="./pwdEdit/{{$user->id}}">修改密码</a></td>
-					<!-- <td><a href="paperEdit.html">编辑</a></td> -->
+					<td><a href="./userDel/{{$user->id}}" onclick="return confirm('确定删除?');" >删除</a></td>
 				</tr>
 				@endforeach
 				@endif

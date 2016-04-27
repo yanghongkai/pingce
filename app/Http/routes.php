@@ -68,6 +68,8 @@ Route::post('/resDelete/{id}','DirectAccessController@resDelete');
 //修改用户密码
 Route::get('/pwdEdit/{id}','DirectAccessController@pwdEdit');
 Route::post('/pwdEdit','DirectAccessController@postPwdEdit');
+//删除用户
+Route::get('/userDel/{id}','DirectAccessController@userDel');
 //试卷详情
 Route::get('/stuPaper/{id}','DirectAccessController@stuPaper');
 

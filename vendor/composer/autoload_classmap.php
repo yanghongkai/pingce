@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddActiveNews' => $baseDir . '/database/migrations/2016_04_19_193717_add_active_news.php',
     'AddActiveToPapers' => $baseDir . '/database/migrations/2016_03_16_122355_add_active_to_papers.php',
+    'AddActiveUsers' => $baseDir . '/database/migrations/2016_04_27_154855_add_active_users.php',
     'AddCatetoryPapers' => $baseDir . '/database/migrations/2016_03_27_163128_add_catetory_papers.php',
     'AddCommentScorerPaper' => $baseDir . '/database/migrations/2016_03_28_162628_add_comment_scorer_paper.php',
     'AddCountScorerPaper' => $baseDir . '/database/migrations/2016_03_27_202733_add_count_scorer_paper.php',

@@ -512,7 +512,7 @@ class DirectAccessController extends Controller
 
     public function manageUser(){
         //获取所有的新闻
-        $users=User::orderBy('created_at','desc')->get();
+        $users=User::where('active',1)->orderBy('created_at','desc')->get();
         //dd($users);
         /*
         foreach($users as $user){
@@ -1354,6 +1354,14 @@ class DirectAccessController extends Controller
             return response()->json(['success'=>false]);
         }
         return response()->json(['success'=>true]);
+    }
+
+    //软删除用户
+    public function userDel($id){
+        $user=User::where('id',$id)->first();
+        $user->active=0;
+        $user->save();
+        return redirect('/manageUser');
     }
 
     //显示修改个人资料页面
