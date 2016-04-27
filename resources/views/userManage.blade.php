@@ -44,7 +44,7 @@
 					<td>{{$paper->created_at->format('Y年m月d日')}}</td>
 					<form action="./paperDelete/{{$paper->id}}" method="POST">
 					 {{ csrf_field() }}
-					<td><button type="submit">删除</button></td>
+					<td><button type="submit" onclick="return confirm('确定删除?');" >删除</button></td>
 					</form>
 					<form action="./paperEdit/{{$paper->id}}" method="POST">
 					 {{ csrf_field() }}

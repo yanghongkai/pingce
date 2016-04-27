@@ -44,7 +44,7 @@
 					<td>
 					<form action="./newsDelete/{{$news_item->id}}" method="POST">
 					{{ csrf_field() }}
-					<td><button type="submit">删除</button></td></form>
+					<td><button type="submit" onclick="return confirm('确定删除?');" >删除</button></td></form>
 					<!--
 					<form action="./newsTop/{{$news_item->id}}" method="POST">
 					{{ csrf_field() }}

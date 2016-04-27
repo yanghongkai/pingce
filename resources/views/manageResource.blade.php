@@ -41,7 +41,7 @@
 					<td>{{$res_item->created_at->format('Y年m月d日')}}</td>
 					<form action="./resDelete/{{$res_item->id}}" method="POST">
 					 {{ csrf_field() }}
-					<td><button type="submit">删除</button></td>
+					<td><button type="submit" onclick="return confirm('确定删除?');" >删除</button></td>
 					</form>
 				</tr>
 				@endforeach
