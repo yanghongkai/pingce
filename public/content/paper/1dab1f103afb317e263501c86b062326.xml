@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2014北京高考文综地理试卷" subject="Geography" id="2014BeijingGaokao" >
+	<section name="选择题" score="44">
+		<questions score="44">
+			<text format="html">北京时间2013年12月21日0时42分，我国为玻利维亚成功发射通信卫星。读图1，回答第1、2题。<Picread id="pic1_2_1"></Picread></text>
+			<question id="2014BeijingGaokao_01" score="4" type="select">
+				<text>玻利维亚__</text>
+				<select multiple="false">
+					<option value="A">东邻巴西，西临太平洋</option>
+					<option value="B">受寒流影响，多雾少雨</option>
+					<option value="C">西南山地垂直地带谱复杂</option>
+					<option value="D">城市多分布于平原地区</option>
+				</select>
+			</question>
+			<question id="2014BeijingGaokao_02" score="4" type="select">
+				<text>卫星发射当日__</text>
+				<select multiple="false">
+					<option value="A">玻利维亚在傍晚可收看卫星发射直播</option>
+					<option value="B">赤道正午太阳高度角接近90°</option>
+					<option value="C">中国南极昆仑站所在地出现极昼现象</option>
+					<option value="D">地球接近公转轨道的远日点</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">气候舒适度主要与气温、湿度、风速等因素相关。图2示意中国4个城市气候舒适度的月变化。读图，回答第3题。<Picread id="pic3_1"></Picread></text>
+			<question id="2014BeijingGaokao_03" score="4" type="select">
+				<text>甲、乙、丙分别是__</text>
+				<select multiple="false">
+					<option value="A">贵阳、西安、长春位</option>
+					<option value="B">昆明、海口、哈尔滨</option>
+					<option value="C">兰州、上海、沈阳</option>
+					<option value="D">南宁、武汉、石家庄</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图3示意北半球夏季4个气旋的移动路径。读图，回答第4、5题。<Picread id="pic4_5_1"></Picread></text>
+			<question id="2014BeijingGaokao_04" score="4" type="select">
+				<text>气旋__</text>
+				<select multiple="false">
+					<option value="A">①给南亚地区带来大风暴雨天气</option>
+					<option value="B">②自东南向西北方向移动</option>
+					<option value="C">③移动方向与地球自转方向相反</option>
+					<option value="D">④生成于太平洋热带洋面</option>
+				</select>
+			</question>
+			<question id="2014BeijingGaokao_05" score="4" type="select">
+				<text>影响气旋④移动路径的主要是__</text>
+				<select multiple="false">
+					<option value="A">东南信风</option>
+					<option value="B">副热带高压</option>
+					<option value="C">极地东风</option>
+					<option value="D">北赤道暖流</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图4示意某河谷断面经历的一次洪水过程。读图，回答第6、7题。<Picread id="pic6_7_1"></Picread></text>
+			<question id="2014BeijingGaokao_06" score="4" type="select">
+				<text>该河谷__</text>
+				<select multiple="false">
+					<option value="A">岩层①比岩层②形成年代早</option>
+					<option value="B">岩层②比岩层①易受侵蚀</option>
+					<option value="C">是断层上发育形成的向斜谷</option>
+					<option value="D">呈“V”型，适宜修建水库</option>
+				</select>
+			</question>
+			<question id="2014BeijingGaokao_07" score="4" type="select">
+				<text>本次洪水__</text>
+				<select multiple="false">
+					<option value="A">水位上升时，河流搬运作用减弱</option>
+					<option value="B">水位下降时，河流含沙量增加</option>
+					<option value="C">流量增大时，河流堆积作用增强</option>
+					<option value="D">河流侵蚀作用使河床加宽变深</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图5（a）为某校地理小组设计的校徽景观指示牌，图5（b）为校园图局部。读图，回答第8题。<Picread id="pic8_1"></Picread></text>
+			<question id="2014BeijingGaokao_08" score="4" type="select">
+				<text>指示牌在图5（b）中的位置是__</text>
+				<select multiple="false">
+					<option value="A">①</option>
+					<option value="B">②</option>
+					<option value="C">③</option>
+					<option value="D">④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图6示意不同类型餐馆在我国部分地区的分布状况。读图，回答第9、10题。<Picread id="pic9_10_1"></Picread></text>
+			<question id="2014BeijingGaokao_09" score="4" type="select">
+				<text>①②③④依次示意__</text>
+				<select multiple="false">
+					<option value="A">川菜馆、湘菜馆、粤菜馆、西餐馆</option>
+					<option value="B">粤菜馆、西餐馆、川菜馆、湘菜馆</option>
+					<option value="C">西餐馆、川菜馆、湘菜馆、粤菜馆</option>
+					<option value="D">湘菜馆、粤菜馆、西餐馆、川菜馆</option>
+				</select>
+			</question>
+			<question id="2014BeijingGaokao_10" score="4" type="select">
+				<text>各类餐馆如此分布，能够__</text>
+				<select multiple="false">
+					<option value="A">降低餐馆原料的运输成本</option>
+					<option value="B">加速农业地域类型转变</option>
+					<option value="C">促进城市服务范围的扩大</option>
+					<option value="D">体现出地域文化的扩散</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图7为我国北方某冶炼厂周边土壤中污染物铜含量等值线图。读图，回答第11题。<Picread id="pic11_1"></Picread></text>
+			<question id="2014BeijingGaokao_11" score="4" type="select">
+				<text>土壤铜含量__</text>
+				<select multiple="false">
+					<option value="A">因河水稀释而逐渐变小</option>
+					<option value="B">从冶炼厂向北递增幅度小</option>
+					<option value="C">高值区沿盛行风向延伸</option>
+					<option value="D">在居民点大于200mg/kg</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="解答题" >
+		<questions score="12">
+			<headtext format="html">读图15，回答下列问题。<Picread id="pic36_1"></Picread></headtext>
+			<text>20世纪50年代以来，针对海河流域频发的旱涝灾害，在流域西部、北部修建了大量水库，在东部新开了多条入海河道。</text>
+			<question id="2014BeijingGaokao_36_01" score="12" type="shortanswer">
+				<text>结合流域气候和地形特点，分析修建水库和新开入海河道的自然原因。</text>
+			</question>	
+		</questions>
+		<questions score="16">
+			<headtext>读图15，回答下列问题。<Picread id="pic36_1"></Picread></headtext>
+			<text>海河流域人均水资源占有量不足全国的1\7.</text>
+			<question id="2014BeijingGaokao_36_02" score="8" type="shortanswer">
+				<text>针对流域水资源匮乏的现状，简述农业生产应采取的对策。</text>
+			</question>	
+			<question id="2014BeijingGaokao_36_03" score="8" type="shortanswer">
+				<text>指出河源地区旅游开发和景区建设给河流带来的环境问题，列举一项应对措施。</text>
+			</question>	
+		</questions>
+		<questions score="8">
+			<headtext>读图15，回答下列问题。<Picread id="pic36_1"></Picread></headtext>
+			<text>依据2014年《政府工作报告》精神，京津冀地区逐步淘汰钢铁、水泥、平板玻璃等行业，加快产业结构调整。</text>
+			<question id="2014BeijingGaokao_36_04" score="8" type="shortanswer">
+				<text>阅读材料三，结合所学，分析“废汉字”主张提出的时代背景；</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<headtext>中国工业布局受政治、资源、市场等因素影响不断变化。</headtext>
+			<text format="html">1932年，日本在上海挑起一·二八事变。鉴于中国重要工厂绝大部分都集中于上海，而内地各省几乎没有工业基础，难以满足抗战的物资需要，南京国民政府计划将工厂内迁。1937年，国民政府制订了《工厂迁移协助办法》，打算在武汉建立新工业区。截止到1937年底，上海迁出民营企业146家，各种机件14600余吨。南京沦陷后，国民政府再次动员企业迁移，拟定《西南西北工业建设计划》。从1938年7月起，已在武汉的工厂又大规模拆迁，主要迁往湘、桂、黔、滇、陕、川，共迁出企业304家，物资511825吨。“十二五”期间，依据国家区域发展新格局，要依托黄金水道，建设长江经济带。读图20，回答第（2）题<Picread id="pic40_1"></Picread></text>
+			<question id="2014BeijingGaokao_40" score="10" type="shortanswer">
+				<text>与长江三角洲地区相比，概述川渝地区发展的地理优势。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<headtext>2014•北京卷维护和平、发展经济、保障民生和保护环境是人类共同的任务，需要世界各国的积极参与。</headtext>
+			<text>工业革命在给英国带来财富的同时，也产生了严重的大气污染。1952年12月的伦敦烟雾事件震惊世界。</text>
+			<question id="2014BeijingGaokao_41" score="10" type="shortanswer">
+				<text>分析气候对英国大气污染的影响。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

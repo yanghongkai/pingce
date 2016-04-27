@@ -1163,6 +1163,11 @@ CREATE;
             $scorer_paper=new ScorerPaper;
             $scorer_paper->user_id=$scorer_id;
             $scorer_paper->user_paper_id=$user_paper_id;
+            //只要新建记录，就将试卷的状态改为评阅中
+            $user_paper=UserPaper::where('id',$user_paper_id)->first();
+            $user_paper->status='评阅中';
+            $user_paper->save();
+
             //新建一个detail_xml对象
             $str='<?xml version="1.0" encoding="UTF-8"?>';
             $str.='<paperanswer></paperanswer>';

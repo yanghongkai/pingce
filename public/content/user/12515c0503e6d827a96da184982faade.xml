@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2014北京高考文综地理试卷" papersubject="Geography" paperid="2014BeijingGaokao">
+
+	<question id="2014BeijingGaokao_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_02" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_04" type="select" >
+		<text>D</text>
+	</question>
+	<question id="2014BeijingGaokao_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="2014BeijingGaokao_06" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_07" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="2014BeijingGaokao_08" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_09" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_10" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_11" type="select">
+		<text>C</text>
+	</question>
+	<question id="2014BeijingGaokao_36_01" type="shortanswer">
+		<text>
+			流域内降水量偏少且集中于夏季，季节和年际变化大。
+			中上游地区以山地、高原为主，平时地表径流量少，暴雨时洪峰流量大，修建水库蓄水调节，可缓解旱涝灾害。
+			下游地区以平原为主，排水不畅，支流集中汇聚于海河，易发生洪涝，开挖人工河道，主要用于排水泄洪。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_36_02" type="shortanswer">
+		<text>
+			推广耐旱作物（调整作物类型、进行品种改良）；应用喷灌、滴灌、微灌等节水技术，发展节水农业；加强农业基础设施建设，提高抵御旱灾的能力。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_36_03" type="shortanswer">
+		<text>
+			问题：河水污染（水质下降）；径流量减少（变化大）；河流含沙量增加。
+			应对措施：例如，合理规划，加强监测，立法管理，控制旅游人数，保护植被，植树种草等。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_36_04" type="shortanswer">
+		<text>
+			发展生产性服务业、文化创意产业；发展高新技术产业；发展新能源、新材料等产业。
+			减少污染源，降低污染物的排放（量）。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_40" type="shortanswer">
+		<text>
+			川渝地区位于长江上游，土地广阔（面积大），价格较低；矿产、能源、水力等资源丰富；政策支持；劳动力丰富；市场广阔；经济发展潜力较大。
+		</text>
+	</question>
+	<question id="2014BeijingGaokao_41" type="shortanswer">
+		<text>
+			英国地处欧洲西部，迎着盛行西风，污染物容易扩散；年降水量丰富，季节分配较均匀，利于污染物沉降；冬季多雾，雾天不利于污染物扩散。
+		</text>
+	</question>
+</paperanswer>
+
