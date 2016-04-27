@@ -126,17 +126,24 @@ class DirectAccessController extends Controller
 
         //$select_num选择题的数目
         $select_num=0;
-        foreach ($selectSection->question as $single_select){
-            //echo $single_select['id'].'<br/>';
-            $select_num++;
-        }
-        //echo $select_num.'<br/>';
-        foreach ($selectSection->questions as $multi_selects){
-                foreach ($multi_selects->question as $multi_select){
-                    //echo $multi_select['id'].'<br/>';
-                    $select_num++;
+        $arr_sel_que=$selectSection->xpath(".//question");
+        $select_num=count($arr_sel_que);
+        //分值数组
+        $std_sele_score=array();
+        foreach ($arr_sel_que as $arr_que){
+            try{
+                $score_temp=(string)$arr_que['score'];
+                if(empty($score_temp)){
+                    $score_temp=1;//如果没有分值，则默认为1分
                 }
+            }catch(Exception $e){
+                //实际上执行不到这一步，是为了代码的健壮性
+                $score_temp=1;
+            }
+            
+            $std_sele_score[]=$score_temp;
         }
+        //dd($std_sele_score);
 
 
         //标准答案
@@ -251,14 +258,17 @@ class DirectAccessController extends Controller
         $cor_sele_num=0;
         for($i=0;$i<$select_num;$i++){
             if($std_sele_answer[$i]==$user_sele_answer[$i]){
+                $select_grade+=$std_sele_score[$i];
                 $cor_sele_num++;
             }
         }
         //echo $cor_sele_num.'<br/>';
+        /*
         //用户选择题的分
         $select_grade=(float)$score_total_sel/($select_num*1.0)*$cor_sele_num*1.0;
         $select_grade=round($select_grade*1.0,1);
         //echo $select_grade.'<br/>';
+        */
          if($score_total_sel<=0){
             //如果选择题没有设置分值，就以‘--’处理
             $select_grade='--';

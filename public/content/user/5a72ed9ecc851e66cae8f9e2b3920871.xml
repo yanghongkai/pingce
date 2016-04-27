@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2015北京高考文综地理试卷" papersubject="Geography" paperid="2015BeijingGaokao">
+
+	<question id="2015BeijingGaokao_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2015BeijingGaokao_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="2015BeijingGaokao_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="2015BeijingGaokao_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="2015BeijingGaokao_05" type="select">
+		<text>A</text>
+	</question>
+	<question id="2015BeijingGaokao_06" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2015BeijingGaokao_07" type="select">
+		<text>B</text>
+	</question>
+
+	<question id="2015BeijingGaokao_08" type="select" >
+		<text>A</text>
+	</question>
+	
+	<question id="2015BeijingGaokao_09" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2015BeijingGaokao_10" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2015BeijingGaokao_11" type="select">
+		<text>C</text>
+	</question>
+	<question id="2015BeijingGaokao_36_01" type="shortanswer">
+		<text>
+		运输方式变化大，出现铁路、公路、高速公路；交通线路增多，路网密度变大。古代驿站衰落；部分聚落（张家口、崇礼等）等级提升。
+		解析：从图示北京及张家口的交通线路分析交通运输变化，主要表现为交通线路增多；交通运输方式多样化；而图示聚落的交通条件发展和衰落，会影响其兴衰，如图示古代的驿站、张家口、崇礼等。
+		</text>
+	</question>
+	<question id="2015BeijingGaokao_36_02" type="shortanswer">
+		<text>
+		利用各自优势，实现资源优化配置；有助于扩大生产规模，延长产业链；增加劳动力就业，提高收入；缩小区域差异。
+		解析：从协同发展角度，联系资源的优化配置、生产规模、产业链、就业、区域差异等知识点，回答对区域经济的影响。
+		</text>
+	</question>
+	<question id="2015BeijingGaokao_36_03" type="shortanswer">
+		<text>
+		与周边地区相比较，崇礼冬季积雪时间较长，在75天以上；平均风速较小，在2米/秒以下。
+		解析：分析图示等值线，可推断崇礼冬季积雪时间较长，在75天以上；平均风速较小，在2米/秒以下。利于雪上项目的进行。
+		</text>
+	</question>
+	<question id="2015BeijingGaokao_36_04" type="shortanswer">
+		<text>
+		推进可再生能源和清洁能源产业发展；如风速较大，开发风能；日照较充足，开发太阳能；生物质能资源丰富，开发生物能。
+		解析：从改善区域环境质量分析，联系可再生的清洁能源，结合当地条件分析，可发展太阳能、风能和生物能。
+		考点：交通运输发展的影响、区域经济、气候、能源
+		</text>
+	</question>
+	<question id="2015BeijingGaokao_40" type="shortanswer">
+		<text>
+		甲地：盛产棉花、水稻、小麦等；农业集中分布在地中海沿岸，尼罗河沿岸及三角洲，土壤肥沃，灌溉水源充足；主要为热带沙漠气候，日照充足，热量丰富，温差大。
+		乙地：盛产棉花、水稻、小麦等；农业集中分布在盆地边缘的绿洲，土壤肥沃，灌溉水源充足，主要为温带大陆性气候，日照充足，热量丰富，温差大。
+		试题分析：从图中乙地位置分析，甲地位于埃及北部，其农作物主要分布水分条件较好的地中海沿岸和尼罗河沿岸及三角洲，主要种植棉花、水稻、小麦等，从气候角度分析，该地大部分地区属于热带沙漠气候，光热资源丰富，且日较差大；从水源角度分析，临近河流；地形为平原地区，土壤肥沃。
+		乙地位于中亚地区，属于温带大陆性气候区，降水少，所以农业主要集中在盆地边缘的绿洲，主要种植棉花、水稻、小麦等，所以从气候分析，日照充足，热量丰富，温差大；有高山上的冰雪融水，提供灌溉水源。
+		考点：农业生产
+		</text>
+	</question>
+	<question id="2015BeijingGaokao_41" type="shortanswer">
+		<text>
+		从资源、劳动力密集型向资金密集型转移，再向知识和技术密集型转型。
+		试题分析：木材加工产业的主导区位因素是资源和劳动力，造船业的主导区位因素是资金，飞机制造和生物技术产业等的主导区位因素是知识和技术。
+		考点：工业区位因素
+		</text>
+	</question>
+</paperanswer>
+

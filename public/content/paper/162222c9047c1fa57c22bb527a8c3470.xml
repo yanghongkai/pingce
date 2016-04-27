@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2015北京高考文综地理试卷" subject="Geography" id="2015BeijingGaokao" >
+	<section name="选择题" score="44">
+		<questions score="44">
+			<text>从太白山的北麓往上，越上树木越密越高，上到山的中腰再往上，树木则越稀越矮。待到大稀大矮的境界。繁衍着狼的族类，也居住了一户猎狼的人家（引自贾平凹《太白山记》。太白山为秦岭主峰，海拔3767米）。据此，回答下列问题。</text>
+			<question id="2015BeijingGaokao_01" score="4" type="select">
+				<text>太白山__</text>
+				<select multiple="false">
+					<option value="A">北麓为亚热带常绿阔叶林带</option>
+					<option value="B">北坡山中腰降水量比山麓少</option>
+					<option value="C">又密又高的树木在针叶林带</option>
+					<option value="D">树木大稀大矮处为稀树草原</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_02" score="4" type="select">
+				<text format="html">如果过度猎狼，将会__
+					<label id="02_1">造成山区生物多样性减少</label>	
+					<label id="02_2">增加山区的环境承载力</label>
+					<label id="02_3">导致不良消费观念的形成</label>
+					<label id="02_4">破坏可持续发展的公平性</label>
+				</text>
+				<select multiple="false">
+					<option value="A">①②</option>
+					<option value="B">②③</option>
+					<option value="C">③④</option>
+					<option value="D">①④</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="2015BeijingGaokao_03" score="4" type="select">
+				<text format="html">图1为某公共设施的服务范围示意图。读图，回答图中最有可能为博物馆、乡（镇）行政机构、集贸市场依次是__<Picread id="pic3_1"></Picread></text>
+				<select multiple="false">
+					<option value="A">⑥①②</option>
+					<option value="B">⑤③⑥</option>
+					<option value="C">③②④</option>
+					<option value="D">①④⑤</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图2为华北某地具备示意图，读图，回答下列问题。<Picread id="pic4_5_1"></Picread></text>
+			<question id="2015BeijingGaokao_04" score="4" type="select">
+				<text>图中__</text>
+				<select multiple="false">
+					<option value="A">甲地陡峻，喀斯特地貌典型</option>
+					<option value="B">乙地低平，泥石流灾害频发</option>
+					<option value="C">丙村比丁村土层深厚</option>
+					<option value="D">丁村比丙村地下水埋藏浅</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_05" score="4" type="select">
+				<text>图示地区__</text>
+				<select multiple="false">
+					<option value="A">地势西高东低、南高北低</option>
+					<option value="B">山前平原受外力侵蚀作用明显</option>
+					<option value="C">洪积扇面积差异取决于降水量</option>
+					<option value="D">渠水通过蒸发环节参与水循环</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text>【题文】2014年11月7日至12日APEC北京会议放假期间，河南省针对北京游客实行景区门票减免优惠。据此，回答下列问题</text>
+			<question id="2015BeijingGaokao_06" score="4" type="select">
+				<text>该优惠政策有助于__</text>
+				<select multiple="false">
+					<option value="A">游客对旅游目的地进行选择</option>
+					<option value="B">提升当地旅游资源价值</option>
+					<option value="C">降低游客交通与游览用时的比值</option>
+					<option value="D">提高旅游服务设施等级</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_07" score="4" type="select">
+				<text>下述景区组合中，旅游资源多样性最丰富的是__</text>
+				<select multiple="false">
+					<option value="A">大相国寺、清明上河图、禹王谷、铁塔公园</option>
+					<option value="B">太行大峡谷、红旗渠、殷墟、马氏庄园</option>
+					<option value="C">老君山、鸡冠洞、龙峪湾、抱犊寨</option>
+					<option value="D">八里沟、万仙山、秋沟、齐王寨</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_08" score="4" type="select">
+				<text>放假期间__</text>
+				<select multiple="false">
+					<option value="A">时值我国立冬到小雪之间</option>
+					<option value="B">太阳直射点向赤道移动</option>
+					<option value="C">黄山6点前日出东北方向</option>
+					<option value="D">南极大陆极夜范围扩大</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">2015年3月9日－22日气旋“帕姆”的移动路径。读图，回答下列问题。<Picread id="pic9_10_1"></Picread></text>
+			<question id="2015BeijingGaokao_09" score="4" type="select">
+				<text>“帕姆”__</text>
+				<select multiple="false">
+					<option value="A">生成于西北太平洋热带洋面</option>
+					<option value="B">气流呈顺时针方向旋转</option>
+					<option value="C">移动路径受控于西北漂流</option>
+					<option value="D">自东向西穿过日界线</option>
+				</select>
+			</question>
+			<question id="2015BeijingGaokao_10" score="4" type="select">
+				<text>该气旋__</text>
+				<select multiple="false">
+					<option value="A">标志当地进入台风多发季节</option>
+					<option value="B">引发滑坡、赤潮等次生灾害</option>
+					<option value="C">造成的灾情可以用GPS滥测</option>
+					<option value="D">对瓦努阿图的危害最大</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<question id="2015BeijingGaokao_11" score="4" type="select">
+				<text format="html">图4为某网上商城通过大数据分析绘制的“城市牵挂”示意图。由于迁出人口比例较高，甲地网购收货量中，从异地下订单的寄达商品所占比例最高，从而成为2014年全中最受异地牵挂的城市。读图，回答问题。据图可推断，甲地人口迁出比例__<Picread id="pic11_1"></Picread></text>
+				<select multiple="false">
+					<option value="A">北方地区比南方地区高</option>
+					<option value="B">直辖市比省级行政中心高</option>
+					<option value="C">珠江三角洲比四川盆地高</option>
+					<option value="D">内陆城市比沿海城市高</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="非选择题" >
+		<questions score="10">
+			<headtext format="html">北京与河北张家口相邻。读下图，回答下列问题：<Picread id="pic36_1"></Picread></headtext>
+			<question id="2015BeijingGaokao_36_01" score="10" type="shortanswer">
+				<text>说明百余年来北京至张家口之间交通运输的变化，并分析此变化对聚落兴衰的影响。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<headtext format="html">北京与河北张家口相邻。读下图，回答下列问题：<Picread id="pic36_1"></Picread></headtext>
+			<text>2014年7月，在北京市延庆县召开的第11届葡萄大会上，延庆与张家口市怀来县签订了葡萄产区合作协议，打造“延怀河谷，葡萄酒乡”品牌，促进区域协同发展。</text>
+			<question id="2015BeijingGaokao_36_02" score="10" type="shortanswer">
+				<text>简述“延怀河谷”协同发展葡萄产业对区域经济的影响。</text>
+			</question>	
+		</questions>
+		<questions score="8">
+			<headtext format="html">北京与河北张家口相邻。读下图，回答下列问题：<Picread id="pic36_1"></Picread></headtext>
+			<text>北京市与张家口市联合申办2022年冬奥会。</text>
+			<question id="2015BeijingGaokao_36_03" score="8" type="shortanswer">
+				<text>概述崇礼作为雪上项目主赛场的气候条件。</text>
+			</question>	
+		</questions>
+		<questions score="8">
+			<headtext format="html">北京与河北张家口相邻。读下图，回答下列问题：<Picread id="pic36_1"></Picread></headtext>
+			<text>为了改善区域环境质量，张家口市积极推进能源生产结构调整。</text>
+			<question id="2015BeijingGaokao_36_04" score="8" type="shortanswer">
+				<text>举例说明张家口市能源生产结构调整的方向和地理条件。</text>
+			</question>	
+		</questions>
+		<questions score="12">
+			<headtext>丝绸之路东起中国西安，西至埃及亚历山大。</headtext>
+			<text format="html"><Picread id="pic40_1"></Picread>陆上丝绸之路是东西方交往的重要通道，分为东西两段，东段主要在今中国境内，其正式开通源自张骞通西域，汉与西域的交往主要通过河西走廊；南北朝时期，由于河西走廊被割据政权占领，南朝与西域的交往主要通过今青海境内的青海道；唐朝统一后，河西走廊又恢复了在丝绸之路中的主导地位；11世纪西夏崛起，青海道和河西走廊被切断，北宋只能向北渡过黄河，再由河套地区向西进入西域。从元朝起，河西走廊成为中西方交往的稳定通道。</text>
+			<question id="2015BeijingGaokao_40" score="12" type="shortanswer">
+				<text>在上图的甲、乙两地中任选其一，说明主要农作物及其分布，并阐述农业发展的自然地理条件。</text>
+			</question>	
+		</questions>
+		<questions score="8">
+			<text format="html">世界博览会通过展示科学技术发展，预示世界发展方向。1962年世博会在美国西雅图举行。随着产业的不断升级，人类生活发生着巨大变化，下图是西雅图主导产业变化过程示意图。<Picread id="pic41_1"></Picread></text>
+			<question id="2015BeijingGaokao_41" score="8" type="shortanswer">
+				<text>归纳西雅图产业转型过程中主导区位因素的变化。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>
