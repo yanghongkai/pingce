@@ -1321,7 +1321,11 @@ CREATE;
         $scorer_paper->save();
         //user_paper状态变为评阅中
         $user_paper=UserPaper::where('id',$user_paper_id)->first();
-        $user_paper->status="评阅中";
+        if($user_paper->status!='已评阅'){
+            //已经提交了试卷批改结果，再一次修改某一道题，状态也保持是“已评阅”
+            $user_paper->status="评阅中";
+        }
+        
         $user_paper->save();
         return response()->json(['success'=>true,'id'=>$question_id]);
 

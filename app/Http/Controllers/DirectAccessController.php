@@ -269,15 +269,6 @@ class DirectAccessController extends Controller
     }
 
     public function accUserEvaluate(Request $request){
-        //test
-        /*
-        if($request->session()->has('name')){
-            $name=$request->session()->get('name');
-            $role=$request->session()->get('role');
-            echo $name."--".$role."<br/>";
-        }
-        */
-        //test
 
         $stu_name=$request->session()->get('name');
         $stu=User::where('name',$stu_name)->first();
@@ -286,11 +277,11 @@ class DirectAccessController extends Controller
         //找到被删除的试卷id,$del_papers被删除试卷的id
         $del_papers=Paper::where('active',0)->lists('id');
         //找到该用户所做的试卷
-        $user_papers=UserPaper::whereNotIn('paper_id',$del_papers)->where('user_id',$stu_id)->orderBy('created_at','desc')->get();
+        $user_papers=UserPaper::whereNotIn('paper_id',$del_papers)->where('user_id',$stu_id)->orderBy('updated_at','desc')->get();
         //如果没有该用户的记录
         if(count($user_papers)<=0){
             $arr_paper_name=array();
-            $arr_created_at=array();
+            $arr_updated_at=array();
             $arr_paper_status=array();
             $arr_grade=array();
             $arr_scorers=array();
@@ -324,9 +315,9 @@ class DirectAccessController extends Controller
                 //echo 'paper_ans='.$paper_ans.'**';
                 
                 
-                //提交时间
-                $created_at=$user_paper->created_at;
-                $arr_created_at[]=$created_at;
+                //提交时间(现在修改为update_at)
+                $updated_at=$user_paper->updated_at;
+                $arr_updated_at[]=$updated_at;
                 //echo $created_at.'**';
                 //试卷状态“已评阅”，“已提交”
                 $paper_status='';
@@ -334,7 +325,7 @@ class DirectAccessController extends Controller
                 //阅卷人
                 $scorers='';
                 $users=$user_paper->users;
-                //dd($users);
+                //dd($users);//users实际上为批改该试卷的教师信息
                 if(count($users)>0){
 
                     foreach ($users as $user){
@@ -345,26 +336,13 @@ class DirectAccessController extends Controller
                     //$paper_status='已评阅';
                     //有阅卷人，但未给出分数，说明是评阅中
                     
-                    $scorer_paper_sub=ScorerPaper::where('user_paper_id',$user_paper->id)->first();
-                    //echo 'submit='.$scorer_paper_sub->submit.'<br/>';
-                    if($scorer_paper_sub->submit==1){
-
-                        $paper_status='已评阅';
-                        
-                    }else{
-                        $paper_status='评阅中';
-                        
-                    }
+                    
                 }else{
                     $scorers='--';
-                    $paper_status='已提交';
                 }
                 $arr_scorers[]=$scorers;
-                $arr_paper_status[]=$paper_status;
+                $arr_paper_status[]=$user_paper->status;//以每个user_paper的status为准
                 //echo 'scorers='.$scorers.'**';
-                //echo 'paper_status='.$paper_status.'**';
-
-                
                 
                 //试卷分数，只要最后一个的成绩（有问题,user_paper_id）
                 //echo 'paper_id='.$paper_id.'**';
@@ -399,7 +377,7 @@ class DirectAccessController extends Controller
 
         }
 
-         return view('userEvaluate',['arr_paper_name'=>$arr_paper_name,'arr_created_at'=>$arr_created_at,'arr_paper_status'=>$arr_paper_status,
+         return view('userEvaluate',['arr_paper_name'=>$arr_paper_name,'arr_updated_at'=>$arr_updated_at,'arr_paper_status'=>$arr_paper_status,
                         'arr_grade'=>$arr_grade,'arr_object_grade'=>$arr_object_grade,'arr_subject_grade'=>$arr_subject_grade,
                         'arr_scorers'=>$arr_scorers,'arr_paper_con'=>$arr_paper_con,'arr_user_ans'=>$arr_user_ans,
                         'arr_paper_ans'=>$arr_paper_ans,'arr_scorer_paper_id'=>$arr_scorer_paper_id
@@ -465,7 +443,7 @@ class DirectAccessController extends Controller
          
 
         $del_papers=Paper::where('active',0)->lists('id');
-        $user_papers=UserPaper::whereNotIn('paper_id',$del_papers)->orderBy('created_at','desc')->get();
+        $user_papers=UserPaper::whereNotIn('paper_id',$del_papers)->orderBy('updated_at','desc')->get();
         return view('userScorer',['user_papers'=>$user_papers]);
     }
     
