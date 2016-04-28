@@ -56,7 +56,11 @@
 						<td><a href=" ./downloadByPath?path={{$arr_user_ans[$i]}} ">我的答案</a></td>
 						<td><a href=" ./downloadByPath?path={{$arr_paper_ans[$i]}} ">参考答案</a></td>
 						-->
+						@if($arr_scorer_paper_id[$i]<0)
+						<td></td>
+						@else
 						<td><a href=" ./stuPaper/{{$arr_scorer_paper_id[$i]}} ">我的试卷</a></td>
+						@endif
 					</tr>
 				<?php
 					}
