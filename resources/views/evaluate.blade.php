@@ -38,10 +38,11 @@
 		                     {{ csrf_field() }}
 
 		                     <div class="pro_file">
-							<input type="text" id="fileField2" readonly="readonly"></input>
+		                     <!--前台页面写的有问题，方法不好，所以只能加每次的$paper->id来区别-->
+							<input type="text" id="fileField{{$paper->id}}" readonly="readonly"></input>
 							<!-- <input type="button" class="upload" value="上传"> -->
 							<h4>上传
-							<input type="file" name="user_answer" id="user_answer{{$paper->id}}" class="file" onchange="document.getElementById('fileField2').value=this.value"></input></h4>
+							<input type="file" name="user_answer" id="user_answer{{$paper->id}}" class="file" onchange="document.getElementById('fileField{{$paper->id}}').value=this.value"></input></h4>
 							</div>
 
 							<!--<input type="file" name="user_answer" id="user_answer{{$paper->id}}" >-->

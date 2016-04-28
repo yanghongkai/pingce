@@ -74,7 +74,7 @@ table{
 }
 
 .user_form_item td a{
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	color: #7b7b7b;
 }
 

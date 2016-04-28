@@ -80,7 +80,7 @@
 					</li>
 					<li class="queCom">
 					<div class="question_left">试题备注：</div>
-					<textarea class="queCom" name="queText" id="queText"  placeholder="请在此填写试题备注...">{{$tea_save_coms[$i-$select_num]}}</textarea>
+					<textarea class="queCom" name="queText" id="queText"  readonly="readonly" placeholder="">{{$tea_save_coms[$i-$select_num]}}</textarea>
 					</li>
 					<li>
 						<div class="question_left">得分：</div>
