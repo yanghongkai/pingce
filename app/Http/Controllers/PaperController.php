@@ -444,7 +444,7 @@ CREATE;
         $content_name=(string)$content['name'];
         $answer=simplexml_load_file('./content/'.$savePath);
         $answer_name=(string)$answer['papername'];
-        file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
+        //file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
         if($content_name != $answer_name){
                 return response()->json(['success'=>false]);
         }
@@ -468,9 +468,140 @@ CREATE;
             Storage::delete($savePath);
             return response()->json(['success'=>false]);
         }
-        
+        //上传成功之后，用一个虚拟教师给他打分
+        //经测试，可以得到$user_paper_id
+        $user_paper_id=$userPaper->id;
+        $paper_content_path=$paper->content;
+        $paper_answer_path=$paper->answer;
+        $user_answer_path=$userAnswer;
+        $vteacher=User::where('name','vteacher')->first();
+        $scorer_id=$vteacher->id;
+        $flag=$this->createScorerPaperItem($paper_content_path,$paper_answer_path,$user_answer_path,$scorer_id,$user_paper_id);
+        if($flag){
+            file_put_contents('./dataTest.txt', 'flag='.$flag.'\r\n',FILE_APPEND);
+        }else{
+            return response()->json(['success'=>false]);
+        }
+        //file_put_contents('./dataTest.txt', 'user_paper_id='.$user_paper_id.'\r\n',FILE_APPEND);
 
         return response()->json(['success'=>true]);
+    }
+
+    //新建一个阅卷记录 $scorer为vteacher创建的虚拟教师
+    public function createScorerPaperItem($paper_content_path,$paper_answer_path,$user_answer_path,$scorer_id,$user_paper_id){
+        //试题
+        $paper_content=simplexml_load_file('./content/'.$paper_content_path);
+        //获得所有试题的question
+        $arr_que=$paper_content->xpath('/paper//question');
+        //dd($arr_que);
+
+        //标准答案
+        $paper_answer=simplexml_load_file('./content/'.$paper_answer_path);
+        //dd($paper_answer);
+        $arr_paper_answer=$paper_answer->xpath('/paperanswer//question');
+        //dd($arr_paper_answer);
+
+        //用户答案
+        $user_answer=simplexml_load_file('./content/'.$user_answer_path);
+        $arr_user_answer=$user_answer->xpath('/paperanswer//question');
+        //dd($arr_user_answer);
+
+        //客观题得分
+        $object_grade=0.0;
+        //默认生成一个只包含选择题的xml
+        //新建一个detail_xml对象（保存教师的批改详情，选择题自动加入）
+        $str='<?xml version="1.0" encoding="UTF-8"?>';
+        $str.='<paperanswer></paperanswer>';
+        $detail_xml=simplexml_load_string($str);
+        
+
+        //计算客观题分值
+        for($i=0;$i<count($arr_paper_answer);$i++){
+            if((string)$arr_paper_answer[$i]['type']=='select'){
+                $paper_ans='';
+                $user_ans='';
+                $user_que_score='';//用户这道选择题的得分
+                $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
+                    foreach ($paper_ans_texts as $paper_ans_text){
+                        $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans.=$paper_ans_item;
+                        //echo $paper_ans.' ';
+                        //echo $paper_ans_text.' ';
+                }
+                $user_ans_texts=$arr_user_answer[$i]->xpath('.//text');
+                    foreach ($user_ans_texts as $user_ans_text){
+                        $user_ans_item=(string)$user_ans_text;
+                        $user_ans.=$user_ans_item;
+                }
+                $score=(float)$arr_que[$i]['score'];
+                if(empty($score)){
+                    //如果没有分值默认为1
+                    $score=1;
+                }
+                $id=$arr_que[$i]['id'];
+                //echo $id.'--';
+                //echo $paper_ans.'--';
+                //echo $user_ans.'--';
+                //echo $score.'--';
+                if($paper_ans==$user_ans){
+                    $user_que_score=$score;
+                }else{
+                    $user_que_score=0;
+                }
+                //echo $user_que_score;
+                $object_grade+=$user_que_score;
+                //新建节点
+                $question=$detail_xml->addChild('question');
+                $question->addAttribute('id',$id);
+                $question->addAttribute('type','select');
+                $question->addChild('text',$user_que_score);
+                $question->addChild('comment','');//选择题不要备注， 
+
+            }
+            //echo '--------------------------------------<br/>';
+
+        }
+        //dd($detail_xml);
+        //dd($object_grade);
+
+        $count_que=count($arr_que);
+        //echo $count_que."<br/>";
+        //评论
+        $comment="";
+
+        //新建一条记录
+        try{
+            $scorer_paper=new ScorerPaper;
+            $scorer_paper->user_id=$scorer_id;
+            $scorer_paper->user_paper_id=$user_paper_id;
+            //vteacher只是一个虚拟教师，并不修改试卷的评阅状态
+            /*
+            //只要新建记录，就将试卷的状态改为评阅中
+            $user_paper=UserPaper::where('id',$user_paper_id)->first();
+            $user_paper->status='评阅中';
+            $user_paper->save();
+            */
+
+            //新建一个detail_xml对象
+            $str_det_xml=$detail_xml->asXML();
+            //dd($str_det_xml);
+            //file_put_contents('./dataTest.txt', $str_det_xml.'\n',FILE_APPEND);
+            //echo $str_det_xml.'<br/>';
+            $scorer_paper->detail_xml=$str_det_xml;
+            //题目总数
+            $scorer_paper->count=$count_que;
+            //客观题分数
+            $scorer_paper->object_grade=$object_grade;
+            $scorer_paper->save();
+
+        }catch(Exception $e){
+            return false;
+        }
+        return true;
+        
+
+
+
     }
 
 
@@ -516,630 +647,175 @@ CREATE;
         //试题的内容和参考答案
         $paper_content_path=$std_paper->content;
         $paper_answer_path=$std_paper->answer;
+
         //dd($std_paper);
 
         //试题
         $paper_content=simplexml_load_file('./content/'.$paper_content_path);
-        //选择题
-        //$selectSections=$shortSections=$paper_content->xpath("/paper/section[@name='选择题']");
-        //$selectSections=$paper_content->xpath("/paper//section[contains(@name,'选择') or contains(@name,'单选')]");
-        //第一道题是选择题
-        $selectSections=$paper_content->xpath("/paper/section[1]");
-        //dd($selectSections);
-        $selectSection=$selectSections[0];
-        //dd($selectSection);
-        //选择题的总分值
-        try{
-            $score_total_sel=$selectSection['score'];
-        }catch(Exception $e){
-            //如果没有score这个属性的话，把分值设置为0.0
-            $score_total_sel=0.0;
+        $arr_questions=$paper_content->xpath('/paper//questions');
+        //echo count($arr_questions);//以语文试卷为例，8道题
+        $arr_ques_head_text=array();
+        $arr_ques_title=array();
+        $arr_ques_text=array();
+        $arr_ques_count=array();
+        $arr_ques_score=array();
+        foreach($arr_questions as $arr_question){
+            //dd($arr_question);
+            $questions_head_text=$arr_question->headtext;
+            $questions_title=(string)$arr_question->title;
+            $questions_text=(string)$arr_question->text;
+            $arr_ques_head_text[]=(string)$questions_head_text;
+            $arr_ques_title[]=$questions_title;
+            $arr_ques_text[]=$questions_text;
+            $arr_que_bel=$arr_question->xpath('./question');
+            //dd($arr_que_bel);
+            $ques_count=count($arr_que_bel);
+            $arr_ques_count[]=$ques_count;
+            //大题分值
+            $arr_ques_score[]=$arr_question['score'];
+
+
+
         }
+        //dd($arr_ques_title);
+        //dd($arr_ques_head_text);
+        //dd($arr_ques_count);
+
+
+        //获得所有试题的question
+        $arr_que=$paper_content->xpath('/paper//question');
+        //dd($arr_que);
+        //echo count($arr_que);
+        //试卷id以试题的为准
+        $std_que_ids=array();
+        foreach($arr_que as $que){
+            $std_que_ids[]=(string)$que['id'];
+        }
+        //dd($std_que_ids);
         
-        //$select_num选择题的数目
-        $select_num=0;
-        $arr_sel_que=$selectSection->xpath(".//question");
-        $select_num=count($arr_sel_que);
-        //分值数组
-        $std_sele_score=array();
-        foreach ($arr_sel_que as $arr_que){
-            try{
-                $score_temp=(string)$arr_que['score'];
-                if(empty($score_temp)){
-                    $score_temp=1;//如果没有分值，则默认为1分
+        /*
+        foreach($arr_que as $que){
+            if((string)$que['type']=='select'){
+                $sel_options=$que->select->xpath('.//option');
+                foreach($sel_options as $sel_option){
+                    //echo $sel_option.'<br/>';
+                    //echo $sel_option['value'].'<br/>';
+                    //dd($sel_option);
                 }
-            }catch(Exception $e){
-                //实际上执行不到这一步，是为了代码的健壮性
-                $score_temp=1;
+                //dd($sel_options);
             }
-            
-            $std_sele_score[]=$score_temp;
+            if((string)$que['type']=='shortanswer'){
+                //echo $que->text->asXML().'<br/>';
+            }
         }
-        //dd($std_sele_score);
+        */
 
 
+        //echo $arr_que[0]['id'].'<br/>';
         //标准答案
         $paper_answer=simplexml_load_file('./content/'.$paper_answer_path);
         //dd($paper_answer);
-        $std_total_answer=$paper_answer->children();
+        $arr_paper_answer=$paper_answer->xpath('/paperanswer//question');
+        //dd($arr_paper_answer);
 
-        //dd($std_total_answer);
-        //对答案需要进行预处理<text>氓之蚩蚩</text><text>抱布贸丝</text>这种情况应该合并为一个
-        foreach($std_total_answer as $question_answer){
-            
-            $texts=$question_answer->children();
-            //$ans=(string)$question_answer->text;
-            
-            if(count($texts)>1){
-                //dd($question_answer);
-                //如果是填空题则多个答案连接在一起
-                if((string)$question_answer['type']=='select'){
-                    $ans_text="";
-                    foreach($texts as $text){
-
-                        $ans_text.=(string)$text;
-                    }
-                    //将多个text合并为一个
-                    //删除text节点
-                    unset($question_answer->text);
-                    //dd($question_answer);
-                    //新增text节点
-                    $question_answer->addChild('text',$ans_text);
-                    //$question_answer->text=$ans_text;
-                    //dd($question_answer);
-
-                }else{
-                    //fillbank等类型多个答案之间则以空格隔开
-                    $ans_text="";
-                    foreach($texts as $text){
-
-                        $ans_text.=(string)$text;
-                        $ans_text.=' ';
-                    }
-                    unset($question_answer->text);
-                    $question_answer->addChild('text',$ans_text);
-
-                }
-                
+        //test
+        /*
+        foreach($arr_paper_answer as $paper_answer){
+            $ans_texts=$paper_answer->xpath('.//text');
+            foreach ($ans_texts as $ans_text){
+                //echo $ans_text.'<br/>';
             }
-               
         }
-        //dd($std_total_answer);
-        //预处理结束
+        */
 
-
-        //选择题答案
-        $std_sele_answer=array();
-        for($i=0;$i<$select_num;$i++){
-            $std_sele_answer[]=(string)$std_total_answer[$i]->text;
-        }
-        //将选择题答案数组转换成字符串
-        $str_std_sele_answer=implode(' ', $std_sele_answer);
-        //echo $str_std_sele_answer;
+        //test
 
         //用户答案
         $user_answer=simplexml_load_file('./content/'.$user_answer_path);
-        //dd($user_answer); 
-        $user_total_answer=$user_answer->children();
-
-        //对答案需要进行预处理<text>氓之蚩蚩</text><text>抱布贸丝</text>这种情况应该合并为一个
-        foreach($user_total_answer as $question_answer){
+        $arr_user_answer=$user_answer->xpath('/paperanswer//question');
+        //dd($arr_user_answer);
+        /*
+        for($i=0,$k=0;$i<count($arr_ques_title);$i++){
+            //questions
+            //echo 'i='.$i.'<br/>';
+            //echo 'head_text='.$arr_ques_head_text[$i].'<br/>';
+            //echo 'title='.$arr_ques_title[$i].'<br/>';
+            //echo 'text='.$arr_ques_text[$i].'<br/>';
             
-            $texts=$question_answer->children();
-            if(count($texts)>1){
-                //dd($question_answer);
-                //如果是填空题则多个答案连接在一起
-                if((string)$question_answer['type']=='select'){
-                    $ans_text="";
-                    foreach($texts as $text){
+            for($j=0; $j<$arr_ques_count[$i] ;$j++,$k++){
+                //question
+                //echo 'j='.$j.'<br/>';
+                //echo 'k='.$k.'<br/>';
+                $que_id=(string)$arr_que[$k]['id'];
+                $score=(string)$arr_que[$k]['score'];
+                $paper_answer=(string)$arr_paper_answer[$k]->text;
+                $user_answer=(string)$arr_paper_answer[$k]->text;
+                //echo 'que_id='.$que_id.'<br/>';
+                //echo 'paper_answer='.$paper_answer.'<br/>';
+                //echo 'user_answer='.$user_answer.'<br/>';
 
-                        $ans_text.=(string)$text;
-                    }
-                    unset($question_answer->text);
-                    $question_answer->addChild('text',$ans_text);
+            }
+            
+        }
+        */
 
+        //客观题得分
+        $object_grade=0.0;
+        //默认生成一个只包含选择题的xml
+        //新建一个detail_xml对象（保存教师的批改详情，选择题自动加入）
+        $str='<?xml version="1.0" encoding="UTF-8"?>';
+        $str.='<paperanswer></paperanswer>';
+        $detail_xml=simplexml_load_string($str);
+        
+
+        //计算客观题分值
+        for($i=0;$i<count($arr_paper_answer);$i++){
+            if((string)$arr_paper_answer[$i]['type']=='select'){
+                $paper_ans='';
+                $user_ans='';
+                $user_que_score='';//用户这道选择题的得分
+                $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
+                    foreach ($paper_ans_texts as $paper_ans_text){
+                        $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans.=$paper_ans_item;
+                        //echo $paper_ans.' ';
+                        //echo $paper_ans_text.' ';
+                }
+                $user_ans_texts=$arr_user_answer[$i]->xpath('.//text');
+                    foreach ($user_ans_texts as $user_ans_text){
+                        $user_ans_item=(string)$user_ans_text;
+                        $user_ans.=$user_ans_item;
+                }
+                $score=(float)$arr_que[$i]['score'];
+                if(empty($score)){
+                    //如果没有分值默认为1
+                    $score=1;
+                }
+                $id=$arr_que[$i]['id'];
+                //echo $id.'--';
+                //echo $paper_ans.'--';
+                //echo $user_ans.'--';
+                //echo $score.'--';
+                if($paper_ans==$user_ans){
+                    $user_que_score=$score;
                 }else{
-                    //fillbank等类型多个答案之间则以空格隔开
-                    $ans_text="";
-                    foreach($texts as $text){
-
-                        $ans_text.=(string)$text;
-                        $ans_text.=' ';
-                    }
-                    unset($question_answer->text);
-                    $question_answer->addChild('text',$ans_text);
-
+                    $user_que_score=0;
                 }
-                
-            }
-               
-        }
-        //dd($user_total_answer);
-        //预处理结束
-
-
-
-        //用户选择题答案
-        $user_sele_answer=array();
-        for($i=0;$i<$select_num;$i++){
-            $user_sele_answer[]=(string)$user_total_answer[$i]->text;
-        }
-        //用户的选择题答案
-        $str_user_sele_answer=implode(' ', $user_sele_answer);
-        //选择题分值
-        $select_grade=0.0;
-        //用户选择题对了几道
-        $cor_sele_num=0;
-        for($i=0;$i<$select_num;$i++){
-            if($std_sele_answer[$i]==$user_sele_answer[$i]){
-                $select_grade+=$std_sele_score[$i];
-                $cor_sele_num++;
-            }
-        }
-        //echo $select_grade;
-        //echo $cor_sele_num.'<br/>';
-        //用户选择题的分
-        /*
-        $select_grade=(float)$score_total_sel/($select_num*1.0)*$cor_sele_num*1.0;
-        $select_grade=round($select_grade*1.0,1);
-        */
-        if($score_total_sel<=0){
-            //如果选择题没有设置分值，就以‘--’处理
-            $select_grade='--';
-            $score_total_sel='--';
-        }
-        
-        //地理和历史的试卷格式是一样的
-        //以后几个学科可能需要单独处理
-        if($paper_category=='geography' || $paper_category=='history'){
-            //简答题试题
-            //简答题
-            //$shortSections=$paper_content->xpath("/paper/section[contains(@name,'综合')]");
-            //除选择题之外的题作为一道题处理
-            $shortSections=$paper_content->xpath("/paper/section[position()>1]");
-            //dd($shortSections);
-            $shortSection=$shortSections[0];
-            //dd($shortSection);
-            $questions_arr=$shortSection->children();
-
-            //dd($questions_arr);
-            //从当前路径开始查找
-            $question_arr=$shortSection->xpath(".//question");
-            //dd($question_arr);
-            
-            //试题简答题数组
-            $std_short_answers=array();
-            //分值数组
-            $std_scores=array();
-            //试题的id数组
-            $std_que_ids=array();
-            //标记数组 0->该题分值 1->该小题所在大题的分值
-            $questions_flag=array();
-            foreach ($question_arr as $question){
-            if((string)$question['type']=='fillblank'){
-                //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
-                $std_short_answers[]=$question->blank->asXML();
-                try{
-                    //当不存在score这个属性时，并不会报错，而是为空字符串
-                    $score=(string)$question['score'];
-                    $flag=0;//表示该小题有分值
-                    if(empty($score)){
-                        //如果该小题没有分值，则用大题的分值代替
-                        $que_par_arr=$question->xpath('parent::questions');
-                        $que_par=$que_par_arr[0];
-                        //dd($que_par);
-                        $score=(string)$que_par['score'];
-                        $flag=1;//表示该小题的分值是大题的分值
-                        
-                    }
-                    $std_scores[]=$score;
-                }catch(Exception $e){
-                    $std_scores[]="";
-                }
-                
-                $std_que_ids[]=(string)$question['id'];
-                $questions_flag[]=$flag;
-
-                }
-
-            if((string)$question['type']=='shortanswer'){
-                //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-
-                $std_short_answers[]=$question->text->asXML();
-                //$std_scores[]=(string)$question['score'];
-                try{
-                    //当不存在score这个属性时，并不会报错，而是为空字符串
-                    $score=(string)$question['score'];
-                    $flag=0;//表示该小题有分值
-                    if(empty($score)){
-                        //如果该小题没有分值，则用大题的分值代替
-                        $que_par_arr=$question->xpath('parent::questions');
-                        $que_par=$que_par_arr[0];
-                        //dd($que_par);
-                        $score=(string)$que_par['score'];
-                        $flag=1;//表示该小题的分值是大题的分值
-                        
-                    }
-                    $std_scores[]=$score;
-                }catch(Exception $e){
-                    $std_scores[]="";
-                }
-                $std_que_ids[]=(string)$question['id'];
-                $questions_flag[]=$flag;
-            }
-
-            if((string)$question['type']=='select'){
-                //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                $std_short_answers[]=$question->text->asXML();
-                //$std_scores[]=(string)$question['score'];
-                try{
-                    //当不存在score这个属性时，并不会报错，而是为空字符串
-                    $score=(string)$question['score'];
-                    $flag=0;//表示该小题有分值
-                    if(empty($score)){
-                        //如果该小题没有分值，则用大题的分值代替
-                        $que_par_arr=$question->xpath('parent::questions');
-                        $que_par=$que_par_arr[0];
-                        //dd($que_par);
-                        $score=(string)$que_par['score'];
-                        $flag=1;//表示该小题的分值是大题的分值
-                        
-                    }
-                    $std_scores[]=$score;
-                }catch(Exception $e){
-                    $std_scores[]="";
-                }
-                $std_que_ids[]=(string)$question['id'];
-                $questions_flag[]=$flag;
-            }
-
-        }
-
-    }
-        //处理语文试卷
-        if($paper_category=='chinese'){
-            //简答题试题
-            //除选择题之外的题作为一道题处理
-            $shortSections=$paper_content->xpath("/paper/section[position()>1]");
-            //dd($shortSections);
-            //试题简答题数组
-            $std_short_answers=array();
-            //分值数组
-            $std_scores=array();
-            //试题的id数组
-            $std_que_ids=array();
-            //标记数组 0->该题分值 1->该小题所在大题的分值
-            $questions_flag=array();
-            //语文和数学会有多个section
-            for($i=0;$i<count($shortSections);$i++){
-                $shortSection=$shortSections[$i];
-                //dd($shortSection);
-                $questions_arr=$shortSection->children();
-
-                //dd($questions_arr);
-                //从当前路径开始查找
-                $question_arr=$shortSection->xpath(".//question");
-                //dd($question_arr);
-                
-               
-                foreach ($question_arr as $question){
-                    if((string)$question['type']=='fillblank'){
-                        //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
-                        //填空题可能有多个
-
-                        $std_short_answers[]=$question->blank->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-
-                    }
-
-                    if((string)$question['type']=='shortanswer'){
-                        $std_short_answers[]=$question->text->asXML();
-                        //$std_scores[]=(string)$question['score'];
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                            
-                        }catch(Exception $e){
-                            //并不会执行到这里，当不存在score这个属性时，并不会报错，而是为空字符串
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    if((string)$question['type']=='select'){
-                        
-                        //$std_short_answers[]=(string)$question->text;
-                        $std_short_answers[]=$question->text->asXML();
-                        //$std_scores[]=(string)$question['score'];
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    if((string)$question['type']=='punctuation'){
-                        //$std_short_answers[]=(string)$question->passage;
-                        $std_short_answers[]=$question->passage->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    //作文
-                    if((string)$question['type']=='composition'){
-                        $std_short_answers[]=$question->text->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-
-                }//foreach
+                //echo $user_que_score;
+                $object_grade+=$user_que_score;
+                //新建节点
+                $question=$detail_xml->addChild('question');
+                $question->addAttribute('id',$id);
+                $question->addAttribute('type','select');
+                $question->addChild('text',$user_que_score);
+                $question->addChild('comment','');//选择题不要备注， 
 
             }
-            
+            //echo '--------------------------------------<br/>';
+
         }
-        //语文试卷处理结束
-
-
-        //处理数学试卷
-        if($paper_category=='math'){
-            //简答题试题
-            //除选择题之外的题作为一道题处理
-            $shortSections=$paper_content->xpath("/paper/section[position()>1]");
-            //dd($shortSections);
-            //试题简答题数组
-            $std_short_answers=array();
-            //分值数组
-            $std_scores=array();
-            //试题的id数组
-            $std_que_ids=array();
-            //标记数组 0->该题分值 1->该小题所在大题的分值
-            $questions_flag=array();
-            //语文和数学会有多个section
-            for($i=0;$i<count($shortSections);$i++){
-                $shortSection=$shortSections[$i];
-                //dd($shortSection);
-                $questions_arr=$shortSection->children();
-
-                //dd($questions_arr);
-                //从当前路径开始查找
-                $question_arr=$shortSection->xpath(".//question");
-                //dd($question_arr);
-                
-               
-                foreach ($question_arr as $question){
-                    if((string)$question['type']=='fillblank'){
-                        //echo $question['id'].'--'.$question['score'].'--'.$question->blank.'<br/>';
-                        //填空题可能有多个
-
-                        $std_short_answers[]=$question->blank->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-
-                    }
-
-                    if((string)$question['type']=='shortanswer'){
-                        $std_short_answers[]=$question->text->asXML();
-                        //$std_scores[]=(string)$question['score'];
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                            
-                        }catch(Exception $e){
-                            //并不会执行到这里，当不存在score这个属性时，并不会报错，而是为空字符串
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    if((string)$question['type']=='select'){
-                        //echo $question['id'].'--'.$question['score'].'--'.$question->text.'<br/>';
-                        $std_short_answers[]=$question->text->asXML();
-                        //$std_scores[]=(string)$question['score'];
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    if((string)$question['type']=='punctuation'){
-                        $std_short_answers[]=$question->passage->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-                    //作文
-                    if((string)$question['type']=='composition'){
-                        $std_short_answers[]=$question->text->asXML();
-                        try{
-                            //当不存在score这个属性时，并不会报错，而是为空字符串
-                            $score=(string)$question['score'];
-                            $flag=0;//表示该小题有分值
-                            if(empty($score)){
-                                //如果该小题没有分值，则用大题的分值代替
-                                $que_par_arr=$question->xpath('parent::questions');
-                                $que_par=$que_par_arr[0];
-                                //dd($que_par);
-                                $score=(string)$que_par['score'];
-                                $flag=1;//表示该小题的分值是大题的分值
-                                
-                            }
-                            $std_scores[]=$score;
-                        }catch(Exception $e){
-                            $std_scores[]="";
-                        }
-                        $std_que_ids[]=(string)$question['id'];
-                        $questions_flag[]=$flag;
-                    }
-
-
-                }//foreach
-            }
-            
-        }
-        //数学试卷处理结束
-
-        
-        
-
-        
-        //dd($std_que_ids);
-        //dd($std_short_answers);
-        //dd($std_scores);
-        //dd($questions_flag);//标记该题的分值是大题的分值还是该小题的分值
-        //简答题答案
-        //必须得知道选择题是几道题，因为答案都是统一的question，而简答题中又有选择题
-        /*
-        for($i=$select_num;$i<count($std_total_answer);$i++){
-            //试卷简答题试题
-            echo $std_total_answer[$i]['id'].'  ';
-            echo $std_scores[$i-$select_num].'  ';
-            echo '试题:'.$std_short_answers[$i-$select_num].'<br/>';
-            echo '参考答案   '.$std_total_answer[$i]->text.'<br/>';
-            echo '用户答案  '.$user_total_answer[$i]->text.'<br/>';
-        }
-        */
+        //dd($detail_xml);
+        //dd($object_grade);
 
         //先在数据库中插入一条记录教师用户试卷记录，用于保存教师已经改过的题scorer_paper
         //用户id
@@ -1148,15 +824,12 @@ CREATE;
         $scorer=User::where('name',$scorer_name)->first();
         $scorer_id=$scorer->id;
         //echo $scorer_id;
-        //整个选择题算一道题
-        $count_que=count($std_que_ids)+1;
+        $count_que=count($arr_que);
         //echo $count_que."<br/>";
         //评论
         $comment="";
-     
 
         $scorer_paper=ScorerPaper::where('user_id',$scorer_id)->where('user_paper_id',$user_paper_id)->first();
-        //dd($scorer_paper);
         //dd($scorer_paper);
         if(empty($scorer_paper)){
             //新建一条记录
@@ -1169,17 +842,15 @@ CREATE;
             $user_paper->save();
 
             //新建一个detail_xml对象
-            $str='<?xml version="1.0" encoding="UTF-8"?>';
-            $str.='<paperanswer></paperanswer>';
-            $detail_xml=simplexml_load_string($str);
             $str_det_xml=$detail_xml->asXML();
+            //dd($str_det_xml);
             //file_put_contents('./dataTest.txt', $str_det_xml.'\n',FILE_APPEND);
             //echo $str_det_xml.'<br/>';
             $scorer_paper->detail_xml=$str_det_xml;
             //题目总数
             $scorer_paper->count=$count_que;
             //客观题分数
-            $scorer_paper->object_grade=$select_grade;
+            $scorer_paper->object_grade=$object_grade;
             $scorer_paper->save();
 
             //如果为空也要传递$tea_save_anws数组
@@ -1203,6 +874,7 @@ CREATE;
             $detail_xml=simplexml_load_string($str_det_xml);
             $tea_save_anws=array();
             $tea_save_coms=array();
+
             for($i=0;$i<count($std_que_ids);$i++){
                 $que_id=$std_que_ids[$i];
                 $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
@@ -1217,37 +889,37 @@ CREATE;
             }
             //如果保存有用户的选择题答案，从数据库中读出用户的选择题答案
             if($scorer_paper->submit==1){//说明教师提交了批改结果
-                $select_grade=$scorer_paper->object_grade;
+                $object_grade=$scorer_paper->object_grade;
             }
             
         }
         $comment=$scorer_paper->comment;
+        //dd($tea_save_anws);
+        //dd($user_paper_id);
+        //dd($scorer_id);
+        //echo $user_paper_id.'--'.$scorer_id.'<br/>';
+        //dd($tea_save_coms);
 
-        //dd($select_num);//选择题数目
-        //dd($cor_sele_num);//选择题正确数目
-        //dd($select_grade);//选择题分数
-        //dd($str_std_sele_answer);//选择题标准答案
-        //dd($str_user_sele_answer);//用户选择题答案
-        //dd($std_short_answers);//简答题试题
-        //dd($score_total_sel);//选择题得分
-        //dd($paper_name);//试卷名称
-        //dd($stu_name);//上传者姓名
-        //dd($user_paper_time);//用户提交试卷时间
-        //dd($scorer_id);//教师id
-        //dd($user_paper_id);//用户提交试卷id
-        //dd($tea_save_anws);//教师上次批改的结果
-        //dd($std_scores);//分值数组
-        //dd($std_total_answer);//参考答案
-        //dd($user_total_answer);//用户提交的答案
+        
 
-       
-        return view('paperScore',['select_num'=>$select_num,'cor_sele_num'=>$cor_sele_num,'select_grade'=>$select_grade,
-                                'str_std_sele_answer'=>$str_std_sele_answer,'str_user_sele_answer'=>$str_user_sele_answer,
-                                'std_short_answers'=>$std_short_answers,'score_total_sel'=>$score_total_sel,
-                                'paper_name'=>$paper_name,'stu_name'=>$stu_name,'user_paper_time'=>$user_paper_time,
-                                'scorer_id'=>$scorer_id,'user_paper_id'=>$user_paper_id,'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,
-                                'comment'=>$comment,'questions_flag'=>$questions_flag,
-                                 'std_scores'=>$std_scores,'std_total_answer'=>$std_total_answer,'user_total_answer'=>$user_total_answer]);
+        
+        
+
+
+
+         
+
+
+
+        
+        return view('paperScore',['paper_name'=>$paper_name,'stu_name'=>$stu_name,'user_paper_time'=>$user_paper_time,'user_paper_id'=>$user_paper_id,
+                                   'scorer_id'=>$scorer_id,'arr_ques_head_text'=>$arr_ques_head_text,'arr_ques_title'=>$arr_ques_title,'arr_ques_text'=>$arr_ques_text,
+                                    'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
+                                    'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
+                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms
+                                    ]);
+        
+        
        
     }
 
@@ -1319,13 +991,7 @@ CREATE;
         $str_new_det=$detail_xml->asXML();
         //file_put_contents('./dataTest.txt', $str_new_det.'\n',FILE_APPEND);
         $scorer_paper->detail_xml=$str_new_det;
-        if($question_id=="select"){
-            
-            $object_grade=(float)$question_scorer;
-            //file_put_contents('./dataTest.txt', $object_grade.'\n',FILE_APPEND);
-            $scorer_paper->object_grade=$object_grade;
-            
-        }
+        
         $scorer_paper->save();
         //user_paper状态变为评阅中
         $user_paper=UserPaper::where('id',$user_paper_id)->first();
@@ -1367,6 +1033,7 @@ CREATE;
         //计算总分
         $total_grade=0.0;
         $question_anws=$detail_xml->xpath('//question');
+        //file_put_contents('./dataTest.txt', count($question_anws).'\r\n',FILE_APPEND);
         if(count($question_anws)<$scorer_paper->count){
             return response()->json(['success'=>false]);
         }
@@ -1381,7 +1048,14 @@ CREATE;
         }
         //echo $total_grade.'<br/>';
         //客观题得分
-        $object_grade=$scorer_paper->object_grade;
+        $object_grade=0.0;
+        $question_sels=$detail_xml->xpath("//question[@type='select']");
+        for($i=0;$i<count($question_sels);$i++){
+            $que_sel_score=(float)$question_sels[$i]->text;
+            $object_grade+=$que_sel_score;
+        }
+        //$object_grade=$scorer_paper->object_grade;
+        $scorer_paper->object_grade=$object_grade;
         //主观题得分
         $subject_grade=$total_grade-$object_grade;
         $scorer_paper->subject_grade=$subject_grade;

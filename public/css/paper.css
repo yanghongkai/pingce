@@ -52,6 +52,19 @@
 	margin:10px 15px 50px 15px;
 }
 
+.questions_text, .questions_score{
+	color:#333333;
+	font-size: 16px;
+	margin:5px 5px;
+}
+
+.questions_title{
+	color:#333333;
+	font-size: 18px;
+	margin:10px 5px;
+	font-weight: bold;
+}
+
 .question span{
 	display: inline-block;
 	margin: 0 15px;
@@ -65,11 +78,17 @@
 
 .question_Name{
 	font-size: 16px;
-	margin-top: 15px;
+	margin-top: 10px;
+	font-weight: bold;
 }
 
 .question_total{
 	color: #B44242;
+}
+
+.question_select{
+	font-size: 16px;
+	margin-top: 3px;
 }
 
 .question_left{

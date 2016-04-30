@@ -71,7 +71,10 @@
 		            $users=$user_paper->users;
 		            if(count($users)>0){
 		                foreach ($users as $user){
-		                    $scorers.=$user->name.'-';
+		                    if($user->name!='vteacher'){
+		                    	//vteacher不算在内
+                            	$scorers.=$user->name.'_';
+                        	}
 		                }
 		                $scorers=substr($scorers, 0,-1);
 		            }else{

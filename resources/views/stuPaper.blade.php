@@ -8,10 +8,6 @@
 @endsection
 
 @section('content')
-<!--面包树-->
-<div class="navBar">
-	<a href="{{ url('/userEvaluate')}}">评测记录</a>&nbsp;>&nbsp; <a href="javascript:void(0);">{{$paper_name}}</a>
-</div>
 <!--阅卷-->
 <div class="paperScore">
 	<!--试卷信息-->
@@ -24,90 +20,133 @@
 	</div>
 	<!--试卷信息结束-->
 
-	<!--客观题自动评分-->
-	<div class="objSection">
-		<div class="secName">一、选择题</div>
+
+
+	<!--试题开始-->
+	@if(count($arr_ques_title)>0)
+	@for($i=0,$k=0;$i<count($arr_ques_title);$i++)
+	<div class="questions">
+		
+		<div class="questions_detail">
+			<div class="questions_title">
+				{{$arr_ques_head_text[$i]}}(总分{{$arr_ques_score[$i]}}分)
+			</div>
+			<div class="questions_title">
+				{{$arr_ques_title[$i]}}
+			</div>
+			<div class="questions_text">
+				{{$arr_ques_text[$i]}}
+			</div>
+			<!--
+			<div class="questions_score">
+				总分值：20分
+			</div>
+			-->
+		</div>
+
+		@for($j=0; $j<$arr_ques_count[$i];$j++,$k++)
 		<ul class="question">
-		
-		<li>
-			<div class="question_left">总分:</div>{{$score_total_sel}}分
-		</li>
-		<li>
-			<div class="question_left">学生答案:</div>&nbsp;{{$str_user_sele_answer}}
-		</li>
-		<li>
-			<div class="question_left">参考答案:</div>&nbsp;{{$str_std_sele_answer}}
-		</li>
+			@if((string)$arr_que[$k]['type']=='select')
+			<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->headtext->asXML()!!}
+				{!!$arr_que[$k]->text->asXML()!!}
 
-		<li>
-			<div class="question_left">一共:</div>&nbsp;{{$select_num}}&nbsp;题
-		</li>
-		<li>
-			<div class="question_left">答对:</div>&nbsp;{{$cor_sele_num}}&nbsp;题
-		</li>
-
-		<li>
-				<div class="question_left">得分：</div>
-				<input title="试卷名" type="text" name="paperName_scorer" id="paperName" readonly="readonly" value="{{$select_grade}}">
-				</input>
 			</li>
-		
+				<?php
+				$sel_options=$arr_que[$k]->select->xpath('.//option');
+                foreach($sel_options as $sel_option){
+                	?>
+                    <li class="question_select">{{$sel_option['value']}} &nbsp;{{$sel_option}}</li>
+					<?php
+                }
+                ?>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='shortanswer')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->text->asXML()!!}
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='fillblank')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->headtext->asXML()!!}
+				{!!$arr_que[$k]->text->asXML()!!}
+				{!!$arr_que[$k]->blank->asXML()!!}
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='composition')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->title->asXML()!!}
+				{!!$arr_que[$k]->text->asXML()!!}
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='punctuation')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->text->asXML()!!}<br/>
+				{!!$arr_que[$k]->passage->asXML()!!}<br/>
+				{!!$arr_que[$k]->term->asXML()!!}
+				</li>
+			@endif
+
+			<!--
+			<li class="question_select">
+				A.你猜
+			</li>
+			-->
+			<li>
+				<!--<div class="question_total"><div class="question_left">总分：</div>{{$arr_que[$k]['score']}}分</div>-->
+				<div class="question_left">总分：</div>{{$arr_que[$k]['score']}}分
+			</li>
+			<li>
+				<div class="question_left">学生答案：</div>
+				<?php 
+					$ans_texts=$arr_user_answer[$k]->xpath('.//text');
+					foreach ($ans_texts as $ans_text){
+                		echo $ans_text.' ';
+            		}
+				?>
+			</li>
+			<li>
+				<div class="question_left">参考答案：</div>
+				<?php 
+					$ans_texts=$arr_paper_answer[$k]->xpath('.//text');
+					foreach ($ans_texts as $ans_text){
+                		echo $ans_text.' ';
+            		}
+				?>
+			</li>
+
+			<!--
+			@if((string)$arr_que[$k]['type']!='select')
+			<li class="queCom">
+				<div class="question_left">试题备注：</div>
+				<textarea class="queCom" name="queText" id="queText" placeholder="请在此填写试题备注...">{{ $tea_save_coms[$k] }}</textarea>
+			</li>
+			@endif
+			-->
+			<li>
+				<div class="question_left">得分：</div>
+				<input title="试卷名" type="text" name="paperName_scorer" readonly="readonly" id="paperName" value="{{$tea_save_anws[$k]}}">
+				</input>
+
+
+			</li>
 		</ul>
-	</div>
-	<!--客观题结束-->
+		@endfor
+		<hr/>
+	@endfor
+</div>
+@endif
 
-	<!--主观题-->
-	<div class="subSection">
-		<div class="secName">二、综合题</div>
-
-		<?php
-		for($i=$select_num;$i<count($std_total_answer);$i++){
-	            //试卷简答题试题
-			?>
-				<ul class="question">
-					<li class="question_Name">
-					<!--{{$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]}}-->
-					{!!$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]!!}
-					</li>
-					<li>
-						<div class="{{ $questions_flag[$i-$select_num]==1 ? 'question_total' : '' }}"><div class="question_left">总分：</div>{{$std_scores[$i-$select_num]}}分</div>
-					</li>
-					<li>
-						<div class="question_left">学生答案：</div>{{$user_total_answer[$i]->text}}
-					</li>
-					<li>
-						<div class="question_left">参考答案：</div>{{$std_total_answer[$i]->text}}
-					</li>
-					<li class="queCom">
-					<div class="question_left">试题备注：</div>
-					<textarea class="queCom" name="queText" id="queText"  readonly="readonly" placeholder="">{{$tea_save_coms[$i-$select_num]}}</textarea>
-					</li>
-					<li>
-						<div class="question_left">得分：</div>
-						<input title="试卷名" type="text" name="paperName_scorer" id="paperName" readonly="readonly" value="{{$tea_save_anws[$i-$select_num]}}">
-						</input>
-					</li>
-				</ul>
-
-			<?php 
-				/*
-	            echo $std_total_answer[$i]['id'].'  ';
-	            echo $std_scores[$i-$select_num].'  ';
-	            echo '试题:'.$std_short_answers[$i-$select_num].'<br/>';
-	            echo '参考答案   '.$std_total_answer[$i]->text.'<br/>';
-	            echo '用户答案  '.$user_total_answer[$i]->text.'<br/>';
-	            */
-	        }
-
-
-
-
-		?>
-
-		
-	</div>
-	<!--主观题结束-->
-	<!-- 相关文件下载 -->
+<!-- 相关文件下载 -->
 	<div class="sourceDnld">
 		<div class="dnldName">相关资源下载：</div>
 		<p><a href="../downloadByPath?path={{$paper_content_path}}">下载试题</a></p>
@@ -118,13 +157,8 @@
 	<!--返回评测页-->
 	<div class="backEva"><a href="{{ url('/userEvaluate')}}"><返回</a></div>
 	
-</div>
-	
 
-<script type="text/javascript">
-	
 
-</script>
 
 
 

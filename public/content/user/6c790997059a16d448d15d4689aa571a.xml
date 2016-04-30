@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2011年普通高等学校招生全国统一考试语文（北京卷）" papersubject="Chinese" paperid="2011BeijingGaokao" info="语文攻关组第一次测试">
+	<question id="2011BeijingGaokao_01" type="select">
+		<text>A</text>
+	</question>
+	<question id="2011BeijingGaokao_02" type="select">
+		<text>A</text>
+	</question>
+	<question id="2011BeijingGaokao_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="2011BeijingGaokao_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="2011BeijingGaokao_05" type="select">
+		<text>D</text>
+	</question>
+	<question id="2011BeijingGaokao_06" type="select">
+		<text>D</text>
+	</question>
+	<question id="2011BeijingGaokao_07" type="select">
+		<text>C</text>
+	</question>
+	<question id="2011BeijingGaokao_08" type="select">
+		<text>D</text>
+	</question>
+	<question id="2011BeijingGaokao_09" type="select">
+		<text>B</text>
+	</question>
+	<question id="2013BeijingGaokao_10" type="punctuation">
+		<text>
+熹窃观古昔圣贤所以教人为学之意/莫非使之讲明义理/以修其身/然后推以及人/非徒欲其务记览/为词章/以钓声名/取利禄而已也/今人之为学者/既反是矣/然圣贤所以教人之法/具存于经/有志之士/固当熟读/深思而问辨之。		
+        </text>
+	</question>
+	<question id="2011BeijingGaokao_11_01" type="fillblank" num="2" scoretype="each">
+		<text>春服既成</text>
+		<text>浴乎沂</text>
+	</question>
+	<question id="2011BeijingGaokao_11_02" type="fillblank" num="2" scoretype="each">
+		<text>水击三千里</text>
+		<text>抟扶摇而上者九万里</text>
+	</question>
+	<question id="2011BeijingGaokao_11_03" type="fillblank" num="2" scoretype="each">
+		<text>庶竭驽钝</text>
+		<text>攘除奸雄</text>
+	</question>
+	<question id="2011BeijingGaokao_11_04" type="fillblank" num="2" scoretype="each">
+		<text>浩浩汤汤</text>
+		<text>朝辉夕阴</text>
+	</question>
+	<question id="2011BeijingGaokao_11_05" type="fillblank" num="2" scoretype="each">
+		<text>铁马秋风大散关</text>
+		<text>塞上长城空自许</text>
+	</question>
+	<question id="2011BeijingGaokao_11_06" type="fillblank" num="2" scoretype="each">
+		<text>青山遮不住</text>
+		<text>江晚正愁予</text>
+	</question> 
+	<question id="2011BeijingGaokao_12_01" type="select">
+		<text>A</text>
+	</question>
+	<question id="2011BeijingGaokao_12_02" type="shortanswer">
+		<text>第一，平实，没有华丽辞藻，明白如话，通俗浅显。举例：“捧盘出户”“市楼东西”等，均无任何修饰之语。
+              第二，有韵味。写景、叙事，蕴含丰富。举例：开篇两句，从视觉和听觉两个方面描画出了清冷空寂的景色，透露出作者对卖饼儿生活际遇的同情和关怀.其他如“人未行”的空寂街景、“忧饼冷”的心态表露，均语浅而意深。
+        </text>
+	</question>
+	<question id="2011BeijingGaokao_13" type="shortanswer">
+		<text>第一问： 
+   教育内容：要点一：无论从事何种职业，都要意志坚定，不畏艰辛。          
+             要点二：要有追求，持之以恒，勤勉而不懈怠。 
+   教育方式：要点一：艺术性，以诗诫子，而不是枯燥说教。          
+             要点二：形象性，以卖饼儿为榜样，激励自己的孩子。 
+          第二问：（略）
+        </text>
+	</question>
+    <question id="2011BeijingGaokao_14" type="select">
+		<text>C</text>
+	</question>
+	<question id="2011BeijingGaokao_15" type="shortanswer">
+		<text>
+汽爆分离技术、酶解过程技术、制造纤维素酶技术、提纯脱水（或提取酒精）技术。</text>
+	</question>
+    <question id="2011BeijingGaokao_16" type="select" num="2" scoretype="all">
+		<text>B</text>
+		<text>C</text>
+	</question>
+	<question id="2011BeijingGaokao_17" type="shortanswer">
+		<text>
+开头以古诗渲染作者从前的印象，在强烈对比中反衬现实真相；起笔大气，在引起下文的同时，也透出文章特有的书卷气。 
+结尾的引用既印证了前文自然景物与生命情感交融互渗的关系，引发作者的诗句来收束文章，同时又以林则徐寂寥无奈的心境映衬作者明朗向上的情绪。
+        </text>
+	</question>
+	<question id="2011BeijingGaokao_18" type="shortanswer">
+		<text>
+		“雪”是贯穿全文的线索； “雪”化水汇成了河流，哺育着河西走廊世世代代的子孙； “雪”赋予祁连山以壮丽景观，圣灵神韵，使人生亲切之感；“雪”充当的是作者抒发思想感情和表达历史感悟的载体；“雪”作为生动鲜明的感性意象，使文章富于艺术感染力。
+		</text>
+	</question>
+	<question id="2011BeijingGaokao_19" type="shortanswer">
+		<text>
+		第一问：祁连山为当地古往今来的历史提供了自然条件，历史文献中的积淀也赋予祁连山以丰厚的人文内涵，史中有山，山中蕴史；眼前的自然山景也出发作者的历史记忆，唤醒了作者的历史感。  
+		第二问：（略）
+		</text>
+	</question>
+	<question id="2011BeijingGaokao_20"  type="composition">
+		<title>阅读下列材料，按要求作文。</title>
+			<text>
+鹿特丹世乒赛结束后，师生们一起议论。
+生甲：太好了，中国对又包揽了全部冠军，这叫实至名归，竞技体育就得靠实力说话。
+生乙：但我更愿意看见外国选手成功挑战中国名将，一个国家长期垄断某项体育比赛的金牌，其实并不利于这一项目的发展。
+生丙：有人主张中国队应让出一两枚金牌，我不赞成。如果故意输球，就有违公平竞争的原则和奥林匹克精神。
+……
+老师：同学们说的都有一定的道理，有些道理不仅体现在乒乓球运动上，也适用于其他社会生活领域。
+要求：根据以上材料，自选角度，自拟题目，联系实际，写一篇不少于800字的文章，除诗歌外，问题不限。				
+			</text>
+	</question>	
+</paperanswer>
