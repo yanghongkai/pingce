@@ -8,6 +8,10 @@
 @endsection
 
 @section('content')
+<!--面包树-->
+<div class="navBar">
+	<a href="{{ url('/userEvaluate')}}">评测记录</a>&nbsp;>&nbsp; <a href="javascript:void(0);">{{$paper_name}}</a>
+</div>
 <!--阅卷-->
 <div class="paperScore">
 	<!--试卷信息-->
