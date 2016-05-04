@@ -34,7 +34,7 @@ class PaperController extends Controller
         $paperName=$request->input('paperName');
         if(empty($paperName)){
             //如果试卷名为空，则保存失败
-            file_put_contents('dataTest.txt', 'paperName='.$paperName.'\r\n',FILE_APPEND);
+            //file_put_contents('dataTest.txt', 'paperName='.$paperName.'\r\n',FILE_APPEND);
             return response()->json(['success'=>false]);
         }
         $category=$request->input('subject');
@@ -334,16 +334,21 @@ CREATE;
         //将提交的文件的路径名保存到session中
         $request->session()->put('answer',$savePath);
         $request->session()->save();//写入session后，需要马上保存
-
+        
         //判断试题文件和答案文件是否匹配
         if($request->session()->has('paper')){
+            //file_put_contents('./dataTest.txt', '54hello'.'\r\n',FILE_APPEND);
             $content_path=$request->session()->get('paper');
             $content=simplexml_load_file('./content/'.$content_path);
             $content_name=(string)$content['name'];
+            //file_put_contents('./dataTest.txt', $content_name.'\r\n',FILE_APPEND);
             $answer_path=$request->session()->get('answer');
+            //file_put_contents('./dataTest.txt', $answer_path.'\r\n',FILE_APPEND);
             $answer=simplexml_load_file('./content/'.$answer_path);
+            //file_put_contents('./dataTest.txt', $answer_path.'\r\n',FILE_APPEND);
             $answer_name=(string)$answer['papername'];
-            file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
+            //file_put_contents('./dataTest.txt', $answer_name.'\r\n',FILE_APPEND);
+            //file_put_contents('./dataTest.txt', $content_name.'--'.$answer_name.'\r\n',FILE_APPEND);
             if($content_name != $answer_name){
                 //清空之前的session
                 $request->session()->forget('answer');
@@ -653,12 +658,14 @@ CREATE;
         //试题
         $paper_content=simplexml_load_file('./content/'.$paper_content_path);
         $arr_questions=$paper_content->xpath('/paper//questions');
+        //dd($arr_questions);
         //echo count($arr_questions);//以语文试卷为例，8道题
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
         $arr_ques_count=array();
         $arr_ques_score=array();
+        $arr_maxnum=array();
         foreach($arr_questions as $arr_question){
             //dd($arr_question);
             $questions_head_text=$arr_question->headtext;
@@ -673,6 +680,18 @@ CREATE;
             $arr_ques_count[]=$ques_count;
             //大题分值
             $arr_ques_score[]=$arr_question['score'];
+
+            $maxnum=(float)$arr_question['maxnum'];
+            $arr_maxnum[]=$maxnum;
+
+            /*
+            $maxnum=(float)$arr_question['maxnum'];
+            if($maxnum>0){
+                //dd($arr_question);
+                $str_rx='任选其中'.$maxnum.'道题';
+                dd($str_rx);
+            }
+            */
 
 
 
@@ -916,7 +935,7 @@ CREATE;
                                    'scorer_id'=>$scorer_id,'arr_ques_head_text'=>$arr_ques_head_text,'arr_ques_title'=>$arr_ques_title,'arr_ques_text'=>$arr_ques_text,
                                     'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
                                     'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
-                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms
+                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'arr_maxnum'=>$arr_maxnum
                                     ]);
         
         

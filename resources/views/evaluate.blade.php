@@ -98,6 +98,7 @@
 	function showResponse(response){
 		if(response.success==true){
 			alert('上传成功');
+			window.location.href="{{ url('/evaluate')}}";
 		}
 		if(response.success==false){
 			alert('上传失败');

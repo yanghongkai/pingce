@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2013北京高考文综地理试卷" papersubject="Geography" paperid="2013BeijingGaokao">
+
+	<question id="2013BeijingGaokao_01" type="select">
+		<text>D</text>
+	</question>
+	<question id="2013BeijingGaokao_02" type="select">
+		<text>A</text>
+	</question>
+	<question id="2013BeijingGaokao_03" type="select">
+		<text>D</text>
+	</question>
+	<question id="2013BeijingGaokao_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="2013BeijingGaokao_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="2013BeijingGaokao_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2013BeijingGaokao_07" type="select">
+		<text>A</text>
+	</question>
+
+	<question id="2013BeijingGaokao_08" type="select" >
+		<text>C</text>
+	</question>
+	
+	<question id="2013BeijingGaokao_09" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2013BeijingGaokao_10" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2013BeijingGaokao_11" type="select">
+		<text>B</text>
+	</question>
+	<question id="2013BeijingGaokao_36_01" type="shortanswer">
+		<text>
+			交通运输方式：海洋运输；航空运输；
+			原因：新西兰为岛国，距其他大陆较远；其经济发达，对外经济贸易和人员交流频繁；海洋运输运量大、成本低；航空运输速度快。
+		</text>
+	</question>
+	<question id="2013BeijingGaokao_36_02" type="shortanswer">
+		<text>
+			地处西风带，盛行西北风；岛屿西侧沿海是东北—西南走向的山脉；岛屿西侧为迎风坡降水量多；东侧为背风坡降水量少。
+		</text>
+	</question>
+	<question id="2013BeijingGaokao_36_03" type="shortanswer">
+		<text>
+			纬度较低，热量条件好；地势较平坦（平原面积较大）；机场密度较大（数量多），路网密度较高；靠近首都，城市密度较大（数量较多）。
+		</text>
+	</question>
+	<question id="2013BeijingGaokao_36_04" type="shortanswer">
+		<text>
+			位于环太平洋火山地震带（板块构造边缘地带或太平洋板块与印度洋板块相挤压的地带），地壳运动活跃（内力作用强烈）易发生岩浆活动或地震。观赏火山地貌等景观，利用温泉等地热资源度假疗养。
+			（太平洋板块与印度洋板块挤压处，地壳运动活跃，易发生地震；岩浆在巨大的压力作用下沿裂隙喷出地表，形成火山喷发，喷出的岩浆和火山灰冷却凝固，形成火山锥。）
+		</text>
+	</question>
+	<question id="2013BeijingGaokao_40" type="shortanswer">
+		<text>
+			①地：地处低纬度大陆东岸。纬度低，气温高；受东南信风控制，盛行向岸风；位于巴西高原东南部，是迎风坡；沿岸有暖流，增温增湿。故此地终年降水丰沛、气温较高，形成热带雨林。
+			②地：山地海拔高，从山麓到山顶，随海拔升高，气温降低，降水变化，形成垂直气候带，从而形成植被的垂直变化现象。
+		</text>
+	</question>
+	<question id="2013BeijingGaokao_41" type="shortanswer">
+		<text>
+			甲区域：聚落主要沿河谷、交通线分布；平原（河流谷地）聚落密度较大，山区和高原聚落密度较小。该区域雨热同期，大部分地区黄土覆盖，土层深厚，易于耕作，河流经过。
+			乙区域：聚落主要沿河湖及交通线分布；长江以南密度较大，以北聚落密度较小。该区域水热条件优越，地势低平，水网密集，土层深厚，土壤肥沃。
+		</text>
+	</question>
+</paperanswer>
+

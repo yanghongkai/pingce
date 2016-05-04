@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2012年普通高等学校招生全国统一考试语文（北京卷）" papersubject="Chinese" paperid="2012BeijingGaokao" info="语文攻关组第一次测试">
+	<question id="2012BeijingGaokao_01" type="select">
+		<text>A</text>
+	</question>
+	<question id="2012BeijingGaokao_02" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_03" type="select">
+		<text>D</text>
+	</question>
+	<question id="2012BeijingGaokao_04" type="select">
+		<text>B</text>
+	</question>
+	<question id="2012BeijingGaokao_05" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_06" type="select">
+		<text>B</text>
+	</question>
+	<question id="2012BeijingGaokao_07" type="select">
+		<text>D</text>
+	</question>
+	<question id="2012BeijingGaokao_08" type="select">
+		<text>D</text>
+	</question>
+	<question id="2012BeijingGaokao_09" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_10_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_10_02" type="select" num="2" scoretype="all">
+		<text>D</text>
+		<text>E</text>
+	</question>
+	<question id="2012BeijingGaokao_11" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="2012BeijingGaokao_12" type="shortanswer">
+		<text>
+医扁鹊见秦武王，武王示之病。扁鹊请除之。左右曰：“君之病在耳之前目之下，除之未必已也，将使耳不聪目不明。”君以告扁鹊。扁鹊怒而投其石，曰：“君与知之者谋之，而与不知。</text>
+	</question>
+	<question id="2012BeijingGaokao_13_01" type="fillblank" num="2" scoretype="each">
+		<text>博学而日参省乎己</text>
+		<text>知明而行无过矣</text>
+	</question>
+	<question id="2012BeijingGaokao_13_02" type="fillblank" num="2" scoretype="each">
+		<text>风烟望五津</text>
+		<text>同是宦游人</text>
+	</question>
+	<question id="2012BeijingGaokao_13_03" type="fillblank" num="2" scoretype="each">
+		<text>随风潜入夜</text>
+		<text>润物细无声</text>
+	</question>
+	<question id="2012BeijingGaokao_13_04" type="fillblank" num="2" scoretype="each">
+		<text>斯是陋室</text>
+		<text>惟吾德馨</text>
+	</question>
+	<question id="2012BeijingGaokao_13_05" type="fillblank" num="2" scoretype="each">
+		<text>同是天涯沦落人</text>
+		<text>相逢何必曾相识</text>
+	</question>
+	<question id="2012BeijingGaokao_13_06" type="fillblank" num="2" scoretype="each">
+		<text>则游者众</text>
+		<text>则至者少</text>
+	</question>   
+	<question id="2012BeijingGaokao_14" type="select">
+		<text>D</text>
+	</question>
+	<question id="2012BeijingGaokao_15" type="shortanswer">
+		<text>
+		1.从整体认识人体，强调整体的影响；
+        2.采取阴阳对立统一的辩证眼光；
+        3.从外部现象观察总结生命规律。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_16" type="select" num="2" scoretype="all">
+		<text>A</text>
+		<text>E</text>
+	</question>
+	<question id="2012BeijingGaokao_17" type="shortanswer">
+		<text>梅里雪山对于作者的创作有如下三点作用：1.让作者突破了原有的写作束缚，启发了一个飞往更高空间的方向；2.成为了小说中故事发生和主人公活动的环境背景；3.在梅里雪山曾经发生过的17人遇难的惨剧同样启发了作者的思考。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_18" type="shortanswer">
+		<text>在作者理解中，为小说命名的“绝顶”包含如下几个层次的含义：首先，绝顶是指小说中主人公希望攀登的梅里雪山绝顶；其次，从攀登雪山中抽象出的“绝顶”，象征着人们在人生中不懈追求希望超越的极限；最后，作者也把创作这部小说当做自己写作生涯的“绝顶”，它或许是最后一部作品，而作者仍试图翻越。
+        </text>
+	</question>
+	<question id="2012BeijingGaokao_19" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="2012BeijingGaokao_20"  type="composition">
+		<title>阅读下面的材料，按要求作文。</title>
+			<text>
+老计一个人工作在大山深处，负责巡视铁路，防止落石、滑坡、倒树危及行车安全，每天要独自行走二十多公里。每当列车经过，老计都会庄重的敬礼。此时，列车也鸣响汽笛，汽笛在深山中久久回响……
+大山深处的独自巡视，庄重的敬礼，久久回响的汽笛……，这一个个场景带给你怎样的感受和思考？
+请在材料含义范围之内，自定角度，自拟题目，自选文体（诗歌除外），写一篇不少于800字的文章。				
+			</text>
+	</question>	
+</paperanswer>

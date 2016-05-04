@@ -102,6 +102,7 @@
 	text-align: center;
 	padding: 3px 3px;
 	/*margin: 3px 3px;*/
+	margin-left: 10px;
 	font-size: 14px;
 }
 
@@ -192,8 +193,8 @@
 .confirm{
 	font-size: 14px;
 	color: #B44242;
-	/*float: left;*/
-	margin-left: 200px;
+	float: left;
+	margin-left: 10px;
 	margin-top: 3px;
 }
 
@@ -242,6 +243,17 @@
 	height: 50px;
 	resize: none;
 	/*float: left;*/
+}
+
+.unread{
+	background-color: rgba(193,71,71,0.7);
+}
+
+.select{
+	font-size: 14px;
+	margin-top: 3px;
+	margin-left: 10px;
+	float: left;
 }
 
 /*学生卷面查看*/

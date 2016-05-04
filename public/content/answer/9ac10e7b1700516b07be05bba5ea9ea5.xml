@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2012北京高考文综地理试卷" papersubject="Geography" paperid="2012BeijingGaokao">
+
+	<question id="2012BeijingGaokao_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="2012BeijingGaokao_03" type="select">
+		<text>A</text>
+	</question>
+	<question id="2012BeijingGaokao_04" type="select" >
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_05" type="select">
+		<text>A</text>
+	</question>
+	<question id="2012BeijingGaokao_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_07" type="select">
+		<text>D</text>
+	</question>
+
+	<question id="2012BeijingGaokao_08" type="select" >
+		<text>B</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_09" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_10" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2012BeijingGaokao_11" type="select">
+		<text>C</text>
+	</question>
+	<question id="2012BeijingGaokao_36_01" type="shortanswer">
+		<text>
+			平原：城镇数量多，密度大，交通线路密集； 
+      山地和高原：城镇数量少，密度小，交通线路稀疏。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_36_02" type="shortanswer">
+		<text>
+			在滦河河口附近，流速减缓，泥沙堆积，形成三角洲。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_36_03" type="shortanswer">
+		<text>
+			河道变窄，分叉减少。主要由于上游沿线修建水库拦水，自滦河向流域外引水，滦河流域生产生活用水量增加，河流流量减少，沼泽湿地被开发为盐田、鱼塘。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_36_04" type="shortanswer">
+		<text>
+			拉动基础设施建设；带动相关产业集聚；促进当地商业、服务业的发展；增加当地就业岗位和经济收入。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_36_05" type="shortanswer">
+		<text>
+			制约因素：降水偏少，水资源短缺，多旱涝、寒潮、冰雹、风沙、病虫害、土壤盐碱化等；应对措施：完善农田水利设施和防护林体系；增加农业技术投入，发展节水农业；加强对灾害的监测和预防；培育和种植优良作物品种。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_39_01" type="shortanswer">
+		<text>
+			城市中心为片状分布，边缘呈网状分布（环状分布，沿主干道呈楔形或条带状或放射状分布）。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_39_02" type="shortanswer">
+		<text>
+			吸附飘（浮）尘，吸收污染气体，释放氧气。
+		</text>
+	</question>
+	<question id="2012BeijingGaokao_40" type="shortanswer">
+		<text>
+			增加了交互功能；信息查询和空间分析功能强，数据更新快，信息共享好。
+		</text>
+	</question>
+</paperanswer>
+

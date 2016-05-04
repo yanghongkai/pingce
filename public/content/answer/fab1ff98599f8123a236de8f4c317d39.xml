@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="语文测试12" papersubject="Chinese" paperid="test12" info="语文攻关组第一次测试">
+	<question id="test12_01" type="select">
+		<text>C</text>
+	</question>
+    <question id="test12_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="test12_04" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_05" type="select">
+		<text>B</text>
+	</question>
+	<question id="test12_06" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_07" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_08" type="select">
+		<text>B</text>
+	</question>
+	<question id="test12_09" type="select">
+		<text>B</text>
+	</question>
+    <question id="test12_10" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_11" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_12" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_13" type="select">
+		<text>B</text>
+	</question>
+	<question id="test12_14" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_15" type="select">
+		<text>A</text>
+	</question>
+	<question id="test12_16" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_17" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_18" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_19_01"  type="fillblank" num="2" scoretype="each">
+		<text>送别</text>
+		<text>杨柳</text>
+	</question>	
+	<question id="test12_19_02"  type="fillblank" num="2" scoretype="each">
+	    <text>明快</text>
+		<text>低沉</text>
+    </question>
+	<question id="test12_19_03" type="shortanswer">
+		<text>王诗以新奇的比喻，把无形的惜别之情比作眼前无处不在、无边无际的春色，从江北到江南，一直陪伴在友人身边，表现出对友人惜别之情深厚。郑诗把原本无形无象的“离恨”，化为可以运载的有形有量之物，仿佛画舸载着诗人的离恨驶向江南，表现出离愁的深重。
+        </text>
+    </question>
+	<question id="test12_20_01" type="select">
+		<text>C</text>
+	</question>
+	<question id="test12_20_02"  type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="test12_21" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_22"  type="shortanswer">
+		<text>①长城具有强烈的生命节奏；②长城达到了天人合一的境界(或建筑美与自然美浑然一体)；③长城因天时不同具有丰富变幻的美感。</text>
+	</question>
+	<question id="test12_23" type="select">
+		<text>D</text>
+	</question>
+	<question id="test12_24" type="select">
+		<text>B</text>
+	</question>
+	<question id="test12_25" type="shortanswer" >
+		<text>“这种生命史”是完美的生命史，生命史中无论大小的言行举止，都体现出高尚、独特的人格修养，并与完整的人格协调一致。</text>
+	</question>
+	<question id="test12_26_01" type="shortanswer">
+		<text>美点：有完整高尚的人格，有独特的情趣或个性，自然。</text>
+	</question>
+	<question id="test12_26_02" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="test12_27" type="select"> 
+		<text>C</text>
+	</question>
+	<question id="test12_28" type="shortanswer">
+		<text>①“鹰”从题目到结尾贯穿小说始终，推动着小说故事情节的变化发展（是小说情节变化发展的线索）；
+        ②“鹰”的有或无影响着老人身心的状态，有助于刻画人物形象；
+		③鹰（风筝）在空中飞翔的姿态，寄托了老人对自由自在生活的向往追求（象征着老人自由自在的精神世界）。 
+		</text>
+	</question>
+	<question id="test12_29" type="shortanswer">
+		<text>①老人代表了在城市化进程中被迫改变自己所熟悉的生活的普通人。
+		②城市化进程改变了他们原有的自由自在的生活。
+		③他们内心充满了孤独、苦闷和失落，他们深深地眷恋着乡村的生活，努力在城市中寻找、追求着他们所习惯的自由自在的生活。小说中这类人的身上，寄寓着作者对他们的人文关怀。
+		</text>
+	</question>
+	<question id="test12_30" type="select" num="2" scoretype="all"> 
+		<text>C</text>
+		<text>E</text>
+	</question>
+	<question id="test12_31_01"  type="fillblank" num="2" scoretype="each">
+		<text>载着</text>
+		<text>摇曳</text>
+	</question>	
+	<question id="test12_31_02"  type="fillblank" num="2" scoretype="each">
+	    <text>“载着”形象地表现出满湖月光，随水波轻漾的景象。</text>
+	</question>
+	<question id="test12_32" type="shortanswer">
+		<text>文中写了三个梦，既指作者儿时做的探索小岛秘密的梦，也指作者、两个孩子儿时探索未知奥秘的梦想。湖光塔影秀雅迷人的燕园，还是唤起孩子们(或年轻人的)人生梦想、启迪他们智慧的摇篮。</text>
+	</question>
+	<question id="test12_33" type="shortanswer">
+		<text>①美丽的湖光塔影是燕园的象征，表现了燕园的自然之美。
+		②鼓鼓的半旧的书包代表着一代代不断追求人类智慧的燕园学子(或燕园学子孜孜以求的精神)。
+		③湖光塔影与书包相结合的画面，揭示出燕园积淀着丰富的历史人文内涵(或它是中国文化知识、人文精神的圣殿) </text>
+	</question>
+	<question id="test12_34" type="punctuation">
+		<text>
+		 陕西因洪水下／大石塞山涧中／水遂横流为害／石之大有如屋者／人力不能去／州县患之／雷简夫为县令／乃使人各于石下穿一穴／度如石大／挽石入穴／窖之／水患遂息也。 
+		</text>
+	</question>
+	<question id="test12_35" type="punctuation">
+		<text>
+		 鲁有恶者／其父出而见商咄／反而告其邻曰／商咄不若吾子矣／且其子至恶也／商咄至美也／彼以至美不如至恶／尤乎爱也／故知美之恶／知恶之美／然后能知美恶。
+		</text>
+	</question>
+    <question id="test12_36_01" type="fillblank" num="2" scoretype="each">
+		<text>臂非加长也</text>
+		<text>声非加疾也</text>
+	</question>
+	<question id="test12_36_02" type="fillblank" num="2" scoretype="each">
+		<text>悟言一室之内</text>
+		<text>放浪形骸之内</text>
+	</question>
+	<question id="test12_36_03" type="fillblank" num="2" scoretype="each">
+		<text>若夫日车而林霏开</text>
+		<text>云归而岩穴暝</text>
+	</question>
+	<question id="test12_36_04" type="fillblank" num="2" scoretype="each">
+		<text>圣人之所以为圣</text>
+		<text>愚人之所以为愚</text>
+	</question>
+	<question id="test12_36_05" type="fillblank" num="2" scoretype="each">
+		<text>淇则有岸</text>
+		<text>隰则有泮 </text>
+	</question>
+	<question id="test12_36_06" type="fillblank" num="2" scoretype="each">
+		<text>城阙辅三秦</text>
+		<text>同是宦游人</text>
+	</question>
+	<question id="test12_37_01" type="fillblank" num="1" scoretype="all">
+		<text>鸡鸣桑树颠</text>
+	</question>
+	<question id="test12_37_02" type="fillblank" num="1" scoretype="all">
+		<text>竹喧归浣女</text>
+	</question>
+	<question id="test12_37_03" type="fillblank" num="1" scoretype="all">
+		<text>扪参历井仰胁息</text>
+	</question>
+	<question id="test12_37_04" type="fillblank" num="1" scoretype="all">
+		<text>一尊还酹江月</text>
+	</question>
+	<question id="test12_37_05" type="fillblank" num="1" scoretype="all">
+		<text>纵豆蔻词工</text>
+	</question>
+	<question id="test12_37_06" type="fillblank" num="1" scoretype="all">
+		<text>以事秦之心礼天下之奇才</text>
+	</question>
+	<question id="test12_37_07" type="fillblank" num="2" scoretype="each">
+		<text>酾酒临江</text>
+		<text>横槊赋诗</text>
+	</question>
+	<question id="test12_38" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="test12_39" type="shortanswer">
+		<text>略</text>
+	</question>
+	<question id="test12_40"  type="composition">
+		<text>
+“品牌”是商业用语，品牌的内涵是指它所包含的个性、价值和文化，个人、集体、国家等都应该有自己的品牌。 
+你对“品牌”有怎样的思考？请自选角度，自拟题目，写一篇不少于800字的文章，除诗歌外，文体不限。  
+		</text>
+	</question>
+	<question id="test12_41"  type="composition">
+		<text>阅读下面文字，按要求写作文。 
+绿萝很好养，折上几枝，放进盛水的玻璃瓶里就行了。摆在桌上，眼前一片绿意。可让人遗憾的是，它在水里慢慢生了根之后，几乎就不再生长，没精打采，枝蔫叶稀。是缺少阳光?放到窗前晒些日子，不见起色。是氧气不足?打开窗子常透透气，也没效果。后来，试着往水里投了一把石子，原来在水中漂来漂去的根须似乎一下有了依托，它们使劲往下扎，把石子紧紧缠住。没过多久，绿萝就绿油油的，枝繁叶茂了。 
+请就以上材料，展开联想，自定角度，写一篇文章。题目自拟，文体自选(除诗歌外)，不少于800字。 
+ 		</text>
+	</question>	
+</paperanswer>

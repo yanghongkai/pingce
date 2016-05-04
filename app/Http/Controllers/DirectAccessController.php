@@ -138,6 +138,7 @@ class DirectAccessController extends Controller
                 $paper_id=$user_paper->paper_id;
                 //获得试卷信息
                 $paper=Paper::where('id',$paper_id)->first();
+                //dd($paper);
                 $paper_name=$paper->name;
                 $arr_paper_name[]=$paper_name;
                 //echo $paper_name.'**';
@@ -190,13 +191,19 @@ class DirectAccessController extends Controller
                 if(empty($scorer_paper)){
                     //虚拟试卷信息(如果刚提交，vteacher，未评阅， 评阅中，也显示出来)
                     $scorer_paper_vtea=ScorerPaper::where('user_paper_id',$user_paper->id)->orderBy('updated_at','desc')->first();
-                    //总分
-                    $grade='';
-                    //客观题得分
-                    $arr_object_grade[]=$scorer_paper_vtea->object_grade;
-                    //主观题得分
-                    $arr_subject_grade[]='';
-                    $arr_scorer_paper_id[]=$scorer_paper_vtea->id;//还没有批改结果
+                    if(empty($scorer_paper_vtea)){
+                        //如果没有批改信息，将这条记录删除
+                        $user_paper->delete();
+                    }else{
+                        //总分
+                        $grade='';
+                        //客观题得分
+                        $arr_object_grade[]=$scorer_paper_vtea->object_grade;
+                        //主观题得分
+                        $arr_subject_grade[]='';
+                        $arr_scorer_paper_id[]=$scorer_paper_vtea->id;//还没有批改结果
+                        }
+                    
                 }else{
                     $grade=$scorer_paper->grade;
                     $arr_object_grade[]=$scorer_paper->object_grade;

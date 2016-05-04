@@ -134,9 +134,13 @@
 			</li>
 			@endif
 			<li>
-				<div class="question_left">得分：</div>
+				<div class="question_left unread">得分：</div>
 				<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="{{$tea_save_anws[$k]}}">
 				</input>
+				<!--<div class="select">*任选四道题</div>-->
+				@if($arr_maxnum[$i]>0)
+					<div class="select">{{'任选其中'.$arr_maxnum[$i].'道题'}}</div>
+				@endif
 				<!--隐藏信息-->
 				<input type="hidden" name="user_paper_id" value="{{$user_paper_id}}" />
 				<input type="hidden" name="scorer_id" value="{{$scorer_id}}" />
