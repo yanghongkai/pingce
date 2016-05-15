@@ -29,13 +29,13 @@
 		
 		<div class="questions_detail">
 			<div class="questions_title">
-				{{$arr_ques_head_text[$i]}}(总分{{$arr_ques_score[$i]}}分)
+				{!!$arr_ques_head_text[$i]!!}(总分{{$arr_ques_score[$i]}}分)
 			</div>
 			<div class="questions_title">
-				{{$arr_ques_title[$i]}}
+				{!!$arr_ques_title[$i]!!}
 			</div>
 			<div class="questions_text">
-				{{$arr_ques_text[$i]}}
+				{!!$arr_ques_text[$i]!!}
 			</div>
 			<!--
 			<div class="questions_score">
@@ -56,8 +56,10 @@
 				<?php
 				$sel_options=$arr_que[$k]->select->xpath('.//option');
                 foreach($sel_options as $sel_option){
+
                 	?>
-                    <li class="question_select">{{$sel_option['value']}} &nbsp;{{$sel_option}}</li>
+                    <!--<li class="question_select">{{$sel_option['value']}} &nbsp;{{$sel_option}}</li>-->
+                   <li class="question_select">{{$sel_option['value']}} &nbsp;{!!$sel_option->asXML()!!}</li>
 					<?php
                 }
                 ?>

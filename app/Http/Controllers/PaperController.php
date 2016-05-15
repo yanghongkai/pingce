@@ -668,9 +668,9 @@ CREATE;
         $arr_maxnum=array();
         foreach($arr_questions as $arr_question){
             //dd($arr_question);
-            $questions_head_text=$arr_question->headtext;
-            $questions_title=(string)$arr_question->title;
-            $questions_text=(string)$arr_question->text;
+            $questions_head_text=$arr_question->headtext->asXML();
+            $questions_title=(string)$arr_question->title->asXML();
+            $questions_text=(string)$arr_question->text->asXML();
             $arr_ques_head_text[]=(string)$questions_head_text;
             $arr_ques_title[]=$questions_title;
             $arr_ques_text[]=$questions_text;
@@ -913,6 +913,7 @@ CREATE;
             
         }
         $comment=$scorer_paper->comment;
+        //dd($arr_que);
         //dd($tea_save_anws);
         //dd($user_paper_id);
         //dd($scorer_id);
