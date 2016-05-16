@@ -53,6 +53,40 @@
 	    }
     }
 
+    //将label处理成①②③的形式
+    function parseLabel($str){
+    	$pattern='/<label[^>]+>(.*)<\/label>/U';
+	    preg_match_all($pattern,$str,$matches);
+	    // dd($matches);
+	    $arr_split=preg_split($pattern,$str);
+	    // dd($arr_split);
+	    $arr_mark=array();
+	    $arr_mark[0]="①";
+	    $arr_mark[1]="②";
+	    $arr_mark[2]="③";
+	    $arr_mark[3]="④";
+	    $arr_mark[4]="⑤";
+	    $arr_mark[5]="⑥";
+	    $arr_mark[6]="⑦";
+	    $arr_mark[7]="⑧";
+	    $arr_mark[8]="⑨";
+	    $count=count($matches[1]);
+	    $str_new="";
+	    for($i=0;$i<$count;$i++){
+	        $str_new.=$arr_split[$i];
+	        $str_new.=$arr_mark[$i];
+	        $str_new.=$matches[1][$i];
+	    }
+	    $str_new.=$arr_split[$count];
+	    if($count>0){
+	        return $str_new;
+	    }else{
+	        return $str;
+	    }
+
+
+    }
+
 
 	?>
 
@@ -87,7 +121,10 @@
 				{!!$arr_que[$k]->headtext->asXML()!!}
 				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
 				<?php
-					echo parseLatex_ps($arr_que[$k]->text->asXML());
+					//先进行label解析
+					$str=parseLabel($arr_que[$k]->text->asXML());
+					// echo parseLatex_ps($arr_que[$k]->text->asXML());
+					echo parseLatex_ps($str);
 				?>
 
 			</li>
