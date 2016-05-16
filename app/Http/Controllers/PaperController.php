@@ -627,6 +627,27 @@ CREATE;
         return response()->download($pathToFile);
     }
 
+    //解析公式
+    public function parseLatex($str){
+        $pattern='/\$([^$]*)\$/U';
+        preg_match_all($pattern,$str,$matches);
+        $arr_split=preg_split($pattern,$str);
+        //dd($arr_split);
+        //dd($matches);
+        $count=count($matches[1]);
+        $str_new="";
+        for($i=0;$i<count($matches[1]);$i++){
+            //$arr_replace[]='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
+            $str_new.=$arr_split[$i];
+            $str_new.='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
+        }
+        if($count>0){
+            return $str_new;
+        }else{
+            return $str;
+        }
+    }
+
     //跳转阅卷页面
     public function paperScore($id,Request $request){
         $user_paper_id=$id;
@@ -668,12 +689,13 @@ CREATE;
         $arr_maxnum=array();
         foreach($arr_questions as $arr_question){
             //dd($arr_question);
-            $questions_head_text=$arr_question->headtext->asXML();
+            $questions_head_text=(string)$arr_question->headtext->asXML();
             $questions_title=(string)$arr_question->title->asXML();
             $questions_text=(string)$arr_question->text->asXML();
-            $arr_ques_head_text[]=(string)$questions_head_text;
+            $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
-            $arr_ques_text[]=$questions_text;
+            //$arr_ques_text[]=$questions_text;
+            $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
             //dd($arr_que_bel);
             $ques_count=count($arr_que_bel);
@@ -699,6 +721,8 @@ CREATE;
         //dd($arr_ques_title);
         //dd($arr_ques_head_text);
         //dd($arr_ques_count);
+        // dd($arr_ques_text);
+
 
 
         //获得所有试题的question
