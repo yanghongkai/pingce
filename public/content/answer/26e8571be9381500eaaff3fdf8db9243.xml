@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2011年北京市高考数学试卷(文科)" papersubject="Math" paperid="2011BeijingGaokao" info="数学攻关组第一次测试">
+	<question id="2011BeijingGaokao_01" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_02" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_03" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_04" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_05" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_06" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_07" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_08" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_09" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$\frac{5\sqrt{2}}{3}$</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_10" type="fillblank" num="1" scoretype="all">
+		<text>2</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_11" type="fillblank" num="1" scoretype="all">
+		<text>1</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_12" type="fillblank" num="2" scoretype="each">
+		<text>2</text>
+		<text format="latex">$2^{n-1}-\frac{1}{2}$</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_13" type="fillblank" num="1" scoretype="all">
+		<text>$(0,1)$</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_14" type="fillblank" num="2" scoretype="each">
+		<text>6</text>
+		<text>6,7,8</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_15_01" type="shortanswer">
+		<text format="latex">因为$f(x)=4\cos x\sin(x+\frac{\pi}{6})-1=4\cos x(\frac{\sqrt{3}}{2}\sin x+\frac{1}{2}\cos x)-1=\sqrt{3}\sin2x+2\cos^2x-1=\sqrt{3}\sin2x+\cos2x=2\sin(2x+\frac{\pi}{6})$，所以$f(x)$的最小正周期为$\pi$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_15_02" type="shortanswer">
+		<text format="latex">因为$-\frac{\pi}{6}\leq x\leq\frac{\pi}{4}$,所以$-\frac{\pi}{6}\leq 2x+\frac{\pi}{6}\leq\frac{2\pi}{3}$.于是,当$2x+\frac{\pi}{6}=\frac{\pi}{2}$,即$x=\frac{\pi}{6}$时,$f(x)$取最大值2;当$2x+\frac{\pi}{6}=-frac{\pi}{6}$时,即$x=-\frac{\pi}{6}$时,$f(x)$取得最小值-1.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_16_01" type="shortanswer">
+		<text format="latex">当$X=8$时,由茎叶图可知,乙组同学的植树棵数是:8,8,9,10,所以平均数为$\overline{x}=\frac{8+8+9+10}{4}=\frac{35}{4}$;方差为$s^2=\frac{1}{4}[(8-\frac{35}{4})^2+(9-\frac{35}{4})^2+(10-\frac{35}{4})^2]=\frac{11}{16}$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_16_02" type="shortanswer">
+		<text format="latex">记甲组四名同学为$A_{1}$,$A_{2}$,$A_{3}$,$A_{4}$,他们植树的棵数依次为9，9，11，11;乙组四名同学为$B_{1}$,$B_{2}$,$B_{3}$,$B_{4}$,他们植树的棵数依次为9，8，9，10，分别从甲,乙两组中随机选取一名同学,所有可能的结果有16个,它们是:$(A_{1},B_{1})$,$(A_{1},B_{2})$,$(A_{1},B_{3})$,$(A_{1},B_{4})$,$(A_{2},B_{1})$,$(A_{2},B_{2})$,$(A_{2},B_{3})$,$(A_{2},B_{4})$,$(A_{3},B_{1})$,$(A_{3},B_{2})$,$(A_{3},B_{3})$,$(A_{3},B_{4})$,$(A_{4},B_{1})$,$(A_{4},B_{2})$,$(A_{4},B_{3})$,$(A_{4},B_{4})$,用C表示:"选出的两名同学的植树总棵数为19"这一事件,则C中的结果有4个,它们是:$(A_{1},B_{4})$,$(A_{2},B_{4})$,$(A_{3},B_{2})$,$(A_{4},B_{2})$,故所求概率为$P(C)=\frac{4}{16}=\frac{1}{4}$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_17_01" type="shortanswer">
+		<text format="latex">因为D,E分别为AP,AC的中点,所以$DE\parallel PC$.又因为$DE\not \subset BCP$,所以$DE\parallel BCP$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_17_02" type="shortanswer">
+		<text format="latex">因为D,E,F,G分别为AP,AC,BC,PB的中点,所以$DE\parallel PC\parallel FG$,$DG\parallel AB\parallel EF$.所以四边形DEFG为平行四边形,又因为$PC\perp AB$,所以$DE\perp DG$,所以边形DEFG为矩形.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_17_03" type="shortanswer">
+		<text format="latex,html"><Picread id="Pic17_1">存在点Q满足条件,理由如下:连接DF,EG,设Q为EG的中点,</Picread>由第一问知,$DF\cap EG=Q$,且$QD=QE=QF=QG=\frac{1}{2}EG$．分别取PC,AB的中点M,N,连接ME,EN,NG,MG,MN．与第二问同理，可证四边形MENG为矩形,其对角线点为EG的中点Q,且$QM=QN=\frac{1}{2}EG$,所以Q为满足条件的点．</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_18_01" type="shortanswer">
+		<text format="latex,html"><Tabread id="Tab18_1">$f'(x)=(x-k+1)e^{3}$.令$f'(x)=0$,得$x=k-1$.当x变化时,$f'(x)$,$f(x)$的变化情况如下表</Tabread>:所以,$f(x)$的单调递减区间是$(-\infty ,k-1)$;单调递增区间是(k-1,+\infty).</text>
+		<tab id="tab18_1">
+		    <row>
+		            <col>x</col>
+					<col>$(-\infty ,k-1)$</col>
+					<col>k-1</col>
+					<col>$(k-1,+\infty)$</col>
+			</row>
+            <row>
+		            <col>$f'(x)$</col>
+					<col>-</col>
+					<col>0</col>
+					<col>+</col>
+			</row>	
+            <row>
+		            <col>$f(x)$</col>
+					<col>$\searrow$</col>
+					<col>极大值$-e^{k-1}$</col>
+					<col>$\nearrow$</col>
+			</row>	
+        </tab>			
+	</question>
+	
+	<question id="2011BeijingGaokao_18_02" type="shortanswer">
+		<text format="latex">当$k-1\leq 0$,即$k\leq 1$时,函数$f(x)$在$[0,1]$上单调递增,所以$f(x)$在区间$[0,1]$上的最小值为$f(0)=-k$:当$0< k-1< 1$,即$1< k< 2$时,由第一问知$f(x)$在$[0,k-1]$上单调递减,在$(k-1,1]$上单调递增,所以$f(x)$在区间$[0，1]$上的最小值为$f(k-1)=-e^(k-1)$;当$k-1\geq t$,即$k=2$时,函数$f(x)$在区间$[0,1]$上单调递减,所以$f(x)$在区间$[0,1]$上的最小值为$f(1)=(1-k)e$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_19_01" type="shortanswer">
+	     <text format="latex">由已知得$c=2\sqrt{2}$,$\frac{c}{a}=\frac{\sqrt{6}}{3}$,解得$a=2\sqrt{3}$.又$b^{2}=a^{2}-c^{2}=4$.所以椭圆G的方程为$\frac{x^{2}}{12}+\frac{y^{2}}{4}=1$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_19_02" type="shortanswer">
+	    <text>设直线l的方程为$y=x+m$.由
+	    $$ \left\{
+                   \begin{aligned}
+                   y=x+m \\
+                   \frac{x^{2}}{12}+\frac{y^{2}}{4}=1\\
+                   \end{aligned}
+                   \right.
+        $$
+		得$4x^{2}+6mx+3m^{2}-12=0$.设A,B的坐标分别为$(x_{1},y_{1})$,$(x_{2},y_{2})$($x_{1}＜x_{2}$),AB的中点为$E(x_{0},y_{0})$,则$x_{0}=\frac{x_{1}+x_{2}}{2}=-\frac{3m}{4}$,$y_{0}=x_{0}+m=\frac{m}{4}$.因为AB是等腰VPAB的底边,所以$PE\perp AB$.所以PE的斜率$k=\frac{2-\frac{m}{4}}{-3+\frac{3m}{4}}=-1$.解得$m=2$.此时方程$4x^{2}+6mx+3m^{2}-12=0$为$4x^{2}+12x=0$,解得$x_{1}=-3$,$x_{2}=0$.所以$y_{1}=-1$,$y_{2}=2$.所以$|AB|=3\sqrt{2}$.
+		此时,点$P(-3,2)$到直线$AB:x-y+2=0$的距离$d=\frac{|-3-2+2|}{\sqrt{2}}=\frac{3\sqrt{2}}{2}$,所以$\triangle PAB$的面积$S=\frac{1}{2}|AB|\cdot d=\frac{9}{2}$.</text>
+	</question>
+	
+	<question id="2011BeijingGaokao_20_01" type="shortanswer">
+	     <text format="latex">0,1,2,1,0是一具满足条件的E数列$A_{5}$.(答案不唯一,0,1,0,1,0也是一个满足条件的E的数列$A_{5}$.)</text>
+	</question>	
+	
+	<question id="2011BeijingGaokao_20_02" type="shortanswer">
+	     <text format="latex">必要性:因为E数列$A_{5}$是递增数列,所以$a_{k+1}-a_{k}=1(k=1,2,\cdots ,1999)$.所以$A_{5}$是首项为12,公差为1的等差数列.所以$a_{2000}=12+(2000-1)\times 1=2011$.
+		 充分性,由于$a_{2000}-a_{1999}\leq 1$,$a_{1999}-a_{1998}\leq 1$, $\cdots$ ,$a_{2}-a_{1}\leq 1$,所以$a_{2000}—a_1\leq 1999$,即$a_{2000}\leq a_{1}+1999$.又因为$a_{1}=12$,$a_{2000}=2011$,所以$a_{2000}=a_{1}+1999$.故$a_{n+1}-a_{n}=1＞0(k=1,2,\cdots,1999)$,即$A_{n}$是递增数列.
+		 综上,结论得证.</text>
+	</question>	 
+	
+	<question id="2011BeijingGaokao_20_03" type="shortanswer">
+	     <text format="latex">对首项为4的E数列$A_{k}$,
+		 由于$a_{2}\geq a_{1}-1=3$,$a_{3}\geq a_{2}-1=2$, $\cdots$,$a_{5}\geq a_{7}-1=-3$,$ \cdots $,
+		 所以$a_{1}+a_{2}+\cdots +a_{k}＞0(k=2,3,\cdots,8)$,所以对任意的首项为4的E数列$A_{m}$,若$S(A_{m})=0$,则必有$n\geq 9$.又$a_{1}=4$的E数列$A_{1}:4,3,2,1,0,-1,-2,-3,-4$满足$S(A_{1})=0$,所以n是最小值是9.
+		 </text>
+	</question>
+</paperanswer>	
+	

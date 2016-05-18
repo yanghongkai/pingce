@@ -21,8 +21,10 @@
 	<!--试卷信息结束-->
 	<?php
 		//解析公式
-    	function parseLatex_ps($str){
-        $pattern='/\$([^$]*)\$/U';
+    function parseLatex_ps($str){
+        //将$$转化为$$
+    	$str=str_replace("$$", "$", $str);
+	    $pattern='/\$([^$]*)\$/Us';
         preg_match_all($pattern,$str,$matches);
         $arr_split=preg_split($pattern,$str);
         //dd($arr_split);
@@ -40,6 +42,8 @@
         }else{
             return $str;
         }
+
+
     }
     //去掉option
     function removeOption($str){
@@ -103,14 +107,15 @@
 			<div class="questions_title">
 				{!!$arr_ques_title[$i]!!}
 			</div>
-			<div class="questions_text">
+			<!-- <div class="questions_text">
 				{!!$arr_ques_text[$i]!!}
+			</div> -->
+			<div class="questions_text">
+			<?php
+				echo parseLatex_ps($arr_ques_text[$i]);
+			?>
 			</div>
-			<!--
-			<div class="questions_score">
-				总分值：20分
-			</div>
-			-->
+			
 		</div>
 
 		@for($j=0; $j<$arr_ques_count[$i];$j++,$k++)
@@ -202,7 +207,7 @@
 					$ans_texts=$arr_user_answer[$k]->xpath('.//text');
 					foreach ($ans_texts as $ans_text){
                 		// echo $ans_text.' ';
-                		echo parseLatex_ps($ans_text);
+                		echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             		}
 				?>
 			</li>
@@ -212,7 +217,7 @@
 					$ans_texts=$arr_paper_answer[$k]->xpath('.//text');
 					foreach ($ans_texts as $ans_text){
                 		// echo $ans_text.' ';
-                		echo parseLatex_ps($ans_text);
+                		echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
             		}
 				?>

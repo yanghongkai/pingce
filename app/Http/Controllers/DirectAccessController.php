@@ -417,25 +417,25 @@ class DirectAccessController extends Controller
     }
 
     //解析公式
-    public function parseLatex($str){
-        $pattern='/\$([^$]*)\$/U';
-        preg_match_all($pattern,$str,$matches);
-        $arr_split=preg_split($pattern,$str);
-        //dd($arr_split);
-        //dd($matches);
-        $count=count($matches[1]);
-        $str_new="";
-        for($i=0;$i<count($matches[1]);$i++){
-            //$arr_replace[]='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
-            $str_new.=$arr_split[$i];
-            $str_new.='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
-        }
-        if($count>0){
-            return $str_new;
-        }else{
-            return $str;
-        }
-    }
+    // public function parseLatex($str){
+    //     $pattern='/\$([^$]*)\$/U';
+    //     preg_match_all($pattern,$str,$matches);
+    //     $arr_split=preg_split($pattern,$str);
+    //     //dd($arr_split);
+    //     //dd($matches);
+    //     $count=count($matches[1]);
+    //     $str_new="";
+    //     for($i=0;$i<count($matches[1]);$i++){
+    //         //$arr_replace[]='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
+    //         $str_new.=$arr_split[$i];
+    //         $str_new.='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
+    //     }
+    //     if($count>0){
+    //         return $str_new;
+    //     }else{
+    //         return $str;
+    //     }
+    // }
 
     //试卷详情
     public function stuPaper($id){
@@ -486,8 +486,8 @@ class DirectAccessController extends Controller
             $questions_text=(string)$arr_question->text;
             $arr_ques_head_text[]=(string)$questions_head_text;
             $arr_ques_title[]=$questions_title;
-            // $arr_ques_text[]=$questions_text;
-            $arr_ques_text[]=$this->parseLatex($questions_text);
+            $arr_ques_text[]=$questions_text;
+            // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
             //dd($arr_que_bel);
             $ques_count=count($arr_que_bel);
