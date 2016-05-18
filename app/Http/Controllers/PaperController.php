@@ -483,7 +483,7 @@ CREATE;
         $scorer_id=$vteacher->id;
         $flag=$this->createScorerPaperItem($paper_content_path,$paper_answer_path,$user_answer_path,$scorer_id,$user_paper_id);
         if($flag){
-            file_put_contents('./dataTest.txt', 'flag='.$flag.'\r\n',FILE_APPEND);
+            // file_put_contents('./dataTest.txt', 'flag='.$flag.'\r\n',FILE_APPEND);
         }else{
             return response()->json(['success'=>false]);
         }
@@ -628,25 +628,46 @@ CREATE;
     }
 
     //解析公式
-    public function parseLatex($str){
-        $pattern='/\$([^$]*)\$/U';
-        preg_match_all($pattern,$str,$matches);
-        $arr_split=preg_split($pattern,$str);
-        //dd($arr_split);
-        //dd($matches);
-        $count=count($matches[1]);
-        $str_new="";
-        for($i=0;$i<count($matches[1]);$i++){
-            //$arr_replace[]='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
-            $str_new.=$arr_split[$i];
-            $str_new.='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
-        }
-        if($count>0){
-            return $str_new;
-        }else{
-            return $str;
-        }
-    }
+    // public function parseLatex($str){
+    //     $str='<text format="latex">设不等式组
+    //             $$ \left\{
+    //                \begin{aligned}
+    //                0\leq x\leq 2 \\
+    //                0\leq y\leq 2\\
+    //                \end{aligned}
+    //                \right.
+    //             $$
+    //             表示平面区域为D,在区域D内随机取一个点，则此点到坐标原点的距离大于2的概率是__</text>';
+    //     //将$$转化为$$
+    //     $str=str_replace("$$", "$", $str);
+    //     // dd($str);
+    //     $pattern='/\$(.*)\$/Us';//只能识别$$  $$
+    //     preg_match_all($pattern,$str,$matches);
+    //     $arr_split=preg_split($pattern,$str);
+    //     //dd($arr_split);
+    //     // dd($matches);
+    //     $count=count($matches[1]);
+    //     $str_new="";
+    //     for($i=0;$i<count($matches[1]);$i++){
+    //         //$arr_replace[]='<img src="http://latex.codecogs.com/gif.latex?'.$matches[1][$i].'" />';
+    //         $matches_str=$matches[1][$i];
+    //         // dd($matches_str);
+    //         //先把\\n转换成\\\n
+    //         $matches_str=str_replace("\\\r\n", "\\\\\r\n", $matches_str);
+    //         // dd($matches_str);
+    //         $matches_str=preg_replace('/\s*/', '', $matches_str);
+    //         // dd($matches_str);
+    //         $str_new.=$arr_split[$i];
+    //         $str_new.='<img src="http://latex.codecogs.com/gif.latex?'.$matches_str.'" />';
+    //     }
+    //     if($count>0){
+    //         // echo $str_new;
+    //         // dd($str_new);
+    //         return $str_new;
+    //     }else{
+    //         return $str;
+    //     }
+    // }
 
     //跳转阅卷页面
     public function paperScore($id,Request $request){
@@ -694,8 +715,8 @@ CREATE;
             $questions_text=(string)$arr_question->text->asXML();
             $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
-            //$arr_ques_text[]=$questions_text;
-            $arr_ques_text[]=$this->parseLatex($questions_text);
+            $arr_ques_text[]=$questions_text;
+            // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
             //dd($arr_que_bel);
             $ques_count=count($arr_que_bel);
