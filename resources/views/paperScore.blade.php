@@ -20,6 +20,7 @@
 	</div>
 	<!--试卷信息结束-->
 	<?php
+	use App\Paper;
 		//解析公式
     function parseLatex_ps($str){
         //将$$转化为$$
@@ -91,6 +92,106 @@
 
     }
 
+    //得到pic的src 默认是试卷的pic
+    function getImgSrc($paper_id,$pic_id,$type){
+    	$paper=Paper::where('id',$paper_id)->first();
+        $content_path=$paper->content;
+        $content=simplexml_load_file('./content/'.$content_path);
+        $content_id=(string)$content['id'];
+        $content_subject=(string)$content['subject'];
+        if($type=="paper"){
+        	$new_name=$content_id."_".$content_subject."_".$pic_id;
+        }
+        if($type=="answer"){
+        	$new_name=$content_id."_".$content_subject."_".$pic_id."_answer";
+        }
+        
+        $new_name='../../content/pics/'.$new_name.".jpg";
+        return $new_name;
+
+    }
+    //得到用户pic的src
+    function getImgSrcUser($user_paper_id,$pic_id){
+    	$new_name=$user_paper_id."_".$pic_id;
+    	$new_name='../../content/userPics/'.$new_name.".jpg";
+    	return $new_name;
+    }
+
+    //解析pic
+    function parsePic($paper_id,$str,$type){
+    	// echo "***************";
+	    $pattern='/<Picread id="(.*)">.*<\/Picread>/Us';
+	    preg_match_all($pattern, $str, $matches);
+	    // dd($matches);
+	    $arr_split=preg_split($pattern, $str);
+	    // dd($arr_split);
+	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Us';
+	    preg_match_all($pattern_con, $str, $matches_con);
+	    // dd($matches_con);
+	    $count=count($matches[1]);
+	    $str_new='';
+	    for($i=0;$i<$count;$i++){
+	        $pic_id=$matches[1][$i];
+	        $img_src=getImgSrc($paper_id,$pic_id,$type);
+	        $str_new.=$arr_split[$i];
+	        $str_new.=$matches_con[1][$i];
+	        
+	        // $str_new.='<img src="../../content/pics/2015BeijingGaokao_Math_Pic5_1.jpg"/>';
+	        $str_new.='<br/><img src="'.$img_src.'"/><br/>';
+
+	    }
+	    $str_new.=$arr_split[$count];
+	    if($count>0){
+	    	// dd($str_new);
+	    	return $str_new;
+	    }else{
+	    	return $str;
+	    }
+
+
+    }
+
+    //解析用户试卷的pic
+    function parsePicUser($user_paper_id,$str){
+    	$pattern='/<Picread id="(.*)">.*<\/Picread>/Us';
+	    preg_match_all($pattern, $str, $matches);
+	    // dd($matches);
+	    $arr_split=preg_split($pattern, $str);
+	    // dd($arr_split);
+	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Us';
+	    preg_match_all($pattern_con, $str, $matches_con);
+	    // dd($matches_con);
+	    $count=count($matches[1]);
+	    $str_new='';
+	    for($i=0;$i<$count;$i++){
+	        $pic_id=$matches[1][$i];
+	        $img_src=getImgSrcUser($user_paper_id,$pic_id);
+	        $str_new.=$arr_split[$i];
+	        $str_new.=$matches_con[1][$i];
+	        
+	        // $str_new.='<img src="../../content/pics/2015BeijingGaokao_Math_Pic5_1.jpg"/>';
+	        $str_new.='<br/><img src="'.$img_src.'"/><br/>';
+
+	    }
+	    $str_new.=$arr_split[$count];
+	    if($count>0){
+	    	// dd($str_new);
+	    	return $str_new;
+	    }else{
+	    	return $str;
+	    }
+
+    }
+
+    //解析表格
+    function parseTable($str){
+    	$search_arr=array("tab","row","col");
+	    $replace_arr=array("table border='1'","tr","td");
+	    $str=str_replace($search_arr, $replace_arr, $str);
+	    return $str;
+
+    }
+
 
 	?>
 
@@ -102,7 +203,18 @@
 		
 		<div class="questions_detail">
 			<div class="questions_title">
-				{!!$arr_ques_head_text[$i]!!}(总分{{$arr_ques_score[$i]}}分)
+				<!-- {!!$arr_ques_head_text[$i]!!} -->
+				<?php
+					$str=$arr_ques_head_text[$i];
+					//label解析
+					$str=parseLabel($str);
+					//解析pic
+					$str=parsePic($paper_id,$str,'paper');
+					//latex
+					echo parseLatex_ps($str);
+
+				?>
+				(总分{{$arr_ques_score[$i]}}分)
 			</div>
 			<div class="questions_title">
 				{!!$arr_ques_title[$i]!!}
@@ -112,7 +224,15 @@
 			</div> -->
 			<div class="questions_text">
 			<?php
-				echo parseLatex_ps($arr_ques_text[$i]);
+				$str=$arr_ques_text[$i];
+				//label解析
+				$str=parseLabel($str);
+				//解析pic
+				$str=parsePic($paper_id,$str,'paper');
+				//latex
+				echo parseLatex_ps($str);
+				//table
+				echo parseTable($arr_ques_table[$i]);
 			?>
 			</div>
 			
@@ -126,10 +246,15 @@
 				{!!$arr_que[$k]->headtext->asXML()!!}
 				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
 				<?php
-					//先进行label解析
-					$str=parseLabel($arr_que[$k]->text->asXML());
-					// echo parseLatex_ps($arr_que[$k]->text->asXML());
+					$str=$arr_que[$k]->text->asXML();
+					//label解析
+					$str=parseLabel($str);
+					//解析pic
+					$str=parsePic($paper_id,$str,'paper');
+					//latex
 					echo parseLatex_ps($str);
+					//table
+					echo parseTable($arr_que[$k]->tab->asXML());
 				?>
 
 			</li>
@@ -156,7 +281,16 @@
 				{{$arr_que[$k]['id']}}
 				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
 				<?php
-					echo parseLatex_ps($arr_que[$k]->text->asXML());
+					
+					$str=$arr_que[$k]->text->asXML();
+					//label
+					$str=parseLabel($arr_que[$k]->blank->asXML());
+					//解析pic
+					$str=parsePic($paper_id,$str,'paper');
+					//公式
+					echo parseLatex_ps($str);
+					//table
+					echo parseTable($arr_que[$k]->tab->asXML());
 				?>
 				</li>
 			@endif
@@ -167,8 +301,24 @@
 				{!!$arr_que[$k]->headtext->asXML()!!}
 				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
 				<?php
-					echo parseLatex_ps($arr_que[$k]->text->asXML());
-					echo parseLatex_ps($arr_que[$k]->blank->asXML());
+					$str_text=$arr_que[$k]->text->asXML();
+					//label
+					$str_text=parseLabel($str_text);
+					//pic
+					$str_text=parsePic($paper_id,$str_text,'paper');
+					//latex
+					echo parseLatex_ps($str_text);
+					//table
+					echo parseTable($arr_que[$k]->tab->asXML());
+					// echo parseLatex_ps($arr_que[$k]->blank->asXML());
+					//数学blank里面有label
+					$str=parseLabel($arr_que[$k]->blank->asXML());
+					//解析pic
+					$str=parsePic($paper_id,$str,'paper');
+					//latex
+					echo parseLatex_ps($str);
+					//table
+					echo parseTable($arr_que[$k]->tab->asXML());
 
 				?>
 				<!-- {!!$arr_que[$k]->blank->asXML()!!} -->
@@ -206,9 +356,19 @@
 				<?php 
 					$ans_texts=$arr_user_answer[$k]->xpath('.//text');
 					foreach ($ans_texts as $ans_text){
-                		// echo $ans_text.' ';
-                		echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                		$str=$ans_text->asXML();
+                		$str=parseLabel($str);
+						//解析pic
+						$str=parsePicUser($user_paper_id,$str);
+						//latex
+						echo parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                		// echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             		}
+            		//table
+            		$str=$arr_paper_answer[$k]->tab->asXML();
+            		//latex
+					$str=parseLatex_ps($str);
+            		echo parseTable($str);
 				?>
 			</li>
 			<li>
@@ -217,9 +377,22 @@
 					$ans_texts=$arr_paper_answer[$k]->xpath('.//text');
 					foreach ($ans_texts as $ans_text){
                 		// echo $ans_text.' ';
-                		echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                		$str=$ans_text->asXML();
+                		$str=parseLabel($str);
+						//解析pic
+						$str=parsePic($paper_id,$str,'answer');
+						//latex
+						echo parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+                		// echo parseLatex_ps($ans_text->asXML())."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
             		}
+            		//table
+            		$str=$arr_paper_answer[$k]->tab->asXML();
+            		//latex
+					$str=parseLatex_ps($str);
+            		echo parseTable($str);
+
 				?>
 			</li>
 
