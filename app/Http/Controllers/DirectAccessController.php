@@ -127,6 +127,7 @@ class DirectAccessController extends Controller
             $arr_object_grade=array();
             $arr_subject_grade=array();
             $arr_scorer_paper_id=array();
+            $arr_user_paper_id=array();
             
         }else{
             //试卷名，提交时间，提交者，阅卷人，得分，阅卷链接
@@ -134,6 +135,7 @@ class DirectAccessController extends Controller
                 //我的答案
                 $user_ans=$user_paper->userAnswer;
                 $arr_user_ans[]=$user_ans;
+                $arr_user_paper_id[]=$user_paper->id;
                 //echo 'user_ans='.$user_ans.'**';
                 $paper_id=$user_paper->paper_id;
                 //获得试卷信息
@@ -228,7 +230,8 @@ class DirectAccessController extends Controller
          return view('userEvaluate',['arr_paper_name'=>$arr_paper_name,'arr_updated_at'=>$arr_updated_at,'arr_paper_status'=>$arr_paper_status,
                         'arr_grade'=>$arr_grade,'arr_object_grade'=>$arr_object_grade,'arr_subject_grade'=>$arr_subject_grade,
                         'arr_scorers'=>$arr_scorers,'arr_paper_con'=>$arr_paper_con,'arr_user_ans'=>$arr_user_ans,
-                        'arr_paper_ans'=>$arr_paper_ans,'arr_scorer_paper_id'=>$arr_scorer_paper_id
+                        'arr_paper_ans'=>$arr_paper_ans,'arr_scorer_paper_id'=>$arr_scorer_paper_id,
+                        'arr_user_paper_id'=>$arr_user_paper_id
                 ]);
 
         
@@ -347,6 +350,24 @@ class DirectAccessController extends Controller
     public function paperNew(){
         return view('paperNew');
     }
+
+    public function picNew($id){
+        $paper=Paper::where('id',$id)->first();
+        return view('picNew',['paper'=>$paper]);
+    }
+
+    public function picNewUser($id){
+        $user_paper=UserPaper::where('id',$id)->first();
+        $paper_id=$user_paper->paper_id;
+        //获得试卷信息
+        $paper=Paper::where('id',$paper_id)->first();
+        //dd($paper);
+        $paper_name=$paper->name;
+        // dd($paper_name);
+        // dd($id);
+        return view('picNewUser',['user_paper_id'=>$id,'paper_name'=>$paper_name]);
+        // return view('picNewUser');
+}
 
     public function manageNews(){
         //获取所有的新闻
@@ -477,16 +498,19 @@ class DirectAccessController extends Controller
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
+        $arr_ques_table=array();
         $arr_ques_count=array();
         $arr_ques_score=array();
         foreach($arr_questions as $arr_question){
             //dd($arr_question);
-            $questions_head_text=(string)$arr_question->headtext;
-            $questions_title=(string)$arr_question->title;
-            $questions_text=(string)$arr_question->text;
-            $arr_ques_head_text[]=(string)$questions_head_text;
+            $questions_head_text=(string)$arr_question->headtext->asXML();
+            $questions_title=(string)$arr_question->title->asXML();
+            $questions_text=(string)$arr_question->text->asXML();
+            $questions_table=(string)$arr_question->tab->asXML();
+            $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
             $arr_ques_text[]=$questions_text;
+            $arr_ques_table[]=$questions_table;
             // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
             //dd($arr_que_bel);
@@ -501,6 +525,7 @@ class DirectAccessController extends Controller
         //dd($arr_ques_title);
         //dd($arr_ques_head_text);
         //dd($arr_ques_count);
+        // dd($arr_ques_text);
 
 
         //获得所有试题的question
@@ -648,7 +673,8 @@ class DirectAccessController extends Controller
                                     'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
                                     'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
                                     'paper_content_path'=>$paper_content_path,'user_answer_path'=>$user_answer_path, 'paper_answer_path'=>$paper_answer_path,
-                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms
+                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'paper_id'=>$paper_id,
+                                    'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
                                     ]);
         
         

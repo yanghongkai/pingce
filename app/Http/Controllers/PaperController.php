@@ -251,6 +251,62 @@ CREATE;
         $request->session()->save();//写入session后，需要马上保存
         return response()->json(['success'=>true]);
     }
+
+    //上传图片
+    public function postUploadPic(Request $request){
+         //判断请求中是否包含name=uploadPic的上传文件
+        if(!$request->hasFile('uploadPic')){
+            //exit('上传文件为空!');
+            return response()->json(['success'=>false]);
+        }
+        $file=$request->file('uploadPic');
+        //判断文件上传过程中是否出错
+        if(!$file->isValid()){
+            //exit('文件上传出错!');
+            return response()->json(['success'=>false]);
+        }
+        $newFileName=md5(time().rand(0,10000)).'.'.$file->getClientOriginalExtension();
+        //$newFileName=$file->getClientOriginalName();
+        $savePath='pics/'.$newFileName;
+        $bytes=Storage::put($savePath,file_get_contents($file->getRealPath()));
+        if(!Storage::exists($savePath)){
+            //exit('保存文件失败！');
+            return response()->json(['success'=>false]);
+        }
+        //将提交的文件的路径名保存到session中
+        $request->session()->put('pic',$savePath);
+        $request->session()->save();//写入session后，需要马上保存
+        return response()->json(['success'=>true]);
+
+    }
+
+    //用户上传图片
+    public function postUploadPicUser(Request $request){
+         //判断请求中是否包含name=uploadPic的上传文件
+        if(!$request->hasFile('uploadPic')){
+            //exit('上传文件为空!');
+            return response()->json(['success'=>false]);
+        }
+        $file=$request->file('uploadPic');
+        //判断文件上传过程中是否出错
+        if(!$file->isValid()){
+            //exit('文件上传出错!');
+            return response()->json(['success'=>false]);
+        }
+        $newFileName=md5(time().rand(0,10000)).'.'.$file->getClientOriginalExtension();
+        //$newFileName=$file->getClientOriginalName();
+        $savePath='userPics/'.$newFileName;
+        $bytes=Storage::put($savePath,file_get_contents($file->getRealPath()));
+        if(!Storage::exists($savePath)){
+            //exit('保存文件失败！');
+            return response()->json(['success'=>false]);
+        }
+        //将提交的文件的路径名保存到session中
+        $request->session()->put('picUser',$savePath);
+        $request->session()->save();//写入session后，需要马上保存
+        return response()->json(['success'=>true]);
+
+    }
     
 
     //新建资源
@@ -273,6 +329,89 @@ CREATE;
         
         return response()->json(['success'=>true]);
         //return redirect('/manageResource');
+
+    }
+
+    //图片上传提交post
+    public function postPicNew(Request $request){
+        $id=$request->input('paper_id');
+        $pic_id=$request->input('pic_id');
+        $paper=Paper::where('id',$id)->first();
+        $content_path=$paper->content;
+        $content=simplexml_load_file('./content/'.$content_path);
+        $content_id=(string)$content['id'];
+        $content_subject=(string)$content['subject'];
+        $new_name=$content_id."_".$content_subject."_".$pic_id;
+        //file_put_contents("./dataTest.txt", "new_name=".$new_name."\n",FILE_APPEND);
+        $pic_name="";
+        if($request->session()->has('pic')){
+            $pic_name=$request->session()->get('pic');
+        }
+        if(empty($pic_name)){
+            //图片文件没有上传成功
+            return response()->json(['success'=>false]);
+        }
+        file_put_contents("./dataTest.txt", "pic=".$pic_name."\n",FILE_APPEND);
+        $pattern='/\w*\.(.*)/';
+        preg_match($pattern, $pic_name,$matches);
+        $file_extension=$matches[1];
+        // file_put_contents("./dataTest.txt", "file=".$file_extension."\n",FILE_APPEND);
+        $new_name='pics/'.$new_name.".".$file_extension;
+        file_put_contents("./dataTest.txt", "new_name=".$new_name."\n",FILE_APPEND);
+        // return response()->json(['success'=>false]);
+        try{
+            if(Storage::exists($new_name)){
+                Storage::delete($new_name);//如果该图片存在，则先删除，再替换，不删除，直接替换，会报错
+            }
+            Storage::move($pic_name,$new_name);
+            // Storage::delete($pic_name);
+        }catch(Exception $e){
+            $request->session()->forget('pic');
+            return response()->json(['success'=>false]);
+        }
+        
+        //清空session
+        $request->session()->forget('pic');
+        return response()->json(['success'=>true]);
+
+    }
+
+    //考生图片上传post请求
+    public function postPicNewUser(Request $request){
+        $user_paper_id=$request->input('user_paper_id');
+        $pic_id=$request->input('pic_id');
+        $new_name=$user_paper_id."_".$pic_id;
+        //file_put_contents("./dataTest.txt", "new_name=".$new_name."\n",FILE_APPEND);
+        $pic_name="";
+        if($request->session()->has('picUser')){
+            $pic_name=$request->session()->get('picUser');
+        }
+        if(empty($pic_name)){
+            //图片文件没有上传成功
+            return response()->json(['success'=>false]);
+        }
+        // file_put_contents("./dataTest.txt", "pic=".$pic_name."\n",FILE_APPEND);
+        $pattern='/\w*\.(.*)/';
+        preg_match($pattern, $pic_name,$matches);
+        $file_extension=$matches[1];
+        // file_put_contents("./dataTest.txt", "file=".$file_extension."\n",FILE_APPEND);
+        $new_name='userPics/'.$new_name.".".$file_extension;
+        // file_put_contents("./dataTest.txt", "new_name=".$new_name."\n",FILE_APPEND);
+        // return response()->json(['success'=>false]);
+        try{
+            if(Storage::exists($new_name)){
+                Storage::delete($new_name);//如果该图片存在，则先删除，再替换，不删除，直接替换，会报错
+            }
+            Storage::move($pic_name,$new_name);
+            // Storage::delete($pic_name);
+        }catch(Exception $e){
+            $request->session()->forget('picUser');
+            return response()->json(['success'=>false]);
+        }
+        
+        //清空session
+        $request->session()->forget('picUser');
+        return response()->json(['success'=>true]);
 
     }
 
@@ -705,6 +844,7 @@ CREATE;
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
+        $arr_ques_table=array();
         $arr_ques_count=array();
         $arr_ques_score=array();
         $arr_maxnum=array();
@@ -713,9 +853,11 @@ CREATE;
             $questions_head_text=(string)$arr_question->headtext->asXML();
             $questions_title=(string)$arr_question->title->asXML();
             $questions_text=(string)$arr_question->text->asXML();
+            $questions_table=(string)$arr_question->tab->asXML();
             $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
             $arr_ques_text[]=$questions_text;
+            $arr_ques_table[]=$questions_table;
             // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
             //dd($arr_que_bel);
@@ -743,6 +885,7 @@ CREATE;
         //dd($arr_ques_head_text);
         //dd($arr_ques_count);
         // dd($arr_ques_text);
+        // dd($arr_ques_table);
 
 
 
@@ -981,7 +1124,8 @@ CREATE;
                                    'scorer_id'=>$scorer_id,'arr_ques_head_text'=>$arr_ques_head_text,'arr_ques_title'=>$arr_ques_title,'arr_ques_text'=>$arr_ques_text,
                                     'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
                                     'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
-                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'arr_maxnum'=>$arr_maxnum
+                                    'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'arr_maxnum'=>$arr_maxnum,
+                                    'paper_id'=>$paper_id,'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
                                     ]);
         
         

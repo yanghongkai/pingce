@@ -32,7 +32,7 @@
 					<td>试卷名</td>
 					<td>添加日期</td>
 					<!--<td>试卷状态</td>-->
-					<td colspan="2">操作</td>
+					<td colspan="3">操作</td>
 					<!--<td>编辑</td>-->
 				</tr>
 
@@ -49,6 +49,7 @@
 					<form action="./paperEdit/{{$paper->id}}" method="POST">
 					 {{ csrf_field() }}
 					<td><button type="submit">编辑</button></td>
+					<td><a href="./picNew/{{$paper->id}}">添加图片</a></td>
 					</form>
 					<!--<td><a href="paperEdit.html">编辑</a></td>-->
 				</tr>

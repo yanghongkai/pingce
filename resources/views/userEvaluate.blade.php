@@ -30,6 +30,7 @@
 					<td>总得分</td>
 					<td>阅卷人</td>
 					<td><a href="#">我的试卷</a></td>
+					<td><a href="#">添加图片</a></td>
 					<!--
 					<td><a href="#">试题</a></td>
 					<td><a href="#">我的答案</a></td>
@@ -61,6 +62,7 @@
 						@else
 						<td><a href=" ./stuPaper/{{$arr_scorer_paper_id[$i]}} ">我的试卷</a></td>
 						@endif
+						<td><a href="./picNewUser/{{$arr_user_paper_id[$i]}}">添加图片</a></td>
 					</tr>
 				<?php
 					}

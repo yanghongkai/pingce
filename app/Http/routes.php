@@ -30,6 +30,14 @@ Route::post('/search','DirectAccessController@search');
 Route::get('/userManage','DirectAccessController@accUserManage');
 //新建试卷
 Route::get('/paperNew','DirectAccessController@paperNew');
+//新建图片上传页面
+Route::get('/picNew/{id}','DirectAccessController@picNew');
+//图片上传post提交
+Route::post('/picNew','PaperController@postPicNew');
+//考生图片上传页面
+Route::get('/picNewUser/{id}','DirectAccessController@picNewUser');
+//考生图片上传post请求
+Route::post('/picNewUser','PaperController@postPicNewUser');
 //新闻管理
 Route::get('/manageNews','DirectAccessController@manageNews');
 //新建新闻
@@ -95,6 +103,10 @@ Route::post('/uploadAnswerEdt','PaperController@postUploadAnswerEdt');
 
 //上传资源
 Route::post('/uploadResource','PaperController@postUploadResource');
+//上传图片
+Route::post('/uploadPic','PaperController@postUploadPic');
+//上传用户试卷图片
+Route::post('/uploadPicUser','PaperController@postUploadPicUser');
 //下载试卷
 Route::get('/downloadPaper/{id}','PaperController@downloadPaper');
 //

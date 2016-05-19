@@ -33,7 +33,7 @@
 				<li>
 					<div class="pro_left">试卷名*</div>
 					<div class="pro_table">
-						<input title="试卷名" type="text" name="paperName" id="paperName" value="{{$paper->name}} ">
+						<input title="试卷名" type="text" name="paperName" readonly="readonly" id="paperName" value="{{$paper->name}} ">
 						</input>
 					</div>
 				</li>
