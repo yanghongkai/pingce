@@ -301,26 +301,3 @@
 .sourceDnld a:hover{
 	color: #B44242;
 }
-
-.tableHeadTitle {
-      /*border-right: solid 1px #e5e5e5;*/
-      background-color: white;
-      padding: 0 !important;
-}
-
-.tableLine {
-      background-image: url(../image/xiexian.png);
-      background-size: 100% 100%;
-}
-
-.tableLine2 {
-      background-image: url(../image/xiexian2.png);
-      background-size: 100% 100%;
-}
-
-.table th{
-	padding: 5px;
-}
-
-
-

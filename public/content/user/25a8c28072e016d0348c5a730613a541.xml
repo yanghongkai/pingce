@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="数学测试02" papersubject="Math" paperid="test02" info="数学攻关组第一次测试">
+    <question id="test02_01" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_02" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_03" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_04" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_05" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="test02_06" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="test02_07" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_08" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="test02_09" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$(-\infty,-3)$</text>
+	</question>
+	
+	<question id="test02_10" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$-\frac{1}{2}$</text>
+	</question>
+	
+	<question id="test02_11" type="fillblank" num="1" scoretype="all">
+		<text>2</text>
+	</question>
+	
+	<question id="test02_12" type="fillblank" num="2" scoretype="each">
+		<text>10</text>
+		<text format="latex">$400\pi$</text>
+	</question>
+	
+	<question id="test02_13" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$\frac{1}{2}a^3$</text>
+	</question>
+	
+	<question id="test02_14" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$n(3n+1)\pi$</text>
+	</question>
+	
+	<question id="test02_15_01" type="shortanswer">
+	    <text format="latex">由$\cos A=\frac{\sqrt{5}}{5}$,$\cos B=\frac{\sqrt{10}}{10}$,得$A,B\in (0,\frac{\pi}{2})$,
+		所以$\sin A=\frac{2}{\sqrt{5}}$,$\sin B=\frac{3}{\sqrt{10}}$,$\cos C=\cos[\pi-(A+B)]=-\cos(A+B)=-\cos A\cos B+\sin A\sin B=\frac{\sqrt{2}}{2}$,
+		且$0\textless C\textless \pi$,故$C=\frac{\pi}{4}$.</text>
+	</question>
+	
+	<question id="test02_15_02" type="shortanswer">
+	    <text format="latex">据正弦定理得$\frac{AB}{\sin C}=\frac{AC}{\sin B} \Rightarrow AC=\frac{AB\cdot\sin B}{\sin C}=\frac{6}{\sqrt{10}}$,
+		所以$\triangle ABC$的面积为$\frac{1}{2}AB\cdot AC\cdot \sin A=\frac{6}{5}$. </text>
+	</question>
+	
+	<question id="test02_16_01" type="shortanswer">
+	    <text format="latex">$f(x)=\sin 2x+\cos 2x=\sqrt{2}\sin(2x+\frac{\pi}{4})$.
+		令$2x+\frac{\pi}{4}=k\pi+\frac{\pi}{2}$,则$x=\frac{k\pi}{2}+\frac{\pi}{8}$,$k\in Z$.
+		$$\therefore f(x)$$函数图像的对称轴方程是$x=\frac{k\pi}{2}+\frac{\pi}{8}$,$k\in Z$.</text>
+	</question>
+	
+	<question id="test02_16_02" type="shortanswer">
+	    <text format="latex">令$2k\pi-\frac{\pi}{2} \leq 2x+\frac{\pi}{4} \leq 2k\pi+\frac{\pi}{2}$,则$k\pi-\frac{3\pi}{8} \leq x \leq k\pi+\frac{\pi}{8}$,$k\in Z$.
+		故$f(x)$的单调增区间为$[k\pi-\frac{3\pi}{8},k\pi+\frac{\pi}{8}]$,$k\in Z$.</text>
+	</question>
+	
+	<question id="test02_16_03" type="shortanswer">
+	    <text format="latex">$\because x\in[\frac{\pi}{4},\frac{3\pi}{4}]$,$\therefore \frac{3\pi}{4} \leq 2x+\frac{\pi}{4} \leq \frac{7\pi}{4}$,
+		$$\therefore -1\leq \sin(2x+\frac{\pi}{4})\leq \frac{\sqrt{2}}{2}$$,$\therefore -\sqrt{2} \leq f(x) \leq 1$.$\therefore$当$x\in[\frac{\pi}{4},\frac{3\pi}{4}]$时,函数$f_{max}(x)=f(\frac{\pi}{4})=1$,最小值为$f_{min}(x)=f(\frac{5}{8}\pi)=-\sqrt{2}$.</text>
+	</question>
+	
+	<question id="test02_17_01" type="shortanswer">
+	    <text format="latex">证明:$\because ABC-A_1B_1C_1$是正三棱柱,$\therefore BB_1\perp ABC$,$\therefore$ BD是$B_1D$在平面上的射影,在正$\triangle ABC$中,$\because$ D是$BC$的中点,$\therefore AD\perp BD$,根据三垂线定理得,$AD\perp B_1D$. </text>
+	</question>
+	
+	<question id="test02_17_02" type="shortanswer">
+	    <text format="latex">解:连接$A_1B$,设$A_1B\cap AB_1=E$,连接DE.$\because AA_1=AB$,$\therefore$四边形$A_1ABB_1$是正方形,$\therefore$ E是$A_1B$的中点,又D是$BC$的中点,$\therefore DE \parallel A_1C$.$\because DE\subset AB_1D$,$A_1C\not\subset AB_1D$,$ \therefore A_1C \parallel AB_1D$.</text>
+	</question>
+	
+	<question id="test02_17_03" type="shortanswer">
+	    <text format="latex">$V_{C-AB_1D}=V_{B_1-ADC}=\frac{1}{3}S_{\triangle ADC}\times |BB_1|=\frac{\sqrt{3}}{24}a^3$.</text>
+	</question>
+	
+	<question id="test02_18_01" type="shortanswer">
+	    <text format="latex">设等差数列$\{a_n\}$的公差为d,则$6a_1+15d=60$,
+		又$a_{6}^{2}=a_{1}a_{21}\Rightarrow (a_1+5d)^2=a_1(a_1+20d)$,解得$a_1=5$,$d=2$.$\therefore a_n=2n+3$,$S_n=\frac{n(5+2n+3)}{2}=n(n+4)$.</text>
+	</question>
+	
+	<question id="test02_18_02" type="shortanswer">
+	    <text format="latex">由$b_{n+1}-b_{n}=a_n$,$\therefore b_n-b_{n-1}=a_{n-1}(n\geq 2,n\in N^*)$.
+		当$n\geq 2$时,$b_n=(b_n-b_{n-1})+(b_{n-1}-b_{n-2})+\cdots+(b_2-b_1)+b_1=a_{n-1}+a_{n-2}+\cdots+a_1+b_1=(n-1)(n-1+4)+3=n(n+2)$.
+		对$b_1=3$也适合.
+		$$\therefore b_n=n(n+2)(n\in N^*)$$, $\therefore \frac{1}{b_n}=\frac{1}{n(n+2)}=\frac{1}{2}(\frac{1}{n}-\frac{1}{n+2})$,
+		$$T_n=\frac{1}{2}(1-\frac{1}{3}+\frac{1}{2}-\frac{1}{4}+\ldots+\frac{1}{n}-\frac{1}{n-2})=\frac{1}{2}(\frac{3}{2}-\frac{1}{n+1}-\frac{1}{n+2})=\frac{3n^2+5n}{4(n+1)(n+2)}$$.</text>
+	</question>
+	
+	<question id="test02_19_01" type="shortanswer">
+	    <text format="latex">$\because f(x)=x^3-\frac{1}{2}x^2+bx+c$, $\therefore f'(x)=3x^2-x+b$.
+		$$\because f(x)$$在$x=1$处取得极值,$\therefore f'(1)=3-1+b=0$.$\therefore b=-2$.经检验符合题意.</text>
+	</question>
+	
+	<question id="test02_19_02" type="shortanswer">
+	    <text format="latex,html">$f(x)=x^3-\frac{1}{2}x^2-2x+c$.$\because f'(x)=3x^2-x-2=(3x+2)(x-1)$,
+		<Tabread id="tab19_1">当x变化时,$f'(x)$,$f(x)$的变化情况如下表：</Tabread>
+		$$\therefore$$,当$x=-\frac{2}{3}$时,$f(x)$有极大值$\frac{22}{27}+c$,
+		又$f(2)=2+c\textgreater \frac{22}{27}+c$,$f(-1)=\frac{1}{2}+c\textless \frac{22}{27}+c$,$\therefore x\in [-1,2]$时,$f(x)$最大值为$f(2)=2+c$.$\therefore c^2\textgreater 2+c$.$\therefore c\textless -1$或$c\textgreater 2$.</text>
+		<tab id="tab19_1">
+		    <row>
+		            <col>x</col>
+					<col>-1</col>
+					<col>$(-1,-\frac{2}{3})$</col>
+					<col>$-\frac{2}{3}$</col>
+					<col>(-\frac{2}{3},1)</col>
+					<col>1</col>
+					<col>(1,2)</col>
+					<col>2</col>
+			</row>
+			<row>
+		            <col>$f'(x)$</col>
+					<col> </col>
+					<col>+</col>
+					<col>0</col>
+					<col>-</col>
+					<col>0</col>
+					<col>+</col>
+					<col> </col>
+			</row>
+			<row>
+		            <col>$f(x)$</col>
+					<col>$f(-1)$</col>
+					<col>$\nearrow$</col>
+					<col>$\frac{22}{27}+c$</col>
+					<col>$ \searrow $</col>
+					<col>$-\frac{3}{2}+c$</col>
+					<col>$\nearrow$</col>
+					<col>$f(2)$</col> 
+			</row>
+		</tab>	
+	</question>
+	
+	<question id="test02_19_03" type="shortanswer">
+	    <text format="latex">对任意的$x_1,x_2\in [-1,2]$,$|f(x_1)-f(x_2)|\leq \frac{7}{2}$恒成立.
+		由第二问可知,当$x=1$时,$f(x)$有极小值$-\frac{3}{2}+c$. 
+		又$f(-1)=\frac{1}{2}+c\textgreater -\frac{3}{2}+c$,$\therefore x\in [-1,2]$时,$f(x)$最小值为$-\frac{3}{2}+c$,$\therefore |f(x_1)-f(x_2)| \leq |f_{max}(x)-f_{min}(x)|=\frac{7}{2}$,故结论成立.</text>
+	</question>
+	
+	<question id="test02_20_01`" type="shortanswer">
+	    <text format="latex">解:因为$a_1=a\in(0,1)$,
+		所以$a_2=-a_1+4=-a+4$,且$a_2\in (3,4)$,
+		所以$a_3=a_2-3=-a+1$,且$a_3\in (0,1)$,
+		所以$a_4=-a_3+4=a+3$,且$a_4\in (3,4)$,
+		所以$a_5=a_4-3=a$.</text>
+	</question>
+	
+	<question id="test02_20_02`" type="shortanswer">
+	    <text format="latex">证明:当$0\textless a_n\textless 3$时,$a_{n+1}=-a_n+4$,所以,$1\leq a_{n+1}\textless 4$.
+		当$3\textless a_n\textless 4$,$a_{n+1}=a_n-3$,所以,$0\textless a_{n+1}\textless 1$.
+		综上,$0\textless a_n\textless 4$时,$0\textless a_{n+1}\textless 4$.</text>
+	</question>
+	
+	<question id="test02_20_03`" type="shortanswer">
+	    <text format="latex">若$0\textless a\textless 1$,由第一问知$a_{5}=a_{1}$,所以$k=4$.因此,当$k=4m(m\in N^*)$时,对所有的$n\in N^*$,$a_{n+k}=a_{n}$成立;
+		                     若$1\leq a\textless 2$, 则$a_2=-a+4$,且$a_2\in (2,3]$,$a_3=-a_2+4=-(-a+4)+4=a=a_1$,所以$k=2$.因此,当$k=2m(m\in N^*)$时,对所有的$n\in N^*$,$a_{n+k}=a_{n}$成立;
+							 若$a=2$,则$a_2=a_3=a_4=\cdots$,所以$k=1$,因此$k=m(m\in N^*)$时,对所有的$n\in N^*$,$a_{n+k}=a_{n}$成立.
+							 综上,若$0\textless a\textless 1$,则$k=4m$;$1\leq a\textless 2$,则$k=2m$;若$a=2$,则$k=m$,$m\in N* $.</text>
+	</question>
+</paperanswer>	
+	
+	

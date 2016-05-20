@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="2012北京高考文综地理试卷" subject="Geography" id="2012BeijingGaokao">
+	<section name="选择题" score="44">
+		<questions score="44">
+			<text format="html">2012年7月27日～8月12日，第30届夏季奥运会将在英国伦敦举行,读图1，回答第1~3题。</text>
+			<question id="2012BeijingGaokao_01" score="4" type="select">
+				<text>在7、8月份，伦敦比北京__</text>
+				<select multiple="false">
+					<option value="A">气温高，日较差大</option>
+					<option value="B">风小雾大，降水多</option>
+					<option value="C">正午太阳高度角小</option>
+					<option value="D">日出晚，昼短夜长</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_02" score="4" type="select">
+				<text>英国__</text>
+				<select multiple="false">
+					<option value="A">地处亚欧板块和美洲板块交界处</option>
+					<option value="B">西部海岸线曲折，珊瑚礁发育好</option>
+					<option value="C">地形以高原为主，地势西高东低</option>
+					<option value="D">多数河流短，含沙少，无结冰期</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_03" score="4" type="select">
+				<text>途经该区域的洋流__</text>
+				<select multiple="false">
+					<option value="A">能使北美洲至欧洲的海轮航行速度加快</option>
+					<option value="B">造成欧洲西部地区气温升高、湿度降低</option>
+					<option value="C">进入到北冰洋海域，使当地能见度变好</option>
+					<option value="D">在与其他洋流交汇的海域不易形成渔场</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图2为某山地的垂直带谱示意图。读图，回答第4、5题。<Picread id="Pic4_5_1"></Picread></text>
+			<question id="2012BeijingGaokao_04" score="4" type="select">
+				<text>图中所示山地__</text>
+				<select multiple="false">
+					<option value="A">各自然带的界线随季节变化而移动</option>
+					<option value="B">北坡热量条件差，林带上界比南坡低</option>
+					<option value="C">南坡冰雪带下界因降水量大而较低</option>
+					<option value="D">南北坡山麓水平距离造成基带差异大</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_05" score="4" type="select">
+				<text>该山地位于__</text>
+				<select multiple="false">
+					<option value="A">喜马拉雅山脉</option>
+					<option value="B">天山山脉</option>
+					<option value="C">祁连山脉</option>
+					<option value="D">昆仑山脉</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图3为东非高原基塔莱和多多马的降水资料及两地之间游牧路线示意图。读图，回答第6、7题。<Picread id="Pic6_7_1"></Picread></text>
+			<question id="2012BeijingGaokao_06" score="4" type="select">
+				<text>该该游牧活动 __</text>
+				<select multiple="false">
+					<option value="A">需要穿越热带雨林</option>
+					<option value="B">随着雨季南北移动</option>
+					<option value="C">向南可至南回归线</option>
+					<option value="D">易受飓风灾害侵扰</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_07" score="4" type="select">
+				<text>游牧至甲地的时间最可能是__</text>
+				<select multiple="false">
+					<option value="A">1月</option>
+					<option value="B">4月</option>
+					<option value="C">7月</option>
+					<option value="D">10月</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图4是某地区大地震后救灾工作程序示意图。读图，回答第8、9题。<Picread id="Pic8_9_1"></Picread></text>
+			<question id="2012BeijingGaokao_08" score="4" type="select">
+				<text>图中所示救灾工作程序还可能适用于__</text>
+				<select multiple="false">
+					<option value="A">鼠害</option>
+					<option value="B">洪涝</option>
+					<option value="C">旱灾</option>
+					<option value="D">寒潮</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_09" score="4" type="select">
+				<text format="html">为降低大城市震后救灾活动强度，应采取的主要防灾减灾措施包括__
+					<label id="9_1">完善城市功能区划 </label>	
+					<label id="9_2">调整产业结构</label>
+					<label id="9_3">人口外迁</label>	
+					<label id="9_4">房屋加固</label>
+					<label id="9_5">组建志愿者队伍</label>	
+					<label id="9_6">避灾自救技能培训</label>
+				</text>
+				<select multiple="false">
+					<option value="A">①②③④</option>
+					<option value="B">②③④⑤</option>
+					<option value="C">③④⑤⑥</option>
+					<option value="D">①④⑤⑥</option>
+				</select>
+			</question>
+		</questions>
+		<questions>
+			<text format="html">图5为温带某景区导游图。读图，回答第9、10题。<Picread id="Pic10_11_1"></Picread></text>
+			<question id="2012BeijingGaokao_10" score="4" type="select">
+				<text>在图示景区的主要自然景观中__</text>
+				<select multiple="false">
+					<option value="A">峡谷由河流下切塑造而成</option>
+					<option value="B">河流补给主要靠冰雪融水</option>
+					<option value="C">瀑布的落差受径流量控制 </option>
+					<option value="D">湖泊是火山口积水形成的</option>
+				</select>
+			</question>
+			<question id="2012BeijingGaokao_11" score="4" type="select">
+				<text>在景区服务设施中，依次布局游客中心、加油站、餐厅、巡防站的合理方案是__</text>
+				<select multiple="false">
+					<option value="A">①③②④</option>
+					<option value="B">②③①④</option>
+					<option value="C">③②④①</option>
+					<option value="D">④①③②</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="简答题" score="56">
+		<questions score="20">
+			<headtext format="html">读图10，回答下列问题。<Picread id="Pic36_1"></Picread></headtext>
+			<question id="2012BeijingGaokao_36_01" score="6" type="shortanswer">
+				<text>说明在地形影响下，该区域城镇和交通线路的分布特征。</text>
+			</question>
+			<question id="2012BeijingGaokao_36_02" score="6" type="shortanswer">
+				<text>简述图中滦河三角洲的成因。</text>
+			</question>	
+			<question id="2012BeijingGaokao_36_03" score="8" type="shortanswer">
+				<text>比较图10(a)与(b)，分析滦河河道的变化及其人为原因。</text>
+			</question>
+		</questions>
+		<questions score="16">
+			<headtext format="html">读图10，回答下列问题。<Picread id="Pic36_1"></Picread></headtext>
+			<text>2010年，曹妃甸新建的首钢京唐钢铁厂已全面投入生产。</text>
+			<question id="2012BeijingGaokao_36_04" score="8" type="shortanswer">
+				<text>说明钢铁厂建设对曹妃甸地区经济发展的带动作用。</text>
+			</question>	
+			<question id="2012BeijingGaokao_36_05" score="8" type="shortanswer">
+				<text>概述制约华北平原农业生产的自然因素，并提出应对措施。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<title>发展经济、改善民生是国家和民族发展的目标与责任。 </title>
+			<text format="html">城市绿化建设是一项重要的民生工程。图13为某城市绿地系统规划示意图。读图13，回答第（1）、（2）题<Picread id="Pic39_1"></Picread></text>
+			<question id="2012BeijingGaokao_39_01" score="4" type="shortanswer">
+				<text>简述规划绿地的分布特点。</text>
+			</question>	
+			<question id="2012BeijingGaokao_39_02" score="6" type="shortanswer">
+				<text>阐述该绿地系统改善城市空气质量的原理。</text>
+			</question>	
+		</questions>
+		<questions score="10">
+			<title>地图反映了人们认识世界的程度，地图的变化记录了人们认识世界的过程。</title>
+			<text format="html">随着地理信息技术的发展，出现了新的地图形式——数字地图。据图14，回答第（1）题.<Picread id="Pic40_1"></Picread></text>
+			<question id="2012BeijingGaokao_40" score="10" type="shortanswer">
+				<text>与纸质地图相比，概括数字地图功能方面的特点。</text>
+			</question>	
+		</questions>
+	</section>
+</paper>

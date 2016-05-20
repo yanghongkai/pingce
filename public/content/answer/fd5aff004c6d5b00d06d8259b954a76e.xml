@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="2014年北京市高考数学试卷(文科)" papersubject="Math" paperid="2014BeijingGaokao" info="数学攻关组第一次测试">
+    <question id="2014BeijingGaokao_01" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_02" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_03" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_04" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_05" type="select">
+		<text>D</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_06" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_07" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_08" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_09" type="fillblank" num="1" scoretype="all">
+		<text>2</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_10" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$x^{2}-y^{2}=1$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_11" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$2\sqrt{2}$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_12" type="fillblank" num="2" scoretype="each">
+		<text>2</text>
+		<text format="latex">$\frac{\sqrt{15}}{8}$</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_13" type="fillblank" num="1" scoretype="all">
+		<text>1</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_14" type="fillblank" num="1" scoretype="all">
+		<text>42</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_15_01" type="shortanswer">
+	    <text format="latex">
+		设等差数列$\{a_{n}\}$的公差为d,由题意得$d=\frac{a_{4}-a_{1}}{3}=\frac{12-3}{3}=3$,
+        所以$a_{n}=a_{1}+(n-1)d=3n(n=1,2,\cdots)$.
+        设等比数列$\{b_{n}-a_{n}\}$的公比为q,
+		由题意得$q^{3}=\frac{b_{4}-a_{4}}{b_{1}-a_{1}}=\frac{20-12}{4-3}=8$,解得$q=2$.
+        所以$b_{n}-a_{n}=(b_{1}-a_{1})q^{n-1}=2^{n-1}$.
+        从而$b_{n}=3n+2^{n-1}(n=1,2,\cdots)$.
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_15_02" type="shortanswer">
+	    <text format="latex">
+		由第一问知$b_{n}=3n+2^{n-1}(n=1,2,\cdots)$.
+        数列$\{3n\}$的前n项和为$\frac{3}{2}n(n+1)$,数列$\{2^{n-1}\}$的前n项和为$1\times\frac{1-2^{n}}{1-2}=2^{n}-1$.
+        所以,数列$\{b_{n}\}$的前n项和为$\frac{3}{2}n(n+1)+2^{n}-1$.
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_16_01" type="shortanswer">
+	    <text format="latex">$f(x)$的最小正周期为$\pi$,$x_{0}=\frac{7\pi}{6}$,$y_{0}=3$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_16_02" type="shortanswer">
+	    <text format="latex"> 因为$x\in\left[-\frac{\pi}{2},-\frac{\pi}{12}\right]$,所以$2x+\frac{\pi}{6}\in\left[-\frac{5\pi}{6},0\right]$.
+          于是当$2x+\frac{\pi}{6}=0$,即$x=-\frac{\pi}{12}$时，$f(x)$取得最大值0,
+          当$2x+\frac{\pi}{6}=-\frac{\pi}{2}$,即$x=-\frac{\pi}{3}$时,$f(x)$取得最小值-3.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_01" type="shortanswer">
+	    <text format="latex">
+		在三棱柱$ABC-A_{1}B_{1}C_{1}$中,$BB_{1}\perp ABC$.
+        所以$BB_{1}\perp AB$.
+        又因为$AB\perp BC$.
+        所以$AB\perp B_{1}BCC_{1}$.
+        所以$ABE\perp B_{1}BCC_{1}$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_02" type="shortanswer">
+	    <text format="latex">
+		<Picread id="Pic17_1">取AB中点G,连结EG,FG.</Picread>
+        因为E,F分别是$A_{1}C_{1}$,BC的中点,
+        所以$FG\parallel AC$,且$FG=\frac{1}{2}AC$.
+        因为,$AC\parallel A_{1}C_{1}$,且$AC=A_{1}C_{1}$,
+        所以$FG\parallel EC_{1}$, 且$FG\parallel EC_{1}$,
+        所以四边形$FGEC_{1}$为平行四边形.
+        所以$C_{1}F\parallel EG $.
+        又因为$EG\subset ABE $, $C_{1}F\not\subset ABE$,
+        所以$C_{1}F\parallel ABE $.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_17_03" type="shortanswer">
+	    <text format="latex">
+		因为$AA_{1}=AC=2$,$BC=1$,$AB\perp BC$,
+        所以$AB=\sqrt{AC^{2}-BC^{2}}=\sqrt3$.
+        所以三棱锥E-ABC的体积$V=\frac{1}{3}S_{\triangle ABC}\cdot AA_{1}=\frac{1}{3}\times\frac{1}{2}\times\sqrt{3}\times1\times2=\frac{\sqrt{3}}{3}$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_01" type="shortanswer">
+	    <text format="latex">
+		根据频数分布表,100名学生中课外阅读时间不少于12小时的学生共有$6+2+2=10$名,所以样本中的学生课外阅读时间少于12小时的频率是$1-\frac{10}{100}=0.9$.
+        从该校随机选取一名学生,估计其课外阅读时间少于12小时的概率为0.9.
+		</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_02" type="shortanswer">
+	    <text format="latex">
+		课外阅读时间落在组$[4,6)$的有17人,频率为0.17,所以$a=\frac{0.17}{2}=0.085$
+        课外阅读时间落在组$[8,10)$的有25人,频率为0.25,
+        所以$b=\frac{0.25}{2}=0.125$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_18_03" type="shortanswer">
+	    <text>样本中的100名学生课外阅读时间的平均数在第4组.</text>
+	</question>
+	
+	<question id="2014BeijingGaokao_19_01" type="shortanswer">
+	    <text format="latex">
+		由题意,椭圆C的标准方程为$\frac{x^{2}}{4}+\frac{y^{2}}{2}=1$.
+        所以$a^{2}=4$,$b^{2}=2$,从而$c^{2}=a^{2}-b^{2}=2$.
+        因此$a=2$,$c=\sqrt{2}$.
+        故椭圆C的离心率$e=\frac{c}{a}=\frac{\sqrt{2}}{2}$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_19_02" type="shortanswer">
+	    <text format="latex">
+		设点A,B的坐标分别为$(t,2)$,$(x_{0},y_{0})$,其中$x_{0}\neq 0$.
+        因为$OA\perp OB$,
+        所以$\overrightarrow{OA}\cdot\overrightarrow{OB}=0$,
+        即$tx_{0}+2y_{0}=0$,解得$t=-\frac{2y_{0}}{x_{0}}$.
+        又$x_{0}^{2}+2y_{0}^{2}=4$,
+		所以$\vert AB\vert^{2}=(x_{0}-t)^{2}+(y_{0}-2)^{2}=(x_{0}+\frac{2y_{0}}{x_{0}})^2+(y_{0}-2)^2=x_{0}^{2}+y_{0}^{2}+\frac{4y_{0}^{2}}{x_{0}^{2}}+4=x_{0}^{2}+\frac{4-x_{0}^{2}}{2}+\frac{2(4-x_{0}^{2})}{x_{0}^{2}}+4=\frac{x_{0}^{2}}{2}+\frac{8}{x_{0}^{2}}+4(0\textless x_{0}^{2}\leqslant 4)$.
+        因为$\frac{x_{0}^{2}}{2}+\frac{8}{x_{0}^{2}}\geqslant 4 (0\textless x_{0}^{2}\leqslant 4)$,且当$x_{0}^{2}=4$时等号成立,所以$\vert AB\vert^{2}\geqslant 8$.
+        故线段AB长度的最小值为$2\sqrt{2}$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_20_01" type="shortanswer">
+	    <text format="latex">
+		由$f(x)=2x^{3}-3x$得$f'(x)=6x^{2}-3$.
+        令$f'(x)=0$,得$x=-\frac{\sqrt{2}}{2}$ 或$x=\frac{\sqrt{2}}{2}$.
+        因为$f(-2)=-10$,$f(-\frac{\sqrt{2}}{2})=\sqrt{2}$,$f(\frac{\sqrt{2}}{2})=-\sqrt{2}$,$f(1)=-1$ . 
+        所以$f(x)$在区间[-2,1]上的最大值为$f(-\frac{\sqrt{2}}{2})=\sqrt{2}$.
+        </text>
+	</question>
+	
+	<question id="2014BeijingGaokao_20_02" type="shortanswer">
+	    <text format="latex,html">
+		设过点P(1,t)的直线与曲线y=f(x)相切于点$(x_{0},y_{0})$ , 
+        则$y_{0}=2x_{0}^{3}-3x_{0}$,且切线斜率为$k=6x_{0}^{2}-3$ ,  
+        所以切线方程为$y-y_{0}=(6x_{0}^{2}-3)(x-x_{0})$.
+        因此$t-y_{0}=(6x_{0}^{2}-3)(1-x_{0})$ ,
+        整理得 $4x_{0}^{3}-6x_{0}^{2}+t+3=0$.
+        设$g(x)=4x^{3}-6x^{2}+t+3$,
+        则“过点P(1,t)存在3条直线与曲线$y=f(x)$相切”等价于“ $g(x)$有3个不同零点”.$g'(x)=12x^{2}-12x=12x(x-1)$.
+        <Tabread id="tab20_1">g(x)与$g'(x)$的情况如下:</Tabread>,
+        所以,$ g(0)=t+3$是g(x)的极大值，$g(1)=t+1$是g(x)的极小值.
+        当$g(0)=t+3\leqslant 0$，即$t\leqslant -3$时,此时$g(x)$在区间$(-\infty,1]$和$(1,+\infty)$上分别至多有1个零点，所以$g(x)$至多有2个零点.
+        当$g(1)=t+1\geqslant 0$，即$t\geqslant -1$时,此时$g(x)$在区间$(-\infty, 0)$和$[0,+\infty)$上分别至多有1个零点，所以$g(x)$至多有2个零点.
+        当$g(0)\textgreater 0$且$g(1)\textless 0$ ，即$ -3\textless t\textless -1$时，因为$g(-1)=t-7 \textless 0,g(2)=t+11 \textgreater 0$所以$g(x)$分别在区间$[-1,0),[0,1)$和[1,2)上恰有1个零点.由于$g(x)$在区间$(-\infty,0)$和$(1,+\infty)$上单调,所以$g(x)$分别在区间$(-\infty,0)$和$[1,+\infty)$上恰有1个零点.
+        综上可知,当过点$P(1,t)$存在3条直线与曲线$y=f(x)$相切时，t的取值范围是$(-3,-1)$.
+        </text>
+		<tab id="tab20_1">
+		    <row>
+		            <col>x</col>
+					<col>$(-\infty ,0)$</col>
+					<col>0</col>
+					<col>$(0,1)$</col>
+					<col>1</col>
+					<col>$(1,+\infty)$</col>
+			</row>
+			<row>
+		            <col>$g'(x)$</col>
+					<col>+</col>
+					<col>0</col>
+					<col>-</col>
+					<col>0</col>
+					<col>+</col>
+			</row>
+			<row>
+		            <col>$g(x)$</col>
+					<col>增</col>
+					<col>$t+3$</col>
+					<col>减</col>
+					<col>$t+1$</col>
+					<col>增</col>
+			</row>
+		</tab>	
+	</question>
+	
+	<question id="2014BeijingGaokao_20_03" type="shortanswer">
+	    <text format="latex">
+		过点$A\left(-1,2\right)$存在3条直线与曲线$y=f(x)$相切;
+        过点$B\left(2,10\right)$存在2条直线与曲线$y=f(x)$相切;
+        过点$C\left(0,2\right)$存在1条直线与曲线$y=f(x)$相切.
+        </text>
+	</question>
+</paperanswer>
+	

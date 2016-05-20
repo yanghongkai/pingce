@@ -1,0 +1,319 @@
+/*登录*/
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+.login{	/*对应form-3*/
+	/*height: 200px;*/
+	width: 1000px;
+	position: relative;
+	/*text-align: center;*/
+	margin:32px auto 24px;
+	background-color:#fff;
+	box-shadow: 0 2px 3px #bdbdbd;
+	border-top:1px solid #B44242;
+	padding:24px 10px;
+	overflow: hidden;
+}
+
+.title{
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-left: 10px;
+	margin-top: -15px;
+}
+
+.login label{
+	width: 100px;
+	float: left;
+	color:#7b7b7b;
+	margin:10px 8px 5px 28px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.inputInfo{
+	width:50%;
+	float:left;
+}
+
+.login input[type=text]{
+	width: 200px;
+	float: left;
+	padding: 8px 5px;
+	margin: 5px auto;
+	font-size: 16px;
+}
+
+.login input[type=password]{
+	width: 200px;
+	float: left;
+	padding: 8px 5px;
+	margin: 5px auto;
+	font-size: 16px;
+}
+
+.logUser{
+	/*width: 200px;*/
+	float: left;
+	padding: 8px 5px;
+	margin: 5px auto;
+	font-size: 16px;
+}
+
+.singBut{
+	width:50%;
+	float:left;
+}
+
+.login input[type=submit]{
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	border: 1px solid #B44242;
+	border-color: #B44242;
+	border-radius: 3px;
+	color: #B44242;
+	background-color: #fff;
+	cursor:pointer;
+	margin-top: 10px;
+	/*margin-left: 300px;	*/
+}
+
+.login input[type=submit]:hover{
+	color: #fff;
+	background-color: #B44242;
+}
+
+/*
+input:focus{
+	border: 1px solid #B44242;
+}*/
+
+
+/*新闻部分*/
+.news{
+	/*height: 300px;*/
+	width: 1000px;
+	position: relative;
+	/*text-align: center;*/
+	margin:32px auto 24px;
+	background-color:#fff;
+	/*margin-top:110px;*/
+	box-shadow: 0 2px 3px #bdbdbd;
+	border-top:1px solid #B44242;
+	padding:24px 10px;
+	overflow: hidden;
+	position:relative;
+}
+
+.news ul{
+	padding: 0 30px;
+	font-size: 14px;
+	color: #cccccc;
+}
+
+.news li{
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0;
+	line-height: 40px;
+}
+
+.news li a{
+	color: #7b7b7b;
+}
+
+.news li a:hover{
+	color:#B44242;
+}
+
+.news li span{
+	float: right;
+}
+
+.news sup{
+	color: #B44242;
+	font-weight: bold;
+}
+
+.news_article{
+	/*height: 300px;*/
+	width: 1000px;
+	position: relative;
+	/*text-align: center;*/
+	margin:110px auto 24px;
+	background-color:#fff;
+	box-shadow: 0 2px 3px #bdbdbd;
+	border-top:1px solid #B44242;
+	padding:24px 10px;
+	overflow: hidden;
+}
+
+.news_name{
+	color:#B44242;
+	text-align:center;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-top:20px;
+}
+
+.news_info{
+	color:#acacac;
+	text-align:center;
+	font-size:12px;
+	line-height:38px;
+}
+
+.news_info span{
+	display:inline-block;
+	margin:0 15px;
+}
+
+.news_content{
+	color:#333333;
+	line-height:1.5;
+	margin:8px 20px;
+	font-size:14px;
+}
+
+.back_homepage a{
+	color:#acacac;
+	float:right;
+	margin-right:20px;
+	font-size:14px;
+}
+
+.back_homepage a:hover{
+	color:#B44242;
+}
+
+/*资源下载和评测页面*/
+.form{
+	box-shadow: 0 2px 3px #bdbdbd;
+	border-top: 1px solid #B44242;
+	background-color: #fff;
+	margin:32px auto 24px;
+	width: 1000px;
+	/*padding: 24px 10px;*/
+	position: relative;
+	min-height: 350px;
+}
+
+.scoreDl_form{
+	/*margin-top: 24px;*/
+	margin: 5px 10px;
+	display: block;
+	text-align: center;
+	width: 90%;
+	padding: 18px 40px 40px;
+}
+
+table{
+	width: 90%;
+}
+
+.scordDl_form_title{
+	height: 24px;
+}
+
+.scordDl_form_title td{
+	font-size: 20px;
+	border:1px solid #bdbdbd;
+	background-color: rgba(193,71,71,0.7);
+	color: #fff;
+	height: 46px;
+}
+
+.scordDl_form_item td{
+	font-size: 17px;
+	color: #888;
+	border:1px solid #dcdcdc;
+	line-height: 30px;
+}
+
+.scordDl_form_item td a{
+	text-decoration: underline;
+	color: #7b7b7b;
+}
+
+.scordDl_form_item td a:hover{
+	color: #B44242;
+}
+
+.evaluate_form{
+	/*margin-top: 24px;*/
+	margin: 5px 10px;
+	display: block;
+	text-align: center;
+	width: 90%;
+	padding: 18px 40px 40px;
+}
+
+.evaluate_form_title{
+	height: 24px;
+}
+
+.evaluate_form_title td{
+	font-size: 20px;
+	border:1px solid #bdbdbd;
+	background-color: rgba(193,71,71,0.7);
+	color: #fff;
+	height: 46px;
+}
+
+.evaluate_form_item td{
+	font-size: 17px;
+	color: #888;
+	border:1px solid #dcdcdc;
+	line-height: 30px;
+
+}
+
+.evaluate_form_item td a{
+	text-decoration: underline;
+	color: #7b7b7b;
+}
+
+.evaluate_form_item td a:hover{
+	color: #B44242;
+}
+
+.evaluate_form_item h4{
+	font-size: 17px;
+	/*padding: 5px 5px;
+	margin: 5px 10px;*/
+	/*color: #B44242;*/
+	margin-right: 15px;
+	text-decoration: underline;
+	float: right;
+	height: 25px;
+	font-weight: normal;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer; /*为什么不行！！！*/
+}
+/*
+.pro_file td h4:hover{
+	cursor: pointer;
+}*/
+
+.evaluate_form_item input[type="text"]{
+	width: 300px;
+	font-size: 16px;
+	border: none;
+}
+
+.evaluate_form_item input[type="file"]{
+	opacity: 0;
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

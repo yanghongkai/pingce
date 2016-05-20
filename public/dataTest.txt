@@ -7,3 +7,5 @@ pic=userPics/971f9f1d301d18c1c9a65784273e6709.jpg
 new_name=userPics/50_2.jpg
 pic=pics/5e6ba35d85731d3161e29296e5fecb19.jpg
 new_name=pics/2015BeijingGaokao_Math_Pic18_1_answer.jpg
+pic=pics/e0aa5d234f581a8375514873d6bb55bf.jpg
+new_name=pics/2012BeijingGaokao_Geography_Pic4_5_1.jpg

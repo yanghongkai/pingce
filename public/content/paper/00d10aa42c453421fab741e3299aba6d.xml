@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="数学测试02" subject="Math" id="test02" >
+	<section name="一,选择题（本大题共8小题,共40分）" score="40" >
+		<questions score="40">
+			<question id="test02_01" score="5" type="select">
+				<text format="latex">已知集合$P=\{x|x(x-3)\textless 0\}$,$Q=\{x||x|\textless 2\}$,则$P\cap Q=$__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$(-2,0)$</option>
+					<option value="B">$(0,2)$</option>
+					<option value="C">$(2,3)$</option>
+					<option value="D">$(-2,3)$</option>
+				</select>
+			</question>
+			<question id="test02_02" score="5" type="select">
+				<text format="latex"> “$\alpha=\frac{\pi}{3}$”是“$\cos \alpha=\frac{1}{2}$ ”的 __</text>
+				<select multiple="false">
+					<option value="A">必要不充分条件</option>
+					<option value="B">充分不必要条件</option>
+					<option value="C">充分必要条件</option>
+					<option value="D">既不充分也不必要条件</option>
+				</select>
+			</question>
+			<question id="test02_03" score="5" type="select">
+				<text format="latex">$S_{n}$是等差数列$\{a_{n}\}$的前n项和,若$S_{5}=20$,则$a_{2}+a_{3}+a_{4}=$__</text>
+				<select multiple="false">
+					<option value="A">15</option>
+					<option value="B">18</option>
+					<option value="C">9</option>
+					<option value="D">12</option>
+				</select>
+			</question>
+			<question id="test02_04" score="5" type="select">
+				<text format="latex,html">设$\alpha$,$\beta$为两个平面,l,m为两条直线,且$l\subset \alpha$,$m\subset \beta$,有如下两个命题：
+                <label id="04_1">若$\alpha\parallel \beta$,$l\parallel m$;</label>	
+				<label id="04_2">若$l\perp m$,则$\alpha\perp \beta$</label>.
+				那么__</text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="04_1"/>是真命题,<label id="04_2"/>是假命题	</option>
+					<option value="B"><label id="04_1"/>是假命题,<label id="04_2"/>是真命题	</option>
+					<option value="C"><label id="04_1"/>,<label id="04_2"/>都是真命题</option>
+					<option value="D"><label id="04_1"/>,<label id="04_2"/>都是假命题</option>
+				</select>
+			</question>
+			<question id="test02_05" score="5" type="select">
+				<text format="latex">若圆O是$\triangle ABC$所在平面内的一点,且满足$(\vec{BO}+\vec{OC})\cdot (\vec{OC}-\vec{OA})=0$,则$\triangle ABC$一定是__</text>
+				<select multiple="false">
+					<option value="A">等边三角形</option>
+					<option value="B">等腰直角三角形</option>
+					<option value="C">直角三角形</option>
+					<option value="D">斜三角形</option>
+				</select>
+			</question>
+			<question id="test02_06" score="5" type="select">
+				<text format="latex">将函数$y=\sin 2x$的图象按向量$(\frac{\pi}{2},1)$平移后得到图象对应的函数解析式是__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$y=\cos 2x+1$</option>
+					<option value="B">$y=-\cos 2x+1$</option>
+					<option value="C">$y=\sin 2x+1$</option>
+					<option value="D">$y=-\sin 2x+1$</option>
+				</select>
+			</question>
+			<question id="test02_07" score="5" type="select">
+				<text format="latex,html"><Picread id="Pic07_1">已知函数$f(x)=A\sin (\omega x+\varphi)(A\textgreater 0,\omega\textgreater 0,-\pi\textless \varphi\textless \pi)$的部分图象如图所示,</Picread>则函数$f(x)$的解析式为__</text>
+				<select multiple="false" format="latex">
+					<option value="A">$f(x)=2\sin(\frac{1}{2}x+\frac{\pi}{4})$</option>
+					<option value="B">$f(x)=2\sin(\frac{1}{2}x+\frac{3\pi}{4})$</option>
+					<option value="C">$f(x)=2\sin(\frac{1}{2}x-\frac{\pi}{4})$</option>
+					<option value="D">$f(x)=2\sin(\frac{1}{2}x-\frac{3\pi}{4})$</option>
+				</select>
+			</question>
+			<question id="test02_08" score="5" type="select">
+				<text format="latex,html">已知函数$f(x)=\cos x\sin x$,下面给出四种说法
+				<label id="08_1">若$f(x_{1})=-f(x_{2})$,则$x_{1}=-x_{2}$;</label>	
+				<label id="08_2">$f(x)$的最小正周期是$2\pi$;</label>
+				<label id="08_1">$f(x)$在区间$[-\frac{\pi}{4},\frac{\pi}{4}]$是增函数;</label>	
+				<label id="08_2">$f(x)$的图象关于直线$x=\frac{3\pi}{4}$对称.</label>
+				其中正确说法的个数为__</text>
+				<select multiple="false">
+					<option value="A">1</option>
+					<option value="B">2</option>
+					<option value="C">3</option>
+					<option value="D">4</option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="二、填空题(本大题共6小题，每题5分，共30分)" score="30" >
+		<questions score="30">
+			<question id="test02_09" type="fillblank">
+				<blank num="1" format="latex">函数$f(x)=\log_{\frac{1}{2}}(x^2+2x-3)$的递增区间是__.</blank>
+			</question>
+			<question id="test02_10" type="fillblank">
+				<blank num="1" format="latex">向量$\vec{a}$,$\vec{b}$满足$(\vec{a}-\vec{b})\cdot(2\vec{a}+\vec{b})=-4$,且$|\vec{a}|=2$,$|\vec{b}|=4$,则$\vec{a}$,$\vec{b}$ 夹角的余弦值等于__.</blank>
+			</question>
+			<question id="test02_11" type="fillblank">
+				<blank num="1" format="latex">已知函数$y=|sin(\omega x+\frac{\pi}{6})|$的最小正周期是$\frac{\pi}{2}$,则正数$\omega=$__.</blank>
+			</question>
+			<question id="test02_12" type="fillblank">
+				<blank num="2" format="latex">湖面上漂着一个小球,湖水结冰后将球取出,冰面上留下了一个直径为12cm,深2cm的空穴,则该球的半径是__cm,表面积是$__{cm}^2$.</blank>
+			</question>
+			<question id="test02_13" type="fillblank">
+				<blank num="1" format="latex,html"><Picread id="Pic13_1">某几何体的三视图如图所示</Picread>,该几何体的体积是__.</blank>	
+			</question>
+			<question id="test02_14" type="fillblank">
+				<blank num="2" format="latex,html"><Picread id="Pic14_1">如图</Picread>,一条螺旋线是用以下方法画成：$\triangle ABC$是边长为1的正三角形,曲线$CA_{1}$,$A_{1}A_{2}$,$A_{2}A_{3}$分别以A,B,C 为圆心,AC,$BA_{1}$,$CA_{2}$为半径画的弧,曲线$CA_{1}A_{2}A_{3}$称为螺旋线旋转一圈．然后又以A为圆心$AA_{3}$为半径画弧,$\ldots$,这样画到第n圈,则所得整条螺旋线的长度$l_{n}=$__（用$\pi$表示即可）.</blank>
+			</question>
+		</questions>
+	</section>
+	<section name="三、解答题(本大题共6小题，共80分)" score="80" >
+		<questions score="13">>
+			<text format="latex">在$\triangle ABC$中,$\cos A=\frac{\sqrt{5}}{5}$,$\cos B=\frac{\sqrt{10}}{10}$.</text>
+			<question id="test02_15_01" type="shortanswer">
+				<text>求角C;</text>
+			</question>	
+			<question id="test02_15_02" type="shortanswer">
+				<text format="latex">设$AB=\sqrt{2}$,求$\triangle ABC$的面积.</text>
+			</question>
+		</questions>
+		<questions score="13">
+			<text format="latex">已知函数$f(x)=(\sin x+\cos x)^2+2\cos^2x-2$.</text>
+			<question id="test02_16_01" type="shortanswer">
+				<text format="latex">求$f(x)$函数图象的对称轴方程：</text>
+			</question>	
+			<question id="test02_16_02" type="shortanswer">
+				<text format="latex">求$f(x)$的单调增区间;</text>
+			</question>
+			<question id="test02_16_03" type="shortanswer">
+				<text format="latex">当$x\in [\frac{\pi}{4},\frac{3\pi}{4}]$时,求函数$f(x)$的最大值,最小值.</text>
+			</question>
+		</questions>
+		<questions score="13">
+			<text format="latex,html"><Picread id="Pic17_1">如图</Picread>,正三棱柱$ABC-A_{1}B_{1}C_{1}$中,D是BC的中点,$AA_{1}=AB=a$.</text>
+			<question id="test02_17_01" type="shortanswer">
+				<text format="latex">求证：$AD\perp B_{1}D$;</text>
+			</question>	
+			<question id="test02_17_02" type="shortanswer">
+				<text format="latex">证明：$A_{1}C \parallel AB_{1}D$;</text>
+			</question>
+			<question id="test02_17_03" type="shortanswer">
+				<text format="latex">求三棱锥$C-A_{1}BD$的体积.</text>
+			</question>			
+		</questions>
+		<questions score="13">
+			<text format="latex">已知各项都不相等的等差数列$\{a_{n}\}$的前六项和为60,且$a_{6}$为$a_{1}$和$a_{21}$的等比中项.</text>
+			<question id="test02_18_01" type="shortanswer">
+				<text format="latex">求数列$\{a_{n}\}$的通项公式$a_{n}$及前n项和$S_{n}$ ;</text>
+			</question>	
+			<question id="test02_18_02" type="shortanswer">
+				<text format="latex">若数列$\{b_{n}\}$满足$b_{n+1}-b_{n}=a_{n}(n\in N^*)$,且$b_{1}=3$,求数列$\{\frac{1}{b_{n}}\}$的前n项和$T_{n}$ .</text>
+			</question>		
+		</questions>
+		<questions score="14">
+			<text format="latex">已知函数$f(x)=x^3-\frac{1}{2}x^2+bx+c$,且$f(x)$在$x=1$处取得极值. </text>
+			<question id="test02_19_01" type="shortanswer">
+				<text>求b的值; </text>
+			</question>	
+			<question id="test02_19_02" type="shortanswer">
+				<text format="latex"> 若$x\in [-1,2]$时,$f(x)\textless c^2$恒成立,求c的取值范围;</text>
+			</question>
+            <question id="test02_19_03" type="shortanswer">
+				<text format="latex">对任意$x_{1},x_{2}\in [-1,2]$,$|f(x_{1})-f(x_{2})|\leq \frac{7}{2}$是否恒成立?如果成立,给出证明,如果不成立,请说明理由.</text>
+			</question>				
+		</questions>
+		<questions score="14">>
+			<text format="latex">设数列$\{a_{n}\}$的首项$a_{1}=a(a\in R)$,且
+			$$a_{n+1}=
+				\left\{
+				\begin{aligned}
+                a_{n}-3,a_{n}\textgreater 3时 \\
+                -a_{n}+4,a_{n}\leq 3时
+				\end{aligned}
+                \right.
+            $$, $n=1,2,3,\cdots$ . </text>
+			<question id="test02_20_01" type="shortanswer">
+				<text format="latex">若$0\textless a\textless 1$,求$a_{2}$,$a_{3}$,$a_{4}$,$a_{5}$; </text>
+			</question>	
+			<question id="test02_20_02" type="shortanswer">
+				<text format="latex"> 若$0\textless a_{n}\textless 4$,证明$0\textless a_{n+1}\textless 4$ ;</text>
+			</question>
+            <question id="test02_20_03" type="shortanswer">
+				<text format="latex">若$0\textless a\leq 2$,求所有的正整数k,使得对于任意$n\in N^*$,均有$a_{n+k}=a_{n}$成立.</text>
+			</question>				
+		</questions>	
+	</section>
+</paper>
