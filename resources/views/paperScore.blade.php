@@ -25,7 +25,7 @@
     function parseLatex_ps($str){
         //将$$转化为$$
     	$str=str_replace("$$", "$", $str);
-	    $pattern='/\$([^$]*)\$/Us';
+	    $pattern='/\$([^$]*)\$/Usi';
         preg_match_all($pattern,$str,$matches);
         $arr_split=preg_split($pattern,$str);
         //dd($arr_split);
@@ -48,7 +48,7 @@
     }
     //去掉option
     function removeOption($str){
-    	$pattern='/<option[^>]+>(.*)<\/option>/U';
+    	$pattern='/<option[^>]+>(.*)<\/option>/Usi';
 	    preg_match_all($pattern,$str,$matches);
 	    //dd($matches);
 	    if(count($matches[1])>0){
@@ -60,7 +60,7 @@
 
     //将label处理成①②③的形式
     function parseLabel($str){
-    	$pattern='/<label[^>]+>(.*)<\/label>/U';
+    	$pattern='/<label[^>]+>(.*)<\/label>/Usi';
 	    preg_match_all($pattern,$str,$matches);
 	    // dd($matches);
 	    $arr_split=preg_split($pattern,$str);
@@ -119,13 +119,14 @@
 
     //解析pic
     function parsePic($paper_id,$str,$type){
-    	// echo "***************";
+    	//对<Picread id=""/>进行处理
+    	$str=str_replace("/>", "></Picread>", $str);
 	    $pattern='/<Picread id="(.*)">.*<\/Picread>/Us';
 	    preg_match_all($pattern, $str, $matches);
 	    // dd($matches);
 	    $arr_split=preg_split($pattern, $str);
 	    // dd($arr_split);
-	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Us';
+	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Usi';
 	    preg_match_all($pattern_con, $str, $matches_con);
 	    // dd($matches_con);
 	    $count=count($matches[1]);
@@ -153,12 +154,12 @@
 
     //解析用户试卷的pic
     function parsePicUser($user_paper_id,$str){
-    	$pattern='/<Picread id="(.*)">.*<\/Picread>/Us';
+    	$pattern='/<Picread id="(.*)">.*<\/Picread>/Usi';
 	    preg_match_all($pattern, $str, $matches);
 	    // dd($matches);
 	    $arr_split=preg_split($pattern, $str);
 	    // dd($arr_split);
-	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Us';
+	    $pattern_con='/<Picread id=".*">(.*)<\/Picread>/Usi';
 	    preg_match_all($pattern_con, $str, $matches_con);
 	    // dd($matches_con);
 	    $count=count($matches[1]);
@@ -183,12 +184,159 @@
 
     }
 
+    // //解析表格
+    // function parseTable($str){
+    // 	$search_arr=array("tab","row","col");
+	   //  $replace_arr=array("table border='1'","tr","td");
+	   //  $str=str_replace($search_arr, $replace_arr, $str);
+	   //  return $str;
+
+    // }
+
     //解析表格
     function parseTable($str){
-    	$search_arr=array("tab","row","col");
-	    $replace_arr=array("table border='1'","tr","td");
-	    $str=str_replace($search_arr, $replace_arr, $str);
-	    return $str;
+    	if(empty($str)){
+    		return $str;
+    	}
+    	// dd($str);
+    	
+    	$tab_xml=simplexml_load_string($str);
+	    // dd($tab_xml);
+	    $tab_id=$tab_xml['id'];
+	    $rows=$tab_xml->xpath('//row');
+	    $vals=$tab_xml->xpath('//val');
+	    $vals_count=count($vals);
+	    // dd($heads);
+	    // dd($rows);
+	    $str_new="";
+	    $str_new.='<table border="1" id="'.$tab_id.'">';
+	    for($i=0;$i<count($rows);$i++){
+	        if($i==0 && $vals_count>0){
+	            if($vals_count==2){
+	                $str_new.='<thead><tr class="a-ca-t-worker"><th rowspan="2" class="tableHeadTitle"><div class="tableLine"><table><thead>';
+	                $row=$rows[$i];
+	                $cols=$row->xpath('.//col');
+	                // dd($cols);
+	                for($j=0;$j<count($cols);$j++){
+	                    $col=$cols[$j];
+	                    $vals=$col->xpath('.//val');
+	                    if(count($vals)>0){
+	                        for($k=0;$k<count($vals);$k++){
+	                            // echo $vals[$k]." ";
+	                            if($k==0){
+                                $str_new.='<tr><th></th><th>'.$vals[$vals_count-1-$k].'</th></tr>';
+	                            }
+	                            if($k==1){
+	                                $str_new.='<tr><th>'.$vals[$vals_count-1-$k].'</th><th></th></tr>';
+	                            }
+	                            
+	                        }
+	                        $str_new.='</tr></thead></table></div></th>';
+	                    }else{
+	                        // echo $col;
+	                        $str_new.='<th>'.$col.'</th>';
+	                    }
+	                }
+	                $str_new.='</tr></thead>';
+	            }
+	            if($vals_count==3){
+	                $str_new.='<thead><tr class="a-ca-t-worker"><th rowspan="3" class="tableHeadTitle"><div class="tableLine2"><table><thead>';
+	                // $str_new.='<thead><tr class=""><th rowspan="3" class=""><div class=""><table><thead>';
+	                $row=$rows[$i];
+	                $cols=$row->xpath('.//col');
+	                // dd($cols);
+	                for($j=0;$j<count($cols);$j++){
+	                    $col=$cols[$j];
+	                    $vals=$col->xpath('.//val');
+	                    if(count($vals)>0){
+	                        for($k=0;$k<count($vals);$k++){
+	                            // echo $vals[$k]." ";
+	                            if($k==0){
+	                                $str_new.='<tr><th></th><th></th><th>'.$vals[$vals_count-1-$k].'</th></tr>';
+	                            }
+	                            if($k==1){
+	                                $str_new.='<tr><th></th><th>'.$vals[$vals_count-1-$k].'</th><th></th></tr>';
+	                            }
+	                            if($k==2){
+	                                $str_new.='<tr><th>'.$vals[$vals_count-1-$k].'</th><th></th><th></th></tr>';
+	                            }
+	                            
+	                        }
+	                        $str_new.='</tr></thead></table></div></th>';
+	                    }else{
+	                        // echo $col;
+	                        $str_new.='<th>'.$col.'</th>';
+	                    }
+	                }
+	                $str_new.='</tr></thead>';
+
+
+	            }
+	            
+	            
+
+	        }else{
+	            $str_new.='<tr/>';
+	            $row=$rows[$i];
+	            $cols=$row->xpath('.//col');
+	            // dd($cols);
+	            for($j=0;$j<count($cols);$j++){
+	                $col=$cols[$j];
+	                $vals=$col->xpath('.//val');
+	                // dd($vals);
+	                if(count($vals)>0){
+	                    for($k=0;$k<count($vals);$k++){
+	                        // echo $vals[$k]." ";
+	                    }
+	                }else{
+	                    $str_new.='<td>'.$col.'</td>';
+	                }
+	            }
+	            $str_new.='</tr>';
+	        }
+	        
+	    }
+	    $str_new.='</table>';
+	    // dd($str_new);
+	    return $str_new;
+
+	    
+
+    }
+
+
+
+    //解析option_label
+    function parseOptionLabel($str){
+    	$pattern='/<label id=".*_(.)"\/>/Usi';
+	    preg_match_all($pattern, $str, $matches);
+	    // dd($matches);
+	    $arr_split=preg_split($pattern,$str);
+	    // dd($arr_split);
+	    $arr_mark=array();
+	    $arr_mark[0]="①";
+	    $arr_mark[1]="②";
+	    $arr_mark[2]="③";
+	    $arr_mark[3]="④";
+	    $arr_mark[4]="⑤";
+	    $arr_mark[5]="⑥";
+	    $arr_mark[6]="⑦";
+	    $arr_mark[7]="⑧";
+	    $arr_mark[8]="⑨";
+	    $count=count($matches[1]);
+	    $str_new="";
+	    for($i=0;$i<$count;$i++){
+	        $str_new.=$arr_split[$i];
+	        $str_new.=$arr_mark[$i];
+	        // $str_new.=$matches[1][$i];
+	    }
+	    $str_new.=$arr_split[$count];
+	    if($count>0){
+	        // dd($str_new);
+	        return $str_new;
+	    }else{
+	        return $str;
+	    }
 
     }
 
@@ -232,7 +380,13 @@
 				//latex
 				echo parseLatex_ps($str);
 				//table
-				echo parseTable($arr_ques_table[$i]);
+				// echo parseTable($arr_ques_table[$i]);
+				$str_tab=$arr_ques_table[$i];
+				//table
+				$str_tab=parseTable($str_tab);
+				//latex
+				$str_tab=parseLatex_ps($str_tab);
+				echo $str_tab;
 			?>
 			</div>
 			
@@ -254,7 +408,12 @@
 					//latex
 					echo parseLatex_ps($str);
 					//table
-					echo parseTable($arr_que[$k]->tab->asXML());
+					// echo parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					$str_tab=parseTable($str_tab);
+					$str_tab=parseLatex_ps($str_tab);
+					//latex
+					echo $str_tab;
 				?>
 
 			</li>
@@ -267,8 +426,12 @@
                    <!-- <li class="question_select">{{$sel_option['value']}} &nbsp;{!!$sel_option->asXML()!!}</li> -->
                    <li class="question_select">{{$sel_option['value']}} &nbsp;
                    <?php
-                   	$str=removeOption($sel_option->asXMl());
-					echo parseLatex_ps($str);
+                    //县解析option_label
+                   	$str=$sel_option->asXMl();
+                   	$str=parseOptionLabel($str);
+                   	$str=parseLatex_ps($str);
+                   	$str=removeOption($str);
+					echo $str;
 					?>
 					</li>
 					<?php
@@ -284,13 +447,19 @@
 					
 					$str=$arr_que[$k]->text->asXML();
 					//label
-					$str=parseLabel($arr_que[$k]->blank->asXML());
+					$str=parseLabel($str);
 					//解析pic
 					$str=parsePic($paper_id,$str,'paper');
 					//公式
 					echo parseLatex_ps($str);
 					//table
-					echo parseTable($arr_que[$k]->tab->asXML());
+					// echo parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					//table
+					$str_tab=parseTable($str_tab);
+					//latex
+					$str_tab=parseLatex_ps($str_tab);
+					echo $str_tab;
 				?>
 				</li>
 			@endif
@@ -309,7 +478,7 @@
 					//latex
 					echo parseLatex_ps($str_text);
 					//table
-					echo parseTable($arr_que[$k]->tab->asXML());
+					// echo parseTable($arr_que[$k]->tab->asXML());
 					// echo parseLatex_ps($arr_que[$k]->blank->asXML());
 					//数学blank里面有label
 					$str=parseLabel($arr_que[$k]->blank->asXML());
@@ -318,7 +487,14 @@
 					//latex
 					echo parseLatex_ps($str);
 					//table
-					echo parseTable($arr_que[$k]->tab->asXML());
+					// echo parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					// echo $str_tab;
+					$str_tab=parseTable($str_tab);
+					//latex
+					$str_tab=parseLatex_ps($str_tab);
+					echo $str_tab;
+					// echo parseTable($str_tab);
 
 				?>
 				<!-- {!!$arr_que[$k]->blank->asXML()!!} -->
@@ -365,10 +541,11 @@
                 		// echo parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             		}
             		//table
-            		$str=$arr_paper_answer[$k]->tab->asXML();
+            		$str=$arr_user_answer[$k]->tab->asXML();
+            		$str=parseTable($str);
             		//latex
 					$str=parseLatex_ps($str);
-            		echo parseTable($str);
+					echo $str;
 				?>
 			</li>
 			<li>
@@ -387,11 +564,13 @@
                 		// echo parseLatex_ps($ans_text->asXML())."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
             		}
-            		//table
+            		//table 先进行table处理，再进行LaTeX处理
             		$str=$arr_paper_answer[$k]->tab->asXML();
+            		$str=parseTable($str);
             		//latex
 					$str=parseLatex_ps($str);
-            		echo parseTable($str);
+					echo $str;
+            		// echo parseTable($str);
 
 				?>
 			</li>
