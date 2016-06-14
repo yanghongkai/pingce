@@ -427,6 +427,8 @@
                    <?php
                     //县解析option_label
                    	$str=$sel_option->asXMl();
+                   	//pic
+                   	$str=parsePic($paper_id,$str,'paper');
                    	$str=parseOptionLabel($str);
                    	$str=parseLatex_ps($str);
                    	$str=removeOption($str);

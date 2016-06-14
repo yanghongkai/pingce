@@ -9,3 +9,5 @@ pic=pics/5e6ba35d85731d3161e29296e5fecb19.jpg
 new_name=pics/2015BeijingGaokao_Math_Pic18_1_answer.jpg
 pic=pics/e0aa5d234f581a8375514873d6bb55bf.jpg
 new_name=pics/2012BeijingGaokao_Geography_Pic4_5_1.jpg
+pic=pics/6406e7cfbdb8160a02d3a0d3664fe5ee.jpg
+new_name=pics/test01_Geography_Pic29_1.jpg
