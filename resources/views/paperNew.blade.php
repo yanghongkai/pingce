@@ -157,7 +157,8 @@
 
 	function showResponseSubmit(response){
 		if(response.success==true){
-			alert('保存成功');
+			// alert('保存成功');
+			window.location.href="{{ url('/userManage')}}";
 		}
 		if(response.success==false){
 			alert('保存失败');

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="语文测试01" subject="Chinese" id="test01">
+	<section name="选择题(本大题共5小题，共15分)" score="15">                    
+		<questions score="15">
+			<question id="test01_01" score="3" type="select">
+				<text>下列词语中，字形和加点字的读音全都正确的一项是__</text>
+				<select multiple="false" format="html">	
+					<option value="A">
+					报不平$$成人之美$$<point>汲</point>取（jí）$$循规蹈<point>矩</point>（jù）
+					</option>
+					<option value="B">
+					打前战$$一如既往$$<point>着</point>陆（zháo）$$兵不<point>血</point>刃（xuè）
+					</option>
+					<option value="C">
+					翻两番$$自顾不暇$$<point>饯</point>行（jiàn）$$刎<point>颈</point>之交（jǐnɡ）
+					</option>
+					<option value="D">
+					捉迷藏$$箭拔弩张$$<point>甄</point>别（zhēn）$$<point>稗</point>官野史（pí）
+					</option>
+				</select>
+			</question>
+			<question id="test01_02" score="3" type="select">
+				<text>下列句子中，加点的成语使用不恰当的一项是__</text>
+				<select multiple="false" format="html">
+					<option value="A">有关领导日前表示，北京要让各功能区更加<point>名副其实</point>，比如中关村就不再新增普通商业项目，而要凸显其以科技为中心的定位。</option>
+					<option value="B">身处当今世界，在快速发展经济、改善民生，与世界各国友好交往的基础上，适当加强武装力量，应是捍卫自身利益的<point>不二法门</point>。</option>
+					<option value="C">面对强震时所表现出的从容不迫和<point>有条不紊</point>，并非一个民族与生俱来的素质，而是其在不断经受天灾的历程中代代积累而成的品质。</option>
+					<option value="D">加强青少年生活自理能力的培养非常重要，如果父母对孩子力所能及的事情一味地包办代替甚至<point>无所不至</point>，不利于孩子的全面发展。</option>
+				</select>
+			</question>
+			<question id="test01_03" score="3" type="select">
+				<text>下列句子中，没有语病的一项是 __</text>
+				<select multiple="false">
+					<option value="A">最近，北京的社区店除了食品、药店和日杂零售外，又出现了一些家居品牌社区店，开始为居民提供各类家居用品。</option>
+					<option value="B">如果在公共领域可以没有证据地、恶意地怀疑普通公民的善行，行善者就会人人自危，社会就将面对无人行善的尴尬局面。</option>
+					<option value="C">近期，全国各地频发骗取客户密码、实施网银盗窃案件。网络金融安全遭到破坏，一时间高度引发广大网民关注。</option>
+					<option value="D">国家有关部门明确规定，某些保健食品生产企业，必须建立供应商档案和原料采购登记，以确保产品源头可以追溯。</option>
+				</select>
+			</question>
+			<question id="test01_04" score="3" type="select">
+				<text>下列有关文学常识的表述，有错误的一项是__</text>
+				<select multiple="false">
+					<option value="A"> “四书”“五经”都是儒家的经典著作。“四书”指的是《大学》《中庸》《论语》《孟子》；“五经”指的是《诗》《书》《礼》《易》《春秋》。</option>
+					<option value="B">宋代散文具有很高的艺术成就，欧阳修的《伶官传序》、韩愈的《师说》、苏洵的《六国论》、王安石的《游褒禅山记》都是宋代优秀散文的代表。</option>
+					<option value="C">现代诗歌《再别康桥》《天狗》、报告文学《包身工》、小说《边城》、戏剧《雷雨》的作者分别是徐志摩、郭沫若、夏衍、沈从文、曹禺。</option>
+					<option value="D">法国浪漫主义作家雨果在《巴黎圣母院》中塑造的敲钟人瓦西莫多和吉普赛少女爱斯梅拉达这两个形象，集中体现了“美丑对照”的原则。</option>
+				</select>
+			</question>
+			<question id="test01_05" score="3" type="select">
+				<text format="html">依次填入下面一段文字横线处的语句，衔接最恰当的一组是__
+				<label id="5_1">其位置依《周礼·考工记》“左祖右社”的规定，</label>	
+				<label id="5_2">是明清两代祭祀社、稷神祗的祭坛。</label>	
+				<label id="5_3">祖与社都是封建政权的象征。</label>	
+				<label id="5_4">置于皇宫之右。</label>
+                <label id="5_5">社象征土地，稷象征五谷，</label>	
+				<label id="5_6">社稷是“太社”和“太稷”的合称。</label>				
+				</text>
+				<term>社稷坛位于天安门西，_____________两者是农业社会最重要的根基。不仅在京城有国家的祭坛，地方各级城市也都有祭祀社稷的场所。
+				</term>
+				<select multiple="false" format="html">
+					<option value="A"><label id="5_4"/><label id="5_1"/><label id="5_2"/><label id="5_6"/><label id="5_5"/><label id="5_3"/></option>
+					<option value="B"><label id="5_1"/><label id="5_4"/><label id="5_3"/><label id="5_2"/><label id="5_5"/><label id="5_6"/></option>
+					<option value="C"><label id="5_6"/><label id="5_1"/><label id="5_4"/><label id="5_3"/><label id="5_5"/><label id="5_2"/></option>
+					<option value="D"><label id="5_2"/><label id="5_1"/><label id="5_4"/><label id="5_3"/><label id="5_6"/><label id="5_5"/></option>
+				</select>
+			</question>
+		</questions>
+	</section>
+	<section name="文言文阅读(本大题共5小题，共17分)" score="17"> 
+		<text>阅读下面文言文，完成6到10题。</text>
+		<questions score="17">
+			<text format="html">	
+(林类<label id="1"/>)年且百岁，底春被裘，拾遗穗于故畦，并歌并进。孔子适卫，望之于野，顾谓弟子曰：“彼叟可与言者，试往讯之。”子贡请行。逆之垅端，面之而叹曰：“先生曾不悔乎？而行歌拾穗？”林类行不留，歌不辍。子贡叩之不已，乃仰而应曰：“吾何悔邪？”子贡曰：“先生少不勤行，长不竞时，老无妻子，死期将至，亦有何乐而拾穗行歌乎？”林类笑曰：“吾之所以为乐，人皆有之，而反以为忧。少不勤行，长不竞时，故能寿若此，老无妻子，死期将至，故能乐若此。”子贡曰：“寿者人之情，死者人之恶。子以死为乐，何也？”林类曰：“死之与生，一往一反。故死于是者，安知不生于彼？故吾安知 其不相若矣？吾又安知营营而求生非惑乎？亦又安知吾今之死不愈昔之生乎？”子贡闻之，不 喻其意，还以告夫子。夫子曰：“吾知其可与言，果然；然彼得之而不尽者也。” 
+子贡倦于学，告仲尼曰：“愿有所息。”仲尼曰：“生无所息。”子贡曰：“然则(赐<label id="2"/>)息无所乎？”仲尼曰：“有焉耳。望其(圹<label id="3"/>)，则知所息矣。”子贡曰：“大哉死乎！君子息焉，小人伏焉。”仲尼曰：“赐！汝知之矣。人(胥<label id="4"/>)知生之乐，未知生之苦；知老之惫，未知老之佚；知死之恶，未知死之息也。晏子曰：‘善哉，古之有死也！仁者息 焉，不仁者伏焉。’死也者，德之(徼<label id="5"/>)也。古者谓死人为归人。夫言死人 为归人，则生人为行人矣。行而不知归，失家者也。一人失家，一世非之；天下失家，莫知非焉。有人去乡土、离六亲、废家业、游于四方而不归者，何人哉？世必谓之为狂荡之人矣。又有人钟贤世、矜巧能、修名誉、夸张 于世而不知己者，亦何人哉？世必以为智谋之士。此二者，胥失者也，而世与一不与一。唯圣人知所与，知所去。” 
+（选自《(列子<label id="6"/>)·天瑞》） 
+			</text>
+			<notetext format="html">
+				<label id="1">林类：古代隐士，事迹不详。</label>
+				<label id="2">赐：子贡之名。</label>
+				<label id="3">圹：坟墓。</label>
+				<label id="4">胥：皆；都。</label>
+				<label id="5">徼：求取。</label>
+				<label id="6">列子：战国时期郑国人，学说属于道家之流。《列子》为道教经典之一。</label>
+			</notetext>
+			<question id="test01_06" score="3" type="select">
+				<text>下列句子中加点的词语的解释，不正确的一项是__</text>
+				<select multiple="false" format="html">	
+					<option value="A">年且百岁，底春<point>被</point>裘$$穿着</option>
+					<option value="B">子贡闻之，不<point>喻</point>其意$$明白</option>
+					<option value="C">一人失家，一世<point>非</point>之$$不是</option>
+					<option value="D">有人钟贤世、<point>矜</point>巧能$$自夸</option>
+				</select>
+			</question>
+			<question id="test01_07" score="3" type="select">
+				<text>下面各组词语中加点的词语，意义用法都相同的一组是__</text>
+				<select multiple="false" format="html">	
+					<option value="A">故吾<point>安</point>知其不相若矣$$<point>安</point>能摧眉折腰事权贵</option>
+					<option value="B">仁者息焉，不仁者伏<point>焉</point>$$<point>焉</point>有仁人在位，罔民而可为也</option>
+					<option value="C">言死人<point>为</point>归人，则生人为行人$$不者，若属皆且<point>为</point>所虏</option>
+					<option value="D">夸张<point>于</point>世而不知已者$$冰，冰为之，而寒<point>于</point>水</option>
+				</select>
+			</question>
+			<question id="test01_08" score="3" type="select">
+				<text format="html">下列语句编为四组，全都属于古人对待死亡的达观认识的一组是__
+				<label id="8_1">死期将至，亦有何乐</label>	
+				<label id="8_2">老无妻子，死期将至，故能乐若此</label>	
+				<label id="8_3">死之与生，一往一反</label>	
+				<label id="8_4">死于是者，安知不生于彼</label>
+				<label id="8_5">知生之乐，未知生之苦 </label>	
+				<label id="8_6">死也者，德之徼也 </label>
+			    </text>
+				<select multiple="false" format="html">
+					<option value="A"><label id="8_1"/><label id="8_4"/><label id="8_5"/></option>
+					<option value="B"><label id="8_2"/><label id="8_4"/><label id="8_6"/></option>
+					<option value="C"><label id="8_1"/><label id="8_3"/><label id="8_4"/></option>
+					<option value="D"><label id="8_3"/><label id="8_5"/><label id="8_6"/></option>
+				</select>
+			</question>
+			<question id="test01_09" score="3" type="select">
+				<text>对原文理解不正确的一项是__</text>
+				<select multiple="false">
+					<option value="A">
+					列子用林类的故事告诉人们，以求生为快乐，也许正是人们忧虑的根源；超越生与死来看待人生，也许才能像林类那样充满快乐。
+					</option>
+					<option value="B">
+					人们恋生惧死是因为留恋这属于自己的唯一一次生命，而在林类看来，人人都会死，死后还会在别处重生，所以死亡没有什么可怕的。
+					</option>
+					<option value="C">
+					列子用子贡倦于学的故事告诉人们，生命是与辛劳相伴的，唯有死亡才是彻底的休息和解脱，才能使人回到和谐安宁的状态之中。 
+					</option>
+					<option value="D">
+					“孔子”认为，无论“狂荡之士”还是“智谋之士”都是有过失的，只有圣人才知道要赞扬其中的哪一种人，反对其中的哪一种人。
+					</option>
+				</select>
+			</question>	
+			<question id="test01_10" score="5" type="punctuation">	
+				<text>用斜线（/）给下面短文画横线的部分断句</text>	
+				<passage>人君之欲平治天下而垂荣名者必尊贤而下士夫朝无贤人犹鸿鹄之无羽翼也虽有千里之望犹不能致其意之所欲至矣故绝江海者托于船致远道者托于乘欲霸王者托于贤是故吕尚聘而天下知商将亡，而周之王也；管夷吾、百里奚任，而天下知齐、秦之必霸也。</passage>
+				<term>人君之欲平治天下而垂荣名者必尊贤而下士夫朝无贤人犹鸿鹄之无羽翼也虽有千里之望犹不能致其意之所欲至矣故绝江海者托于船致远道者托于乘欲霸王者托于贤是故吕尚聘而天下知商将亡，</term>
+			</question>
+		</questions>
+	</section>
+	<section name="默写(本大题共1小题，共8分)" score="8">
+		<questions score="8" maxnum="4">
+			<text>在横线处写出诗句原句（任选其中4道题）</text>
+			<question id="test01_11_01" score="2" type="fillblank">
+				<blank num="2">		
+                __________，依依墟里烟。狗吠深巷中，___________。（陶渊明《归园田居》） 
+				</blank>
+			</question>		
+			<question id="test01_11_02" score="2" type="fillblank">
+				<blank num="2">
+                伏惟圣朝以孝治天下，____________，____________。（李密《陈情表》）
+				</blank>
+			</question>
+			<question id="test01_11_03" score="2" type="fillblank">
+				<blank num="2">
+                ____________，____________，万类霜天竞自由。（毛泽东《沁园春﹒长沙》）
+				</blank>
+			</question>
+			<question id="test01_11_04" score="2" type="fillblank">
+				<blank num="2">
+                舳舻千里，旌旗蔽空，______________，______________。（苏轼《赤壁赋》）
+				</blank>
+			</question>
+			<question id="test01_11_05" score="2" type="fillblank">
+				<blank num="2">
+				天地也，只合把清浊分辨，_______________？为善的受贫穷更命短，_______________。（关汉卿《窦娥冤》） 
+				</blank>
+			</question>
+			<question id="test01_11_06" score="2" type="fillblank">
+				<blank num="2">
+                临溪而渔，_____________。酿泉为酒，______________。（欧阳修《醉翁亭记》）
+				</blank>
+			</question>
+		</questions>	
+    </section>
+	<section name="诗歌鉴赏(本大题共3小题，共17分)" score="17">	
+	    <questions score="17">
+			<title>阅读下面这首诗，完成12-14小题</title>
+			<text format="html">
+                      (再登岳阳楼感慨赋诗<label id="1"/>)
+                                  陈与义 
+                     岳阳壮观天下传，楼阴背日堤绵绵。 
+                     草木相连(南服<label id="2"/>)内，江湖异态栏干前。 
+                     乾坤万事集双鬓，臣子一谪今五年。 
+                     欲题文字吊古昔，风壮浪涌心茫然。 
+		    </text>
+			<notetext format="html">
+				<label id="1">宋钦宗靖康二年（1126）春，金军攻破东京（今河南开封），掳徽宗，钦宗二帝，北宋灭亡，史称“靖康之难”。陈与义1124年被贬在陈留（在今河南开封东南）做监酒税的小官，靖康之难发生后，流离失所，后流亡到洞庭湖。此诗写于南宋高宗建炎二年（1128）秋。</label>
+				<label id="2">南服，指南方。</label>
+			</notetext>
+			<question id="test01_12" score="3" type="select">
+				<text>下列对本诗的理解，不正确的一项是__</text>
+				<select multiple="false">
+					<option value="A">首联中“楼阴”指楼的南面，“背日”也指楼南，两词点明观景角度：站在楼南向远处眺望。</option>
+					<option value="B">颔联继续写登楼所见景色。“江湖异态”写出倚栏远眺，江水与洞庭湖水不同，异态纷呈。</option>
+					<option value="C">颈联意思是：诗人被贬官迄今已有五年，“靖康之难”后，宋室南迁，诗人颠沛流离，双鬓已白。</option>
+					<option value="D">尾联中用“风壮浪涌”，即写出江水湍急汹涌，同时也表明诗人此时心潮起伏如波涛汹涌。</option>
+				</select>
+			</question>	
+			<question id="test01_13" score="4" type="shortanswer">
+				<text>诗人登临远望看到怎样的景象？这种景象描写有何作用？结合诗句，简要分析。</text>
+			</question>	
+			<question id="test01_14" score="10" type="shortanswer">
+				<text>有学者盛称“乾坤”一联“学杜而得其骨”，意思是为家国之忧而心碎，而头白，正是杜甫诗歌与陈与义诗歌共具的思想特色。结合这首诗，联系自己的阅读体验，谈谈你对这种思想特色的认识。
+				</text>
+			</question>	
+		</questions>
+	</section>
+	<section name="现代文阅读(本大题共6小题，共33分)" score="33">
+		<questions score="7">
+			<title>阅读下面的文章，完成15、16题。</title>
+			<text>
+太空美丽而宁静，也时刻充满着未知的危险。俄罗斯的空间站距离地球400公里，是人类在太空最前沿的哨兵。1997年6月25日俄罗斯空间站在与空运船进行对接时突发意外，空运船撞坏了空间站，珍贵的氧气开始向太空泄漏。宇航员们进入了救生舱，但因为缺少能量，救生舱的启动系统无法工作，幸运的是随着太阳从地平线上升起，一块未被损坏的太阳能电池板发挥了作用，救生舱才开始了工作。
+对于正在建设太空站的设计者来说，那天发生的事件是非常宝贵的教训，它表明在任何情况下都能正常启动的救生舱是至关重要的，X—38就是他们的研究成果，这是一艘即将作为国际空间站逃生舱的全新太空救生船。按照设计要求，宇航员将从400公里高的空间下降，X—38必须保证宇航员在返回地面时完好无损。
+出于综合考虑，X—38被设计得既像一辆救护车，又像一艘救生船。它必须保证一旦空间站出了问题，如失火、缺氧，或是有人生病、受伤，宇航员们能立即离开空间站。所以，X—38是全自动的，它可以随便让一个对它一无所知的人坐进去，不需要做任何事情，就可以把他送回地面。
+为了检测X—38是否能够正常工作，日前工程师们把它悬挂在大型运输机的机翼下面，带到了6500米的高空。X—38开始下降以后，首先是一个20米直径的小降落伞从飞船的尾部抛出，以减缓飞船的速度。然后小降落伞被切断，接着抛出一个大降落伞。大降落伞像拉手风琴一样，分五个步骤展开，每一步都在逐渐放慢救生船下降的速度。一旦完全开始工作，利用全球卫星定位系统，X—38会计算出自己所处的位置，分析到达目的所要走的路线。体内安装的驱动系统，牵引着大降落伞的两边，使降落伞能左右转动，这就使X—38能在预定的地点着陆。着陆点通常可以精确到距预定点不超过100米，在逃离空间站以后的一个半小时以内，宇航员们就可以躺在医院的救护车里。最后降落时X—38停在了距预定目标10米范围以内，第一次试飞圆满成功。
+X—38不仅会给未来的宇航员带来更多的安全感，对我国的航天事业也有一定的参考价值。                                              
+（选自《太空救生船》，有删改。）                                  
+			</text>
+			<question id="test01_15" score="3" type="select">
+				<text>下列推断不符合文意的一项是__</text>
+				<select multiple="false">
+					<option value="A">采集、利用太阳能，是航天器解决能量补充问题的有效办法之一。</option>
+					<option value="B">新型太空救生舱应能在空间站没有能量的情况下自行启动并工作。</option>
+					<option value="C">X—38救生船能在无人驾驶的情况下，将昏迷的人准确地送回地面。</option>
+					<option value="D">X—38将全面排除空间站的各种危险，给宇航员带来更多的安全感。</option>
+				</select>
+			</question>
+			<question id="test01_16" score="4" type="shortanswer">
+				<text>根据文意，依次概括X—38从6500米高空下降，自动完成的几项关键操作。（不超过40个字。分点请写序号）</text>	
+			</question>
+		</questions>		
+		<questions score="26">
+			<title>阅读下面的作品，完成17-20小题。</title>
+			<text>
+沙漠对河流说：结束！ 
+河流回答：我本身就是开始。 
+                      ——题记 
+在新疆生活的这么多年月里，我非常幸运地见识了它的那些著名的河流。的确，我非常幸运。 
+伊犁河、巩乃斯河、喀会河、塔里木河、孔雀河、额尔齐斯河、玉龙喀会河、叶尔羌河、多浪河……河流给人留下的往往是永难磨灭的记忆，是丝缕一般柔长的诗情。虽然水和水几乎是完全一样的，奇怪的却是河与河完全不一样。 
+叶尔羌河完好地保留了一副古代河流的面貌，在洪水期，它宽阔的河床里流泻的仿佛不是水，而是永无休止的、奔腾拥挤的骆驼群；额尔齐斯河有着令人惊异的风采，它水量的充沛和纯净近乎神话，它的浪涛如同众多大块的碧玉倾泻翻滚；还有塔里木河，那是一支忧伤的歌，它以伤感的情调告别一个又一个绿洲，然后义无反顾地走进沙漠……还有呢，还有伊犁河和巩乃斯河啦，那是和我青年时期的生活紧密联系的河，我已经好多次写到它们，但始终不能真正表达出它们的神韵。 
+如果说我对新疆有一种无法抗拒和割舍的爱，那么这里面有很大一部分是缘自这些河流。河流这些生命之蛇缠住了我的心。 
+与河相反的是，我这么多年走遍了新疆的许多地方，穿越了无数的戈壁和碱滩，却很难深入地见识到沙漠的真面目。我与最著名的塔克拉玛干沙漠、塔里森沙漠、古尔班通古特沙漠共居一域，但始终没有真正见到过它们。它们就像传说中的巨蜥，时常留下足迹，却难见真形。 
+于是我经常在头脑里想象出这样一些画面：河与沙的关系如同一些生命之蛇与几只巨型蜥蜴之间的生死搏斗。河想包围沙漠，缠住它并消解它，沙漠固执地蹲伏在那里，愚蠢而又警觉，充满仇恨而冷酷无情，等待时机，随时准备猛地向蛇扑去，并一口咬断它。 
+那些消逝的河流，是怎样地被断，然后被吞没…… 
+在河与沙的殊死搏斗中，夹在当中的是我们人。
+人是多么灵醒的动物啊！
+我看到过西海固作家王漫西的一段文字，是这样写的：“1972年，西海固大旱，我采风去某村找一位烧窑师傅，他说：‘你是走州过县的人，咱这里都说地球把把子（把柄）快磨断了……是苏联专家测出来的，正拿电焊机焊着哩。电焊机把天都烧红了，山干火燎的，牛赶到山里只吃空气没有草，咱这里人说，焊住了我们就不用迁了，焊不住我还要迁走哩。’” 
+这段精彩的对话正是大西北的缺水贫困地区的人民群众所独有的生态环境危机意识，也是由他们口头创造出的“魔幻现实主义文学”。在当今众多的有关生态环境的呼吁文字中，我没见过比这更绝妙的。 
+烧窑师傅的想象力令人叹为观止。 
+直到这时，才想起了树。 
+那些不会逃跑、不能移动的树，那些在人类兵团到达后像成群成片的俘虏等待砍伐的树，那些身材高大、枝叶俊茂但敌不过一柄斧锯的树，那些在微风中哗笑着本来想当人类的朋友却不料成为屠杀重点的树……只要想起，为时何晚！ 
+现在怎么办呢？现在栽树吧！ 
+树是人类的最忠实的朋友，但愿我们今后不再因为它们无言、不能移动而去任意伤害它们。在河流、沙漠和人三者之间，有了树，一切都会变得和谐起来。每一棵树其实都是一根伟大的“魔杖”——就像古老的神话中传说的那样。 
+至于河流，这养育生命和文明的保姆，除了近百年来遭受污染和破坏，过去在历史上可是一直受到热爱和歌颂的。一本书上说道：“实际上，在成吉思汗后裔中，对流水的崇拜一直持续了很长时间。”直至今天，我依然记得中学时读过的题在《静静的顿时》卷首的那几句古歌——哎呀，静静的顿河，像是我们的父亲！哎呀，静静的顿河，你的水流为什么这样浑？ 
+			</text>
+			<question id="test01_17" score="4" type="select">
+				<text>下列对文章内容的理解，正确的两项是__</text>	
+				<select multiple="true">
+					<option value="A">作者强调“的确，我非常幸运”，是因为自己曾亲眼看到了那些河流的不同神韵，感受丰厚。</option>
+					<option value="B">将河与沙漠想像为蛇与巨型蜥蜴，形神兼似，十分准确地表现了河的警觉与沙漠的凶猛。</option>
+					<option value="C">“直到这时，人才想起了树”一句的意思是，生存环境恶化了，人才意识到了树的存在。</option>
+					<option value="D">“河流，这养育生命和文明的保姆”，是对题记“河流回答：我本身就是开始”的一种解释。</option>
+					<option value="E">结尾提到成吉思汗后裔对流水的崇拜，是为了表明中华文化包容广博，有着优良的传统。</option>
+				</select>
+			</question>
+			<question id="test01_18_01" score="3" type="shortanswer">
+				<text>作者用“奔腾拥挤的骆驼群”比喻叶尔羌河，突出了它怎样的特点？</text>
+			</question>		
+			<question id="test01_18_02" score="3" type="shortanswer">
+				<text>作者为什么说塔里木河是一支“忧伤”的歌？</text>
+			</question>
+			<question id="test01_19" score="6" type="shortanswer">
+				<text>结尾引用《静静的顿河》卷首的几句古老的歌词，有什么作用？</text>
+			</question>
+			<question id="test01_20" score="10" type="shortanswer">
+				<text>文中说：“在河与沙的殊死搏斗中，夹在当中的是我们人。”人在河与沙的搏斗中有了怎样认识？起了什么作用？请联系你的生活经历或阅读经验，谈谈你对这句话的思考。</text>
+			</question>
+		</questions>		
+	</section>	
+	<section name="作文(本大题共1小题，共60分)" score="60">
+		<questions score="60">
+			<question id="test01_21" score="60" type="composition">
+				<text>
+印地安酋长说：上帝给了每个人一杯水，你从里面饮入生活。 
+有人说，生活确实就是一杯白开水，杯子的华丽与否显示了一个人的贫与富，但杯子里的水，清澈透明，无色无味，对任何人都一样。 
+有人说，你可以往这杯水里加入糖，可以加入盐，甚至可以加一点点毒药，只要你能承受，这就是你生活的权利。 
+有人说，纯净的水，缓缓地从生命的陶罐里注入杯子，这是你生活的开始。 
+有人说，往杯子里加水，适可而止，因为杯子的容量有限。 
+有人说，啜饮的时候，你要慢慢体味，水喝光了，杯子就空了。 
+…… 
+请就以上材料，展开联想，自定角度，写一篇文章，题目自拟，文体自选（除诗歌外），不少于800字。				
+				</text>
+			</question>			
+		</questions>		
+	</section>	
+</paper>

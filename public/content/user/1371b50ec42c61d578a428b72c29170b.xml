@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="语文测试01" papersubject="Chinese" paperid="test01" info="语文攻关组第一次测试">
+	<question id="test01_01" type="select">
+		<text>C</text>
+	</question>
+    <question id="test01_02" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_03" type="select">
+		<text>B</text>
+	</question>
+	<question id="test01_04" type="select" >
+		<text>B</text>
+	</question>
+	<question id="test01_05" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_06" type="select">
+		<text>C</text>
+	</question>
+	<question id="test01_07" type="select" >
+		<text>A</text>
+	</question>
+	<question id="test01_08" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_09" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_10" type="punctuation">
+		<text>
+		人君之欲平治天下而垂荣名者/必尊贤而下士/夫朝无贤人/犹鸿鹄之无羽翼也/虽有千里之望/犹不能致其意之所欲至矣/故绝江海者托于船/致远道者托于乘/欲霸王者托于贤/是故吕尚聘/而天下知商将亡，
+		</text>
+	</question>
+    <question id="test01_11_01" type="fillblank" num="2" scoretype="each">
+		<text>暧暧远人村</text>
+		<text>鸡鸣桑树颠</text>
+	</question>
+	<question id="test01_11_02" type="fillblank" num="2" scoretype="each">
+		<text>凡在故老</text>
+		<text>犹蒙矜育</text>
+	</question>
+	<question id="test01_11_03" type="fillblank" num="2" scoretype="each">
+		<text>鹰击长空</text>
+		<text>鱼翔浅底</text>
+	</question>
+	<question id="test01_11_04" type="fillblank" num="2" scoretype="each">
+		<text>酾酒临江</text>
+		<text>横槊赋诗</text>
+	</question>
+	<question id="test01_11_05" type="fillblank" num="2" scoretype="each">
+		<text>可怎生糊涂了盗跖、颜渊</text>
+		<text>造恶的享富贵又寿延</text>
+	</question>
+	<question id="test01_11_06" type="fillblank" num="2" scoretype="each">
+		<text>溪深而鱼肥</text>
+		<text>泉香而酒洌</text>
+	</question>
+	<question id="test01_12" type="select">
+		<text>A</text>
+	</question>
+	<question id="test01_13" type="shortanswer" >
+		<text>①诗人登高远眺，看到岳阳楼周围的壮阔景观：江堤曲折，草木连绵不断，江水、湖水形态各异，风高浪急。
+		②以壮景衬哀情，壮观之景使人产生飘零之感，诗人触景伤情，引发了国破家亡、流离失所后的迁谪之恨，家国之愁。</text>
+	</question>
+	<question id="test01_14" type="shortanswer">
+		<text>
+		思想特色：中国古代文人总是自觉地将自己与国家、历史和天下联系起来，表现读书人的社会良知和悲悯之心。
+		联系本词和阅读体验谈认识：略 
+		</text>
+	</question>
+	<question id="test01_15" type="select">
+		<text>D</text>
+	</question>
+	<question id="test01_16" type="shortanswer">
+		<text>
+		①分步开伞减速。
+		②计算所在位置及返回路线。
+		③控制降落伞准确着陆。
+		</text>
+	</question>
+	<question id="test01_17" type="select" num="2" scoretype="all">
+		<text>A</text>
+		<text>D</text>
+	</question>
+	<question id="test01_18_01" type="shortanswer">
+		<text>浪涛翻滚、水量充沛、水色浑浊。
+		</text>
+	</question>
+	<question id="test01_18_02" type="shortanswer">
+		<text>它默默地滋养了绿洲，自己却在沙漠中消逝，令人伤感。
+		</text>
+	</question>
+	<question id="test01_19" type="shortanswer">
+		<text>①强调了河流是生命的开始。②表达了对河流的崇敬与赞美。③强调了河流历经沧桑。④表明人类对于河流的依恋与崇敬是共同的。⑤照应题记，使文章首尾呼应。⑥使结尾含蓄而凝重。⑦给文章增加了文采。</text>
+	</question>
+	<question id="test01_20" type="shortanswer">
+		<text>①对环境恶化有危机意识。②乱砍乱伐，助沙灭河。</text>
+	</question>
+	<question id="test01_21"  type="composition">
+		<text>
+印地安酋长说：上帝给了每个人一杯水，你从里面饮入生活。 
+有人说，生活确实就是一杯白开水，杯子的华丽与否显示了一个人的贫与富，但杯子里的水，清澈透明，无色无味，对任何人都一样。 
+有人说，你可以往这杯水里加入糖，可以加入盐，甚至可以加一点点毒药，只要你能承受，这就是你生活的权利。 
+有人说，纯净的水，缓缓地从生命的陶罐里注入杯子，这是你生活的开始。 
+有人说，往杯子里加水，适可而止，因为杯子的容量有限。 
+有人说，啜饮的时候，你要慢慢体味，水喝光了，杯子就空了。 
+…… 
+请就以上材料，展开联想，自定角度，写一篇文章，题目自拟，文体自选（除诗歌外），不少于800字。				
+		</text>
+	</question>	
+</paperanswer>

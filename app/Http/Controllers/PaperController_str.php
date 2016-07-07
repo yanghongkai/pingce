@@ -636,8 +636,6 @@ CREATE;
     public function createScorerPaperItem($paper_content_path,$paper_answer_path,$user_answer_path,$scorer_id,$user_paper_id){
         //试题
         $paper_content=simplexml_load_file('./content/'.$paper_content_path);
-        //试题
-        $arr_questions=$paper_content->xpath('/paper//questions');
         //获得所有试题的question
         $arr_que=$paper_content->xpath('/paper//question');
         //dd($arr_que);
@@ -651,16 +649,65 @@ CREATE;
         //用户答案
         $user_answer=simplexml_load_file('./content/'.$user_answer_path);
         $arr_user_answer=$user_answer->xpath('/paperanswer//question');
-        //dd($arr_user_answer);
+        // dd($arr_user_answer);
 
-        $object_grade=ScorerPaper::calObjectScore($arr_que,$arr_paper_answer,$user_answer);
-        // $detail_xml=ScorerPaper::getDetailXML($arr_que,$arr_paper_answer,$user_answer);
-        $detail_xml=ScorerPaper::initDetailXML($arr_questions);
-        $detail_xml=ScorerPaper::initSelectXML($detail_xml,$arr_que,$arr_paper_answer,$user_answer);
-        // dd($detail_xml);
-        // file_put_contents('./dataTest.txt', 'detail_xml'.$detail_xml."\n",FILE_APPEND);
-        // dd($object_grade);
-        // file_put_contents('./dataTest.txt', "object_grade=".$object_grade."\n",FILE_APPEND);
+        //客观题得分
+        $object_grade=0.0;
+        //默认生成一个只包含选择题的xml
+        //新建一个detail_xml对象（保存教师的批改详情，选择题自动加入）
+        $str='<?xml version="1.0" encoding="UTF-8"?>';
+        $str.='<paperanswer></paperanswer>';
+        $detail_xml=simplexml_load_string($str);
+        
+
+        //计算客观题分值
+        for($i=0;$i<count($arr_paper_answer);$i++){
+            if((string)$arr_paper_answer[$i]['type']=='select'){
+                $paper_ans='';
+                $user_ans='';
+                $user_que_score='';//用户这道选择题的得分
+                $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
+                    foreach ($paper_ans_texts as $paper_ans_text){
+                        $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans.=$paper_ans_item;
+                        //echo $paper_ans.' ';
+                        //echo $paper_ans_text.' ';
+                }
+                $user_ans_texts=$arr_user_answer[$i]->xpath('.//text');
+                    foreach ($user_ans_texts as $user_ans_text){
+                        $user_ans_item=(string)$user_ans_text;
+                        $user_ans.=$user_ans_item;
+                }
+                $score=(float)$arr_que[$i]['score'];
+                if(empty($score)){
+                    //如果没有分值默认为1
+                    $score=1;
+                }
+                $id=$arr_que[$i]['id'];
+                //echo $id.'--';
+                //echo $paper_ans.'--';
+                //echo $user_ans.'--';
+                //echo $score.'--';
+                if($paper_ans==$user_ans){
+                    $user_que_score=$score;
+                }else{
+                    $user_que_score=0;
+                }
+                //echo $user_que_score;
+                $object_grade+=$user_que_score;
+                //新建节点
+                $question=$detail_xml->addChild('question');
+                $question->addAttribute('id',$id);
+                $question->addAttribute('type','select');
+                $question->addChild('text',$user_que_score);
+                $question->addChild('comment','');//选择题不要备注， 
+
+            }
+            //echo '--------------------------------------<br/>';
+
+        }
+        //dd($detail_xml);
+        //dd($object_grade);
 
         $count_que=count($arr_que);
         //echo $count_que."<br/>";
@@ -793,8 +840,223 @@ CREATE;
         //试题
         $paper_content=simplexml_load_file('./content/'.$paper_content_path);
         $arr_questions=$paper_content->xpath('/paper//questions');
+        //标准答案
+        $paper_answer=simplexml_load_file('./content/'.$paper_answer_path);
+        // dd($paper_answer);
+        //用户答案
+        $user_answer=simplexml_load_file('./content/'.$user_answer_path);
+
+        //test
         // dd($arr_questions);
-        //echo count($arr_questions);//以语文试卷为例，8道题
+        $paper_score_page="";
+        foreach($arr_questions as $questions){
+
+            $paper_score_page.='<div class="questions">';
+            $paper_score_page.='<div class="questions_detail">';
+            
+
+            $questions_head_text=$questions->headtext->asXML();
+            $questions_title=$questions->title->asXML();
+            $questions_text=$questions->text->asXML();
+            $questions_tab=$questions->tab->asXML();
+
+            
+            
+            $questions_head_text=Parser::parseLabel($questions_head_text);          //label解析
+            $questions_head_text=Parser::parsePic($paper_id,$questions_head_text,'paper');  //pic解析
+            $questions_head_text=Parser::parseLatex_ps($questions_head_text);       //latex解析
+
+            $questions_text=Parser::parseLabel($questions_text);                    //label解析
+            $questions_text=Parser::parsePic($paper_id,$questions_text,'paper');    //pic解析
+            $questions_text=Parser::parseLatex_ps($questions_text);                 //latex解析
+
+            $questions_tab=Parser::parseTable($questions_tab);      //tab解析
+            $questions_tab=Parser::parseLatex_ps($questions_tab);   //latex解析
+
+            // echo $questions_head_text.'<br/>';
+            // echo $questions_title.'<br/>';
+            // echo $questions_text.'<br/>';
+            // echo $questions_tab.'<br/>';
+            // echo "<hr/>";
+
+            $paper_score_page.='<div class="questions_title">';
+            $paper_score_page.=$questions_head_text;
+            $paper_score_page.='</div>';
+            $paper_score_page.='<div class="questions_title">';
+            $paper_score_page.=$questions_title;
+            $paper_score_page.='</div>';
+            $paper_score_page.='<div class="questions_text">';
+            $paper_score_page.=$questions_text;
+            $paper_score_page.=$questions_tab;
+            $paper_score_page.='</div>';
+            $paper_score_page.='</div>';    //questions_detail
+
+
+            $arr_question=$questions->xpath(".//question");
+            // dd($arr_question);
+            foreach($arr_question as $question){
+
+                $paper_score_page.='<ul class="question">';
+                $paper_score_page.='<li class="question_Name">';
+
+                $question_id=(string)$question['id'];
+                $question_head_text=$question->headtext->asXML();
+                $questions_title=$question->title->asXML();
+                $question_text=$question->text->asXML();
+                $question_tab=$question->tab->asXML();
+
+                $question_head_text=Parser::parseLabel($question_head_text);          //label解析
+                $question_head_text=Parser::parsePic($paper_id,$question_head_text,'paper');  //pic解析
+                $question_head_text=Parser::parseLatex_ps($question_head_text);       //latex解析
+
+                $question_text=Parser::parseLabel($question_text);                    //label解析
+                $question_text=Parser::parsePic($paper_id,$question_text,'paper');    //pic解析
+                $question_text=Parser::parseLatex_ps($question_text);                 //latex解析
+
+                $question_tab=Parser::parseTable($question_tab);      //tab解析
+                $question_tab=Parser::parseLatex_ps($question_tab);   //latex解析
+
+                if((string)$question['type']=="select"){
+                    
+                    $paper_score_page.='<li class="question_Name">';
+                    $paper_score_page.=$question_id;
+                    $paper_score_page.=$question_head_text;
+                    $paper_score_page.=$question_text;
+                    $paper_score_page.=$question_tab;
+                    $paper_score_page.='</li>';
+
+                    $question_sel_options=$question->select->xpath('.//option');
+                    foreach($question_sel_options as $question_sel_option){
+                        $paper_score_page.='<li class="question_select">';
+                        $paper_score_page.=$question_sel_option['value'].'&nbsp;';
+
+                        $question_sel_option_str=$question_sel_option->asXML();
+                        $question_sel_option_str=Parser::parsePic($paper_id,$question_sel_option_str,'paper');  //pic解析
+                        $question_sel_option_str=Parser::parseOptionLabel($question_sel_option_str);            //label解析
+                        $question_sel_option_str=Parser::parseLatex_ps($question_sel_option_str);               //latex解析
+                        $question_sel_option_str=Parser::removeOption($question_sel_option_str);                //option去掉
+
+                        $paper_score_page.=$question_sel_option_str.'</li>';
+                    }
+
+
+                }
+
+                if((string)$question['type']=="shortanswer"){
+                    //text-tab
+                }
+
+                if((string)$question['type']=="fillblank"){
+                    //text-blank-tab
+                    $question_blank=$question->blank->asXML();
+                    $question_blank=Parser::parsePic($paper_id,$question_blank,'paper');    //pic解析
+                    $question_blank=Parser::parseLatex_ps($question_blank);                 //latex解析
+
+                    $paper_score_page.='<li class="question_Name">';
+                    $paper_score_page.=$question_id;
+                    $paper_score_page.=$question_head_text;
+                    $paper_score_page.=$question_text;
+                    $paper_score_page.=$question_tab;
+                    $paper_score_page.=$question_blank;
+                    $paper_score_page.='</li>';
+
+                }
+
+                if((string)$question['type']=="composition"){
+                    //title-text
+                    $paper_score_page.='<li class="question_Name">';
+                    $paper_score_page.=$question_id;
+                    $paper_score_page.=$question_head_text;
+                    $paper_score_page.=$question_text;
+                    $paper_score_page.=$question_tab;
+                    $paper_score_page.='</li>';
+                }
+
+                if((string)$question['type']=="punctuation"){
+                    //text->passage-term
+                    $question_passage=$question->passage->asXML();
+                    $question_term=$question->term->asXML();
+
+                    $paper_score_page.='<li class="question_Name">';
+                    $paper_score_page.=$question_id;
+                    $paper_score_page.=$question_head_text;
+                    $paper_score_page.=$question_text;
+                    $paper_score_page.=$question_tab;
+                    $paper_score_page.=$question_passage.'<br/>';
+                    $paper_score_page.=$question_term.'<br/>';
+                    $paper_score_page.='</li>';
+                }
+
+                
+                $paper_score_page.='<li><div class="question_left">总分：</div>'.$question['score'].'分</li>';
+
+                $paper_score_page.='<li><div class="question_left">学生答案：</div>';
+
+                $user_ans=$user_answer->xpath('//question[@id="'.$question_id.'"]');
+                // $ans_texts=$user_answer->xpath('//question[@id="2014BeijingGaokao_01"]');
+                $ans_texts=$user_ans->xpath('.//text');
+                foreach($ans_texts as $ans_text){
+                    $ans_text_str=$ans_text->asXML();
+                    $ans_text_str=Parser::parseLabel($ans_text_str);    //label解析
+                    $ans_text_str=Parser::parsePicUser($user_paper_id,$ans_text_str);   //pic user解析
+                    $ans_text_str=Parser::parseLatex_ps($ans_text_str);                 //latex解析
+                    $paper_score_page.=$ans_text_str.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+                }
+                $ans_tab=$user_ans->tab->asXML();
+                $ans_tab=Parser::parseTable($ans_tab);      //table 解析
+                $ans_tab=Parser::parseLatex_ps($ans_tab);   //latex 解析
+
+                $paper_score_page.=$ans_tab.'</li>';
+
+                //參考答案
+                $paper_score_page.='<li><div class="question_left">参考答案：</div>';
+                $paper_ans=$paper_answer->xpath('//question[@id="'.$question_id.'"]');
+                // $ans_texts=$user_answer->xpath('//question[@id="2014BeijingGaokao_01"]');
+                $ans_texts=$paper_ans->xpath('.//text');
+                foreach($ans_texts as $ans_text){
+                    $ans_text_str=$ans_text->asXML();
+                    $ans_text_str=Parser::parseLabel($ans_text_str);    //label解析
+                    $ans_text_str=Parser::parsePicUser($user_paper_id,$ans_text_str);   //pic user解析
+                    $ans_text_str=Parser::parseLatex_ps($ans_text_str);                 //latex解析
+                    $paper_score_page.=$ans_text_str.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+                }
+                $ans_tab=$paper_ans->tab->asXML();
+                $ans_tab=Parser::parseTable($ans_tab);      //table 解析
+                $ans_tab=Parser::parseLatex_ps($ans_tab);   //latex 解析
+
+                $paper_score_page.=$ans_tab.'</li>';
+
+
+                $paper_score_page.='<form id="saveForm'.$question_id.'" action="{{ url(\'/answerSave\')}}" method="POST" >';
+                $paper_score_page.='{{ csrf_field() }}';
+
+                if((string)$question['type']!="select"){
+                    $paper_score_page.='<li class="queCom"><div class="question_left">试题备注：</div>'.
+                    '<textarea class="queCom" name="queText" id="queText" placeholder="请在此填写试题备注...">试题备注</textarea></li>';
+
+
+                }
+
+                $paper_score_page.='<li><div class="question_left unread">得分：</div>'.
+                '<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="上次分值"></input>';
+
+
+
+            }
+
+
+
+        }
+
+        exit();
+
+
+
+        //test
+
+
+
+        // echo count($arr_questions);//以语文试卷为例，8道题
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
@@ -823,10 +1085,26 @@ CREATE;
             $maxnum=(float)$arr_question['maxnum'];
             $arr_maxnum[]=$maxnum;
 
+            /*
+            $maxnum=(float)$arr_question['maxnum'];
+            if($maxnum>0){
+                //dd($arr_question);
+                $str_rx='任选其中'.$maxnum.'道题';
+                dd($str_rx);
+            }
+            */
+
 
 
         }
-        
+        //dd($arr_ques_title);
+        //dd($arr_ques_head_text);
+        //dd($arr_ques_count);
+        // dd($arr_ques_text);
+        // dd($arr_ques_table);
+
+
+
         //获得所有试题的question
         $arr_que=$paper_content->xpath('/paper//question');
         //dd($arr_que);
@@ -836,23 +1114,129 @@ CREATE;
         foreach($arr_que as $que){
             $std_que_ids[]=(string)$que['id'];
         }
+        //dd($std_que_ids);
         
+        /*
+        foreach($arr_que as $que){
+            if((string)$que['type']=='select'){
+                $sel_options=$que->select->xpath('.//option');
+                foreach($sel_options as $sel_option){
+                    //echo $sel_option.'<br/>';
+                    //echo $sel_option['value'].'<br/>';
+                    //dd($sel_option);
+                }
+                //dd($sel_options);
+            }
+            if((string)$que['type']=='shortanswer'){
+                //echo $que->text->asXML().'<br/>';
+            }
+        }
+        */
+
+
+        //echo $arr_que[0]['id'].'<br/>';
         //标准答案
         $paper_answer=simplexml_load_file('./content/'.$paper_answer_path);
+        //dd($paper_answer);
         $arr_paper_answer=$paper_answer->xpath('/paperanswer//question');
+        //dd($arr_paper_answer);
 
-        
+        //test
+        /*
+        foreach($arr_paper_answer as $paper_answer){
+            $ans_texts=$paper_answer->xpath('.//text');
+            foreach ($ans_texts as $ans_text){
+                //echo $ans_text.'<br/>';
+            }
+        }
+        */
+
+        //test
 
         //用户答案
         $user_answer=simplexml_load_file('./content/'.$user_answer_path);
         $arr_user_answer=$user_answer->xpath('/paperanswer//question');
-        
+        //dd($arr_user_answer);
+        /*
+        for($i=0,$k=0;$i<count($arr_ques_title);$i++){
+            //questions
+            //echo 'i='.$i.'<br/>';
+            //echo 'head_text='.$arr_ques_head_text[$i].'<br/>';
+            //echo 'title='.$arr_ques_title[$i].'<br/>';
+            //echo 'text='.$arr_ques_text[$i].'<br/>';
+            
+            for($j=0; $j<$arr_ques_count[$i] ;$j++,$k++){
+                //question
+                //echo 'j='.$j.'<br/>';
+                //echo 'k='.$k.'<br/>';
+                $que_id=(string)$arr_que[$k]['id'];
+                $score=(string)$arr_que[$k]['score'];
+                $paper_answer=(string)$arr_paper_answer[$k]->text;
+                $user_answer=(string)$arr_paper_answer[$k]->text;
+                //echo 'que_id='.$que_id.'<br/>';
+                //echo 'paper_answer='.$paper_answer.'<br/>';
+                //echo 'user_answer='.$user_answer.'<br/>';
+
+            }
+            
+        }
+        */
 
         //客观题得分
-        $object_grade=ScorerPaper::calObjectScore($arr_que,$arr_paper_answer,$user_answer);
-        // $detail_xml=ScorerPaper::getDetailXML($arr_que,$arr_paper_answer,$user_answer);
-        $detail_xml=ScorerPaper::initDetailXML($arr_questions);
-        $detail_xml=ScorerPaper::initSelectXML($detail_xml,$arr_que,$arr_paper_answer,$user_answer);
+        $object_grade=0.0;
+        //默认生成一个只包含选择题的xml
+        //新建一个detail_xml对象（保存教师的批改详情，选择题自动加入）
+        $str='<?xml version="1.0" encoding="UTF-8"?>';
+        $str.='<paperanswer></paperanswer>';
+        $detail_xml=simplexml_load_string($str);
+        
+
+        //计算客观题分值
+        for($i=0;$i<count($arr_paper_answer);$i++){
+            if((string)$arr_paper_answer[$i]['type']=='select'){
+                $paper_ans='';
+                $user_ans='';
+                $user_que_score='';//用户这道选择题的得分
+                $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
+                    foreach ($paper_ans_texts as $paper_ans_text){
+                        $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans.=$paper_ans_item;
+                        //echo $paper_ans.' ';
+                        //echo $paper_ans_text.' ';
+                }
+                $user_ans_texts=$arr_user_answer[$i]->xpath('.//text');
+                    foreach ($user_ans_texts as $user_ans_text){
+                        $user_ans_item=(string)$user_ans_text;
+                        $user_ans.=$user_ans_item;
+                }
+                $score=(float)$arr_que[$i]['score'];
+                if(empty($score)){
+                    //如果没有分值默认为1
+                    $score=1;
+                }
+                $id=$arr_que[$i]['id'];
+                //echo $id.'--';
+                //echo $paper_ans.'--';
+                //echo $user_ans.'--';
+                //echo $score.'--';
+                if($paper_ans==$user_ans){
+                    $user_que_score=$score;
+                }else{
+                    $user_que_score=0;
+                }
+                //echo $user_que_score;
+                $object_grade+=$user_que_score;
+                //新建节点
+                $question=$detail_xml->addChild('question');
+                $question->addAttribute('id',$id);
+                $question->addAttribute('type','select');
+                $question->addChild('text',$user_que_score);
+                $question->addChild('comment','');//选择题不要备注， 
+
+            }
+            //echo '--------------------------------------<br/>';
+
+        }
         //dd($detail_xml);
         //dd($object_grade);
 
@@ -864,6 +1248,7 @@ CREATE;
         $scorer_id=$scorer->id;
         //echo $scorer_id;
         $count_que=count($arr_que);
+        //echo $count_que."<br/>";
         //评论
         $comment="";
 
@@ -897,13 +1282,13 @@ CREATE;
             $tea_save_coms=array();
             for($i=0;$i<count($std_que_ids);$i++){
                 $que_id=$std_que_ids[$i];
-                $ans_save=$detail_xml->xpath("//question[@id='$que_id']");
+                $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
                 if(count($ans_save)>0){
-                    $tea_save_anws[$que_id]=(float)$ans_save[0]->text;
-                    $tea_save_coms[$que_id]=$ans_save[0]->comment;
+                    $tea_save_anws[]=(float)$ans_save[0]->text;
+                    $tea_save_coms[]=$ans_save[0]->comment;
                 }else{
-                    $tea_save_anws[$que_id]='';
-                    $tea_save_coms[$que_id]='';
+                    $tea_save_anws[]='';
+                    $tea_save_coms[]='';
                 }
             }
         }else{
@@ -915,13 +1300,13 @@ CREATE;
 
             for($i=0;$i<count($std_que_ids);$i++){
                 $que_id=$std_que_ids[$i];
-                $ans_save=$detail_xml->xpath("//question[@id='$que_id']");
-                if(count($ans_save)>0 && $ans_save[0]['submit']=='1'){
-                    $tea_save_anws[$que_id]=(float)$ans_save[0]->text;
-                    $tea_save_coms[$que_id]=$ans_save[0]->comment;
+                $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
+                if(count($ans_save)>0){
+                    $tea_save_anws[]=(float)$ans_save[0]->text;
+                    $tea_save_coms[]=$ans_save[0]->comment;
                 }else{
-                    $tea_save_anws[$que_id]='';
-                    $tea_save_coms[$que_id]='';
+                    $tea_save_anws[]='';
+                    $tea_save_coms[]='';
 
                 }
             }
@@ -933,15 +1318,11 @@ CREATE;
         }
         $comment=$scorer_paper->comment;
         //dd($arr_que);
-        // dd($tea_save_anws);
+        //dd($tea_save_anws);
         //dd($user_paper_id);
         //dd($scorer_id);
-        // dd($std_que_ids);
         //echo $user_paper_id.'--'.$scorer_id.'<br/>';
-        // dd($tea_save_coms);
-        // echo ($tea_save_coms["2015BeijingGaokao_01"]);
-        // dd($tea_save_coms["2015BeijingGaokao_01"]);
-        // exit();
+        //dd($tea_save_coms);
 
         
 
@@ -957,8 +1338,8 @@ CREATE;
         
         return view('paperScore',['paper_name'=>$paper_name,'stu_name'=>$stu_name,'user_paper_time'=>$user_paper_time,'user_paper_id'=>$user_paper_id,
                                    'scorer_id'=>$scorer_id,'arr_ques_head_text'=>$arr_ques_head_text,'arr_ques_title'=>$arr_ques_title,'arr_ques_text'=>$arr_ques_text,
-                                    'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'paper_answer'=>$paper_answer,
-                                    'user_answer'=>$user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
+                                    'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
+                                    'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
                                     'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'arr_maxnum'=>$arr_maxnum,
                                     'paper_id'=>$paper_id,'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
                                     ]);
@@ -980,6 +1361,7 @@ CREATE;
 
        
         $scorer_id=$request->input('scorer_id');
+        //file_put_contents('./dataTest.txt', $scorer_id.'\n',FILE_APPEND);
         $user_paper_id=$request->input('user_paper_id');
         $question_id=$request->input('question_id');
         //试题备注queText
@@ -1017,10 +1399,9 @@ CREATE;
         $str_det_xml=$scorer_paper->detail_xml;
         $detail_xml=simplexml_load_string($str_det_xml);
         //先确定<question id="">存在吗
-        $question_exist=$detail_xml->xpath("//question[@id='$question_id']");
+        $question_exist=$detail_xml->xpath("/paperanswer/question[@id='$question_id']");
         if(count($question_exist)>0){
             //存在的话，修改分值
-            $question_exist[0]['submit']='1';
             $question_exist[0]->text=$question_scorer;
             $question_exist[0]->comment=$que_text;
 
@@ -1067,44 +1448,6 @@ CREATE;
 
     }
 
-    //计算试卷的总成绩
-    static public function getTotGrade($detail_xml){
-        $total_grade=0.0;
-        $arr_questions=$detail_xml->xpath('//questions');
-        // dd($arr_questions);
-        for($i=0;$i<count($arr_questions);$i++){
-            // print 'i='.$i.'<br/>';
-            $questions=$arr_questions[$i];
-            // dd($questions);
-            $maxnum=0;
-            $maxnum=(int)$questions['maxnum'];
-            $arr_question=$questions->xpath('.//question');
-            $que_grade_arr=array();
-            for($j=0;$j<count($arr_question);$j++){
-                $question=$arr_question[$j];
-                $que_grade_arr[]=(float)$question->text;
-                $score=(float)$question->text;
-            }
-            rsort($que_grade_arr);
-            
-            if($maxnum>0){
-                for($k=0;$k<count($que_grade_arr) && $k<$maxnum ;$k++){
-                    $score=$que_grade_arr[$k];
-                    $total_grade+=$score;
-                }
-            }else{
-                for($k=0;$k<count($que_grade_arr);$k++){
-                    $score=$que_grade_arr[$k];
-                    $total_grade+=$score;
-                }
-            }
-            
-        }
-        return $total_grade;
-
-
-    }
-
     //保存试卷的总成绩
     public function gradeSave(Request $request){
         $scorer_id=$request->input('scorer_id');
@@ -1114,17 +1457,20 @@ CREATE;
         $detail_xml=simplexml_load_string($str_det_xml);
         //计算总分
         $total_grade=0.0;
-        $question_anws=$detail_xml->xpath("//question[@submit='1']");
+        $question_anws=$detail_xml->xpath('//question');
         //file_put_contents('./dataTest.txt', count($question_anws).'\r\n',FILE_APPEND);
         if(count($question_anws)<$scorer_paper->count){
-            $str_not="";
-            $arr_question_not=$detail_xml->xpath("//question[@submit='0']");
-            for($i=0;$i<count($arr_question_not);$i++){
-                $str_not.=(string)$arr_question_not[$i]['id'].' ';
-            }
-            return response()->json(['success'=>false,'notice'=>$str_not]);
+            return response()->json(['success'=>false]);
         }
-        $total_grade=self::getTotGrade($detail_xml);
+        if(count($question_anws)==$scorer_paper->count){
+            for($i=0;$i<count($question_anws);$i++){
+                $question_anw=$question_anws[$i];
+                $que_scorer=(float)$question_anw->text;
+                //echo $que_scorer.'<br/>';
+                //dd($que_scorer);
+                $total_grade+=$que_scorer;
+            }
+        }
         //echo $total_grade.'<br/>';
         //客观题得分
         $object_grade=0.0;

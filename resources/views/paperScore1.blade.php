@@ -19,123 +19,286 @@
 		</div>
 	</div>
 	<!--试卷信息结束-->
-
-	<!--客观题自动评分-->
-	<div class="objSection">
-		<div class="secName">一、选择题</div>
-		<ul class="question">
+	<?php
+	use App\Paper;
+	use App\Parser;
+	
 		
-		<li>
-			<div class="question_left">总分:</div>{{$score_total_sel}}分
-		</li>
-		<li>
-			<div class="question_left">学生答案:</div>&nbsp;{{$str_user_sele_answer}}
-		</li>
-		<li>
-			<div class="question_left">参考答案:</div>&nbsp;{{$str_std_sele_answer}}
-		</li>
 
-		<li>
-			<div class="question_left">一共:</div>&nbsp;{{$select_num}}&nbsp;题
-		</li>
-		<li>
-			<div class="question_left">答对:</div>&nbsp;{{$cor_sele_num}}&nbsp;题
-		</li>
+	?>
 
-		<li>
-				<div class="question_left">得分：</div>
 
-				<form id="selectSave" action="./answerSave" method="POST" >
-				{{ csrf_field() }}
-				<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="{{$select_grade}}">
+	<!--试题开始-->
+	@if(count($arr_ques_title)>0)
+	@for($i=0,$k=0;$i<count($arr_ques_title);$i++)
+	<div class="questions">
+		
+		<div class="questions_detail">
+			<div class="questions_title">
+				<!-- {!!$arr_ques_head_text[$i]!!} -->
+				<?php
+					$str=$arr_ques_head_text[$i];
+					//label解析
+					$str=Parser::parseLabel($str);
+					//解析pic
+					$str=Parser::parsePic($paper_id,$str,'paper');
+					//latex
+					echo Parser::parseLatex_ps($str);
+
+				?>
+				(总分{{$arr_ques_score[$i]}}分)
+			</div>
+			<div class="questions_title">
+				{!!$arr_ques_title[$i]!!}
+			</div>
+			<!-- <div class="questions_text">
+				{!!$arr_ques_text[$i]!!}
+			</div> -->
+			<div class="questions_text">
+			<?php
+				$str=$arr_ques_text[$i];
+				//label解析
+				$str=Parser::parseLabel($str);
+				//解析pic
+				$str=Parser::parsePic($paper_id,$str,'paper');
+				//latex
+				echo Parser::parseLatex_ps($str);
+				//table
+				// echo Parser::parseTable($arr_ques_table[$i]);
+				$str_tab=$arr_ques_table[$i];
+				//table
+				$str_tab=Parser::parseTable($str_tab);
+				//latex
+				$str_tab=Parser::parseLatex_ps($str_tab);
+				echo $str_tab;
+			?>
+			</div>
+			
+		</div>
+
+		@for($j=0; $j<$arr_ques_count[$i];$j++,$k++)
+		<ul class="question">
+			@if((string)$arr_que[$k]['type']=='select')
+			<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->headtext->asXML()!!}
+				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
+				<?php
+					$str=$arr_que[$k]->text->asXML();
+					//label解析
+					$str=Parser::parseLabel($str);
+					//解析pic
+					$str=Parser::parsePic($paper_id,$str,'paper');
+					//latex
+					echo Parser::parseLatex_ps($str);
+					//table
+					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					$str_tab=Parser::parseTable($str_tab);
+					$str_tab=Parser::parseLatex_ps($str_tab);
+					//latex
+					echo $str_tab;
+				?>
+
+			</li>
+				<?php
+				$sel_options=$arr_que[$k]->select->xpath('.//option');
+                foreach($sel_options as $sel_option){
+
+                	?>
+                    <!--<li class="question_select">{{$sel_option['value']}} &nbsp;{{$sel_option}}</li>-->
+                   <!-- <li class="question_select">{{$sel_option['value']}} &nbsp;{!!$sel_option->asXML()!!}</li> -->
+                   <li class="question_select">{{$sel_option['value']}} &nbsp;
+                   <?php
+                    //县解析option_label
+                   	$str=$sel_option->asXMl();
+                   	//pic
+                   	$str=Parser::parsePic($paper_id,$str,'paper');
+                   	$str=Parser::parseOptionLabel($str);
+                   	$str=Parser::parseLatex_ps($str);
+                   	$str=Parser::removeOption($str);
+					echo $str;
+					?>
+					</li>
+					<?php
+                }
+                ?>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='shortanswer')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
+				<?php
+					
+					$str=$arr_que[$k]->text->asXML();
+					//label
+					$str=Parser::parseLabel($str);
+					//解析pic
+					$str=Parser::parsePic($paper_id,$str,'paper');
+					//公式
+					echo Parser::parseLatex_ps($str);
+					//table
+					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					//table
+					$str_tab=Parser::parseTable($str_tab);
+					//latex
+					$str_tab=Parser::parseLatex_ps($str_tab);
+					echo $str_tab;
+				?>
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='fillblank')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->headtext->asXML()!!}
+				<!-- {!!$arr_que[$k]->text->asXML()!!} -->
+				<?php
+					$str_text=$arr_que[$k]->text->asXML();
+					//label
+					$str_text=Parser::parseLabel($str_text);
+					//pic
+					$str_text=Parser::parsePic($paper_id,$str_text,'paper');
+					//latex
+					echo Parser::parseLatex_ps($str_text);
+					//table
+					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
+					// echo Parser::parseLatex_ps($arr_que[$k]->blank->asXML());
+					//数学blank里面有label
+					$str=Parser::parseLabel($arr_que[$k]->blank->asXML());
+					//解析pic
+					$str=Parser::parsePic($paper_id,$str,'paper');
+					//latex
+					echo Parser::parseLatex_ps($str);
+					//table
+					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
+					$str_tab=$arr_que[$k]->tab->asXML();
+					// echo $str_tab;
+					$str_tab=Parser::parseTable($str_tab);
+					//latex
+					$str_tab=Parser::parseLatex_ps($str_tab);
+					echo $str_tab;
+					// echo Parser::parseTable($str_tab);
+
+				?>
+				<!-- {!!$arr_que[$k]->blank->asXML()!!} -->
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='composition')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->title->asXML()!!}
+				{!!$arr_que[$k]->text->asXML()!!}
+				</li>
+			@endif
+
+			@if((string)$arr_que[$k]['type']=='punctuation')
+				<li class="question_Name">
+				{{$arr_que[$k]['id']}}
+				{!!$arr_que[$k]->text->asXML()!!}<br/>
+				{!!$arr_que[$k]->passage->asXML()!!}<br/>
+				{!!$arr_que[$k]->term->asXML()!!}
+				</li>
+			@endif
+
+			<!--
+			<li class="question_select">
+				A.你猜
+			</li>
+			-->
+			<li>
+				<!--<div class="question_total"><div class="question_left">总分：</div>{{$arr_que[$k]['score']}}分</div>-->
+				<div class="question_left">总分：</div>{{$arr_que[$k]['score']}}分
+			</li>
+			<li>
+				<div class="question_left">学生答案：</div>
+				<?php 
+					$ans_texts=$arr_user_answer[$k]->xpath('.//text');
+					foreach ($ans_texts as $ans_text){
+                		$str=$ans_text->asXML();
+                		$str=Parser::parseLabel($str);
+						//解析pic
+						$str=Parser::parsePicUser($user_paper_id,$str);
+						//latex
+						echo Parser::parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                		// echo Parser::parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+            		}
+            		//table
+            		$str=$arr_user_answer[$k]->tab->asXML();
+            		$str=Parser::parseTable($str);
+            		//latex
+					$str=Parser::parseLatex_ps($str);
+					echo $str;
+				?>
+			</li>
+			<li>
+				<div class="question_left">参考答案：</div>
+				<?php 
+					$ans_texts=$arr_paper_answer[$k]->xpath('.//text');
+					foreach ($ans_texts as $ans_text){
+                		// echo $ans_text.' ';
+                		$str=$ans_text->asXML();
+                		$str=Parser::parseLabel($str);
+						//解析pic
+						$str=Parser::parsePic($paper_id,$str,'answer');
+						//latex
+						echo Parser::parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+                		// echo Parser::parseLatex_ps($ans_text->asXML())."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+            		}
+            		//table 先进行table处理，再进行LaTeX处理
+            		$str=$arr_paper_answer[$k]->tab->asXML();
+            		$str=Parser::parseTable($str);
+            		//latex
+					$str=Parser::parseLatex_ps($str);
+					echo $str;
+            		// echo Parser::parseTable($str);
+
+				?>
+			</li>
+
+			<form id="saveForm{{$arr_que[$k]['id']}}" action="{{ url('/answerSave')}}" method="POST" >
+			{{ csrf_field() }}
+
+			@if((string)$arr_que[$k]['type']!='select')
+			<li class="queCom">
+				<div class="question_left">试题备注：</div>
+				<textarea class="queCom" name="queText" id="queText" placeholder="请在此填写试题备注...">{{ $tea_save_coms[$k] }}</textarea>
+			</li>
+			@endif
+			<li>
+				<div class="question_left unread">得分：</div>
+				<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="{{$tea_save_anws[$k]}}">
 				</input>
-				<!--隐藏传输的信息-->
+				<!--<div class="select">*任选四道题</div>-->
+				@if($arr_maxnum[$i]>0)
+					<div class="select">{{'任选其中'.$arr_maxnum[$i].'道题'}}</div>
+				@endif
+				<!--隐藏信息-->
 				<input type="hidden" name="user_paper_id" value="{{$user_paper_id}}" />
 				<input type="hidden" name="scorer_id" value="{{$scorer_id}}" />
 				<!--题号-->
-				<input type="hidden" name="question_id" value="select" />
+				<input type="hidden" name="question_id" value="{{$arr_que[$k]['id']}}" />
 				<!--该题分值-->
-				<input type="hidden" name="question_score" value="{{$score_total_sel}}" />
-				<input type="button" name="save" id="btn_select" value="确认"></input>
-				
-				</form>
-				<div id="conselect" class="confirm">.</div>
+				<input type="hidden" name="question_score" value="{{$arr_que[$k]['score']}}" />
+
+				<input type="button" id="save{{$arr_que[$k]['id']}}" name="save" value="保存"></input>
+				<div id="con{{$arr_que[$k]['id']}}" class="confirm"></div>
 
 			</li>
-		
+			</form>
 		</ul>
-	</div>
-	<!--客观题结束-->
+		@endfor
+		<hr/>
+	@endfor
+</div>
+@endif
 
-	<!--主观题-->
-	<div class="subSection">
-		<div class="secName">二、综合题</div>
-
-		<?php
-		for($i=$select_num;$i<count($std_total_answer);$i++){
-	            //试卷简答题试题
-			?>
-				<ul class="question">
-					<li class="question_Name">
-					<!--{{$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]}}-->
-					{!!$std_total_answer[$i]['id'].'  '.$std_short_answers[$i-$select_num]!!}
-					</li>
-					<li>
-						<div class="{{ $questions_flag[$i-$select_num]==1 ? 'question_total' : '' }}"><div class="question_left">总分：</div>{{$std_scores[$i-$select_num]}}分</div>
-					</li>
-					<li>
-						<div class="question_left">学生答案：</div>{{$user_total_answer[$i]->text}}
-					</li>
-					<li>
-						<div class="question_left">参考答案：</div>{{$std_total_answer[$i]->text}}
-					</li>
-
-					<form id="saveForm{{$std_total_answer[$i]['id']}}" action="{{ url('/answerSave')}}" method="POST" >
-					<li class="queCom">
-					<div class="question_left">试题备注：</div>
-					<textarea class="queCom" name="queText" id="queText"  placeholder="请在此填写试题备注...">{{$tea_save_coms[$i-$select_num]}}</textarea>
-					</li>
-
-
-					<li>
-						<!--<form id="saveForm{{$std_total_answer[$i]['id']}}" action="{{ url('/answerSave')}}" method="POST" >-->
-						{{ csrf_field() }}
-						<div class="question_left">得分：</div>
-						<input title="试卷名" type="text" name="paperName_scorer" id="paperName" value="{{$tea_save_anws[$i-$select_num]}}">
-						</input>
-						<input type="hidden" name="user_paper_id" value="{{$user_paper_id}}" />
-						<input type="hidden" name="scorer_id" value="{{$scorer_id}}" />
-						<!--题号-->
-						<input type="hidden" name="question_id" value="{{$std_total_answer[$i]['id']}}" />
-						<!--该题分值-->
-						<input type="hidden" name="question_score" value="{{$std_scores[$i-$select_num]}}" />
-						<input type="button" id="save{{$std_total_answer[$i]['id']}}" name="save" value="保存"></input>
-						<!--</form>-->
-						<div id="con{{$std_total_answer[$i]['id']}}" class="confirm"></div>
-					</li>
-					</form>
-				</ul>
-
-			<?php 
-				/*
-	            echo $std_total_answer[$i]['id'].'  ';
-	            echo $std_scores[$i-$select_num].'  ';
-	            echo '试题:'.$std_short_answers[$i-$select_num].'<br/>';
-	            echo '参考答案   '.$std_total_answer[$i]->text.'<br/>';
-	            echo '用户答案  '.$user_total_answer[$i]->text.'<br/>';
-	            */
-	        }
-
-
-
-
-		?>
-
-		
-	</div>
-	<!--主观题结束-->
-
-	<!--试卷备注-->
+<!--试卷备注-->
 	
 	<div class="comments">
 		<div class="secName">*试卷备注</div>
@@ -157,7 +320,7 @@
 	</div>
 	
 	<!--试卷备注结束-->
-</div>
+
 	<!--提交开始-->
 	<div class="submitBar">
 		<div class="inner">
@@ -178,6 +341,9 @@
 	</div>
 	<!--提交结束-->
 
+	
+	
+
 <script type="text/javascript">
 	$(function(){
 		var answer_save={
@@ -187,8 +353,30 @@
 			success: showResponse,
 		};
 
-		$('#selectSave #btn_select').on('click',function(){
-			$('#selectSave').ajaxForm(answer_save).submit();
+		<?php
+		for($i=0;$i<count($arr_que);$i++){
+			//试卷简答题试题
+			?>
+			$('#saveForm{{$arr_que[$i]['id']}} #save{{$arr_que[$i]['id']}}').on('click',function(){
+			$('#saveForm{{$arr_que[$i]['id']}}').ajaxForm(answer_save).submit();
+			});
+		
+
+		<?php
+
+		}
+	?>
+
+
+		var comment_save={
+			url: "{{ url('/commentSave')}}",
+			type: 'POST',
+			dataType: 'json',//返回的数据类型
+			success: showResponseCom,
+		};
+
+		$('#commentForm #comment_but').on('click',function(){
+			$('#commentForm').ajaxForm(comment_save).submit();
 		});
 
 		var total_save={
@@ -202,34 +390,12 @@
 			$('#tot_submit').ajaxForm(total_save).submit();
 		});
 
-		var comment_save={
-			url: "{{ url('/commentSave')}}",
-			type: 'POST',
-			dataType: 'json',//返回的数据类型
-			success: showResponseCom,
-		};
 
-		$('#commentForm #comment_but').on('click',function(){
-			$('#commentForm').ajaxForm(comment_save).submit();
-		});
 
-		<?php
-		for($i=$select_num;$i<count($std_total_answer);$i++){
-			//试卷简答题试题
-			?>
-			$('#saveForm{{$std_total_answer[$i]['id']}} #save{{$std_total_answer[$i]['id']}}').on('click',function(){
-			$('#saveForm{{$std_total_answer[$i]['id']}}').ajaxForm(answer_save).submit();
-			});
-		
-
-		<?php
-
-		}
-	?>
 
 	});
 
-
+	
 	function showResponse(response){
 		if(response.success==true){
 			$("#con"+response.id).html("保存成功!");
@@ -239,6 +405,7 @@
 		}
 
 	}
+
 	function showResponseCom(response){
 		if(response.success==true){
 			$("#com_div").html("保存成功!");
@@ -258,6 +425,10 @@
 		}
 
 	}
+
+
+
+	
 
 
 </script>

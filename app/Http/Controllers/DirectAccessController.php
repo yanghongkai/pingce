@@ -14,6 +14,7 @@ use App\UserPaper;
 use App\ScorerPaper;
 use App\News;
 use App\Resource;
+use App\Parser;
 
 class DirectAccessController extends Controller
 {
@@ -522,10 +523,7 @@ class DirectAccessController extends Controller
 
 
         }
-        //dd($arr_ques_title);
-        //dd($arr_ques_head_text);
-        //dd($arr_ques_count);
-        // dd($arr_ques_text);
+        
 
 
         //获得所有试题的question
@@ -542,9 +540,7 @@ class DirectAccessController extends Controller
         //echo $arr_que[0]['id'].'<br/>';
         //标准答案
         $paper_answer=simplexml_load_file('./content/'.$paper_answer_path);
-        //dd($paper_answer);
         $arr_paper_answer=$paper_answer->xpath('/paperanswer//question');
-        //dd($arr_paper_answer);
 
         //用户答案
         $user_answer=simplexml_load_file('./content/'.$user_answer_path);
@@ -552,74 +548,10 @@ class DirectAccessController extends Controller
         //dd($arr_user_answer);
         
         //客观题得分
-        $object_grade=0.0;
-        //默认生成一个只包含选择题的xml
-        //新建一个detail_xml对象（保存教师的批改详情，选择题自动加入）
-        $str='<?xml version="1.0" encoding="UTF-8"?>';
-        $str.='<paperanswer></paperanswer>';
-        $detail_xml=simplexml_load_string($str);
-        
-
-        //计算客观题分值
-        for($i=0;$i<count($arr_paper_answer);$i++){
-            if((string)$arr_paper_answer[$i]['type']=='select'){
-                $paper_ans='';
-                $user_ans='';
-                $user_que_score='';//用户这道选择题的得分
-                $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
-                    foreach ($paper_ans_texts as $paper_ans_text){
-                        $paper_ans_item=(string)$paper_ans_text;
-                        $paper_ans.=$paper_ans_item;
-                        //echo $paper_ans.' ';
-                        //echo $paper_ans_text.' ';
-                }
-                $user_ans_texts=$arr_user_answer[$i]->xpath('.//text');
-                    foreach ($user_ans_texts as $user_ans_text){
-                        $user_ans_item=(string)$user_ans_text;
-                        $user_ans.=$user_ans_item;
-                }
-                $score=(float)$arr_que[$i]['score'];
-                if(empty($score)){
-                    //如果没有分值默认为1
-                    $score=1;
-                }
-                $id=$arr_que[$i]['id'];
-                //echo $id.'--';
-                //echo $paper_ans.'--';
-                //echo $user_ans.'--';
-                //echo $score.'--';
-                if($paper_ans==$user_ans){
-                    $user_que_score=$score;
-                }else{
-                    $user_que_score=0;
-                }
-                //echo $user_que_score;
-                $object_grade+=$user_que_score;
-                //新建节点
-                $question=$detail_xml->addChild('question');
-                $question->addAttribute('id',$id);
-                $question->addAttribute('type','select');
-                $question->addChild('text',$user_que_score);
-                $question->addChild('comment','');//选择题不要备注， 
-
-            }
-            //echo '--------------------------------------<br/>';
-
-        }
-        //dd($detail_xml);
-        //dd($object_grade);
-        /*
-        //先在数据库中插入一条记录教师用户试卷记录，用于保存教师已经改过的题scorer_paper
-        //用户id
-        $scorer_name=$request->session()->get('name');
-        //echo $scorer_name;
-        $scorer=User::where('name',$scorer_name)->first();
-        $scorer_id=$scorer->id;
-        //echo $scorer_id;
-        $count_que=count($arr_que);
-        //echo $count_que."<br/>";
-        //评论
-        */
+        $object_grade=ScorerPaper::calObjectScore($arr_que,$arr_paper_answer,$user_answer);
+        // $detail_xml=ScorerPaper::getDetailXML($arr_que,$arr_paper_answer,$user_answer);
+        $detail_xml=ScorerPaper::initDetailXML($arr_questions);
+        $detail_xml=ScorerPaper::initSelectXML($detail_xml,$arr_que,$arr_paper_answer,$user_answer);
         $comment="";
 
         //$scorer_paper=ScorerPaper::where('user_id',$scorer_id)->where('user_paper_id',$user_paper_id)->first();
@@ -633,13 +565,13 @@ class DirectAccessController extends Controller
 
         for($i=0;$i<count($std_que_ids);$i++){
             $que_id=$std_que_ids[$i];
-            $ans_save=$detail_xml->xpath("//paperanswer/question[@id='$que_id']");
-            if(count($ans_save)>0){
-                $tea_save_anws[]=(float)$ans_save[0]->text;
-                $tea_save_coms[]=$ans_save[0]->comment;
+            $ans_save=$detail_xml->xpath("//question[@id='$que_id']");
+            if(count($ans_save)>0 && $ans_save[0]['submit']=='1'){
+                $tea_save_anws[$que_id]=(float)$ans_save[0]->text;
+                $tea_save_coms[$que_id]=$ans_save[0]->comment;
             }else{
-                $tea_save_anws[]='';
-                $tea_save_coms[]='';
+                $tea_save_anws[$que_id]='';
+                $tea_save_coms[$que_id]='';
 
             }
         }
@@ -650,7 +582,7 @@ class DirectAccessController extends Controller
             
        
         $comment=$scorer_paper->comment;
-        //dd($tea_save_anws);
+        // dd($tea_save_anws);
         //dd($user_paper_id);
         //dd($scorer_id);
         //echo $user_paper_id.'--'.$scorer_id.'<br/>';
@@ -670,8 +602,8 @@ class DirectAccessController extends Controller
         
         return view('stuPaper',['paper_name'=>$paper_name,'stu_name'=>$stu_name,'user_paper_time'=>$user_paper_time,'user_paper_id'=>$user_paper_id,
                                    'arr_ques_head_text'=>$arr_ques_head_text,'arr_ques_title'=>$arr_ques_title,'arr_ques_text'=>$arr_ques_text,
-                                    'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'arr_paper_answer'=>$arr_paper_answer,
-                                    'arr_user_answer'=>$arr_user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
+                                    'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'paper_answer'=>$paper_answer,
+                                    'user_answer'=>$user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
                                     'paper_content_path'=>$paper_content_path,'user_answer_path'=>$user_answer_path, 'paper_answer_path'=>$paper_answer_path,
                                     'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'paper_id'=>$paper_id,
                                     'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
