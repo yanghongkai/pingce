@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paperanswer papername="石景山区2014—2015学年第一学期期末考试试卷高三数学（文）" papersubject="Math" paperid="2014-2015SJSQGaoSanShangQiMoWen" info="数学攻关组第一次测试">
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_01" type="select">
+		<text>  C   </text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_02" type="select">
+		<text>   A   </text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_03" type="select">
+		<text>   D  </text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_04" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_05" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_06" type="select">
+		<text>B</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_07" type="select">
+		<text>C</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_08" type="select">
+		<text>A</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_09" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$-1-3i$</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_10" type="fillblank" num="1" scoretype="all">
+		<text>8</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_11" type="fillblank" num="1" scoretype="all">
+		<text format="latex">$\frac{2\pi}{3}$</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_12" type="fillblank" num="1" scoretype="each">
+		<text format="latex">$\sqrt{5}$</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_13" type="fillblank" num="2" scoretype="all">
+		<text>1</text>
+		<text format="latex">$-4$</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_14" type="fillblank" num="2" scoretype="each">
+		<text>45</text>
+		<text>8</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_15_01" type="shortanswer">
+		<text format="latex">由已知,$\{a_{n\}$是首项为1，公比为3的等比数列,所以$a_{n}=3^(n-1)$,所以$S_{n}=\frac{1}{2}(3^n-1)$</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_15_02" type="shortanswer">
+		<text format="latex">$b_{1}=S_{3}=13,b_{3}=9$,$b_{3}-b_{1}=2d=-4,d=-2$,$T_{n}=13n+\frac{n(n-1)}{2}\times (-2)=-n^2+14n$,当时$n=7$时，$T_{n}$有最大值49</text>
+	</question>
+	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_16_01" type="shortanswer">
+		<text format="latex">$T=2(\frac{11\pi}{12}-\frac{5\pi}{12})=\pi$,所以$\omega=\frac{2\pi}{T}=2$,因为点$(\frac{5\pi}{12},0)$在函数图象上，得$\sin(\frac{5\pi}{6}+\varphi)=0$,
+		由$\varphi\in(0,\frac{\pi}{2})$可得$\frac{5\pi}{6}+\varphi\in(\frac{5\pi}{6},\frac{4\pi}{3})$，从而$\frac{5\pi}{6}+\varphi=\pi$即$\varphi=\frac{\pi}{6}$,因为点$(0,1)$在函数图像上，$A\sin\frac{\pi}{6}=1$,即$A=2$,
+		故函数$f(x)$的解析式为$f(x)=2\sin(2x+\frac{\pi}{6})$</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_16_02" type="shortanswer">
+		<text format="latex">因为$x\in[-\frac{\pi}{2},0]$，所以$2x+\frac{\pi}{6}\in[-\frac{5\pi}{6},\frac{\pi}{6}]$.              
+       当$2x+\frac{\pi}{6}=-\frac{\pi}{2}$时，即$x=-\frac{\pi}{3}$时，$f(x)$的最小值为-2；
+       当$2x+\frac{\pi}{6}=\frac{\pi}{6}$时，即$x=0$时，$f(x)$的最大值为1.</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_17_01" type="shortanswer">
+		<text format="latex">证明: 
+       因为$ABCD-A_{1}B_{1}C_{1}D_{1}$为正方体，
+       所以$B_{1}C_{1}\perp ABB_{1}A_{1}$；
+       因为$A_{1}B\subset ABB_{1}A_{1}$，所以$B_{1}C_{1}\perp A_{1}B$．                     
+       又因为$A_{1}B\perp AB_{1},B_{1}C_{1}\cap AB_{1}=B_{1}$,所以面$A_{1}B\perp ADC_{1}B_{1}$ 
+      因为$A_{1}B\cap A_{1}BE$,所以平面$ADC_{1}B_{1}\perp A_{1}BE$.</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_17_02" type="shortanswer">
+		<text format="latex">连接EF,$EF\parallel\fac{1}{2}C_{1}D$, 且$EF=\fac{1}{2}C_{1}D$                 
+     设$AB_{1}\cap A_{1}B=O$，
+     则$B_{1}O\parallel\fac{1}{2}C_{1}D$且$B_{1}O=\fac{1}{2}C_{1}D$,
+     所以$EF\parallel B_{1}O$且$EF= B_{1}O$，
+     所以四边形$B_{1}OEF$为平行四边形. 所以$B_{1}F\parallel OE$
+     又因为$B_{1}F\nsubseteq A_{1}BE$，$OE\sqsubset A_{1}BE$．
+     所以$B_{1}F\parallel A_{1}BE$.</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_17_03" type="shortanswer">
+		<text format="latex">$V_{A_{1}-B_{1}BE}=V_{E-A_{1}B_{1}B}=\frac{1}{3}\times S_{\triangle A_{1}B_{1}B}\times B_{1}C_{1}=\frac{1}{6}$</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_18_01" type="shortanswer">
+		<text format="latex,html">因为“购买基金”后，投资结果只有“获利”、“不赔不赚”、“亏损”三种
+      且三种投资结果相互独立，
+      所以$p+\frac{1}{3}+q=1$                                  
+      又因为$p=\frac{1}{2}$，              
+      所以$q=\frac{1}{6}$.</text>
+      <tab id="Tab18_1">
+				<row>
+					<col>投资结果</col>
+					<col>获利</col>
+					<col>不赔不赚</col>
+					<col>亏损</col>
+				</row>
+				<row>
+					<col>概率</col>
+					<col>$\frac{1}{2}$</col>
+					<col>$\frac{1}{8}$</col>
+					<col>$\frac{3}{8}$</col>
+				</row>
+			</tab>
+			<tab id="Tab18_2">
+				<row>
+					<col>投资结果</col>
+					<col>获利</col>
+					<col>不赔不赚</col>
+					<col>亏损</col>
+				</row>
+				<row>
+					<col>概率</col>
+					<col>p</col>
+					<col>$\frac{1}{3}$</col>
+					<col>q</col>
+				</row>
+			</tab>		
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_18_02" type="shortanswer">
+		<text format="latex">由“购买基金”亏损的概率比“投资股市”亏损的概率小，
+    得$q\textless \frac{3}{8}$，                                           
+    因为$p+\frac{1}{3}+q=1$，                                      
+    所以$q=\frac{2}{3}-p\textless\frac{3}{8}$，解得$p\textgreater \frac{7}{24}$.                        
+    又因为$p+\frac{1}{3}+q=1,q\geq 0$
+    所以$p\leq \frac{2}{3}$
+    所以$\frac{7}{24}\textless p\leq\frac{2}{3}$</text>
+	</question>	
+		<question id="2014-2015SJSQGaoSanShangQiMoWen_18_03" type="shortanswer">
+		<text format="latex">记事件为A“一年后张师傅和李师傅两人中至少有一人获利”，
+    用a，b，c分别表示一年后张师傅购买基金“获利”、“不赔不赚”、“亏损”，用x，y，z分别表示一年后李师傅购买基金“获利”、“不赔不赚”、“亏损”，
+    则一年后张师傅和李师傅购买基金，所有可能的投资结果有$3\times3=9$种， 它们是：$(a,x),(a,y),(a,z),(b,x),(b,y),(b,z),(c,x),(c,y),(c,z)$,  
+    所以事件的结果有5种，它们是：$(a,x),(a,y),(a,z),(b,x),(c,x)$
+    因此这一年后张师傅和李师傅两人中至少有一人获利的概率$P(A)=\frac{5}{9}$.</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_19_01" type="shortanswer">
+	     <text format="latex">
+    由题意知, $c=1$                                      
+    解得$a^2=4,b^2=3$                                    
+    故椭圆方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$．</text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_19_02" type="shortanswer">
+	    <text>设$A(x_{1},y_{1}),B(x_{2},y_{2})$
+    当k不存在时，直线方程为$x=0$，不符合题意．             
+    当k存在时，设直线方程为$y=k+1$， 
+    联立$$\left\{\begin{aligned}
+		y=kx+1
+		\\\frac{x^2}{4}+\frac{y^2}{3}=1
+		\end{aligned}\right.$$，消去y，得：$(3+4k^2)+8kx-8=0$，     
+    由题意，点在椭圆内部，必有两个交点，方程必有实根．（或计算$\Delta\textgreater 0$）   
+    $$\left\{\begin{aligned}
+		x_{1}+x_{2}=-\frac{8k}{3+4k^2}
+		\\x_{1}\times x_{2}=-\frac{8k}{3+4k^2}
+		\end{aligned}\right.$$                                   
+    若$\overrightarrow{AM}=2\overrightarrow{MB}$，则$x_{1}=-2x_{2}$，                         
+    代入上式，可得
+    $$\left\{\begin{aligned}
+		-x_{2}=-\frac{8k}{3+4k^2}
+		\\-x_{2}^2=-\frac{8k}{3+4k^2}
+		\end{aligned}\right.$$消去$x_{2}$，解得$k=\pm \frac{1}{2}$.              
+    所求直线方程为$y=\pm \frac{1}{2}x+1$．  </text>
+	</question>	
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_20_01" type="shortanswer">
+	     <text format="latex">由$f'(x)=3ax^2-2x+b$，因为函数在$x=3$时有极小值-9，
+    所以$$\left\{\begin{aligned}
+		27a-6+b=0
+		\\27a-9+3b=-9
+		\end{aligned}\right.$$，从而得$a=\frac{1}{3},b=-3$，               
+    所求的$f(x)=\frac{1}{3}x^3-x^2-3x$，所以$f'(x)=x^2-2x-3$，
+    由$f'(x)\textless 0$解得$-1\textless x\textless 3$，
+    所以$f(x)$的单调递减区间为$(-1,3)$.</text>
+	</question>		
+	<question id="2014-2015SJSQGaoSanShangQiMoWen_20_02" type="shortanswer">
+	     <text format="latex">因为$f'(x)=x^2-2x-3$，所以$f'(x)\textgreater k(x\ln x-1)-6x-4$等价于
+    $x^2+4x+1\textgreater k(x\ln x-1)$，即$x+\frac{k+1}{x}+4-k\ln x\textgreater 0$， 
+    记$g(x)=x+\frac{k+1}{x}+4-k\ln x$，
+    则$g'(x)=1-\frac{k+1}{x^2}-\frac{k}{x}=\frac{(x+1)(x-k-1)}{x^2}$，
+    由$g'(x)=0$，得$x=k+1$，
+    所以$g(x)$在$(0,k+1)$上单调递减，在$(k+1,+\infty)$上单调递增，
+    所以$g(x)\geq g(x+1)=k+6-k\ln(k+1)$，                    
+    $g(x)\textgreater 0$对任意正实数恒成立，
+    等价于$k+6-k\ln(k+1)\textgreater 0$，即$1+\frac{6}{k}-\ln(k+1)\textgreater 0$.          
+    记$h(x)=1+\frac{6}{x}-\ln(x+1)$，
+    则$h'(x)=-\frac{6}{x^2}-\frac{1}{x+1}\textless 0$，所以$h(x)$在$(0,+\infty)$上单调递减，
+   又$h(6)=2-\ln7\textgreater 0,h(7)=\frac{13}{7}-\ln8\textless 0$，
+   所以k的最大值为6．</text>
+	</question>	 	
+</paperanswer>	
+	

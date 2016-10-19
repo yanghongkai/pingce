@@ -44,7 +44,7 @@
 					//解析pic
 					$str=Parser::parsePic($paper_id,$str,'paper');
 					//latex
-					echo Parser::parseLatex_ps($str);
+					echo Parser::parseLatex_ps($str,$paper_category);
 
 				?>
 				(总分{{$arr_ques_score[$i]}}分)
@@ -64,16 +64,43 @@
 				//解析pic
 				$str=Parser::parsePic($paper_id,$str,'paper');
 				//latex
-				echo Parser::parseLatex_ps($str);
+				echo Parser::parseLatex_ps($str,$paper_category);
+				//换行
+				echo '<br/>';
+				//notetext
+				$str_notetext=$arr_ques_notetext[$i];
+				$str_notetext=Parser::parseStr($str_notetext);
+				$str_notetext=Parser::parseLabel($str_notetext);
+				echo $str_notetext;
 				//table
 				// echo Parser::parseTable($arr_ques_table[$i]);
 				$str_tab=$arr_ques_table[$i];
-				$str_tab=Parser::parseStr($str_tab);	//**()** 解析
-				//table
-				$str_tab=Parser::parseTable($str_tab);
-				//latex
-				$str_tab=Parser::parseLatex_ps($str_tab);
-				echo $str_tab;
+				$tab_patt='/@@/U';
+				$tab_split=preg_split($tab_patt, $str_tab);
+				if(count($tab_split)>2){
+					// dd($tab_split);
+					for($j=0;$j<count($tab_split);$j++){
+						$str_tab=$tab_split[$j];
+						if(!empty($str_tab)){
+							$str_tab=Parser::parseStr($str_tab);	//**()** 解析
+							//table
+							$str_tab=Parser::parseTable($str_tab);
+							//latex
+							$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
+							echo $str_tab;
+							echo '<br/>';		
+						}
+					}
+				}
+				else{
+					$str_tab=Parser::parseStr($str_tab);	//**()** 解析
+					//table
+					$str_tab=Parser::parseTable($str_tab);
+					//latex
+					$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
+					echo $str_tab;
+				}
+
 			?>
 			</div>
 			
@@ -94,15 +121,18 @@
 					//解析pic
 					$str=Parser::parsePic($paper_id,$str,'paper');
 					//latex
-					echo Parser::parseLatex_ps($str);
+					echo Parser::parseLatex_ps($str,$paper_category);
 					//table
 					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
-					$str_tab=$arr_que[$k]->tab->asXML();
-					$str_tab=Parser::parseStr($str_tab);	//**()** 解析
-					$str_tab=Parser::parseTable($str_tab);
-					$str_tab=Parser::parseLatex_ps($str_tab);
-					//latex
-					echo $str_tab;
+					$str_tabs=$arr_que[$k]->xpath("./tab");
+					for($tab_i=0;$tab_i<count($str_tabs);$tab_i++){
+						$str_tab=$str_tabs[$tab_i]->asXML();
+						$str_tab=Parser::parseStr($str_tab);	//**()** 解析
+						$str_tab=Parser::parseTable($str_tab);
+						$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
+						//latex
+						echo $str_tab;	
+					}
 				?>
 
 			</li>
@@ -121,7 +151,7 @@
                    	//pic
                    	$str=Parser::parsePic($paper_id,$str,'paper');
                    	$str=Parser::parseOptionLabel($str);
-                   	$str=Parser::parseLatex_ps($str);
+                   	$str=Parser::parseLatex_ps($str,$paper_category);
                    	$str=Parser::removeOption($str);
 					echo $str;
 					?>
@@ -144,7 +174,7 @@
 					//解析pic
 					$str=Parser::parsePic($paper_id,$str,'paper');
 					//公式
-					echo Parser::parseLatex_ps($str);
+					echo Parser::parseLatex_ps($str,$paper_category);
 					//table
 					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
 					$str_tab=$arr_que[$k]->tab->asXML();
@@ -152,7 +182,7 @@
 					//table
 					$str_tab=Parser::parseTable($str_tab);
 					//latex
-					$str_tab=Parser::parseLatex_ps($str_tab);
+					$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
 					echo $str_tab;
 				?>
 				</li>
@@ -171,7 +201,7 @@
 					//pic
 					$str_text=Parser::parsePic($paper_id,$str_text,'paper');
 					//latex
-					echo Parser::parseLatex_ps($str_text);
+					echo Parser::parseLatex_ps($str_text,$paper_category);
 					//table
 					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
 					// echo Parser::parseLatex_ps($arr_que[$k]->blank->asXML());
@@ -182,7 +212,7 @@
 					//解析pic
 					$str=Parser::parsePic($paper_id,$str,'paper');
 					//latex
-					echo Parser::parseLatex_ps($str);
+					echo Parser::parseLatex_ps($str,$paper_category);
 					//table
 					// echo Parser::parseTable($arr_que[$k]->tab->asXML());
 					$str_tab=$arr_que[$k]->tab->asXML();
@@ -190,7 +220,7 @@
 					// echo $str_tab;
 					$str_tab=Parser::parseTable($str_tab);
 					//latex
-					$str_tab=Parser::parseLatex_ps($str_tab);
+					$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
 					echo $str_tab;
 					// echo Parser::parseTable($str_tab);
 
@@ -243,16 +273,20 @@
 							//解析pic
 							$str=Parser::parsePicUser($user_paper_id,$str);
 							//latex
-							echo Parser::parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+							echo Parser::parseLatex_ps($str,$paper_category)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 	                		// echo Parser::parseLatex_ps($ans_text)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 	            		}
 	            		//table
-	            		$str=$user_answer_get->tab->asXML();
-	            		$str=Parser::parseStr($str);
-	            		$str=Parser::parseTable($str);
-	            		//latex
-						$str=Parser::parseLatex_ps($str);
-						echo $str;
+	            		$str_tabs=$user_answer_get->xpath("./tab");
+	            		for($tab_i=0;$tab_i<count($str_tabs);$tab_i++){
+	            			$str_tab=$str_tabs[$tab_i]->asXML();
+	            			$str_tab=Parser::parseStr($str_tab);	//**()** 解析
+		            		$str_tab=Parser::parseTable($str_tab);
+		            		//latex
+							$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
+							echo $str_tab;
+		            		// echo Parser::parseTable($str);
+	            		}
 					}
 					
 				?>
@@ -271,19 +305,23 @@
 							//解析pic
 							$str=Parser::parsePic($paper_id,$str,'answer');
 							//latex
-							echo Parser::parseLatex_ps($str)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+							echo Parser::parseLatex_ps($str,$paper_category)."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
 	                		// echo Parser::parseLatex_ps($ans_text->asXML())."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
 	            		}
 	            		//table 先进行table处理，再进行LaTeX处理
-	            		$str=$paper_answer_get->tab->asXML();
-	            		$str=Parser::parseStr($str);
-	            		$str=Parser::parseTable($str);
-	            		//latex
-						$str=Parser::parseLatex_ps($str);
-						echo $str;
-	            		// echo Parser::parseTable($str);
+	            		$str_tabs=$paper_answer_get->xpath("./tab");
+	            		for($tab_i=0;$tab_i<count($str_tabs);$tab_i++){
+	            			$str_tab=$str_tabs[$tab_i]->asXML();
+	            			$str_tab=Parser::parseStr($str_tab);	//**()** 解析
+		            		$str_tab=Parser::parseTable($str_tab);
+		            		//latex
+							$str_tab=Parser::parseLatex_ps($str_tab,$paper_category);
+							echo $str_tab;
+		            		// echo Parser::parseTable($str);
+	            		}
+
 
 					}
 					

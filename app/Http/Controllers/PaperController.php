@@ -784,6 +784,7 @@ CREATE;
         //echo $paper_name.'<br/>';
         //试卷类型
         $paper_category=$std_paper->category;
+        // dd($paper_category);
         //试题的内容和参考答案
         $paper_content_path=$std_paper->content;
         $paper_answer_path=$std_paper->answer;
@@ -798,6 +799,7 @@ CREATE;
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
+        $arr_ques_notetext=array();
         $arr_ques_table=array();
         $arr_ques_count=array();
         $arr_ques_score=array();
@@ -807,10 +809,25 @@ CREATE;
             $questions_head_text=(string)$arr_question->headtext->asXML();
             $questions_title=(string)$arr_question->title->asXML();
             $questions_text=(string)$arr_question->text->asXML();
-            $questions_table=(string)$arr_question->tab->asXML();
+            $questions_notetext=$arr_question->notetext->asXML();
+            // $questions_table=(string)$arr_question->tab->asXML();
+            //1018
+            $questions_table="";
+            $questions_tables=$arr_question->xpath("./tab");
+            if(count($questions_tables)>1){
+                // dd($questions_tables);//1018
+                for($i=0;$i<count($questions_tables);$i++){
+                    $questions_table.="@@".$questions_tables[$i]->asXML();
+                }
+                // dd($questions_table);
+            }else{
+                $questions_table=(string)$arr_question->tab->asXML();
+            }
+            //1018
             $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
             $arr_ques_text[]=$questions_text;
+            $arr_ques_notetext[]=$questions_notetext;
             $arr_ques_table[]=$questions_table;
             // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
@@ -960,7 +977,8 @@ CREATE;
                                     'arr_ques_count'=>$arr_ques_count,'arr_que'=>$arr_que,'paper_answer'=>$paper_answer,
                                     'user_answer'=>$user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
                                     'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'arr_maxnum'=>$arr_maxnum,
-                                    'paper_id'=>$paper_id,'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
+                                    'paper_id'=>$paper_id,'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id,'paper_category'=>$paper_category,
+                                    'arr_ques_notetext'=>$arr_ques_notetext
                                     ]);
         
         

@@ -54,9 +54,12 @@ class ScorerPaper extends Model
                 $paper_ans='';
                 $user_ans='';
                 $user_que_score='';//用户这道选择题的得分
+                // $paper_ans_arr=array();
+                // $user_ans_arr=array();
                 $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
                     foreach ($paper_ans_texts as $paper_ans_text){
                         $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans_item=trim($paper_ans_item);
                         $paper_ans.=$paper_ans_item;
                         //echo $paper_ans.' ';
                         //echo $paper_ans_text.' ';
@@ -66,12 +69,19 @@ class ScorerPaper extends Model
                     $user_ans_texts=$user_ans_get->xpath('.//text');
                     foreach ($user_ans_texts as $user_ans_text){
                         $user_ans_item=(string)$user_ans_text;
+                        $user_ans_item=trim($user_ans_item);
                         $user_ans.=$user_ans_item;
                     }
                 }else{
                     $user_ans="";
                 }
-                
+                $user_ans_arr=str_split($user_ans);
+                sort($user_ans_arr);
+                $user_ans=implode("", $user_ans_arr);
+                $paper_ans_arr=str_split($paper_ans);
+                sort($paper_ans_arr);
+                $paper_ans=implode("", $paper_ans_arr);
+                // dd($user_ans);
                 $score=(float)$arr_que[$i]['score'];
                 if(empty($score)){
                     //如果没有分值默认为1
@@ -122,6 +132,7 @@ class ScorerPaper extends Model
                 $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
                     foreach ($paper_ans_texts as $paper_ans_text){
                         $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans_item=trim($paper_ans_item);
                         $paper_ans.=$paper_ans_item;
                         //echo $paper_ans.' ';
                         //echo $paper_ans_text.' ';
@@ -131,6 +142,7 @@ class ScorerPaper extends Model
                     $user_ans_texts=$user_ans_get->xpath('.//text');
                     foreach ($user_ans_texts as $user_ans_text){
                         $user_ans_item=(string)$user_ans_text;
+                        $user_ans_item=trim($user_ans_item);
                         $user_ans.=$user_ans_item;
                     }
                 }else{
@@ -220,6 +232,7 @@ class ScorerPaper extends Model
                 $paper_ans_texts=$arr_paper_answer[$i]->xpath('.//text');
                     foreach ($paper_ans_texts as $paper_ans_text){
                         $paper_ans_item=(string)$paper_ans_text;
+                        $paper_ans_item=trim($paper_ans_item);
                         $paper_ans.=$paper_ans_item;
                         //echo $paper_ans.' ';
                         //echo $paper_ans_text.' ';
@@ -229,12 +242,18 @@ class ScorerPaper extends Model
                     $user_ans_texts=$user_ans_get->xpath('.//text');
                     foreach ($user_ans_texts as $user_ans_text){
                         $user_ans_item=(string)$user_ans_text;
+                        $user_ans_item=trim($user_ans_item);
                         $user_ans.=$user_ans_item;
                     }
                 }else{
                     $user_ans="";
                 }
-                
+                $user_ans_arr=str_split($user_ans);
+                sort($user_ans_arr);
+                $user_ans=implode("", $user_ans_arr);
+                $paper_ans_arr=str_split($paper_ans);
+                sort($paper_ans_arr);
+                $paper_ans=implode("", $paper_ans_arr);
                 $score=(float)$arr_que[$i]['score'];
                 if(empty($score)){
                     //如果没有分值默认为1

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paper name="石景山区2014—2015学年第一学期期末考试试卷高三数学（文）" subject="Math" id="2014-2015SJSQGaoSanShangQiMoWen" >
+	<section name="一、选择题共8小题，每小题5分，共40分．在每小题列出的四个选项中，选出符合题目要求的一项" score="40">
+		<questions id="questions_01" score="40">
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_01" score="5" type="select">
+				<text format="latex">设集合$U=\{1,2,3,4\}$,$A=\{1,2\}$,$B=\{2,4\}$, 则$(C_{U}A)\cap B=$</text>	
+				<select multiple="false" format="latex">
+					<option value="A">$\{2\}$</option>
+					<option value="B">$\{1,2,4\}$</option>
+					<option value="C">$\{4\}$</option>
+					<option value="D">$\{1,4\}$</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_02" score="5" type="select">
+				<text format="latex">下列函数中，在$(0,+\infty)$上单调递增，并且是偶函数的是 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">$y=x^{2}$</option>
+					<option value="B">$y=-x^{3}$</option>
+					<option value="C">$y=-\lg |x|$</option>
+					<option value="D">$y=2^{x}$</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_03" score="5" type="select">
+				<text format="latex">已知向量$\overrightarrow {AB}=(2,4),\overrightarrow {AC}=(0,2)$，则$\frac{1}{2}\overrightarrow {BC}=$ </text>	
+				<select multiple="false" format="latex">
+					<option value="A">$(-2,-2)$</option>
+					<option value="B">$(2,2)$</option>
+					<option value="C">$(1,1)$</option>
+					<option value="D">$(-1,-1)$</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_04" score="5" type="select">
+				<text format="html">若某程序框图**(pic,0,Pic04_1)**如图**(pic,1,Pic04_1)**所示，则该程序运行后输出的B等于 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">63</option>
+					<option value="B">31</option>
+					<option value="C">15</option>
+					<option value="D">7</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_05" score="5" type="select">
+				<text format="latex">设a,b为实数，命题甲：$ab\textgreater b^{2}$，命题乙：$a\textless b\textless 0$，则命题甲是命题乙的 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">充分不必要条件</option>
+					<option value="B">必要不充分条件</option>
+					<option value="C">充要条件</option>
+					<option value="D">既不充分也不必要条件</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_06" score="5" type="select">
+				<text format="latex">函数$f(x)=\log_{2}x+x-2$的零点所在的区间是 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">$(0,1)$</option>
+					<option value="B">$(1,2)$</option>
+					<option value="C">$(2,3)$</option>
+					<option value="D">$(3,4)$</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_07" score="5" type="select">
+				<text format="latex">若点$A(1,0)$和点$B(4,0)$到直线l的距离依次为1和2，则这样的直线有 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">1条</option>
+					<option value="B">2条</option>
+					<option value="C">3条</option>
+					<option value="D">4条</option>
+				</select>
+			</question>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_08" score="5" type="select">
+				<text format="latex,html">某同学为了研究函数$f(x)=\sqrt{1+x^{2}}+\sqrt{1+(1-x)^{2}}(0\leq x\leq 1)$的性质，构造了**(pic,0,Pic08_1)**如图**(pic,1,Pic08_1)**所示的两个边长为1的正方形$ABCD$和$BEFC$，
+				点P是边BC上的一个动点，设$CP=x$，则$f(x)=PF+AP$．那么可推知方程$f(x)=\sqrt{6}$解的个数是 </text>	
+				<select multiple="false" format="latex">
+					<option value="A">0</option>
+					<option value="B">1</option>
+					<option value="C">2</option>
+					<option value="D">4</option>
+				</select>
+			</question>
+		</questions>	
+	</section>
+	<section name="二、填空题共6小题，每小题5分，共30分" score="30">
+	    <questions id="questions_02" score="30">
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_09" score="5" type="fillblank">
+			 <blank num="1" format="latex">若复数$Z_{1}=i,Z_{2}=3-i$,则$\frac{Z_{2}}{Z_{1}}=$____．</blank>
+			 </question>
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_10" score="5" type="fillblank">
+			 <blank num="1" format="latex">若抛物线$y^{2}=ax$的焦点与双曲线$\frac{x^2}{3}-y^{2}=1$的右焦点重合，则a的值为____ ．</blank>
+			 </question>
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_11" score="5" type="fillblank">
+			 <blank num="1" format="latex">在$\triangle ABC$中，角A,B,C所对的边分别为a,b,c，已知$C=\frac{\pi}{6},a=1,b=\sqrt{3}$，则B=____________．</blank>
+			 </question>
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_12" score="5" type="fillblank">
+			 <blank num="1" format="html">**(pic,0,Pic12_1)**如图**(pic,1,Pic12_1)**，网格纸上正方形的边长为1，粗实线画出的是某多面体的三视图，则该多面体的各条棱中，最长的棱的长度为____．</blank>
+			 </question>
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_13" score="5" type="fillblank">
+			 <blank num="2" format="latex">已知不等式组
+			 $$\left\{
+			    \begin{aligned}
+			    x-y\leq 0 \\
+			    x+y\geq 0 \\
+				y\leq a
+			    \end{aligned}
+			    \right
+			    $$，
+			 表示的平面区域S的面积为1，则a=____；若点$P(x,y)\in S$，则$z=x-3y$的最小值为_____．</blank>
+			 </question>
+			 <question id="2014-2015SJSQGaoSanShangQiMoWen_14" score="5" type="fillblank">
+			 <blank num="2" format="latex,html">将连续整数$1,2,\cdots,25$填入**(pic,0,Pic14_1)**如图**(pic,1,Pic14_1)**所示的5行5列的表格中，使每一行的数从左到右都成递增数列，
+			 则第三列各数之和的最小值为____，最大值为______．</blank>
+			 </question>
+		</questions>
+	</section>
+	<section name="三、解答题共6小题，共80分．解答应写出文字说明，演算步骤或证明过程．" score="80">
+	    <questions id="questions_03" score="13">
+			<text format="latex">设数列$\{a_{n}\}$满足:$a_{1}=1,a_{n+1}=3a_{n},n\in N^{\ast}$．</text>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_15_01" score="6" type="shortanswer">
+				<text>求数列$\{a_{n}\}$的通项公式及前n项和$S_{n}$；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_15_02" score="7" type="shortanswer">
+				<text>已知数列$\{b_{n}\}$是等差数列,$T_{n}$为$\{b_{n}\}$的前n项和,且$b_{1}=a_{1}+a_{2}+a_{3}$,$b_{3}=a_{3}$,求$T_{n}$的最大值．</text>
+			</question> 
+		</questions>
+	    <questions id="questions_04" score="13">
+			<text format="latex,html">已知函数$f(x)=A\sin(\omega x+\varphi)(x\in R,\omega\textgreater 0,0\textless \varphi \textless \frac{\pi}{2})$的部分图象**(pic,0,Pic6_1)**如图**(pic,1,Pic16_1)**所示．</text>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_16_01"  score="6" type="shortanswer">
+				<text format="latex">求函数$f(x)$的解析式；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_16_02"  score="7" type="shortanswer">
+				<text format="latex">求函数$f(x)$在区间$[-\frac{\pi}{2},0]$上的最大值与最小值．</text>
+			</question> 
+		</questions>
+	    <questions id="questions_05" score="14">
+			<text format="latex,html">**(pic,0,Pic17_1)**如图**(pic,1,Pic17_1)**所示，在正方体$ABCD-A_{1}B_{1}C_{1}D_{1}$中，E,F分别是棱$DD_{1}$、$CC_{1}$的中点．</text>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_17_01"  score="5" type="shortanswer">
+				<text format="latex">证明：$ADC_{1}B_{1}\perp A_{1}BE$；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_17_02"  score="6" type="shortanswer">
+				<text format="latex">证明：$B_{1}F\parallel A_{1}BE$；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_17_03"  score="3" type="shortanswer">
+				<text format="latex">若正方体棱长为1，求四面体$A_{1}-B_{1}BE$的体积．</text>
+			</question> 
+		</questions>
+	    <questions id="questions_06" score="13">
+			<text format="latex,html">最近，张师傅和李师傅要将家中闲置资金进行投资理财．现有两种投资方案，且一年后投资盈亏的情况如下：
+			**(tab,0,Tab18_1)**投资股市：**(tab,1,Tab18_1)**
+			**(tab,0,Tab18_2)**购买基金：**(tab,1,Tab18_2)**</text>
+			<tab id="Tab18_1">
+				<row>
+					<col>投资结果</col>
+					<col>获利</col>
+					<col>不赔不赚</col>
+					<col>亏损</col>
+				</row>
+				<row>
+					<col>概率</col>
+					<col>$\frac{1}{2}$</col>
+					<col>$\frac{1}{8}$</col>
+					<col>$\frac{3}{8}$</col>
+				</row>
+			</tab>
+			<tab id="Tab18_2">
+				<row>
+					<col>投资结果</col>
+					<col>获利</col>
+					<col>不赔不赚</col>
+					<col>亏损</col>
+				</row>
+				<row>
+					<col>概率</col>
+					<col>p</col>
+					<col>$\frac{1}{3}$</col>
+					<col>q</col>
+				</row>
+			</tab>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_18_01"  score="3" type="shortanswer">
+				<text format="latex">当$p=\frac{1}{2}$时，求q的值；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_18_02"  score="5" type="shortanswer">
+				<text format="latex">已知“购买基金”亏损的概率比“投资股市”亏损的概率小，求p的取值范围；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_18_03"  score="7" type="shortanswer">
+				<text format="latex">已知张师傅和李师傅两人都选择了“购买基金”来进行投资，假设三种投资结果出现的可能性相同，求一年后他们两人中至少有一人获利的概率．</text>
+			</question> 
+		</questions>
+	    <questions id="questions_07" score="14" >
+			<text format="latex">已知椭圆C的中心在原点，焦点在x轴上，焦距为2，离心率为$\frac{1}{2}$．</text>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_19_01"  score="4" type="shortanswer">
+				<text format="latex">求椭圆C的标准方程；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_19_02"  score="10" type="shortanswer">
+				<text format="latex">设直线l经过点$M(0,1)$，且与椭圆C交于A,B两点，若$\overrightarrow {AM}=2\overrightarrow {MB}$，求直线l的方程．</text>
+			</question> 
+		</questions>
+	    <questions id="questions_08" score="13" >
+			<text format="latex">已知函数$f(x)=ax^{3}-x^{2}+bx(a,b\in R)$，$f'(x)$为其导函数，且$x=3$时有极小值-9．</text>
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_20_01"  score="4" type="shortanswer">
+				<text format="latex">求$f(x)$的单调递减区间；</text>
+			</question> 
+			<question id="2014-2015SJSQGaoSanShangQiMoWen_20_02"  score="9" type="shortanswer">
+				<text format="latex">若不等式$f'(x)\textgreater k(x\ln x-1)-6x-4$(k为正整数)对任意正实数x恒成立，求k的最大值．
+				(解答过程可参考使用以下数据：$\ln 7\approx 1.95$，$\ln 8\approx 2.08$)</text>
+			</question> 
+		</questions>
+	</section>
+</paper>

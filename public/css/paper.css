@@ -322,5 +322,9 @@
 	padding: 5px;
 }
 
+.emphasis{
+	-webkit-text-emphasis-style: filled dot;
+	-webkit-text-emphasis-position:under;
+}
 
 

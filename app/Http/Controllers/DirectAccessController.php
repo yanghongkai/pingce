@@ -499,6 +499,7 @@ class DirectAccessController extends Controller
         $arr_ques_head_text=array();
         $arr_ques_title=array();
         $arr_ques_text=array();
+        $arr_ques_notetext=array();
         $arr_ques_table=array();
         $arr_ques_count=array();
         $arr_ques_score=array();
@@ -507,10 +508,24 @@ class DirectAccessController extends Controller
             $questions_head_text=(string)$arr_question->headtext->asXML();
             $questions_title=(string)$arr_question->title->asXML();
             $questions_text=(string)$arr_question->text->asXML();
-            $questions_table=(string)$arr_question->tab->asXML();
+            $questions_notetext=$arr_question->notetext->asXML();
+            //1018
+            $questions_table="";
+            $questions_tables=$arr_question->xpath("./tab");
+            if(count($questions_tables)>1){
+                // dd($questions_tables);//1018
+                for($i=0;$i<count($questions_tables);$i++){
+                    $questions_table.="@@".$questions_tables[$i]->asXML();
+                }
+                // dd($questions_table);
+            }else{
+                $questions_table=(string)$arr_question->tab->asXML();
+            }
+            //1018
             $arr_ques_head_text[]=$questions_head_text;
             $arr_ques_title[]=$questions_title;
             $arr_ques_text[]=$questions_text;
+            $arr_ques_notetext[]=$questions_notetext;
             $arr_ques_table[]=$questions_table;
             // $arr_ques_text[]=$this->parseLatex($questions_text);
             $arr_que_bel=$arr_question->xpath('./question');
@@ -524,7 +539,7 @@ class DirectAccessController extends Controller
 
         }
         
-
+        // dd($arr_ques_table);
 
         //获得所有试题的question
         $arr_que=$paper_content->xpath('/paper//question');
@@ -606,7 +621,8 @@ class DirectAccessController extends Controller
                                     'user_answer'=>$user_answer,'arr_ques_score'=>$arr_ques_score,'comment'=>$comment,
                                     'paper_content_path'=>$paper_content_path,'user_answer_path'=>$user_answer_path, 'paper_answer_path'=>$paper_answer_path,
                                     'tea_save_anws'=>$tea_save_anws,'tea_save_coms'=>$tea_save_coms,'paper_id'=>$paper_id,
-                                    'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id
+                                    'arr_ques_table'=>$arr_ques_table,'user_paper_id'=>$user_paper_id,'paper_category'=>$paper_category,
+                                    'arr_ques_notetext'=>$arr_ques_notetext
                                     ]);
         
         
