@@ -10,7 +10,11 @@ use Illuminate\Database\Eloquent\Model;
 class Parser 
 {
 	//解析公式
-    static function  parseLatex_ps($str){
+    static function  parseLatex_ps($str,$category){
+    	if($category=='chinese'){
+    		$str=str_replace("$$", "$", $str);
+    		return $str;
+    	}
         //将$$转化为$$
     	$str=str_replace("$$", "$", $str);
 	    $pattern='/\$([^$]*)\$/Usi';
@@ -194,7 +198,7 @@ class Parser
     		return $str;
     	}
     	// dd($str);
-    	
+
     	$tab_xml=simplexml_load_string($str);
 	    // dd($tab_xml);
 	    $tab_id=$tab_xml['id'];
@@ -390,10 +394,14 @@ class Parser
 
         if($str_arr[0]=="point" || $str_arr[0]=="Point"){
             if($str_arr[1]==0){
-                $str_new.='<point>';
+                // $str_new.='<point>';
+                // $str_new.='<u>';
+                $str_new.='<span class="emphasis">';
             }
             if($str_arr[1]==1){
-                $str_new.='</point>';
+                // $str_new.='</point>';
+                // $str_new.='</u>';
+                $str_new.='</span>';
             }
         }
         // dd($str_new);
